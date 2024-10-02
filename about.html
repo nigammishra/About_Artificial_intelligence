@@ -1,0 +1,345 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+       @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,700&display=swap');
+
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'roboot', sans-serif;
+text-decoration: none;
+
+}
+nav {
+width: 100%;
+height: 48px;
+background: #000;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+nav ul {
+list-style: none;
+display: flex;
+}
+nav ul li {
+margin: 0 40px;
+}
+nav ul li a {
+font-weight: 300;
+color: #adadad;
+transition: 600ms;
+}
+nav ul li a:hover {
+color: #f5f5f7;
+}
+
+/*--- section welcome ---*/
+.welcome {
+width: 100%;
+height: 600px;
+background-image: url("pic/20230607PHT95601_original.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.welcome h1 {
+color: rgb(255, 0, 21);
+font-weight: 500;
+font-size: 3rem;
+}
+
+/*--- section product ---*/
+.product-mac,
+.product-iphone,
+.product-watch,
+.product-ipad {
+width: 100%;
+height: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 50px 0;
+cursor: pointer;
+background-color: aliceblue;
+height: 100%;
+width: 100%;
+}
+.product-mac h2,
+.product-iphone h2,
+.product-watch h2,
+.product-ipad h2 {
+font-size: 2rem;
+font-weight: 300;
+margin-bottom: 20px;
+}
+.container {
+width: 1070px;
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+.grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 15px;
+}
+.grid-product {
+background: #f1f1f1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+transition: .5s;
+}
+.grid-product:hover {
+background: #e1e1e1;
+}
+.grid-product img {
+width: 300px;
+}
+.grid-detail {
+margin: 20px 0;
+text-align: center;
+}
+.grid-detail p:last-child {
+transition: .5s;
+margin-top: 10px;
+}
+.grid-product:hover > .grid-detail p:last-child {
+color: #3498db;
+}
+
+/*-------*/
+.grid-full {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 10px;
+}
+.grid-product-full {
+background: #f1f1f1;
+grid-column: span 3;
+display: flex;
+position: relative;
+}
+.grid-detail-sum {
+position: absolute;
+top: 35%;
+right: 12%;
+text-align: center;
+}
+.grid-detail-sum h2 {
+font-size: 3rem;
+font-weight: 500;
+}
+.grid-detail-sum p {
+margin: 20px 0;
+}
+.grid-detail-sum a {
+color: #3498db;
+}
+.grid-detail-sum a:hover {
+text-decoration: underline;
+}
+
+/*--- footer ---*/
+
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  position: relative;
+  background: #000;
+  padding: 1rem 0;
+  z-index: 999;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(90%, 800px);
+  margin-inline: auto;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover {
+  color: #4FC3F7;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  
+  .toggle {
+    transition: ease-in-out 550ms;
+    transform: translate(0px);
+    opacity: 1;
+    display: block;
+  }
+  
+  .header-container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: hsla(0, 0%, 0%, .5);
+    backdrop-filter: blur(10px);
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  
+  nav li {
+    padding: 1rem;
+    cursor: pointer;
+  }
+  
+  nav li:hover {
+    background: hsla(0, 0%, 0%, .7);
+  }
+  
+  .hamburger {
+    display: block; 
+  }
+}
+@property --k {
+	syntax: '<number>';
+	initial-value: 0;
+	inherits: false
+}
+html, body { display: grid }
+
+html { height: 100% }
+
+body { background: #000; }
+
+svg[height='0'] { position: absolute }
+
+h1 { 
+	--k: 0;
+	place-self: center;
+   
+	background: 
+		linear-gradient(90deg, 
+				hsl(calc(var(--k)*1turn), 95%, 65%), 
+				hsl(calc(var(--k)*1turn + 90deg), 95%, 65%));
+	-webkit-background-clip: text;
+	color: transparent;
+	font: 900 clamp(.875em, 7.25vw, 5em) arial black, sans-serif;
+	filter: url(#f);
+	text-align: center;
+	text-transform: uppercase;
+	animation: k 4s linear infinite; 
+}
+@keyframes k { to { --k: 1 }
+ }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <span><img src="photo/logo1.png" style="height: 50px;width: 70px;overflow: hidden;backface-visibility: hidden;"></span>
+      <nav id="nav">
+        <ul id="nav-ul">
+          <li><a href="nigam1.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="AIservices.html">Service</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <span class="hamburger" id="button"><i class="fa-solid fa-bars"></i></span>
+    </div>
+  </header>
+  </body>
+  <body>
+  <h1> ARTIFICIAL INTELLIGENCE</h1>
+<section class="product-mac">
+  <div class="container">
+    <h2>About AI</h2>
+    <div class="grid">
+      <div class="grid-product">
+        <img src="pic/What-is-Artificial-Intelligence-AI.webp">
+        <div class="grid-detail">
+          <p><b><i>Artificial intelligence is the intelligence of machines or software, as opposed to the intelligence of humans or animals. It is also the field of study in computer science that develops and studies intelligent machines. "AI" may also refer to the machines themselves. </i></b></p>
+          <p><a href="AI 1.html">ReadMore</a></p>
+        </div>
+      </div>
+      <div class="grid-product">
+        <img src="pic\What-is-Machine-Learning.webp">
+        <div class="grid-detail">
+          <p><b><i>Machine learning is a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can effectively generalize and thus perform tasks without explicit instructions.</i></b></p>
+          <p><a href="AI 2.html">ReadMore</a></p>
+        </div>
+      </div>
+      
+      <div class="grid-product">
+        <img src="pic/What-is-Data-Science.webp">
+        <div class="grid-detail">
+          <p><b><i>Data science combines math and statistics, specialized programming, advanced analytics, artificial intelligence (AI), and machine learning with specific subject matter expertise to uncover actionable insights hidden in an organization’s data. These insights can be used to guide decision making and strategic planning.</i></b></p>
+         <p><a href="AI 5.html">ReadMore</a></p>
+        </div>
+      </div>
+      
+      <div class="grid-product">
+        <img src="pic/Deep-Learning.jpg">
+        <div class="grid-detail">
+          <p><b><i>Deep learning is a method in artificial intelligence (AI) that teaches computers to process data in a way that is inspired by the human brain. Deep learning models can recognize complex patterns in pictures, text, sounds, and other data to produce accurate insights and predictions.</i></b></p>
+          <p><a href="AI 3.html">ReadMore</a></p>
+        </div>
+      </div>
+      
+      <div class="grid-product">
+        <img src="pic/What-is-Neural-Networks.webp">
+        <div class="grid-detail">
+          <p><b><i>A neural network is a neural circuit of biological neurons, sometimes also called a biological neural network, or a network of artificial neurons or nodes in the case of an artificial neural network.</i></b></p>
+          <p><a href="AI 4.HTML">ReadMore</a></p>
+        </div>
+      </div>
+  
+      <!--<div class="grid-product">
+        <img src="">
+        <div class="grid-detail">
+          <p></p>
+          <p></p>
+        </div>
+      </div>
+    </div> 
+  </div> 
+</section>
+</body></html>

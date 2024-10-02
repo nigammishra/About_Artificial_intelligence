@@ -1,0 +1,1789 @@
+<html lang="en"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>What is Artificial Intelligence (AI)? Tutorial, Meaning </title>
+  <link rel="stylesheet" href="style.css">
+ <style>
+  body {
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  header {
+    position: relative;
+    background: hsla(0, 0%, 0%, .6);
+    padding: 1rem 0;
+    z-index: 999;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: min(90%, 800px);
+    margin-inline: auto;
+    color: #fff;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  nav a:hover {
+    color: #4FC3F7;
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 600px) {
+    
+    .toggle {
+      transition: ease-in-out 550ms;
+      transform: translate(0px);
+      opacity: 1;
+      display: block;
+    }
+    
+    .header-container {
+      width: 100%;
+      padding: 0 1rem;
+    }
+    
+    nav ul {
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: hsla(0, 0%, 0%, .5);
+      backdrop-filter: blur(10px);
+      transform: translateX(-500px);
+      opacity: 0;
+    }
+    
+    nav li {
+      padding: 1rem;
+      cursor: pointer;
+    }
+    
+    nav li:hover {
+      background: hsla(0, 0%, 0%, .7);
+    }
+    
+    .hamburger {
+      display: block; 
+    }
+  }
+  *,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+	background-color: #151515;
+	padding: 80px 0;
+}
+
+.container {
+	max-width: 1170px;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer-col {
+	width: 25%;
+	padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 18px;
+	color: #FFF;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #E91E63;
+	width: 50px;
+	height: 2px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	color: #DDD;
+	display: block;
+	font-size: 1rem;
+	font-weight: 300;
+	text-transform: capitalize;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: #FFF;
+	padding-left: 7px;
+}
+
+.footer-col .social-links a {
+	color: #FFF;
+	background-color: rgba(255, 255, 255, 0.2);
+	display: inline;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	text-align: center;
+	margin: 0 10px 10px 0;
+	line-height: 100px;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #151515;
+	background-color: #FFF;
+}
+
+@media(max-width: 767px) {
+	.footer-col {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 574px) {
+	.footer-col {
+		width: 100%;
+	}
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+	background-color: #151515;
+	padding: 80px 0;
+}
+
+.container {
+	max-width: 1170px;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer-col {
+	width: 25%;
+	padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 18px;
+	color: #FFF;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #E91E63;
+	width: 50px;
+	height: 2px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	color: #DDD;
+	display: block;
+	font-size: 1rem;
+	font-weight: 300;
+	text-transform: capitalize;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: #FFF;
+	padding-left: 7px;
+}
+
+.footer-col .social-links a {
+	color: #FFF;
+	background-color: rgba(255, 255, 255, 0.2);
+	display: inline;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	text-align: center;
+	margin: 0 10px 10px 0;
+	line-height: 100px;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #151515;
+	background-color: #FFF;
+}
+
+@media(max-width: 767px) {
+	.footer-col {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 574px) {
+	.footer-col {
+		width: 100%;
+	}
+}
+        </style>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+       
+       </head><body>
+        <header>
+          <div class="header-container">
+            <span><img src="photo/logo1.png" style="height: 50px;width: 70px;overflow: hidden;backface-visibility: hidden;"></span>
+            <nav id="nav">
+              <ul id="nav-ul">
+                <li><a href="nigam1.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="AIservices.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+            <span class="hamburger" id="button"><i class="fa-solid fa-bars"></i></span>
+          </div>
+        </header>
+      <!-- Code injected by live-server -->
+  
+      
+     
+      
+      
+      <div id="menu">
+      <div class="leftmenu2">
+      <h2 class="spanh2"><span class="spanh2">Artificial Intelligence</span></h2>
+      </div>
+      <div class="leftmenu">
+      <a href="nigam1.html" style="color: black;"><strong>Artificial Intelligence (AI)</strong> </a>
+    </div>
+    <div class="leftmenu2">
+      <h2 class="spanh2"><span class="spanh2">definations and small descriptions</span></h2>
+      </div>
+      <div class="leftmenu">
+        <a href=" " style="color: black;"><strong> what is artificial Intelligence?</strong> </a><br>
+        <a href=" " style="color: black;"><strong> what-is-machine-learning?</strong> </a><br>
+        <a href=" " style="color: black;"><strong> what is Deep-Learning?</strong> </a>
+        <a href=" " style="color: black;"><strong> What-is-Neural-Networks?</strong> </a>
+        <a href=" " style="color: black;"><strong> what is data Science?</strong> </a>
+        <a href=" " style="color: black;"><strong> </strong> </a>
+        
+          </div>
+        
+        </div>
+        <b><i><div class="onlycontent">
+          <div class="onlycontentad">
+          </div>
+          <div class="onlycontentinner">
+          <div id="city">
+          <table>
+          <tbody><tr><td>
+            <b><i><div id="header">
+              <h1> Data Science</h1>
+          </div>
+          <div id="content">
+              <div id="history" class="animate">
+                  
+                                      <h1>What is Data Science? – A Complete Guide</h1>
+                                      
+                                      
+                                          <img src="pic/What-is-Data-Science.webp" class="img-fluid" alt="What is Data Science? – A Complete Guide">
+                                      
+                                      
+                                  </div>
+          
+          
+                                  <article class="col-12">
+                                      <div class="row tbc">
+                                          <div class="col-12">
+                                              <div class="accordion">
+                                                  <div class="accordion-item">
+                                                      <h2 class="accordion-header">
+                                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tableofcontent" aria-expanded="false" fdprocessedid="etrykb">
+                                                              Table of Content
+                                                          </button>
+                                                      </h2>
+                                                      <div id="tableofcontent" class="accordion-collapse collapse ">
+                                                          <div class="accordion-body">
+                                                              <ul class="tbclist"><li class="i-H2"><a href="#goto what-is-data-science">
+           
+            What is Data Science?
+           
+          </a></li><li class="i-H3"><a href="#goto why-is-it-important">
+           
+            Why is it Important?
+           
+          </a></li><li class="i-H3"><a href="#goto history">
+           
+            History
+           
+          </a></li><li class="i-H2"><a href="#goto data-science-life-cycle">
+           
+            Data Science Life Cycle
+           
+          </a></li><li class="i-H3"><a href="#goto 1-capture">
+           
+            1. Capture
+           
+          </a></li><li class="i-H3"><a href="#goto 2-maintain">
+           
+            2. Maintain
+           
+          </a></li><li class="i-H3"><a href="#goto 3-process">
+           
+            3. Process
+           
+          </a></li><li class="i-H3"><a href="#goto 4-analyze">
+           
+            4. Analyze
+           
+          </a></li><li class="i-H3"><a href="#goto 5-communication">
+           
+            5. Communication
+           
+          </a></li><li class="i-H2"><a href="#goto prerequisites-for-data-science">
+           
+            Prerequisites for Data Science
+           
+          </a></li><li class="i-H3"><a href="#goto 1-programming-languages">
+           
+            1. Programming Languages
+           
+          </a></li><li class="i-H3"><a href="#goto 2-machine-learning">
+           
+            2. Machine Learning
+           
+          </a></li><li class="i-H3"><a href="#goto 3-statistics-probability-and-linear-algebra">
+           
+            3. Statistics, Probability, and Linear Algebra
+           
+          </a></li><li class="i-H3"><a href="#goto 4-databases-and-sql">
+           
+            4. Databases and SQL
+           
+          </a></li><li class="i-H3"><a href="#goto 5-big-data-frameworks">
+           
+            5. Big Data Frameworks
+           
+          </a></li><li class="i-H3"><a href="#goto 6-data-visualization">
+           
+            6. Data Visualization
+           
+          </a></li><li class="i-H2"><a href="#goto who-is-a-data-scientist">
+           
+            Who is a Data Scientist?
+           
+          </a></li><li class="i-H3"><a href="#goto roles-and-responsibilities">
+           
+            Roles and Responsibilities
+           
+          </a></li><li class="i-H3"><a href="#goto what-do-they-do">
+           
+            What do They Do?
+           
+          </a></li><li class="i-H2"><a href="#goto data-science-applications-in-daily-life">
+           
+            Data Science Applications in Daily Life
+           
+          </a></li><li class="i-H3"><a href="#goto 1-e-commerce-price-comparison-websites">
+           
+            1. E-Commerce Price Comparison Websites
+           
+          </a></li><li class="i-H3"><a href="#goto 2-internet-search">
+           
+            2. Internet Search
+           
+          </a></li><li class="i-H3"><a href="#goto 3-digital-marketing">
+           
+            3. Digital Marketing
+           
+          </a></li><li class="i-H3"><a href="#goto 4-image-and-speech-recognition">
+           
+            4. Image and Speech Recognition
+           
+          </a></li><li class="i-H3"><a href="#goto 5-healthcare">
+           
+            5. Healthcare
+           
+          </a></li><li class="i-H3"><a href="#goto 6-airline-route-planning">
+           
+            6. Airline Route Planning
+           
+          </a></li><li class="i-H3"><a href="#goto 7-logistics">
+           
+            7. Logistics
+           
+          </a></li><li class="i-H3"><a href="#goto 8-gaming">
+           
+            8. Gaming
+           
+          </a></li><li class="i-H3"><a href="#goto 9-ar-and-vr">
+           
+            9. AR and VR
+           
+          </a></li><li class="i-H3"><a href="#goto 10-banking">
+           
+            10. Banking
+           
+          </a></li><li class="i-H3"><a href="#goto 11-recommendation-systems">
+           
+            11. Recommendation Systems
+           
+          </a></li><li class="i-H2"><a href="#goto job-roles-in-data-science">
+           
+            Job Roles in Data Science
+           
+          </a></li><li class="i-H3"><a href="#goto 1-data-scientist">
+           
+            1. Data Scientist
+           
+          </a></li><li class="i-H3"><a href="#goto 2-data-analyst">
+           
+            2. Data Analyst
+           
+          </a></li><li class="i-H3"><a href="#goto 3-data-engineer">
+           
+            3. Data Engineer
+           
+          </a></li><li class="i-H2"><a href="#goto data-science-vs-other-related-data-fields">
+           
+            Data Science vs Other Related Data Fields
+           
+          </a></li><li class="i-H3"><a href="#goto how-does-data-science-differ-from-business-intelligence">
+           
+            How does Data Science Differ from Business Intelligence?
+           
+          </a></li><li class="i-H3"><a href="#goto how-does-data-science-differ-from-data-analytics">
+           
+            How does Data Science Differ From Data Analytics?
+           
+          </a></li><li class="i-H3"><a href="#goto how-does-data-science-differ-from-machine-learning">
+           
+            How does Data Science Differ from Machine Learning?
+           
+          </a></li><li class="i-H2"><a href="#goto conclusion">
+           
+            Conclusion
+           
+          </a></li></ul>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <!-- Article start -->
+                                      <p>
+           Over the past decade, there has been no sign of slowing down data generation. It is generated in quintillions daily but is unstructured, raw, and noisy. It needs to be converted into a meaningful and understandable form to make the most out of the data. This is where the role of data science comes into play.
+          </p>
+          <p>
+           Data science has taken the world by storm in the past decade. It has become an essential aspect of every company due to the consistent and extensive creation of data daily.
+          </p>
+          <p>
+           Today, companies have adopted data science techniques to uncover valuable insights from raw and noisy data to improve customer satisfaction and grow their business.
+          </p>
+          <p>
+           <strong>
+            <em>
+             Do you know?
+            </em>
+           </strong>
+          </p>
+          <p>
+           <a href="https://www.marketsandmarkets.com/Market-Reports/data-science-platform-market-21532997.html" rel="nofollow" target="_blank">
+            <em>
+             According to Markets and Markets
+            </em>
+           </a>
+           <em>
+            , the global data science platform market was valued at $95.3 billion in 2021 and is expected to grow to $322.9 billion by 2026 at a CAGR of 27.7%.
+           </em>
+          </p>
+          <p>
+           <img alt="Attractive opportunities in Data Science platform market " src="pic/screenshot-2023-03-10-at-103225-pm.jpg"style="height: 500px;width: 770px;" class="img-fluid img-center">
+          </p>
+          <p>
+           Undoubtedly, data science is a growing field. With the forecast of its global market size, we can say that there will be great opportunities and demand for skilled data professionals in the near future.
+          </p>
+          <p>
+           If you plan to enter this field, you must first understand it. This article will help you gain insights into the data science domain, a flourishing and ever-expanding field.
+          </p>
+          <h2 id="goto what-is-data-science">
+           <strong>
+            What is Data Science?
+           </strong>
+          </h2>
+          <p>
+           It is a multi-disciplinary field that lies at the intersection of
+          </p>
+          <ul>
+           <li>
+            Artificial intelligence
+           </li>
+           <li>
+            Computer engineering
+           </li>
+           <li>
+            Mathematics and statistics
+           </li>
+           <li>
+            Substantive expertise
+           </li>
+          </ul>
+          <p>
+           Simply put, it is the field involving the study of data to uncover valuable insights. Businesses leverage these insights to make strategic planning and informed decisions.
+          </p>
+          <p>
+           The transformation of raw data into actionable insights takes place with the help of statistical analysis,
+           <a href="https://www.techgeekbuzz.com/blog/what-is-data-analysis/">
+            data analysis
+           </a>
+           , machine learning algorithms, data modeling, and many other techniques.
+          </p>
+          <p>
+           The field is not just the concept of unifying statistics, data analysis, and their related methods but also comprises their results. It intends to analyze and understand actual phenomena with the help of data and answer various questions, like
+          </p>
+          <ul>
+           <li>
+            What happened?
+           </li>
+           <li>
+            Why did it happen?
+           </li>
+           <li>
+            What will happen?
+           </li>
+           <li>
+            What can be done with the results?
+           </li>
+          </ul>
+          <p>
+           Further, it aims to reveal the features or the hidden structure of complex and natural human and social phenomena using a different point of view from the established or traditional theories and methods. These points of view imply multidimensional, dynamic, and flexible ways of thinking.
+          </p>
+          <h3 id="goto why-is-it-important">
+           <strong>
+            Why is it Important?
+           </strong>
+          </h3>
+          <p>
+           Data science combines various techniques, tools, and methods to derive value from raw and unstructured data.
+          </p>
+          <p>
+           With technological advancements, there has been a proliferation in the inception and use of devices that automatically collect user data. Social media platforms, online stores, payment apps, and many other online systems gather extensive amounts of data. As a result, organizations today are always flooded with loads of data.
+          </p>
+          <p>
+           Well, this data originally exists in a raw and unstructured form, which is tricky to understand and use. However, data science turns this data into knowledge businesses use to improve their processes and attain maximum customer satisfaction.
+          </p>
+          <h3 id="goto history">
+           <strong>
+            History
+           </strong>
+          </h3>
+          <p>
+           Today, deriving insights from vast data stores has been designated as a new profession. However, making sense of has been practiced for a long time by scientists, statisticians, computer scientists, librarians, and many other professionals.
+          </p>
+          <p>
+           Let us now discuss the evolution of the term “Data Science” below.
+          </p>
+          <ul>
+           <li>
+            <h4>
+             <strong>
+              1962
+             </strong>
+            </h4>
+           </li>
+          </ul>
+          <p>
+           John Tukey wrote “The Future of Data Analysis”. In this, he stated that data analysis and the part of statistics that adhere to it must inherit the characteristics of science rather than mathematics. Data analysis is fundamentally an empirical science.
+          </p>
+          <ul>
+           <li>
+            <h4>
+             <strong>
+              1974
+             </strong>
+            </h4>
+           </li>
+          </ul>
+          <p>
+           Peter Naur published the book “Concise Survey of Computer Methods” in Sweden and the United States. It covers contemporary data processing methods used in a wide range of applications. Further, Naur defined data science as –
+          </p>
+          <p>
+           <em>
+            “The science of dealing with data, once they have been established, while the relation of the data to what they represent is delegated to other fields and sciences.”
+           </em>
+          </p>
+          <ul>
+           <li>
+            <h4>
+             <strong>
+              1977
+             </strong>
+            </h4>
+           </li>
+          </ul>
+          <p>
+           The
+           <a href="https://iasc-isi.org/" target="_blank">
+            International Association for Statistical Computing
+           </a>
+           (IASC) was established. Its primary motive was to associate traditional statistical methodology, modern computer technology, and the knowledge of domain experts to transform data into knowledge and information.
+          </p>
+          <ul>
+           <li>
+            <h4>
+             <strong>
+              1989
+             </strong>
+            </h4>
+           </li>
+          </ul>
+          <p>
+           Gregory Piatetsky-Shapiro organized the first data-related workshop, Knowledge Discovery in Databases (KDD). Later, it became the annual ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD).
+          </p>
+          <ul>
+           <li>
+            <h4>
+             <strong>
+              1994
+             </strong>
+            </h4>
+           </li>
+          </ul>
+          <p>
+           BusinessWeek published a cover story on database marketing. The story highlighted how companies collect data to predict which customers will likely buy their products. Using this data, they craft personalized messages and send them to potential customers.
+          </p>
+          <ul>
+           <li>
+            <h4>
+             <strong>
+              1996
+             </strong>
+            </h4>
+           </li>
+          </ul>
+          <p>
+           International Federation of Classification Societies (IFCS) members gathered together in Kobe, Japan, for the biennial conference. The conference's title was “Data Science, classification, and related methods”. It was the first time the term ‘Data Science” was used.
+          </p>
+          <p>
+           Meanwhile, Usama Fayyad, Gregory Piatetsky-Shapiro, and Padhraic Smyth published “From Data Mining to Knowledge Discovery in Databases.” In this, they wrote that the concept of finding useful patterns and information in data is referred to by different names –
+           <a href="https://www.techgeekbuzz.com/blog/what-is-data-mining/">
+            data mining
+           </a>
+           , knowledge extraction, information harvesting, information discovery, data archeology, and data pattern processing.
+          </p>
+          <ul>
+           <li>
+            <h4>
+             <strong>
+              1997 to 2000
+             </strong>
+            </h4>
+           </li>
+          </ul>
+          <p>
+           Professor C. F. Jeff Wu, in his inaugural lecture for H. C. Carver Chair in Statistics, said that statistics should be renamed by data science and statisticians by data scientists.
+          </p>
+          <ul>
+           <li>
+            <h4>
+             <strong>
+              2001 to 2010
+             </strong>
+            </h4>
+           </li>
+          </ul>
+          <p>
+           In 2001, William S. Cleveland published "Data Science: An Action Plan for Expanding the Technical Areas of the Field of Statistics." He said that the plan was to expand the technical areas of the field of statistics. Further, he stated that the field should be called data science due to substantial changes.
+          </p>
+          <p>
+           In 2002, the
+           <em>
+            Data Science Journal
+           </em>
+           focused on data and database management in science and technology. It provided descriptions of data systems, their applications, and legal issues.
+          </p>
+          <p>
+           The
+           <em>
+            Journal of Data Science
+           </em>
+           states that ‘data science’ means collecting, analyzing, modeling, etc., all sorts of applications.
+          </p>
+          <p>
+           Further, many more experts, journals, and publications presented their thoughts on data science.
+          </p>
+          <ul>
+           <li>
+            <h4>
+             <strong>
+              Present
+             </strong>
+            </h4>
+           </li>
+          </ul>
+          <p>
+           Currently, the data science domain combines a variety of tools, technologies, and fields, including statistics, machine learning, computer science, data mining, and data visualization. Also, it is implemented in various industry verticals, such as healthcare, finance, government agencies, IT, marketing, and transportation.
+          </p>
+          <p>
+           With a tremendous amount of data available today, the job of a data scientist is considered one of the sexiest ones.
+          </p>
+          <h2 id="goto data-science-life-cycle">
+           <strong>
+            Data Science Life Cycle
+           </strong>
+          </h2>
+          <p>
+           Every data science project comprises the following steps:
+          </p>
+          <h3 id="goto 1-capture">
+           <strong>
+            1. Capture
+           </strong>
+          </h3>
+          <p>
+           The first step involves acquiring data based on the question(s) you need to answer. The project begins with identifying various data sources like logs from
+           <a href="https://www.techgeekbuzz.com/blog/what-is-web-server/">
+            web servers
+           </a>
+           , social media data, online repositories or excel, etc.
+          </p>
+          <p>
+           Data acquisition involves acquiring data from all the identified internal and external sources that can help answer the business question(s). It is important to track where the data slice comes from and whether it is up-to-date. It is recommended to track this information during the entire lifecycle of a data science project, as data might need to be re-acquired to test other hypotheses.
+          </p>
+          <h3 id="goto 2-maintain">
+           <strong>
+            2. Maintain
+           </strong>
+          </h3>
+          <p>
+           This step involves
+           <a href="https://www.techgeekbuzz.com/blog/what-is-data-wrangling/">
+            data wrangling
+           </a>
+           . Now comes the role of data scientists. They clean data and transform it into a standard format. Through regular data cleaning, data scientists can easily identify the following:
+          </p>
+          <ul>
+           <li>
+            Foibles that exist in the data acquisition process,
+           </li>
+           <li>
+            Assumptions they could make, and
+           </li>
+           <li>
+            Models they could apply to produce results.
+           </li>
+          </ul>
+          <p>
+           Further, they load the refined and transformed data into any one of the
+           <a href="https://www.techgeekbuzz.com/blog/data-science-tools/">
+            data science tools
+           </a>
+           .
+          </p>
+          <h3 id="goto 3-process">
+           <strong>
+            3. Process
+           </strong>
+          </h3>
+          <p>
+           This step defines a project’s core activity. It requires writing, running, and refining the programs to analyze and derive meaningful business insights from the data.
+          </p>
+          <p>
+           Such programs are often written in Python, Perl,
+           <a href="https://www.techgeekbuzz.com/blog/r-vs-matlab/">
+            R and MATLAB
+           </a>
+           . Various machine learning techniques are applied to the data to identify the ML model that best fits the business requirements. All the models are trained using the training data sets.
+          </p>
+          <h3 id="goto 4-analyze">
+           <strong>
+            4. Analyze
+           </strong>
+          </h3>
+          <p>
+           After we get the set of process-ready data, we need to analyze it. It involves analysis of the random subset of data. This is a brainstorming stage for data analysts as this is where the patterns in the data are observed, and useful insights are retrieved.
+          </p>
+          <p>
+           There could be a possibility that the dataset could be missing values or there is some unnecessary (dispensable) data. Such inconsistencies are identified and removed in this stage.
+          </p>
+          <h3 id="goto 5-communication">
+           <strong>
+            5. Communication
+           </strong>
+          </h3>
+          <p>
+           The goal of this stage is to deploy the models into production for the final user acceptance. The user must validate the models' performance; if any issues exist, they must fix them in this stage. A data science project is an iterative process. Steps are iteratively repeated as data is acquired continuously, and understanding becomes much easier.
+          </p>
+          <h2 id="goto prerequisites-for-data-science">
+           <strong>
+            Prerequisites for Data Science
+           </strong>
+          </h2>
+          <p>
+           To carry out the process of data science in organizations, here are a few technical concepts you must master:
+          </p>
+          <h3 id="goto 1-programming-languages">
+           <strong>
+            1. Programming Languages
+           </strong>
+          </h3>
+          <p>
+           R and Python are useful for performing statistical analysis and computations. For this purpose, Python provides a myriad of libraries, such as NumPy, SciPy, Pandas, Matplotlib, Sci-kit Learn, etc.
+          </p>
+          <p>
+           <strong>
+            <em>
+             Check out in detail:
+            </em>
+           </strong>
+           <a href="https://www.techgeekbuzz.com/blog/python-data-science-libraries/">
+            <em>
+             Python Data Science Libraries
+            </em>
+           </a>
+          </p>
+          <p>
+           On the other hand, R is a programming language and a software environment for statistical computing and graphics. The software environment is a suite of tools for data manipulation, calculation, and graphics display.
+          </p>
+          <h3 id="goto 2-machine-learning">
+           <strong>
+            2. Machine Learning
+           </strong>
+          </h3>
+          <p>
+           It is all about equipping machines with training data sets and making them able to perform tasks requiring human-like intelligence without any human intervention.
+          </p>
+          <p>
+           Machine learning has significantly transformed how data is extracted, processed, and interpreted. It replaces traditional statistical techniques with modern, automated sets of generic methods.
+          </p>
+          <p>
+           For data scientists, understanding the basic concepts of machine learning and mastering
+           <a href="https://www.techgeekbuzz.com/blog/machine-learning-algorithms/">
+            machine learning algorithms
+           </a>
+           is essential.
+          </p>
+          <h3 id="goto 3-statistics-probability-and-linear-algebra">
+           <strong>
+            3. Statistics, Probability, and Linear Algebra
+           </strong>
+          </h3>
+          <p>
+           These concepts form the basis for various data science techniques and tools. Statistics is at the heart of ML algorithms that are useful for capturing and transforming data into actionable insights. It is used to collect, process, and draw conclusions from data.
+          </p>
+          <p>
+           Probability helps data scientists to evaluate the certainty of a particular study’s or experiment’s outcomes.
+          </p>
+          <p>
+           Data processing, data transformation, and model evaluation require linear algebra. In addition, it forms the basis for writing various ML algorithms, such as linear regressions, principal component analysis (PCA), etc.
+          </p>
+          <h3 id="goto 4-databases-and-sql">
+           <strong>
+            4. Databases and SQL
+           </strong>
+          </h3>
+          <p>
+           As data is stored in databases, data scientists should have hands-on experience working with
+           <a href="https://www.techgeekbuzz.com/blog/sql-vs-nosql/">
+            relational (SQL) and non-relational (NQL) databases
+           </a>
+           . Relational databases store unstructured data, while non-relational databases store all kinds of data – structured, semi-structured, and unstructured.
+          </p>
+          <p>
+           SQL, or&nbsp;Structured Query Language, is a language to communicate with relational databases. It allows you to store, retrieve, manipulate, and delete data in SQL databases.
+          </p>
+          <h3 id="goto 5-big-data-frameworks">
+           <strong>
+            5. Big Data Frameworks
+           </strong>
+          </h3>
+          <p>
+           Big data is a term referred to enormous amounts of data. We have
+           <a href="https://www.techgeekbuzz.com/blog/best-big-data-tools/">
+            big data frameworks
+           </a>
+           to make the processing of big data quick and easy. Apache Hadoop, Spark, Hive, Samza, Flink, and MapReduce are well-known options.
+          </p>
+          <h3 id="goto 6-data-visualization">
+           <strong>
+            6. Data Visualization
+           </strong>
+          </h3>
+          <p>
+           It implies the visual representation of data. The insights or knowledge extracted from extensive data sets are represented in different forms, such as charts, graphs, plots, maps, etc. These data visualizations make it easy for laymen to grasp the insights.
+          </p>
+          <p>
+           Data scientists should be proficient in
+           <a href="https://www.techgeekbuzz.com/blog/best-data-visualization-tools/">
+            popular data visualization tools
+           </a>
+           , such as Tableau, Power BI, etc.
+          </p>
+          <h2 id="goto who-is-a-data-scientist">
+           <strong>
+            Who is a Data Scientist?
+           </strong>
+          </h2>
+          <p>
+           A data scientist is a professional in charge of deriving valuable insights from vast volumes of data and helping businesses make informed decisions. They identify business problems and provide solutions using big data.
+          </p>
+          <p>
+           These professionals have a broad skill set, a combination of mathematics, statistics, computer science, machine learning, and many other technologies. Using these skills, they analyze big data and discover trends and patterns useful for organizations.
+          </p>
+          <h3 id="goto roles-and-responsibilities">
+           <strong>
+            Roles and Responsibilities
+           </strong>
+          </h3>
+          <p>
+           Here are the common roles and responsibilities of a data scientist:
+          </p>
+          <ul>
+           <li>
+            Find patterns and trends from data to discover insights.
+           </li>
+           <li>
+            Communicate insights and recommendations to the team and other staff.
+           </li>
+           <li>
+            Create algorithms and data models to predict outcomes.
+           </li>
+           <li>
+            Leverage machine learning techniques to help businesses improve the quality of their offerings.
+           </li>
+           <li>
+            Stay atop the latest data science trends and technologies.
+           </li>
+          </ul>
+          <h3 id="goto what-do-they-do">
+           <strong>
+            What do They Do?
+           </strong>
+          </h3>
+          <p>
+           Let us now discuss a step-by-step approach to how data scientists discover insights from unstructured and noisy data and help businesses.
+          </p>
+          <ul>
+           <li>
+            Identify the business problem and understand it thoroughly.
+           </li>
+           <li>
+            Determine the appropriate data sets required to solve the problem.
+           </li>
+           <li>
+            Gather structured and unstructured data from diverse relevant data sources – whether external or internal.
+           </li>
+           <li>
+            Standardize the raw data, i.e., transform it into a format required for data analysis. It involves cleaning data, such as eliminating redundant data, adding missing values, and removing inconsistencies.
+           </li>
+           <li>
+            Feed data to the analytics system to analyze and uncover patterns and trends.
+           </li>
+           <li>
+            Understand and interpret the patterns and trends to find solutions and opportunities for the business problem.
+           </li>
+           <li>
+            Communicate the results or insights with stakeholders and the team.
+           </li>
+          </ul>
+          <p>
+           <strong>
+            <em>
+             Check out:
+            </em>
+           </strong>
+           <a href="https://www.techgeekbuzz.com/blog/how-to-become-data-scientist/">
+            <em>
+             How to Become a Data Scientist?
+            </em>
+           </a>
+          </p>
+          <h2 id="goto data-science-applications-in-daily-life">
+           <strong>
+            Data Science Applications in Daily Life
+           </strong>
+          </h2>
+          <p>
+           Data science or data-driven science enables better decisions,
+           <a href="https://www.techgeekbuzz.com/blog/what-is-predictive-analytics/">
+            predictive analysis
+           </a>
+           , and pattern discovery. It associates various areas of work in statistics and calculation to translate data with an end goal of decision-making.
+          </p>
+          <h3 id="goto 1-e-commerce-price-comparison-websites">
+           <strong>
+            1. E-Commerce Price Comparison Websites
+           </strong>
+          </h3>
+          <p>
+           These websites are fueled with data fetched using APIs and RSS feeds. Such websites offer a single platform to check the prices of different objects or things across many online shopping websites. This allows users to select a product by comparing prices, features, etc., from numerous sellers in a single place. PriceRunner, Junglee, and Shopzilla are a few examples of such sites.
+          </p>
+          <h3 id="goto 2-internet-search">
+           <strong>
+            2. Internet Search
+           </strong>
+          </h3>
+          <p>
+           All search engines, including Google, Bing, Baidu, Yahoo, and
+           <a href="https://duckduckgo.com/" target="_blank">
+            DuckDuckGo
+           </a>
+           , use data science algorithms to provide accurate outcomes for a search query in just a few seconds.
+          </p>
+          <h3 id="goto 3-digital-marketing">
+           <strong>
+            3. Digital Marketing
+           </strong>
+          </h3>
+          <p>
+           It is a critical domain where data science applications go unnoticed. Data science algorithms help marketers collect and segment customer data based on buying behavior, interests, and demographics.
+          </p>
+          <p>
+           With customer data at their fingertips, marketers can send personalized messages to them, increasing the chances of conversion. Also, they can significantly improve their marketing campaigns and return on investment (ROI).
+          </p>
+          <p>
+           Furthermore, sentiment analysis helps marketers understand customers' perceptions through social media posts, reviews, and other online content. Using this, they can tailor their products and services.
+          </p>
+          <h3 id="goto 4-image-and-speech-recognition">
+           <strong>
+            4. Image and Speech Recognition
+           </strong>
+          </h3>
+          <p>
+           Image and speech recognition are another two areas extensively using data science. For example, when we upload a photo on Facebook, we get tag suggestions, which is possible due to the image recognition feature that Facebook offers.
+          </p>
+          <p>
+           We also use speech recognition in our daily lives using smartphones featuring intelligent assistants like Siri and Google. Following the trend, the world has also witnessed the inception of voice-supported speakers and TVs.
+          </p>
+          <h3 id="goto 5-healthcare">
+           <strong>
+            5. Healthcare
+           </strong>
+          </h3>
+          <p>
+           This industry has greatly benefitted from data science. It has helped healthcare professionals develop amazing tools and systems to diagnose diseases quickly, improve patient care, and cure diseases.
+          </p>
+          <h3 id="goto 6-airline-route-planning">
+           <strong>
+            6. Airline Route Planning
+           </strong>
+          </h3>
+          <p>
+           With data science, an airline can optimize its operations in many ways and thus offer a hassle-free experience to its customers. Presently, it can:
+          </p>
+          <ul>
+           <li>
+            Plan the routes, thus predicting if connecting flights will be needed or direct flights could be scheduled.
+           </li>
+           <li>
+            Predict if any delays are possible.
+           </li>
+           <li>
+            Offers promotional offers by observing the booking patterns of customers.
+           </li>
+           <li>
+            Decide which class of planes to purchase depending on the demand.
+           </li>
+          </ul>
+          <h3 id="goto 7-logistics">
+           <strong>
+            7. Logistics
+           </strong>
+          </h3>
+          <p>
+           Companies like DHL, FedEx, and UPS use data science algorithms to enhance their operational efficiency. With optimized algorithms, these companies have discovered the best possible ways to ship, the most appropriate delivery time, and the best method of transport to pick, leading to cost-effectiveness and so on.
+          </p>
+          <h3 id="goto 8-gaming">
+           <strong>
+            8. Gaming
+           </strong>
+          </h3>
+          <p>
+           Gaming went to the next level with data science. Video games developed these days using machine learning are designed in such a way that they upgrade themselves. EA Sports, Sony, and Zynga are among the few giants who have taken the gaming experience to a new level with data science.
+          </p>
+          <h3 id="goto 9-ar-and-vr">
+           <strong>
+            9. AR and VR
+           </strong>
+          </h3>
+          <p>
+           Augmented reality (AR) and virtual reality (VR) use data science to provide amazing user experiences. AR and VR greatly rely on image and video processing to provide realistic and immersive experiences. It is possible with the help of data science.
+          </p>
+          <p>
+           In addition, with the help of predictive analytics and
+           <a href="https://www.techgeekbuzz.com/blog/what-is-data-analytics/">
+            data analytics
+           </a>
+           , AR and VR applications can understand user behavior and provide personalized experiences.
+          </p>
+          <h3 id="goto 10-banking">
+           <strong>
+            10. Banking
+           </strong>
+          </h3>
+          <p>
+           Data science plays a vital role in the banking industry by helping them detect fraud and potential risks. Fraud detection systems use data science and machine learning algorithms to detect and prevent fraud in real time.
+          </p>
+          <p>
+           Some other applications include customer lifetime value prediction, churn rate prediction, customer sentiment analysis, personalized marketing, virtual assistants, chatbots, and customer segmentation.
+          </p>
+          <h3 id="goto 11-recommendation-systems">
+           <strong>
+            11. Recommendation Systems
+           </strong>
+          </h3>
+          <p>
+           If you use streaming platforms like Netflix and Amazon, you are using recommendation systems. Netflix’s recommendation engine provides viewers with movies and shows based on their preferences and choices.
+          </p>
+          <p>
+           Conversely, Amazon uses a recommendation engine to recommend products to customers based on their browsing and purchase history.
+          </p>
+          <p>
+           <em>
+            Do you know? –
+           </em>
+           <a href="https://www.mckinsey.com/industries/retail/our-insights/how-retailers-can-keep-up-with-consumers" rel="nofollow" target="_blank">
+            <em>
+             More than 35% of purchases on Amazon
+            </em>
+           </a>
+           <em>
+            come from its recommendation engine.
+           </em>
+          </p>
+          <p>
+           These few popular industry verticals have greatly benefited from data science. The field has also transformed many other industry verticals and will continue to find new opportunities to help businesses improve their operations.
+          </p>
+          <h2 id="goto job-roles-in-data-science">
+           <strong>
+            Job Roles in Data Science
+           </strong>
+          </h2>
+          <h3 id="goto 1-data-scientist">
+           <strong>
+            1. Data Scientist
+           </strong>
+          </h3>
+          <p>
+           Data scientists examine the questions needing answers and find related data. They have good business acumen and analytical skills, as well as the ability to mine, clean, and present data.
+          </p>
+          <p>
+           <strong>
+            Skills Required:
+           </strong>
+          </p>
+          <ul>
+           <li>
+            Programming Skills (SAS, R, Python)
+           </li>
+           <li>
+            Statistical and mathematical skills
+           </li>
+           <li>
+            Storytelling
+           </li>
+           <li>
+            Problem-solving
+           </li>
+           <li>
+            Data visualization
+           </li>
+           <li>
+            Hadoop and SQL
+           </li>
+           <li>
+            Machine learning
+           </li>
+          </ul>
+          <h3 id="goto 2-data-analyst">
+           <strong>
+            2. Data Analyst
+           </strong>
+          </h3>
+          <p>
+           Data analysts bridge the gap between data scientists and business analysts. They are provided with the questions that need answering from an organization and so they organize and analyze data to find results that align with high-level business strategies. They are responsible for translating technical analysis to qualitative action items and effectively communicating their findings to diverse stakeholders.
+          </p>
+          <p>
+           <strong>
+            Skills Required:
+           </strong>
+          </p>
+          <ul>
+           <li>
+            Programming Skills (SAS, R, Python)
+           </li>
+           <li>
+            Data wrangling
+           </li>
+           <li>
+            Data visualization
+           </li>
+           <li>
+            Statistical and mathematical skills
+           </li>
+          </ul>
+          <h3 id="goto 3-data-engineer">
+           <strong>
+            3. Data Engineer
+           </strong>
+          </h3>
+          <p>
+           Data engineers manage exponential amounts of rapidly changing data. They focus on the development, deployment, management, and optimization of data pipelines and infrastructure to transform and transfer data to data scientists for querying.
+          </p>
+          <p>
+           <strong>
+            Skills Required:
+           </strong>
+          </p>
+          <ul>
+           <li>
+            Programming languages (Java or Scala)
+           </li>
+           <li>
+            NoSQL databases (MongoDB)
+           </li>
+           <li>
+            Frameworks (Apache Hadoop)
+           </li>
+          </ul>
+          <p>
+           <em>
+            <strong>
+             Check out:
+            </strong>
+            <a href="https://www.techgeekbuzz.com/blog/how-to-become-a-data-engineer/">
+             How to Become a Data Engineer?
+            </a>
+           </em>
+          </p>
+          <h2 id="goto data-science-vs-other-related-data-fields">
+           <strong>
+            Data Science vs Other Related Data Fields
+           </strong>
+          </h2>
+          <p>
+           Data Science is a broad, umbrella term for all other data-related fields. Let us highlight some differences between them.
+          </p>
+          <h3 id="goto how-does-data-science-differ-from-business-intelligence">
+           <strong>
+            How does Data Science Differ from Business Intelligence?
+           </strong>
+          </h3>
+          <p>
+           Business intelligence (BI) also comprises the use of strategies and technologies to analyze business data or information. It can also provide historical, current, and predictive views of business insights. But still, there are some key differences.
+          </p>
+          <p>
+           Unlike data science, which uses structured and unstructured data, business intelligence uses only structured data. Also, BI is analytical in nature. This means that it provides historical reports of data.
+          </p>
+          <p>
+           In contrast, data science is scientific in nature as it performs in-depth statistical analysis on the datasets. Further, it leverages more sophisticated statistical and predictive analysis and machine learning, whereas business intelligence uses basic statistics emphasizing visualization.
+          </p>
+          <p>
+           Lastly, business intelligence compares historical data and current data to identify trends. Contrary to this, data science combines historical and current data to predict future performance, possibilities, and outcomes.
+          </p>
+          <div class="hscroll"><table>
+           <tbody>
+            <tr>
+             <td>
+              <p>
+               <strong>
+                Business Intelligence
+               </strong>
+              </p>
+             </td>
+             <td>
+              <p>
+               <strong>
+                Data Science
+               </strong>
+              </p>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <p>
+               Uses only structured data.
+              </p>
+             </td>
+             <td>
+              <p>
+               Uses structured and unstructured data.
+              </p>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <p>
+               Provides historical reports of data (Analytical in nature).
+              </p>
+             </td>
+             <td>
+              <p>
+               Provides in-depth insights into data by performing statistical analysis (Scientific in nature).
+              </p>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <p>
+               Compares historical and current data to identify trends.
+              </p>
+             </td>
+             <td>
+              <p>
+               Compares historical and current data to predict future outcomes.
+              </p>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <p>
+               Leverages statistics and visualization.
+              </p>
+             </td>
+             <td>
+              <p>
+               Leverages statistical and predictive analytics and machine learning.
+              </p>
+             </td>
+            </tr>
+           </tbody>
+          </table></div>
+          <h3 id="goto how-does-data-science-differ-from-data-analytics">
+           <strong>
+            How does Data Science Differ From Data Analytics?
+           </strong>
+          </h3>
+          <p>
+           We use both these terms interchangeably for collecting, processing, analyzing, and deriving insights from large data sets. The primary difference is that data science is an umbrella term, while data analytics is associated with statistics, mathematics, and statistical analysis.
+          </p>
+          <p>
+           Data analytics primarily focuses on data analysis, while data science associates with a broader picture of the organizational data. It is a technique to examine data sets and generate insights by connecting and observing patterns in trends to achieve organizational targets.
+          </p>
+          <p>
+           Unlike data science, it involves dealing with historical data in context and less in AI, machine learning, and predictive modeling.
+          </p>
+          <p>
+           In companies,
+           <a href="https://www.techgeekbuzz.com/blog/difference-between-data-scientist-vs-data-analyst/">
+            data scientists and data analysts
+           </a>
+           work together. Data analysts focus on routine analysis and provide regular reports. In addition to this, data scientists create new data models, write algorithms, and generate new tools and methods for data analysts.
+          </p>
+          <p>
+           The following table presents the various differences between the two closely related fields:
+          </p>
+          <div class="hscroll"><table>
+           <tbody>
+            <tr>
+             <td>
+              <p>
+               <strong>
+                Data Science
+               </strong>
+              </p>
+             </td>
+             <td>
+              <p>
+               <strong>
+                Data Analytics
+               </strong>
+              </p>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <p>
+               <strong>
+                Goal
+               </strong>
+              </p>
+             </td>
+             <td>
+              <p>
+               Asking business questions and planning strategy.
+              </p>
+             </td>
+             <td>
+              <p>
+               Analyzing and mining business data.
+              </p>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <p>
+               <strong>
+                Size of data
+               </strong>
+              </p>
+             </td>
+             <td>
+              <p>
+               Big set of data (big data).
+              </p>
+             </td>
+             <td>
+              <p>
+               A limited set of data.
+              </p>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <p>
+               <strong>
+                Involves
+               </strong>
+              </p>
+             </td>
+             <td>
+              <p>
+               Data preparation, cleansing, and analysis to gain insights.
+              </p>
+             </td>
+             <td>
+              <p>
+               Data querying and aggregation to find trends.
+              </p>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <p>
+               <strong>
+                Focus on
+               </strong>
+              </p>
+             </td>
+             <td>
+              <p>
+               Pre-processed data.
+              </p>
+             </td>
+             <td>
+              <p>
+               Processed data.
+              </p>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <p>
+               <strong>
+                Purpose
+               </strong>
+              </p>
+             </td>
+             <td>
+              <p>
+               Finding insights from raw data.
+              </p>
+             </td>
+             <td>
+              <p>
+               Finding insights from processed data.
+              </p>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <p>
+               <strong>
+                Data Types
+               </strong>
+              </p>
+             </td>
+             <td>
+              <p>
+               Structured and unstructured.
+              </p>
+             </td>
+             <td>
+              <p>
+               Structured.
+              </p>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <p>
+               <strong>
+                Source
+               </strong>
+              </p>
+             </td>
+             <td>
+              <p>
+               Data scientist explores and examines data from multiple disconnected sources.
+              </p>
+             </td>
+             <td>
+              <p>
+               Data analysts usually look at the data from a single source.
+              </p>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <p>
+               <strong>
+                AI and ML
+               </strong>
+              </p>
+             </td>
+             <td>
+              <p>
+               More involvement.
+              </p>
+             </td>
+             <td>
+              <p>
+               Less involvement.
+              </p>
+             </td>
+            </tr>
+            <tr>
+             <td>
+              <p>
+               <strong>
+                Predictive Analysis
+               </strong>
+              </p>
+             </td>
+             <td>
+              <p>
+               Yields more predictable insights.
+              </p>
+             </td>
+             <td>
+              <p>
+               Yields less predictable insights.
+              </p>
+             </td>
+            </tr>
+           </tbody>
+          </table></div>
+          <p>
+           <strong>
+            <em>
+             Check out:
+            </em>
+           </strong>
+           <a href="https://www.techgeekbuzz.com/blog/data-science-vs-data-analytics/">
+            <em>
+             Data Science vs Data Analytics
+            </em>
+           </a>
+          </p>
+          <h3 id="goto how-does-data-science-differ-from-machine-learning">
+           <strong>
+            How does Data Science Differ from Machine Learning?
+           </strong>
+          </h3>
+          <p>
+           Machine learning is a computer science discipline that trains machines to understand and analyze data independently and provide accurate predictions. It enables machines to mimic human intelligence. It is one of the methods used in data science to drive valuable insights from data.
+          </p>
+          <p>
+           Data scientists generally combine machine learning with mathematics, statistics, and other fields to process data.
+          </p>
+          <p>
+           <em>
+            To know the differences in detail, check out:
+           </em>
+           <a href="https://www.techgeekbuzz.com/blog/data-science-vs-machine-learning/">
+            <em>
+             Data Science vs Machine Learning
+            </em>
+           </a>
+          </p>
+          <h3 class="h3">Feedback</h3>
+                    <ul class="points">
+                    <li>Send your Feedback to nigammishra826@gmail.com</li>
+                    </ul></i></b>
+          <h2 id="goto conclusion">
+           
+          
+          
+          <quillbot-extension-portal>
+          </quillbot-extension-portal>
+                                      <!-- Article ends -->
+                                  </article>
+                                  
+                              </div>
+                              
+                              
+                              
+                                  
+                              
+          
+                     
+                          </div>
+                          <aside class="col-lg-2 col-12 order-lg-3 order-3 text-center" style="overflow-x: hidden; max-width: 100%;">
+                              <div class="ads-1-right">
+          
+                              </div>
+                          </aside>
+                             
+                      </div>
+          
+                  </section>
+          
+                  
+                  <!-- Homepage Blog section -->
+                  
+                  
+                <!-- Homepage Blog section ends -->
+                  <!-- Comment Section -->
+                  
+                  <!-- Comment Section ends -->
+          
+                  <!-- Comments list -->
+                  
+                  <!-- Comment list ends -->
+              </main>
+          
+            <!-- Main section ended -->
+          
+            
+          
+            
+            <script src="/static/js/script.js"></script>
+            
+            
+          <script src="/static/js/prism.js"></script>
+          <script src="/static/js/blogdetail.js"></script>
+          
+            
+          
+          
+          
+          <head>
+            <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+          </head>
+          
+          <body>
+            <footer class="footer">
+              <div class="container row">
+                <div class="footer-col">
+                  <h4>About</h4>
+                  <ul>
+                    <li><a href="nigam1.html">Artificial intelligence(AI)</a></li>
+                    <li><a href="nigam4.html">Types of AI</a></li>
+                    <li><a href="nigam8.html">Turing test of AI</a></li>
+                    <li><a href="nigam22.html">The Wumpus world</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>get help</h4>
+                  <ul>
+                    <li><a href="nigam89.html">MCQ</a></li>
+                    <li><a href="nigam87.html">Machine Learning</a></li>
+                    <li><a href="nigam88.html">NPL</a></li>
+                    <li><a href="nigam92.html">Data Science</a></li>
+                    <li><a href="nigam93.html">Reinforcement learning</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>Misc</h4>
+                  <ul>
+                    <li><a href="nigam36.html">examples</a></li>
+                    <li><a href="nigam43.html">Robotioc & AI</a></li>
+                    <li><a href="nigam44.html">Future of AI</a></li>
+                    <li><a href="nigam47.html">Scope of AI</a></li>
+                    <li><a href="nigam81.html">open AI&ChatGPT</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>follow us</h4>
+                  <div class="social-links">
+                    <a href="https://www.facebook.com/nigam.mishra.710?mibextid=9R9pXO"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/MishraNugam?s=09"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://instagram.com/mr_nigam_8199?igshid=MXNzeGI3bmZ6b3M3NQ=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                  </div>
+                  <a href="contact1.html"><img src="photo/logo2.jpg" style="height: 100px;width: 100px;"></a>
+                </div>
+              </div>
+            </footer>
+          </body>
+          </body></html>
+            

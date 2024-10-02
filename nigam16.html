@@ -1,0 +1,564 @@
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>What is Artificial Intelligence (AI)? Tutorial, Meaning </title>
+<link rel="stylesheet" type="text/css" href="style.css" async="">
+          </style><meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A/ERL66fN363FkXxgDc6F1+ucRUkAhjEca9W3la6xaLnD2Y1lABsqmdaJmPNaUKPKVBRpyMKEhXYl7rSvrQw+AkAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A6OdGH3fVf4eKRDbXb4thXA4InNqDJDRhZ8U533U/roYjp4Yau0T3YSuc63vmAs/8ga1cD0E3A7LEq6AXk1uXgsAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202311090101/pubads_impl.js" async=""></script><script src="https://config.aps.amazon-adsystem.com/configs/2e7e1587-d92f-46dd-8721-80b53eccb87e" type="text/javascript" async="async"></script><style type="text/css">.vjs-youtube .vjs-iframe-blocker { display: none; }.vjs-youtube.vjs-user-inactive .vjs-iframe-blocker { display: block; }.vjs-youtube .vjs-poster { background-size: cover; }.vjs-youtube-mobile .vjs-big-play-button { display: none; }</style><style type="text/css">
+
+body {
+  background-image: url(photo/qq.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  position: relative;
+  background: transparent;
+  padding: 1rem 0;
+  z-index: 999;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(90%, 800px);
+  margin-inline: auto;
+  color: #000;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav a:hover {
+  color: #4FC3F7;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  
+  .toggle {
+    transition: ease-in-out 550ms;
+    transform: translate(0px);
+    opacity: 1;
+    display: block;
+  }
+  
+  .header-container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: hsla(0, 0%, 0%, .5);
+    backdrop-filter: blur(10px);
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  
+  nav li {
+    padding: 1rem;
+    cursor: pointer;
+  }
+  
+  nav li:hover {
+    background: hsla(0, 0%, 0%, .7);
+  }
+  
+  .hamburger {
+    display: block; 
+  }
+}
+div.onlycontent {
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-right: 4px;
+    width: 58%;
+    float: left;
+    padding: 10px 15px;
+    background :none;
+  }
+  #city td {
+    color: black;
+    line-height: 1.7;
+  }
+  #city li {
+    line-height: 25px;
+    color: black;
+    margin-top: 4px;
+  }
+  *,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+	background-color: #151515;
+	padding: 80px 0;
+}
+
+.container {
+	max-width: 1170px;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer-col {
+	width: 25%;
+	padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 18px;
+	color: #FFF;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #E91E63;
+	width: 50px;
+	height: 2px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	color: #DDD;
+	display: block;
+	font-size: 1rem;
+	font-weight: 300;
+	text-transform: capitalize;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: #FFF;
+	padding-left: 7px;
+}
+
+.footer-col .social-links a {
+	color: #FFF;
+	background-color: rgba(255, 255, 255, 0.2);
+	display: inline;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	text-align: center;
+	margin: 0 10px 10px 0;
+	line-height: 100px;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #151515;
+	background-color: #FFF;
+}
+
+@media(max-width: 767px) {
+	.footer-col {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 574px) {
+	.footer-col {
+		width: 100%;
+	}
+}
+      </style>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+     <body>
+      <header>
+        <div class="header-container">
+          <span><img src="photo/logo1.png" style="height: 50px;width: 70px;overflow: hidden;backface-visibility: hidden;"></span>
+          <nav id="nav">
+           <b><i><ul id="nav-ul">
+              <li><a href="nigam1.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="AIservices.html">Service</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul></i></b>
+          </nav>
+          <span class="hamburger" id="button"><i class="fa-solid fa-bars"></i></span>
+        </div>
+      </header>
+    </body>
+    
+    </div>
+    </div>
+    <div id="link" style="clear:both;z-index:999"> </div>
+    <div class="mobilemenu" style="clear:both">
+    
+    </div>
+    <div id="menu">
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Artificial Intelligence</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam1.html" style="color: black;"><strong>Artificial Intelligence (AI)</strong> </a>
+    <a href="nigam2.html">Applications of AI</a>
+    <a href="nigam3.html">History of AI</a>
+    <a href="nigam4.html">Types of AI</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Intelligent Agent</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam5.html">Types of Agents</a>
+    <a href="nigam6.html">Intelligent Agent</a>
+    <a href="nigam7.html">Agent Environment</a>
+    <a href="nigam8.html">Turing Test in AI</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Problem-solving</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam9.html">Search Algorithms</a>
+    <a href="nigam10.html">Uninformed Search Algorithm</a>
+    <a href="nigam11.html">Informed Search Algorithms</a>
+    <a href="nigam12.html">Hill Climbing Algorithm</a>
+    <a href="nigam13.html">Means-Ends Analysis</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Adversarial Search</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam14.html">Adversarial search</a>
+    <a href="nigam15.html">Minimax Algorithm</a>
+    <a href="nigam16.html">Alpha-Beta Pruning</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Knowledge Represent</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam17.html">Knowledge Based Agent</a>
+    <a href="nigam18.html">Knowledge Representation</a>
+    <a href="nigam19.html">Knowledge Representation Techniques</a>
+    <a href="nigam20.html">Propositional Logic</a>
+    <a href="nigam21.html">Rules of Inference</a>
+    <a href="nigam22.html">The Wumpus world</a>
+    <a href="nigam23.html">knowledge-base for Wumpus World</a>
+    <a href="nigam24.html">First-order logic</a>
+    <a href="nigam25.html">Knowledge Engineering in FOL</a>
+    <a href="nigam26.html">Inference in First-Order Logic</a>
+    <a href="nigam27.html">Unification in FOL</a>
+    <a href="nigam28.html">Resolution in FOL</a>
+    <a href="nigam29.html">Forward Chaining and backward chaining</a>
+    <a href="nigam30.html">Backward Chaining vs Forward Chaining</a>
+    <a href="nigam31.html">Reasoning in AI</a>
+    <a href="nigam32.html">Inductive vs. Deductive reasoning</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Uncertain Knowledge R.</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam33.html">Probabilistic Reasoning in AI</a>
+    <a href="nigam34.html">Bayes theorem in AI</a>
+    <a href="nigam35.html">Bayesian Belief Network</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Misc</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam36.html">Examples of AI</a>
+    <a href="nigam37.html">AI Essay</a>
+    <a href="nigam38.html">AI in Healthcare</a>
+    <a href="nigam39.html">Artificial Intelligence in Education</a>
+    <a href="nigam40.html">Artificial Intelligence in Agriculture</a>
+    <a href="nigam41.html">Engineering Applications of AI</a>
+    <a href="nigam42.html">Advantages &amp; Disadvantages of AI</a>
+    <a href="nigam43.html">Robotics and AI</a>
+    <a href="nigam44.html">Future of AI</a>
+    <a href="nigam45.html">Languages used in AI</a>
+    <a href="nigam46.html">Approaches to AI Learning</a>
+    <a href="nigam47.html">Scope of AI</a>
+    <a href="nigam48.html">Agents in AI</a>
+    <a href="nigam49.html">Artificial Intelligence Jobs</a>
+    <a href="nigam50.html">Amazon CloudFront</a>
+    <a href="nigam51.html">Goals of Artificial Intelligence</a>
+    <a href="nigam52.html">Can Artificial Intelligence replace Human Intelligence</a>
+    <a href="nigam53.html">Importance of Artificial Intelligence</a>
+    <a href="nigam54.html">Artificial Intelligence Stock in India</a>
+    <a href="nigam55.html">How to Use Artificial Intelligence in Marketing</a>
+    <a href="nigam56.html">Artificial Intelligence in Business</a>
+    <a href="nigam57.html">Companies Working on Artificial Intelligence</a>
+    <a href="nigam58.html">Artificial Intelligence Future Ideas</a>
+    <a href="nigam59.html">Government Jobs in Artificial Intelligence in India</a>
+    <a href="nigam60.html">What is the Role of Planning in Artificial Intelligence</a>
+    <a href="nigam61.html">AI as a Service</a>
+    <a href="nigam62.html">AI in Banking</a>
+    <a href="nigam63.html">AI Tools</a>
+    <a href="nigam64.html">Cognitive AI</a>
+    <a href="nigam65.html">Introduction of Seaborn</a>
+    <a href="nigam66.html">Natural Language ToolKit (NLTK)</a>
+    <a href="nigam67.html">Best books for ML</a>
+    <a href="nigam68.html">AI companies of India will lead in 2022</a>
+    <a href="nigam69.html">Constraint Satisfaction Problems in Artificial Intelligence</a>
+    <a href="nigam70.html">How artificial intelligence will change the future</a>
+    <a href="nigam71.html">Problem Solving Techniques in AI</a>
+    <a href="nigam72.html">AI in Manufacturing Industry</a>
+    <a href="nigam73.html">Artificial Intelligence in Automotive Industry</a>
+    <a href="nigam74.html">Artificial Intelligence in Civil Engineering</a>
+    <a href="nigam75.html">Artificial Intelligence in Gaming Industry</a>
+    <a href="nigam76.html">Artificial Intelligence in HR</a>
+    <a href="nigam77.html">Artificial Intelligence in Medicine</a>
+    <a href="nigam78.html">PhD in Artificial Intelligence</a>
+    <a href="nigam79.html">Activation Functions in Neural Networks</a>
+    <a href="nigam80.html">Boston Housing Kaggle Challenge with Linear Regression</a>
+    <a href="nigam81.html">What are OpenAI and ChatGPT</a>
+    <a href="nigam82.html">Chatbot vs. Conversational AI</a>
+    <a href="nigam83.html">Iterative Deepening A* Algorithm (IDA*)</a>
+    <a href="nigam84.html">Iterative Deepening Search (IDS) or Iterative Deepening Depth First Search (IDDFS)</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Subsets of AI</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam85.html">Subsets of AI</a>
+    <a href="nigam86.html">Expert Systems</a>
+    <a href="nigam87.html">Machine Learning Tutorial</a>
+    <a href="nigam88.html">NLP Tutorial</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Artificial Intelligence MCQ</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam89.html">Artificial Intelligence MCQ</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Related Tutorials</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam92.html">Data Science Tutorial</a>
+    <a href="nigam93.html">Reinforcement Learning</a>
+    </div>
+     
+</div>
+</div>
+<div class="onlycontent">
+    <div class="onlycontentad">
+    </div>
+    <div class="onlycontentinner">
+    <div id="city">
+    <table>
+    <tbody><tr><td>
+    <div id="bottomnextup">
+    
+    
+    </div>
+    <b><i><h1 class="h1">Alpha-Beta Pruning</h1>
+    <ul class="points">
+    <li>Alpha-beta pruning is a modified version of the minimax algorithm. It is an optimization technique for the minimax algorithm. </li>
+    <li>As we have seen in the minimax search algorithm that the number of game states it has to examine are exponential in depth of the tree. Since we cannot eliminate the exponent, but we can cut it to half. Hence there is a technique by which without checking each node of the game tree we can compute the correct minimax decision, and this technique is called <strong>pruning</strong>. This involves two threshold parameter Alpha and beta for future expansion, so it is called <strong>alpha-beta pruning</strong>. It is also called as <strong>Alpha-Beta Algorithm</strong>.</li>
+    <li>Alpha-beta pruning can be applied at any depth of a tree, and sometimes it not only prune the tree leaves but also entire sub-tree.</li>
+    <li>The two-parameter can be defined as:
+    <ol class="pointsa">
+    <li><strong>Alpha:</strong> The best (highest-value) choice we have found so far at any point along the path of Maximizer. The initial value of alpha is <strong>-∞</strong>. </li>
+    <li><strong>Beta:</strong> The best (lowest-value) choice we have found so far at any point along the path of Minimizer. The initial value of beta is <strong>+∞</strong>.</li>
+    </ol></li>
+    <li>The Alpha-beta pruning to a standard minimax algorithm returns the same move as the standard algorithm does, but it removes all the nodes which are not really affecting the final decision but making algorithm slow. Hence by pruning these nodes, it makes the algorithm fast. </li>
+    </ul>
+    <h4 class="n">Note: To better understand this topic, kindly study the minimax algorithm. </h4>
+    <h2 class="h2">Condition for Alpha-beta pruning:</h2>
+    <p>The main condition which required for alpha-beta pruning is:</p>
+    <div class="codeblock"><div class="dp-highlighter"><div class="bar"><div class="tools"><a href="#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;"></a><a href="#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;"></a><a href="#" onclick="dp.sh.Toolbar.Command('About',this);return false;"></a></div></div><ol start="1" class="dp-j"><li class="alt"><span><span>α&gt;=β&nbsp;&nbsp;</span></span></li></ol></div><textarea name="code" class="java" style="display: none;">α&gt;=β
+    </textarea></div>
+    <h2 class="h2">Key points about alpha-beta pruning:</h2>
+    <ul class="points">
+    <li>The Max player will only update the value of alpha.</li>
+    <li>The Min player will only update the value of beta.</li>
+    <li>While backtracking the tree, the node values will be passed to upper nodes instead of values of alpha and beta.</li>
+    <li>We will only pass the alpha, beta values to the child nodes.</li>
+    </ul>
+    <h2 class="h2">Pseudo-code for Alpha-beta Pruning: </h2>
+    <div class="codeblock"><div class="dp-highlighter"><div class="bar"><div class="tools"><a href="#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;"></a><a href="#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;"></a><a href="#" onclick="dp.sh.Toolbar.Command('About',this);return false;"></a></div></div><ol start="1" class="dp-j"><li class="alt"><span><span>function&nbsp;minimax(node,&nbsp;depth,&nbsp;alpha,&nbsp;beta,&nbsp;maximizingPlayer)&nbsp;is&nbsp;&nbsp;</span></span></li><li class=""><span><span class="keyword">if</span><span>&nbsp;depth&nbsp;==</span><span class="number">0</span><span>&nbsp;or&nbsp;node&nbsp;is&nbsp;a&nbsp;terminal&nbsp;node&nbsp;then&nbsp;&nbsp;</span></span></li><li class="alt"><span><span class="keyword">return</span><span>&nbsp;</span><span class="keyword">static</span><span>&nbsp;evaluation&nbsp;of&nbsp;node&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;</span></li><li class="alt"><span><span class="keyword">if</span><span>&nbsp;MaximizingPlayer&nbsp;then&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">//&nbsp;for&nbsp;Maximizer&nbsp;Player</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;maxEva=&nbsp;-infinity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;<span class="keyword">for</span><span>&nbsp;each&nbsp;child&nbsp;of&nbsp;node&nbsp;</span><span class="keyword">do</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;eva=&nbsp;minimax(child,&nbsp;depth-<span class="number">1</span><span>,&nbsp;alpha,&nbsp;beta,&nbsp;False)&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;maxEva=&nbsp;max(maxEva,&nbsp;eva)&nbsp;&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;alpha=&nbsp;max(alpha,&nbsp;maxEva)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;<span class="keyword">if</span><span>&nbsp;beta&lt;=alpha&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;<span class="keyword">break</span><span>&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;<span class="keyword">return</span><span>&nbsp;maxEva&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span><span class="keyword">else</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="comment">//&nbsp;for&nbsp;Minimizer&nbsp;player</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;minEva=&nbsp;+infinity&nbsp;&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;<span class="keyword">for</span><span>&nbsp;each&nbsp;child&nbsp;of&nbsp;node&nbsp;</span><span class="keyword">do</span><span>&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;&nbsp;eva=&nbsp;minimax(child,&nbsp;depth-<span class="number">1</span><span>,&nbsp;alpha,&nbsp;beta,&nbsp;</span><span class="keyword">true</span><span>)&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;minEva=&nbsp;min(minEva,&nbsp;eva)&nbsp;&nbsp;&nbsp;</span></li><li class=""><span>&nbsp;&nbsp;&nbsp;beta=&nbsp;min(beta,&nbsp;eva)&nbsp;&nbsp;</span></li><li class="alt"><span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span><span>&nbsp;beta&lt;=alpha&nbsp;&nbsp;</span></span></li><li class=""><span>&nbsp;&nbsp;<span class="keyword">break</span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></li><li class="alt"><span>&nbsp;<span class="keyword">return</span><span>&nbsp;minEva&nbsp;&nbsp;</span></span></li></ol></div><textarea name="code" class="java" style="display: none;">function minimax(node, depth, alpha, beta, maximizingPlayer) is
+    if depth ==0 or node is a terminal node then
+    return static evaluation of node
+    
+    if MaximizingPlayer then      // for Maximizer Player
+       maxEva= -infinity          
+       for each child of node do
+       eva= minimax(child, depth-1, alpha, beta, False)
+      maxEva= max(maxEva, eva) 
+      alpha= max(alpha, maxEva)    
+       if beta&lt;=alpha
+     break
+     return maxEva
+      
+    else                         // for Minimizer player
+       minEva= +infinity 
+       for each child of node do
+       eva= minimax(child, depth-1, alpha, beta, true)
+       minEva= min(minEva, eva) 
+       beta= min(beta, eva)
+        if beta&lt;=alpha
+      break        
+     return minEva
+    </textarea></div>
+    <h2 class="h2">Working of Alpha-Beta Pruning:</h2>
+    <p>Let's take an example of two-player search tree to understand the working of Alpha-beta pruning</p>
+    <p><strong>Step 1:</strong> At the first step the, Max player will start first move from node A where α= -∞ and β= +∞, these value of alpha and beta passed down to node B where again α= -∞ and β= +∞, and Node B passes the same value to its child D.</p>
+    <img src="https://static.javatpoint.com/tutorial/ai/images/alpha-beta-pruning-step1.png" alt="Alpha-Beta Pruning">
+    <p><strong>Step 2:</strong> At Node D, the value of α will be calculated as its turn for Max. The value of α is compared with firstly 2 and then 3, and the max (2, 3) = 3 will be the value of α at node D and node value will also 3.</p>
+    <p><strong>Step 3:</strong> Now algorithm backtrack to node B, where the value of β will change as this is a turn of Min, Now β= +∞, will compare with the available subsequent nodes value, i.e. min (∞, 3) = 3, hence at node B now α= -∞, and β= 3.</p>
+    <img src="https://static.javatpoint.com/tutorial/ai/images/alpha-beta-pruning-step3.png" alt="Alpha-Beta Pruning">
+    <p>In the next step, algorithm traverse the next successor of Node B which is node E, and the values of α= -∞, and β= 3 will also be passed.</p>
+    <p><strong>Step 4:</strong> At node E, Max will take its turn, and the value of alpha will change. The current value of alpha will be compared with 5, so max (-∞, 5) = 5, hence at node E α= 5 and β= 3, where α&gt;=β, so the right successor of E will be pruned, and algorithm will not traverse it, and the value at node E will be 5. </p>
+    <img src="https://static.javatpoint.com/tutorial/ai/images/alpha-beta-pruning-step4.png" alt="Alpha-Beta Pruning">
+    <p><strong>Step 5:</strong> At next step, algorithm again backtrack the tree, from node B to node A. At node A, the value of alpha will be changed the maximum available value is 3 as max (-∞, 3)= 3, and β= +∞, these two values now passes to right successor of A which is Node C.</p>
+    <p>At node C, α=3 and β= +∞, and the same values will be passed on to node F.</p>
+    <p><strong>Step 6:</strong> At node F, again the value of α will be compared with left child which is 0, and max(3,0)= 3, and then compared with right child which is 1, and max(3,1)= 3 still α remains 3, but the node value of F will become 1. </p>
+    <img src="https://static.javatpoint.com/tutorial/ai/images/alpha-beta-pruning-step6.png" alt="Alpha-Beta Pruning">
+    <p><strong>Step 7:</strong> Node F returns the node value 1 to node C, at C α= 3 and β= +∞, here the value of beta will be changed, it will compare with 1 so min (∞, 1) = 1. Now at C, α=3 and β= 1, and again it satisfies the condition α&gt;=β, so the next child of C which is G will be pruned, and the algorithm will not compute the entire sub-tree G.</p>
+    <img src="https://static.javatpoint.com/tutorial/ai/images/alpha-beta-pruning-step7.png" alt="Alpha-Beta Pruning"><div id="77c1a61c-863d-4c17-85a7-06d359764d71" data-section="77c1a61c-863d-4c17-85a7-06d359764d71" class="_ap_apex_ad" data-xpath="#city > table:eq(0) > tbody:eq(0) > tr:eq(0) > td:eq(0) > img:eq(4)" data-section-id="" data-ap-network="adpTags" data-render-time="1700157890895" style="display: block; clear: both; text-align: center; margin: 10px auto; width: 0px; height: 0px; overflow: hidden; visibility: hidden;"><div id="ADP_37780_728X280_77c1a61c-863d-4c17-85a7-06d359764d71" style="text-align: center; margin: 0 auto;" data-google-query-id="CJTfgt-NyYIDFeMH1QodubMO9w">
+    <script type="text/javascript">
+    window.adpushup.adpTags.que.push(function(){
+    window.adpushup.adpTags.display("ADP_37780_728X280_77c1a61c-863d-4c17-85a7-06d359764d71");
+    });
+    </script>
+    <div id="google_ads_iframe_/103512698,22511567001/22987863470_0__container__" style="border: 0pt none; width: 728px; height: 0px;"></div></div></div>
+    <p><strong>Step 8:</strong> C now returns the value of 1 to A here the best value for A is max (3, 1) = 3. Following is the final game tree which is the showing the nodes which are computed and nodes which has never computed. Hence the optimal value for the maximizer is 3 for this example. </p>
+    <img src="https://static.javatpoint.com/tutorial/ai/images/alpha-beta-pruning-step8.png" alt="Alpha-Beta Pruning">
+    <div id="a9d156a7-075f-4e17-b533-47690b1b56b2" data-section="a9d156a7-075f-4e17-b533-47690b1b56b2" class="_ap_apex_ad" data-xpath="#city > table:eq(0) > tbody:eq(0) > tr:eq(0) > td:eq(0) > h2:eq(4)" data-section-id="" data-ap-network="adpTags" data-render-time="1700157890899" style="display: block; clear: both; text-align: center; margin: 10px auto; width: 0px; height: 0px; overflow: hidden; visibility: hidden;"><div id="ADP_37780_728X280_a9d156a7-075f-4e17-b533-47690b1b56b2" style="text-align: center; margin: 0 auto;" data-google-query-id="CIX_g9-NyYIDFY0G1QodCx43_g">
+    <script type="text/javascript">
+    window.adpushup.adpTags.que.push(function(){
+    window.adpushup.adpTags.display("ADP_37780_728X280_a9d156a7-075f-4e17-b533-47690b1b56b2");
+    });
+    </script>
+    <div id="google_ads_iframe_/103512698,22511567001/22987847942_0__container__" style="border: 0pt none; width: 728px; height: 0px;"></div></div></div><h2 class="h2">Move Ordering in Alpha-Beta pruning: </h2>
+    <p>The effectiveness of alpha-beta pruning is highly dependent on the order in which each node is examined. Move order is an important aspect of alpha-beta pruning.</p>
+    <p>It can be of two types:</p>
+    <ul class="points">
+    <li><strong>Worst ordering:</strong> In some cases, alpha-beta pruning algorithm does not prune any of the leaves of the tree, and works exactly as minimax algorithm. In this case, it also consumes more time because of alpha-beta factors, such a move of pruning is called worst ordering. In this case, the best move occurs on the right side of the tree. The time complexity for such an order is O(b<sup>m</sup>).</li>
+    <li><strong>Ideal ordering:</strong> The ideal ordering for alpha-beta pruning occurs when lots of pruning happens in the tree, and best moves occur at the left side of the tree. We apply DFS hence it first search left of the tree and go deep twice as minimax algorithm in the same amount of time. Complexity in ideal ordering is O(b<sup>m/2</sup>).</li>
+    </ul>
+    <h2 class="h2">Rules to find good ordering: </h2>
+    <p>Following are some rules to find good ordering in alpha-beta pruning:</p>
+    <ul class="points">
+    <li>Occur the best move from the shallowest node.</li>
+    <li>Order the nodes in the tree such that the best nodes are checked first. </li>
+    <li>Use domain knowledge while finding the best move. Ex: for Chess, try order: captures first, then threats, then forward moves, backward moves.</li>
+    <li>We can bookkeep the states, as there is a possibility that states may repeat.</li>
+    </ul>
+    <hr>
+    <h3 class="h3">Feedback</h3>
+  <ul class="points">
+  <li>Send your Feedback to nigammishra826@gmail.com</li>
+  </ul></i></b>
+
+    <div class="nexttopicdiv">
+    <span class="nexttopictext">Next Topic</span><span class="nexttopiclink"><a href="nigam17.html">Knowledge Based Agent in AI</a></span>
+    </div>
+    
+    <br><br>
+    <div id="bottomnext">
+    <a style="float:left" class="next" href="nigam15.html">← prev</a>
+    <a style="float:right" class="next" href="nigam17.html">next →</a>
+    </div>
+    <br><br>
+    </td></tr>
+    </tbody></table>
+    <head>
+      <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+      <footer class="footer">
+        <div class="container row">
+          <div class="footer-col">
+            <h4>About</h4>
+            <ul>
+              <li><a href="nigam1.html">Artificial intelligence(AI)</a></li>
+              <li><a href="nigam4.html">Types of AI</a></li>
+              <li><a href="nigam8.html">Turing test of AI</a></li>
+              <li><a href="nigam22.html">The Wumpus world</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="nigam89.html">MCQ</a></li>
+              <li><a href="nigam87.html">Machine Learning</a></li>
+              <li><a href="nigam88.html">NPL</a></li>
+              <li><a href="nigam92.html">Data Science</a></li>
+              <li><a href="nigam93.html">Reinforcement learning</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Misc</h4>
+            <ul>
+              <li><a href="nigam36.html">examples</a></li>
+              <li><a href="nigam43.html">Robotioc & AI</a></li>
+              <li><a href="nigam44.html">Future of AI</a></li>
+              <li><a href="nigam47.html">Scope of AI</a></li>
+              <li><a href="nigam81.html">open AI&ChatGPT</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/nigam.mishra.710?mibextid=9R9pXO"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://twitter.com/MishraNugam?s=09"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://instagram.com/mr_nigam_8199?igshid=MXNzeGI3bmZ6b3M3NQ=="><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <a href="contact1.html"><img src="photo/logo2.jpg" style="height: 100px;width: 100px;"></a>
+          </div>
+        </div>
+      </footer>
+    </body>
+    </div>
+    
+    </div>
+    <br><br><div class="mobilemenu" style="clear:both">
+    </div></div>

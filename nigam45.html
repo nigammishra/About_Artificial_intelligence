@@ -1,0 +1,610 @@
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>What is Artificial Intelligence (AI)? Tutorial, Meaning </title>
+<link rel="stylesheet" type="text/css" href="style.css" async="">
+          </style><meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A/ERL66fN363FkXxgDc6F1+ucRUkAhjEca9W3la6xaLnD2Y1lABsqmdaJmPNaUKPKVBRpyMKEhXYl7rSvrQw+AkAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A6OdGH3fVf4eKRDbXb4thXA4InNqDJDRhZ8U533U/roYjp4Yau0T3YSuc63vmAs/8ga1cD0E3A7LEq6AXk1uXgsAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202311090101/pubads_impl.js" async=""></script><script src="https://config.aps.amazon-adsystem.com/configs/2e7e1587-d92f-46dd-8721-80b53eccb87e" type="text/javascript" async="async"></script><style type="text/css">.vjs-youtube .vjs-iframe-blocker { display: none; }.vjs-youtube.vjs-user-inactive .vjs-iframe-blocker { display: block; }.vjs-youtube .vjs-poster { background-size: cover; }.vjs-youtube-mobile .vjs-big-play-button { display: none; }</style><style type="text/css">
+ 
+body {
+  background-image: url(photo/b3.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  position: relative;
+  background: transparent;
+  padding: 1rem 0;
+  z-index: 999;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(90%, 800px);
+  margin-inline: auto;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover {
+  color: #4FC3F7;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  
+  .toggle {
+    transition: ease-in-out 550ms;
+    transform: translate(0px);
+    opacity: 1;
+    display: block;
+  }
+  
+  .header-container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: hsla(0, 0%, 0%, .5);
+    backdrop-filter: blur(10px);
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  
+  nav li {
+    padding: 1rem;
+    cursor: pointer;
+  }
+  
+  nav li:hover {
+    background: hsla(0, 0%, 0%, .7);
+  }
+  
+  .hamburger {
+    display: block; 
+  }
+}
+div.onlycontent {
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-right: 4px;
+    width: 58%;
+    float: left;
+    padding: 10px 15px;
+    background :none;
+  }
+  #city td {
+    color: black;
+    line-height: 1.7;
+  }
+  #city li {
+    line-height: 25px;
+    color: black;
+    margin-top: 4px;
+  }
+  *,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+	background-color: #151515;
+	padding: 80px 0;
+}
+
+.container {
+	max-width: 1170px;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer-col {
+	width: 25%;
+	padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 18px;
+	color: #FFF;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #E91E63;
+	width: 50px;
+	height: 2px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	color: #DDD;
+	display: block;
+	font-size: 1rem;
+	font-weight: 300;
+	text-transform: capitalize;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: #FFF;
+	padding-left: 7px;
+}
+
+.footer-col .social-links a {
+	color: #FFF;
+	background-color: rgba(255, 255, 255, 0.2);
+	display: inline;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	text-align: center;
+	margin: 0 10px 10px 0;
+	line-height: 100px;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #151515;
+	background-color: #FFF;
+}
+
+@media(max-width: 767px) {
+	.footer-col {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 574px) {
+	.footer-col {
+		width: 100%;
+	}
+}
+      </style>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+     <body>
+      <header>
+        <div class="header-container">
+          <span><img src="photo/logo1.png" style="height: 50px;width: 70px;overflow: hidden;backface-visibility: hidden;    overflow-clip-margin: content-box; overflow: clip;"></span>
+          <nav id="nav">
+            <b><i><ul id="nav-ul">
+              <li><a href="nigam1.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="AIservices.html">Service</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul></i></b>
+          </nav>
+          <span class="hamburger" id="button"><i class="fa-solid fa-bars"></i></span>
+        </div>
+      </header>
+    </body>
+    
+    </div>
+    </div>
+    <div id="link" style="clear:both;z-index:999"> </div>
+    <div class="mobilemenu" style="clear:both">
+    
+    </div>
+    <div id="menu">
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Artificial Intelligence</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam1.html" style="color: black;"><strong>Artificial Intelligence (AI)</strong> </a>
+    <a href="nigam2.html">Applications of AI</a>
+    <a href="nigam3.html">History of AI</a>
+    <a href="nigam4.html">Types of AI</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Intelligent Agent</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam5.html">Types of Agents</a>
+    <a href="nigam6.html">Intelligent Agent</a>
+    <a href="nigam7.html">Agent Environment</a>
+    <a href="nigam8.html">Turing Test in AI</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Problem-solving</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam9.html">Search Algorithms</a>
+    <a href="nigam10.html">Uninformed Search Algorithm</a>
+    <a href="nigam11.html">Informed Search Algorithms</a>
+    <a href="nigam12.html">Hill Climbing Algorithm</a>
+    <a href="nigam13.html">Means-Ends Analysis</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Adversarial Search</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam14.html">Adversarial search</a>
+    <a href="nigam15.html">Minimax Algorithm</a>
+    <a href="nigam16.html">Alpha-Beta Pruning</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Knowledge Represent</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam17.html">Knowledge Based Agent</a>
+    <a href="nigam18.html">Knowledge Representation</a>
+    <a href="nigam19.html">Knowledge Representation Techniques</a>
+    <a href="nigam20.html">Propositional Logic</a>
+    <a href="nigam21.html">Rules of Inference</a>
+    <a href="nigam22.html">The Wumpus world</a>
+    <a href="nigam23.html">knowledge-base for Wumpus World</a>
+    <a href="nigam24.html">First-order logic</a>
+    <a href="nigam25.html">Knowledge Engineering in FOL</a>
+    <a href="nigam26.html">Inference in First-Order Logic</a>
+    <a href="nigam27.html">Unification in FOL</a>
+    <a href="nigam28.html">Resolution in FOL</a>
+    <a href="nigam29.html">Forward Chaining and backward chaining</a>
+    <a href="nigam30.html">Backward Chaining vs Forward Chaining</a>
+    <a href="nigam31.html">Reasoning in AI</a>
+    <a href="nigam32.html">Inductive vs. Deductive reasoning</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Uncertain Knowledge R.</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam33.html">Probabilistic Reasoning in AI</a>
+    <a href="nigam34.html">Bayes theorem in AI</a>
+    <a href="nigam35.html">Bayesian Belief Network</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Misc</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam36.html">Examples of AI</a>
+    <a href="nigam37.html">AI Essay</a>
+    <a href="nigam38.html">AI in Healthcare</a>
+    <a href="nigam39.html">Artificial Intelligence in Education</a>
+    <a href="nigam40.html">Artificial Intelligence in Agriculture</a>
+    <a href="nigam41.html">Engineering Applications of AI</a>
+    <a href="nigam42.html">Advantages &amp; Disadvantages of AI</a>
+    <a href="nigam43.html">Robotics and AI</a>
+    <a href="nigam44.html">Future of AI</a>
+    <a href="nigam45.html">Languages used in AI</a>
+    <a href="nigam46.html">Approaches to AI Learning</a>
+    <a href="nigam47.html">Scope of AI</a>
+    <a href="nigam48.html">Agents in AI</a>
+    <a href="nigam49.html">Artificial Intelligence Jobs</a>
+    <a href="nigam50.html">Amazon CloudFront</a>
+    <a href="nigam51.html">Goals of Artificial Intelligence</a>
+    <a href="nigam52.html">Can Artificial Intelligence replace Human Intelligence</a>
+    <a href="nigam53.html">Importance of Artificial Intelligence</a>
+    <a href="nigam54.html">Artificial Intelligence Stock in India</a>
+    <a href="nigam55.html">How to Use Artificial Intelligence in Marketing</a>
+    <a href="nigam56.html">Artificial Intelligence in Business</a>
+    <a href="nigam57.html">Companies Working on Artificial Intelligence</a>
+    <a href="nigam58.html">Artificial Intelligence Future Ideas</a>
+    <a href="nigam59.html">Government Jobs in Artificial Intelligence in India</a>
+    <a href="nigam60.html">What is the Role of Planning in Artificial Intelligence</a>
+    <a href="nigam61.html">AI as a Service</a>
+    <a href="nigam62.html">AI in Banking</a>
+    <a href="nigam63.html">AI Tools</a>
+    <a href="nigam64.html">Cognitive AI</a>
+    <a href="nigam65.html">Introduction of Seaborn</a>
+    <a href="nigam66.html">Natural Language ToolKit (NLTK)</a>
+    <a href="nigam67.html">Best books for ML</a>
+    <a href="nigam68.html">AI companies of India will lead in 2022</a>
+    <a href="nigam69.html">Constraint Satisfaction Problems in Artificial Intelligence</a>
+    <a href="nigam70.html">How artificial intelligence will change the future</a>
+    <a href="nigam71.html">Problem Solving Techniques in AI</a>
+    <a href="nigam72.html">AI in Manufacturing Industry</a>
+    <a href="nigam73.html">Artificial Intelligence in Automotive Industry</a>
+    <a href="nigam74.html">Artificial Intelligence in Civil Engineering</a>
+    <a href="nigam75.html">Artificial Intelligence in Gaming Industry</a>
+    <a href="nigam76.html">Artificial Intelligence in HR</a>
+    <a href="nigam77.html">Artificial Intelligence in Medicine</a>
+    <a href="nigam78.html">PhD in Artificial Intelligence</a>
+    <a href="nigam79.html">Activation Functions in Neural Networks</a>
+    <a href="nigam80.html">Boston Housing Kaggle Challenge with Linear Regression</a>
+    <a href="nigam81.html">What are OpenAI and ChatGPT</a>
+    <a href="nigam82.html">Chatbot vs. Conversational AI</a>
+    <a href="nigam83.html">Iterative Deepening A* Algorithm (IDA*)</a>
+    <a href="nigam84.html">Iterative Deepening Search (IDS) or Iterative Deepening Depth First Search (IDDFS)</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Subsets of AI</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam85.html">Subsets of AI</a>
+    <a href="nigam86.html">Expert Systems</a>
+    <a href="nigam87.html">Machine Learning Tutorial</a>
+    <a href="nigam88.html">NLP Tutorial</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Artificial Intelligence MCQ</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam89.html">Artificial Intelligence MCQ</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Related Tutorials</span></h2>
+    </div>
+    <div class="leftmenu"> 
+    <a href="nigam92.html">Data Science Tutorial</a>
+    <a href="nigam93.html">Reinforcement Learning</a>
+    </div>
+    
+</div>
+</div>
+<div class="onlycontent">
+  <div class="onlycontentad">
+  </div>
+  <div class="onlycontentinner">
+  <div id="city">
+  <table>
+  <tbody><tr><td>
+  <div id="bottomnextup">
+  
+  
+  </div>
+  <b><i><h1 class="h1">Languages used in Artificial Intelligence</h1>
+  <p>Artificial Intelligence has become an important part of human life as we are now highly dependent on machines. <strong>Artificial Intelligence is a very important technology to develop and build new computer programs and systems, which can be used to simulate various intelligence processes like learning, reasoning, etc.</strong></p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/languages-used-in-artificial-intelligence.png" alt="Languages used in Artificial Intelligence">
+  <ul class="points">
+  <li><strong>Python</strong></li>
+  <li><strong>R</strong></li>
+  <li><strong>Lisp</strong></li>
+  <li><strong>Java</strong></li>
+  <li><strong>C++</strong></li>
+  <li><strong>Julia</strong></li>
+  <li><strong>Prolog</strong></li>
+  </ul>
+  <h2 class="h2">1. Python</h2>
+  <p>Python is one of the most powerful and easy programming languages that anyone can start to learn. Python is initially developed in the early stage of 1991. Most of the developers and programmers choose Python as their favourite programming language for developing <a href="https://www.javatpoint.com/artificial-intelligence-tutorial">Artificial Intelligence</a> solutions. Python is worldwide popular among all developers and experts because it has more career opportunities than any other programming language.</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/languages-used-in-artificial-intelligence1.png" alt="Languages used in Artificial Intelligence">
+  <p>Python also comes with some default sets of standards libraries and also provides better community support to its users. Further, Python is a platform-independent language and also provides an extensive framework for Deep Learning, Machine Learning, and Artificial Intelligence.</p>
+  <p>Python is also a portable language as it is used on various platforms such as <strong>Linux, Windows, Mac OS, and UNIX.</strong></p>
+  <h3 class="h3">Features of Python</h3>
+  <ul class="points">
+  <li>It is easy to learn than any other programming language.</li>
+  <li>It is also a dynamically-typed language.</li>
+  <li>Python is an Object-oriented language.</li>
+  <li>It provides extensive community support and a framework for ML and DL.</li>
+  <li>Open-source.</li>
+  <li>Large standard sets of libraries.</li>
+  <li>Interpreted language.</li>
+  </ul>
+  <p>Python is an ideal programming language used for Machine Language, Natural Processing Language (NLP), and Neural networks, etc. Due to the flexible nature of Python, it can be used for AI development. It contains various pre-existing libraries such as <strong>Pandas, SciPy and nltk</strong>, etc. Further, Python also contains simple syntax and easy coding, which makes Python the first choice of AI developers and programmers.</p>
+  <p><strong>There are some standard Libraries in Python used for Artificial Intelligence as follows:</strong></p>
+  <ol class="points">
+  <li><strong>Tensor Flow Python</strong></li>
+  <li><strong>Keras Python</strong></li>
+  <li><strong>Theano Python</strong></li>
+  <li><strong>Scikit-Learn Python</strong></li>
+  <li><strong>PyTorch Python</strong></li>
+  <li><strong>NumPy Python</strong></li>
+  <li><strong>Python Pandas</strong></li>
+  <li><strong>Seaborn Python</strong></li>
+  </ol>
+  <h2 class="h2">2. Java</h2>
+  <p>Java is also the most widely used programming language by all developers and programmers to develop machine learning solutions and enterprise development. Similar to Python, Java is also a platform-independent language as it can also be easily implemented on various platforms. Further, Java is an object-oriented and scalable programming language. Java allows virtual machine technology that helps to create a single version of the app and provides support to your business. The best thing about Java is once it is written and compiled on one platform, then you do not need to compile it again and again. This is known as WORA (Once Written Read/Run Anywhere) principle.</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/languages-used-in-artificial-intelligence2.png" alt="Languages used in Artificial Intelligence">
+  <h3 class="h3">Features of Java</h3>
+  <p>Java has so many features which make Java best in industry and to develop artificial intelligence applications:</p>
+  <ul class="points">
+  <li>Portability</li>
+  <li>Cross-platform.</li>
+  <li>Easy to learn and use.</li>
+  <li>Easy-to-code Algorithms.</li>
+  <li>Built-in garbage collector.</li>
+  <li>Swing and Standard Widget Toolkit.</li>
+  <li>Simplified work with large-scale projects.</li>
+  <li>Better user interaction.</li>
+  <li>Easy to debug.</li>
+  </ul>
+  <h2 class="h2">3. Prolog</h2>
+  <p>Prolog is one of the oldest programming languages used for Artificial Intelligence solutions. Prolog stands for "<strong>Programming in Logic</strong>", which was developed by French scientist Alain Colmerauer in 1970.</p>
+  <p>For AI programming in Prolog, developers need to define the rules, facts, and the end goal. After defining these three, the prolog tries to discover the connection between them. Programming in AI using Prolog is different and has several advantages and disadvantages.</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/languages-used-in-artificial-intelligence3.png" alt="Languages used in Artificial Intelligence">
+  <p>It may seem like a bizarre language to learn for those programmers who are from a C++ background.</p>
+  <p>Prolog may not be a great programming language to build something big, but it's a great language to study and think about problems in more logical ways rather than procedural.</p>
+  <p><strong>Features of Prolog</strong></p>
+  <ul class="points">
+  <li>Supports basic mechanisms such as</li>
+  <li>Pattern Matching,</li>
+  <li>Tree-based data structuring, and</li>
+  <li>Automatic backtracking.</li>
+  <li>Prolog is a declarative language rather than imperative.</li>
+  </ul>
+  <h2 class="h2">4. Lisp</h2>
+  <p>Lisp has been around for a very long time and has been widely used for scientific research in the fields of natural languages, theorem proofs, and to solve artificial intelligence problems. Lisp was originally created as a practical mathematical notation for programs but eventually became a top choice of developers in the field of AI.</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/languages-used-in-artificial-intelligence4.jpg" alt="Languages used in Artificial Intelligence"><div id="77c1a61c-863d-4c17-85a7-06d359764d71" data-section="77c1a61c-863d-4c17-85a7-06d359764d71" class="_ap_apex_ad" data-xpath="#city > table:eq(0) > tbody:eq(0) > tr:eq(0) > td:eq(0) > img:eq(4)" data-section-id="" data-ap-network="adpTags" data-render-time="1700208742915" style="display: block; clear: both; text-align: center; margin: 10px auto; width: 0px; height: 0px; overflow: hidden; visibility: hidden;"><div id="ADP_37780_728X280_77c1a61c-863d-4c17-85a7-06d359764d71" style="text-align: center; margin: 0 auto;" data-google-query-id="CLnn75TLyoIDFdiPrAId3_AA_Q">
+  <script type="text/javascript">
+  window.adpushup.adpTags.que.push(function(){
+  window.adpushup.adpTags.display("ADP_37780_728X280_77c1a61c-863d-4c17-85a7-06d359764d71");
+  });
+  </script>
+  <div id="google_ads_iframe_/103512698,22511567001/22987863470_0__container__" style="border: 0pt none; width: 728px; height: 0px;"></div></div></div>
+  <p>Although Lisp programming language is the second oldest language after Fortran, it is still being used because of its crucial features. The inventor of LISP programming was <strong>John McCarthy</strong>, who coined the term Artificial Intelligence.</p>
+  <p>LISP is one of the most efficient programming languages for solving specific problems. Currently, it is mainly used for machine learning and inductive logic problems. It has also influenced the creation of other programming languages for AI, and some worth examples are <strong>R</strong> and <strong>Julia.</strong></p>
+  <p>However, though being so flexible, it has various deficiencies, such as lack of well-known libraries, not so-human-friendly syntax, etc. Due to this reason, it is not preferred by the programmers.</p>
+  <h3 class="h3">Features of LISP</h3>
+  <ul class="points">
+  <li>The program can be easily modified, similar to data.</li>
+  <li>Make use of recursion for control structure rather than iteration.</li>
+  <li>Garbage Collection is necessary.</li>
+  <li>We can easily execute data structures as programs.</li>
+  <li>An object can be created dynamically.</li>
+  </ul>
+  <div id="a9d156a7-075f-4e17-b533-47690b1b56b2" data-section="a9d156a7-075f-4e17-b533-47690b1b56b2" class="_ap_apex_ad" data-xpath="#city > table:eq(0) > tbody:eq(0) > tr:eq(0) > td:eq(0) > h2:eq(4)" data-section-id="" data-ap-network="adpTags" data-render-time="1700208742965" style="display: block; clear: both; text-align: center; margin: 10px auto; width: 0px; height: 0px; overflow: hidden; visibility: hidden;"><div id="ADP_37780_728X280_a9d156a7-075f-4e17-b533-47690b1b56b2" style="text-align: center; margin: 0 auto;" data-google-query-id="CIHx75TLyoIDFQxeaAody10Mzg">
+  <script type="text/javascript">
+  window.adpushup.adpTags.que.push(function(){
+  window.adpushup.adpTags.display("ADP_37780_728X280_a9d156a7-075f-4e17-b533-47690b1b56b2");
+  });
+  </script>
+  <div id="google_ads_iframe_/103512698,22511567001/22987847942_0__container__" style="border: 0pt none; width: 728px; height: 0px;"></div></div></div><h2 class="h2">5. R</h2>
+  <p>R is one of the great languages for statistical processing in programming. However, R supports free, open-source programming language for data analysis purposes. It may not be the perfect language for AI, but it provides great performance while dealing with large numbers.</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/languages-used-in-artificial-intelligence5.jpg" alt="Languages used in Artificial Intelligence">
+  <p>Some inbuilt features such as <strong>built-in functional programming, object-oriented nature, and vectorial computation</strong> make it a worthwhile programming language for AI.</p>
+  <p>R contains several packages that are specially designed for AI, which are:</p>
+  <ul class="points">
+  <li><strong>gmodels</strong> - This package provides different tools for the model fitting task.</li>
+  <li><strong>TM</strong> - It is a great framework that is used for text mining applications.</li>
+  <li><strong>RODBC</strong> - It is an ODBC interface.</li>
+  <li><strong>OneR</strong> - This package is used to implement the One Rule Machine Learning classification algorithm.</li>
+  </ul>
+  <h3 class="h3">Features of R programming</h3>
+  <ul class="points">
+  <li>R is an open-source programming language, which is free of cost, and also you can add packages for other functionalities.</li>
+  <li>R provides strong &amp; interactive graphics capability to users.</li>
+  <li>It enables you to perform complex statistical calculations.</li>
+  <li>It is widely used in machine learning and AI due to its high-performance capabilities.</li>
+  </ul>
+  <h2 class="h2">6. Julia</h2>
+  <p>Julia is one of the newer languages on the list and was created to focus on performance computing in scientific and technical fields. Julia includes several features that directly apply to AI programming.</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/languages-used-in-artificial-intelligence6.png" alt="Languages used in Artificial Intelligence">
+  <p>Julia is a comparatively new language, which is mainly suited for numerical analysis and computational science. It contains several features that can be very helpful in AI programming.</p>
+  <h3 class="h3">Features of Julia</h3>
+  <ul class="points">
+  <li>Common numeric data types.</li>
+  <li>Arbitrary precision values.</li>
+  <li>Robust mathematical functions.</li>
+  <li>Tuples, dictionaries, and code introspection.</li>
+  <li>Built-in package manager.</li>
+  <li>Dynamic type system.</li>
+  <li>Ability to work for both parallel and distributed computing.</li>
+  <li>Macros and metaprogramming capabilities.</li>
+  <li>Support for multiple dispatches.</li>
+  <li>Support for C functions.</li>
+  </ul>
+  <div id="c77b05e7-25e0-457b-93ce-bea8b5cdc41b" data-section="c77b05e7-25e0-457b-93ce-bea8b5cdc41b" class="_ap_apex_ad" data-xpath="#city > table:eq(0) > tbody:eq(0) > tr:eq(0) > td:eq(0) > h2:eq(6)" data-section-id="" data-ap-network="adpTags" data-render-time="1700208742984" style="display: block; clear: both; text-align: center; margin: 10px auto; width: 728px; height: auto !important; overflow: hidden;" data-refresh-time="1700208797713" data-timeout="4059"><div id="ADP_37780_728X280_c77b05e7-25e0-457b-93ce-bea8b5cdc41b" style="text-align: center; margin: 0 auto;" data-google-query-id="CILx75TLyoIDFQxeaAody10Mzg">
+  
+  </div></div><h2 class="h2">7. C++</h2>
+  <p>C++ language has been present for so long around, but still being a top and popular programming language among developers. It provides better handling for AI models while developing.</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/languages-used-in-artificial-intelligence7.png" alt="Languages used in Artificial Intelligence">
+  <p>Although C++ may not be the first choice of developers for AI programming, various machine learning and deep learning libraries are written in the C++ language.</p>
+  <h3 class="h3">Features of C++</h3>
+  <ul class="points">
+  <li>C++ is one of the fastest languages, and it can be used in statistical techniques.</li>
+  <li>It can be used with ML algorithms for fast execution.</li>
+  <li>Most of the libraries and packages available for Machine learning and AI are written in C++.</li>
+  <li>It is a user friendly and simple language.</li>
+  </ul>
+  <hr> <h3 class="h3">Feedback</h3>
+  <ul class="points">
+  <li>Send your Feedback to nigammishra826@gmail.com</li>
+  </ul>
+  <div class="nexttopicdiv">
+  <span class="nexttopictext">Next Topic</span><span class="nexttopiclink"><a href="nigam46.html">Approaches to AI Learning</a></span>
+  </div>
+  <br><br>
+  <div id="bottomnext">
+  <a style="float:left" class="next" href="nigam44.html">← prev</a>
+  <a style="float:right" class="next" href="nigam46.html">next →</a>
+  </div>
+  <br><br>
+  </td></tr>
+  </tbody></table>
+  <head>
+    <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+  </head>
+  
+  <body>
+    <footer class="footer">
+      <div class="container row">
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="nigam1.html">Artificial intelligence(AI)</a></li>
+            <li><a href="nigam4.html">Types of AI</a></li>
+            <li><a href="nigam8.html">Turing test of AI</a></li>
+            <li><a href="nigam22.html">The Wumpus world</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="nigam89.html">MCQ</a></li>
+            <li><a href="nigam87.html">Machine Learning</a></li>
+            <li><a href="nigam88.html">NPL</a></li>
+            <li><a href="nigam92.html">Data Science</a></li>
+            <li><a href="nigam93.html">Reinforcement learning</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Misc</h4>
+          <ul>
+            <li><a href="nigam36.html">examples</a></li>
+            <li><a href="nigam43.html">Robotioc & AI</a></li>
+            <li><a href="nigam44.html">Future of AI</a></li>
+            <li><a href="nigam47.html">Scope of AI</a></li>
+            <li><a href="nigam81.html">open AI&ChatGPT</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/nigam.mishra.710?mibextid=9R9pXO"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/MishraNugam?s=09"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://instagram.com/mr_nigam_8199?igshid=MXNzeGI3bmZ6b3M3NQ=="><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </div>
+          <a href="contact1.html"><img src="photo/logo2.jpg" style="height: 100px;width: 100px;"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  </div>
+  
+  </div>
+  <br><br><div class="mobilemenu" style="clear:both">
+  </div></div></i></b>

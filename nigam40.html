@@ -1,0 +1,555 @@
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>What is Artificial Intelligence (AI)? Tutorial, Meaning </title>
+<link rel="stylesheet" type="text/css" href="style.css" async="">
+          </style><meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A/ERL66fN363FkXxgDc6F1+ucRUkAhjEca9W3la6xaLnD2Y1lABsqmdaJmPNaUKPKVBRpyMKEhXYl7rSvrQw+AkAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A6OdGH3fVf4eKRDbXb4thXA4InNqDJDRhZ8U533U/roYjp4Yau0T3YSuc63vmAs/8ga1cD0E3A7LEq6AXk1uXgsAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202311090101/pubads_impl.js" async=""></script><script src="https://config.aps.amazon-adsystem.com/configs/2e7e1587-d92f-46dd-8721-80b53eccb87e" type="text/javascript" async="async"></script><style type="text/css">.vjs-youtube .vjs-iframe-blocker { display: none; }.vjs-youtube.vjs-user-inactive .vjs-iframe-blocker { display: block; }.vjs-youtube .vjs-poster { background-size: cover; }.vjs-youtube-mobile .vjs-big-play-button { display: none; }</style><style type="text/css">
+ 
+body {
+  background-image: url(photo/bbb.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  position: relative;
+  background: transparent;
+  padding: 1rem 0;
+  z-index: 999;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(90%, 800px);
+  margin-inline: auto;
+  color: #000;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav a:hover {
+  color: #4FC3F7;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  
+  .toggle {
+    transition: ease-in-out 550ms;
+    transform: translate(0px);
+    opacity: 1;
+    display: block;
+  }
+  
+  .header-container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: salmon;
+    backdrop-filter: blur(10px);
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  
+  nav li {
+    padding: 1rem;
+    cursor: pointer;
+  }
+  
+  nav li:hover {
+    background: salmon;
+  }
+  
+  .hamburger {
+    display: block; 
+  }
+}
+div.onlycontent {
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-right: 4px;
+    width: 58%;
+    float: left;
+    padding: 10px 15px;
+    background :none;
+  }
+  #city td {
+    color: black;
+    line-height: 1.7;
+  }
+  #city li {
+    line-height: 25px;
+    color: black;
+    margin-top: 4px;
+  }
+  *,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+	background-color: #151515;
+	padding: 80px 0;
+}
+
+.container {
+	max-width: 1170px;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer-col {
+	width: 25%;
+	padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 18px;
+	color: #FFF;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #E91E63;
+	width: 50px;
+	height: 2px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	color: #DDD;
+	display: block;
+	font-size: 1rem;
+	font-weight: 300;
+	text-transform: capitalize;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: #FFF;
+	padding-left: 7px;
+}
+
+.footer-col .social-links a {
+	color: #FFF;
+	background-color: rgba(255, 255, 255, 0.2);
+	display: inline;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	text-align: center;
+	margin: 0 10px 10px 0;
+	line-height: 100px;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #151515;
+	background-color: #FFF;
+}
+
+@media(max-width: 767px) {
+	.footer-col {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 574px) {
+	.footer-col {
+		width: 100%;
+	}
+}
+      </style>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+     <body>
+      <header>
+        <div class="header-container">
+          <span><img src="photo/logo1.png" style="height: 50px;width: 70px;overflow: hidden;backface-visibility: hidden;"></span>
+          <nav id="nav">
+            <b><i><ul id="nav-ul">
+              <li><a href="nigam1.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="AIservices.html">Service</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul></i></b>
+          </nav>
+          <span class="hamburger" id="button"><i class="fa-solid fa-bars"></i></span>
+        </div>
+      </header>
+    </body>
+    
+    </div>
+    </div>
+    <div id="link" style="clear:both;z-index:999"> </div>
+    <div class="mobilemenu" style="clear:both">
+    
+    </div>
+    <div id="menu">
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Artificial Intelligence</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam1.html" style="color: black;"><strong>Artificial Intelligence (AI)</strong> </a>
+    <a href="nigam2.html">Applications of AI</a>
+    <a href="nigam3.html">History of AI</a>
+    <a href="nigam4.html">Types of AI</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Intelligent Agent</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam5.html">Types of Agents</a>
+    <a href="nigam6.html">Intelligent Agent</a>
+    <a href="nigam7.html">Agent Environment</a>
+    <a href="nigam8.html">Turing Test in AI</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Problem-solving</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam9.html">Search Algorithms</a>
+    <a href="nigam10.html">Uninformed Search Algorithm</a>
+    <a href="nigam11.html">Informed Search Algorithms</a>
+    <a href="nigam12.html">Hill Climbing Algorithm</a>
+    <a href="nigam13.html">Means-Ends Analysis</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Adversarial Search</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam14.html">Adversarial search</a>
+    <a href="nigam15.html">Minimax Algorithm</a>
+    <a href="nigam16.html">Alpha-Beta Pruning</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Knowledge Represent</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam17.html">Knowledge Based Agent</a>
+    <a href="nigam18.html">Knowledge Representation</a>
+    <a href="nigam19.html">Knowledge Representation Techniques</a>
+    <a href="nigam20.html">Propositional Logic</a>
+    <a href="nigam21.html">Rules of Inference</a>
+    <a href="nigam22.html">The Wumpus world</a>
+    <a href="nigam23.html">knowledge-base for Wumpus World</a>
+    <a href="nigam24.html">First-order logic</a>
+    <a href="nigam25.html">Knowledge Engineering in FOL</a>
+    <a href="nigam26.html">Inference in First-Order Logic</a>
+    <a href="nigam27.html">Unification in FOL</a>
+    <a href="nigam28.html">Resolution in FOL</a>
+    <a href="nigam29.html">Forward Chaining and backward chaining</a>
+    <a href="nigam30.html">Backward Chaining vs Forward Chaining</a>
+    <a href="nigam31.html">Reasoning in AI</a>
+    <a href="nigam32.html">Inductive vs. Deductive reasoning</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Uncertain Knowledge R.</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam33.html">Probabilistic Reasoning in AI</a>
+    <a href="nigam34.html">Bayes theorem in AI</a>
+    <a href="nigam35.html">Bayesian Belief Network</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Misc</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam36.html">Examples of AI</a>
+    <a href="nigam37.html">AI Essay</a>
+    <a href="nigam38.html">AI in Healthcare</a>
+    <a href="nigam39.html">Artificial Intelligence in Education</a>
+    <a href="nigam40.html">Artificial Intelligence in Agriculture</a>
+    <a href="nigam41.html">Engineering Applications of AI</a>
+    <a href="nigam42.html">Advantages &amp; Disadvantages of AI</a>
+    <a href="nigam43.html">Robotics and AI</a>
+    <a href="nigam44.html">Future of AI</a>
+    <a href="nigam45.html">Languages used in AI</a>
+    <a href="nigam46.html">Approaches to AI Learning</a>
+    <a href="nigam47.html">Scope of AI</a>
+    <a href="nigam48.html">Agents in AI</a>
+    <a href="nigam49.html">Artificial Intelligence Jobs</a>
+    <a href="nigam50.html">Amazon CloudFront</a>
+    <a href="nigam51.html">Goals of Artificial Intelligence</a>
+    <a href="nigam52.html">Can Artificial Intelligence replace Human Intelligence</a>
+    <a href="nigam53.html">Importance of Artificial Intelligence</a>
+    <a href="nigam54.html">Artificial Intelligence Stock in India</a>
+    <a href="nigam55.html">How to Use Artificial Intelligence in Marketing</a>
+    <a href="nigam56.html">Artificial Intelligence in Business</a>
+    <a href="nigam57.html">Companies Working on Artificial Intelligence</a>
+    <a href="nigam58.html">Artificial Intelligence Future Ideas</a>
+    <a href="nigam59.html">Government Jobs in Artificial Intelligence in India</a>
+    <a href="nigam60.html">What is the Role of Planning in Artificial Intelligence</a>
+    <a href="nigam61.html">AI as a Service</a>
+    <a href="nigam62.html">AI in Banking</a>
+    <a href="nigam63.html">AI Tools</a>
+    <a href="nigam64.html">Cognitive AI</a>
+    <a href="nigam65.html">Introduction of Seaborn</a>
+    <a href="nigam66.html">Natural Language ToolKit (NLTK)</a>
+    <a href="nigam67.html">Best books for ML</a>
+    <a href="nigam68.html">AI companies of India will lead in 2022</a>
+    <a href="nigam69.html">Constraint Satisfaction Problems in Artificial Intelligence</a>
+    <a href="nigam70.html">How artificial intelligence will change the future</a>
+    <a href="nigam71.html">Problem Solving Techniques in AI</a>
+    <a href="nigam72.html">AI in Manufacturing Industry</a>
+    <a href="nigam73.html">Artificial Intelligence in Automotive Industry</a>
+    <a href="nigam74.html">Artificial Intelligence in Civil Engineering</a>
+    <a href="nigam75.html">Artificial Intelligence in Gaming Industry</a>
+    <a href="nigam76.html">Artificial Intelligence in HR</a>
+    <a href="nigam77.html">Artificial Intelligence in Medicine</a>
+    <a href="nigam78.html">PhD in Artificial Intelligence</a>
+    <a href="nigam79.html">Activation Functions in Neural Networks</a>
+    <a href="nigam80.html">Boston Housing Kaggle Challenge with Linear Regression</a>
+    <a href="nigam81.html">What are OpenAI and ChatGPT</a>
+    <a href="nigam82.html">Chatbot vs. Conversational AI</a>
+    <a href="nigam83.html">Iterative Deepening A* Algorithm (IDA*)</a>
+    <a href="nigam84.html">Iterative Deepening Search (IDS) or Iterative Deepening Depth First Search (IDDFS)</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Subsets of AI</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam85.html">Subsets of AI</a>
+    <a href="nigam86.html">Expert Systems</a>
+    <a href="nigam87.html">Machine Learning Tutorial</a>
+    <a href="nigam88.html">NLP Tutorial</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Artificial Intelligence MCQ</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam89.html">Artificial Intelligence MCQ</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Related Tutorials</span></h2>
+    </div>
+    <div class="leftmenu"> 
+    <a href="nigam92.html">Data Science Tutorial</a>
+    <a href="nigam93.html">Reinforcement Learning</a>
+    </div>
+     
+</div>
+</div>
+<div class="onlycontent">
+  <div class="onlycontentad">
+  </div>
+  <div class="onlycontentinner">
+  <div id="city">
+  <table>
+  <tbody><tr><td>
+  <div id="bottomnextup">
+  
+  
+  </div>
+  <b><i><h1 class="h1">Artificial Intelligence in Agriculture</h1>
+  <p>Agriculture plays a crucial role in the economic sector for each country. Population around the world is increasing day by day, and so is the demand for food. The traditional methods that are used by the farmers are not sufficient to fulfil the need at the current stage. Hence, some new automation methods are introduced to satisfy these requirements and to provide great job opportunities to many people in this sector. Artificial Intelligence has become one of the most important technologies in every sector, including education, banking, robotics, agriculture, etc. In the agriculture sector, it is playing a very crucial role, and it is transforming the agriculture industry. <strong><em>AI saves the agriculture sector from different factors such as climate change, population growth, employment issues in this field, and food safety. </em></strong>Today's agriculture system has reached at a different level due to AI. Artificial Intelligence has improved crop production and real-time monitoring, harvesting, processing and marketing. Different hi-tech computer-based systems are designed to determine various important parameters such as weed detection, yield detection, crop quality, and many more.</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/artificial-intelligence-in-agriculture.png" alt="Artificial Intelligence in Agriculture">
+  <p>In this topic, we will discuss the impact and application of Artificial Intelligence on Agriculture, along with the challenges in adoption of AI.</p>
+  <h2 class="h2">Challenges in Agriculture using traditional methods</h2>
+  <p>Before understanding AI impact and application in Agriculture, we must understand what are the challenges in agriculture by using traditional methods, which are given below:</p>
+  <ul class="points">
+  <li>In farming, different weather factors such as Rainfall, temperature, and humidity play an important role. Due to pollution, sometimes climate varies abruptly, and hence it becomes difficult for farmers to make proper decisions for harvesting, sowing seeds, and soli preparing.</li>
+  <li>For a better crop, it is necessary that the soil should be productive and have the required nutrition, such as Nitrogen, Phosphorous, and Potassium. If these nutrients are not present in effective way in the soil, then it may lead to poor quality crops. But it is difficult to identify these soil-quality with traditional ways.</li>
+  <li>In the agriculture lifecycle, it is required that we save our crops from weeds. Else it may increase the production cost, and it also absorbs nutrients from the soil. But by traditional ways, identification and prevention of crop from weeds is not efficient.</li>
+  </ul>
+  <h2 class="h2">Applications of Artificial Intelligence in Agriculture</h2>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/artificial-intelligence-in-agriculture2.png" alt="Artificial Intelligence in Agriculture">
+  <p>As with the traditional methods of Agriculture, there are so many challenges that farmers would face. To solve these challenges, AI is being widely used in this sector. For agriculture, Artificial Intelligence has become a revolutionary technology. It helps the farmers by yielding healthier crops, control pests, soil monitoring, and many more ways. Below are some key applications of Artificial Intelligence in the Agriculture sector:</p>
+  <p><strong>1. Weather &amp; price Forecasting:</strong></p>
+  <img src="photo/Weather & price Forecasting.jpeg"style="height=500px;width=770px;" alt="">
+     <p>As we have discussed in challenges that it is difficult for the farmers to take the right decision for harvesting, sowing seeds, and soli preparing due to climate change. But with the help of AI weather forecasting, farmers can have information on weather analysis, and accordingly, they can plan for the type of crop to grow, seeds to sow, and harvesting the crop. With price forecasting, farmers can get a better idea about the price of crops for the next few weeks, which can help them to get maximum profit.</p>
+  <p><strong>2. Health Monitoring of Crops:</strong></p>
+  <img src="photo/Health Monitoring of Crops.jpg" alt="">
+  <p>The quality of crop widely depends on the type of soil and nutrition of the soil. But with the increasing rate of deforestation, the soil quality is degrading day by day, and it is hard to determine it.</p>
+  <p>To resolve this issue, AI has come up with a new application called <strong>Plantix</strong>. It was developed by <strong>PEAT</strong> to identify the deficiencies in soil, including plant pests and diseases. With the help of this application, farmers can get an idea to use better fertilizer which can improve the harvest quality. In this app, AI's image recognition technology is used by which farmers can capture the images of plants and get information about the quality.</p>
+  <p><strong>3. Agriculture Robotics:</strong></p>
+  <img src="photo/Agriculture Robotics.jpg" alt="">
+  <p>Robotics is being widely used in different sectors, mainly in manufacturing, to perform complex tasks. Nowadays, different AI companies are developing robots to be employed in the Agriculture sector. These AI robots are developed in such a way that they can perform multiple tasks in farming.</p>
+  <p>AI robots are also trained in checking the quality of crops, detect and controlling weeds, and harvesting the crop with faster speed compared to a human.</p>
+  <p><strong>4. Intelligent Spraying</strong></p>
+  <img src="photo/Intelligent Spraying.jpeg" alt="">
+  <p>With AI sensors, weed can be detected easily, and it also detects weed affected areas. On finding such areas, herbicides can be precisely sprayed to reduce the use of herbicides and also saves time and crop. There are different AI companies that are building robots with AI and computer vision, which can precisely spray on weeds. The use of AI sprayers can widely reduce the number of chemicals to be used on fields, and hence improves the quality of crops and also saves money.</p>
+  <p><strong>5. Disease Diagnosis</strong></p>
+  <img src="photo/Disease Diagnosis plants.jpg" alt="">
+  <p>With AI predictions, farmers can get knowledge of diseases easily. With this, they can easily diagnose diseases with proper strategy and on time. It can save the life of plants and farmer's time. To do this, firstly, images of plants are pre-processed using computer vision technology. This ensures that plant images are properly divided into the diseased and non-diseased parts. After detection, the diseased part is cropped and send to the labs for further diagnosis. This technique also helps in the detection of pests, deficiency of nutrients, and many more.</p>
+  <p><strong>6. Precision Farming</strong></p>
+  <img src="photo/precision-agriculture-machines-in-field.jpg" alt="">
+  <p>Precision farming is all about "<strong>Right place, Right Time, and Right products".</strong> The precision farming technique is a much accurate and controlled way that can replace the labour-intensive part of farming to perform repetitive tasks. One example of Precision farming is the identification of stress levels in plants. This can be obtained using high-resolution images and different sensor data on plants. The data obtained from sensors is then fed to a machine learning model as input for stress recognition.</p>
+  <h2 class="h2">AI start-ups in Agriculture</h2>
+  <p>Below is the list of popular start-ups in Agriculture:</p>
+  <p><strong>1. Prospera:</strong></p>
+  <img src="photo/Prospera.jpg" alt="">
+    <p> It is an Israeli start-up founded in the year 2014. This company creates intelligent solutions for efficient farming. It develops cloud-based solutions that collect all the data from the fields such as soil/water, aerial images, etc. and combine this data with an in-field device. This device is known as the Prospera device, and it makes insights from this data. The device is powered by various sensors and technologies such as computer vision.</p>
+  <p><strong>2. Blue River technology:</strong></p>
+  <img src="photo/Blue River technology.jpg" alt="">
+  <p>Blue-River technology is a California-based start-up that has started in the year 2011. It develops next-generation agriculture equipment using AI, computer vision, and robotics technology. This equipment identifies individual plants using computer vision, ML decides action, and with robotics, the action is performed. This helps the farmers to save costs and chemicals in farming.</p>
+  <p><strong>3. FarmBot:</strong></p>
+  <img src="photo/FarmBot.jpg" alt="">
+  <p>Farmbot is an open-source CNC precision farming machine and software package, which is developed to grow crops by anyone at their own place. The complete product "Farmbot" is available at a price of $4000, and it enables anyone to do complete farming ranging from seed plantation to weed detection on their own with the help of a physical bot and open-source software system. It also provides a webapp that can be downloaded on any smartphone or computer system and allows us to manage farming from any place at any time.</p>
+  <p><strong>4. Fasal:</strong></p>
+  <img src="photo/Fasal.jpg" alt=""> 
+    <p>The use of AI in the agriculture industry is increasing day by day in various places across the world. However, agriculture holdings per farmer in the poorer region is less compared to the rich region, which is advantageous for automated monitoring as it requires a lesser number of devices with low bandwidth and size to capture the complete agriculture data. In this field, the Indian start-up Fasal is working. It uses affordable sensors and AI to provide real-time data and insights to farmers. With this, farmers can be benefitted from real-time, actionable information relevant to day-to-day operations at the farm. The company's devices are easy to implement for small places. They are developing AI-enabled machines to make precision farming that can be accessible by every farmer.</p>
+  <p><strong>5. OneSoil:</strong></p>
+  <img src="photo/OneSoil.png" alt="">
+    <p> Onesoil is an application that is designed to help farmers to take a better decision. This app uses a machine-learning algorithm and computer vision for precision farming. It monitors the crops remotely, identifies problems in the fields, check the weather forecast, and calculate nitrogen, phosphorus, and potassium fertilizer rate, etc.</p>
+  <h2 class="h2">Benefits and Challenges of AI in agriculture</h2>
+  <h3 class="h3">Advantages</h3>
+  <ul class="points">
+  <li><strong>AI enables better decision-making</strong></li>
+  </ul>
+  <p>Predictive analytics is really a boon for the agriculture industry. It helps the farmers solving the key challenges of farming, such as analysing the market demands, price forecasting, and finding optimal times for sowing and harvesting the crop. Moreover, AI-powered machines can also determine soil and crop health, provides fertilizer recommendations, monitor the weather, and can also determine the quality of crop. All such benefits of AI in agriculture enable the farmers to make better decisions and do efficient farming.</p>
+  <ul class="points">
+  <li><strong>AI brings cost savings.</strong></li>
+  </ul>
+  <p>Precision farming using AI-enabled equipment helps the farmers to grow more crops with lesser resources and cost. AI provides the real-time insights to farmers that enables them to take proper decision at each stage of farming. With this correct decision, there is less loss of products and chemicals and efficient use of time and money. Moreover, it also allows the farmers to identify the particular areas that need irrigation, fertilization, and pesticide treatment, which saves excessive use of chemicals on the crop. All these things sum up and result in reduced use of herbicides, better crop quality and high profit with fewer resources.</p>
+  <ul class="points">
+  <li><strong>AI reduces labour shortage.</strong></li>
+  </ul>
+  <p>There has always been an issue of labour shortage in the agriculture industry. AI can solve this issue with automation in farming. With AI and automation, farmers can get work done without having more people, and some examples are Driverless tractors, smart irrigation and fertilizing systems, smart spraying, vertical farming software, and AI-based robots for harvesting. AI-driven machines and equipment are much faster and accurate compared to human farmhands.</p>
+  <div id="a9d156a7-075f-4e17-b533-47690b1b56b2" data-section="a9d156a7-075f-4e17-b533-47690b1b56b2" class="_ap_apex_ad" data-xpath="#city > table:eq(0) > tbody:eq(0) > tr:eq(0) > td:eq(0) > h2:eq(4)" data-section-id="" data-ap-network="adpTags" data-render-time="1700197566101" style="display: block; clear: both; text-align: center; margin: 10px auto; width: 0px; height: 0px; overflow: hidden; visibility: hidden;" data-refresh-time="1700197612732" data-timeout="3829"><div id="ADP_37780_728X280_a9d156a7-075f-4e17-b533-47690b1b56b2" style="text-align: center; margin: 0 auto;" data-google-query-id="CIWg-cGhyoIDFRKNrAIdCOoFBQ">
+  <script type="text/javascript">
+  window.adpushup.adpTags.que.push(function(){
+  window.adpushup.adpTags.display("ADP_37780_728X280_a9d156a7-075f-4e17-b533-47690b1b56b2");
+  });
+  </script>
+  <div id="google_ads_iframe_/103512698,22511567001/22987847942_0__container__" style="border: 0pt none; width: 728px; height: 0px;"></div></div></div><h2 class="h2">Challenges of AI adoption in Agriculture</h2>
+  <p>By seeing the advantages of AI for sustainable farming, implementing this technology may seem like a logical step for every farmer. However, there are still some serious challenges that everyone knows, which are as follows:</p>
+  <ul class="points">
+  <li><strong>Lack of familiarity with AI machines</strong></li>
+  </ul>
+  <p>Although there are lots of benefits of using AI in agriculture, yet people are not familiar with the use of AI-enabled solutions and equipment across most of the world. To solve the issues, AI companies should provide the basic equipment to farmers, and once they get familiar with them, then provide them with advanced machines.</p>
+  <ul class="points">
+  <li><strong>Lack of experience with emerging technologies</strong></li>
+  </ul>
+  <p>The adoption of AI and emerging technologies in agriculture for developing countries can be a challenging task. It will be very difficult to sell such technologies in the areas where there is no such agricultural technology is being taken into use. In such areas, to use these technologies, farmers need someone's help.</p>
+  <ul class="points">
+  <li><strong>Privacy and security issues</strong></li>
+  </ul>
+  <p>As there are still no clear regulations and policies for using AI, it may raise various legal issues. Further, due to the use of software and the internet, there may also be some privacy and security issues such as cyberattacks and data leaks. All these issues can create a big problem for farm owners or farmers.</p>
+  <h2 class="h2">Conclusion:</h2>
+  <p>The future of AI in farming largely depends on the adoption of AI solutions. Although some large-scale researches are in progress and some applications are already in the market, yet industry in agriculture is underserved. Moreover, creating predictive solutions to solve a real challenge faced by farmers in farming is still in progress at an early stage.</p>
+  <hr> <h3 class="h3">Feedback</h3>
+  <ul class="points">
+  <li>Send your Feedback to nigammishra826@gmail.com</li>
+  </ul>
+  <div class="nexttopicdiv">
+  <span class="nexttopictext">Next Topic</span><span class="nexttopiclink"><a href="nigam41.html">Engineering Applications of Artificial Intelligence</a></span>
+  </div>
+  
+  <br><br>
+  <div id="bottomnext">
+  <a style="float:left" class="next" href="nigam39.html">← prev</a>
+  <a style="float:right" class="next" href="nigam41.html">next →</a>
+  </div>
+  <br><br>
+  </td></tr>
+  </tbody></table>
+  <head>
+    <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+  </head>
+  
+  <body>
+    <footer class="footer">
+      <div class="container row">
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="nigam1.html">Artificial intelligence(AI)</a></li>
+            <li><a href="nigam4.html">Types of AI</a></li>
+            <li><a href="nigam8.html">Turing test of AI</a></li>
+            <li><a href="nigam22.html">The Wumpus world</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="nigam89.html">MCQ</a></li>
+            <li><a href="nigam87.html">Machine Learning</a></li>
+            <li><a href="nigam88.html">NPL</a></li>
+            <li><a href="nigam92.html">Data Science</a></li>
+            <li><a href="nigam93.html">Reinforcement learning</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Misc</h4>
+          <ul>
+            <li><a href="nigam36.html">examples</a></li>
+            <li><a href="nigam43.html">Robotioc & AI</a></li>
+            <li><a href="nigam44.html">Future of AI</a></li>
+            <li><a href="nigam47.html">Scope of AI</a></li>
+            <li><a href="nigam81.html">open AI&ChatGPT</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/nigam.mishra.710?mibextid=9R9pXO"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/MishraNugam?s=09"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://instagram.com/mr_nigam_8199?igshid=MXNzeGI3bmZ6b3M3NQ=="><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </div>
+          <a href="contact1.html"><img src="photo/logo2.jpg" style="height: 100px;width: 100px;"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  </div>
+  
+  </div>
+  <br><br><div class="mobilemenu" style="clear:both">
+  </div></div></i></b>

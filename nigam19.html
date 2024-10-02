@@ -1,0 +1,646 @@
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>What is Artificial Intelligence (AI)? Tutorial, Meaning </title>
+<link rel="stylesheet" type="text/css" href="style.css" async="">
+          </style><meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A/ERL66fN363FkXxgDc6F1+ucRUkAhjEca9W3la6xaLnD2Y1lABsqmdaJmPNaUKPKVBRpyMKEhXYl7rSvrQw+AkAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A6OdGH3fVf4eKRDbXb4thXA4InNqDJDRhZ8U533U/roYjp4Yau0T3YSuc63vmAs/8ga1cD0E3A7LEq6AXk1uXgsAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202311090101/pubads_impl.js" async=""></script><script src="https://config.aps.amazon-adsystem.com/configs/2e7e1587-d92f-46dd-8721-80b53eccb87e" type="text/javascript" async="async"></script><style type="text/css">.vjs-youtube .vjs-iframe-blocker { display: none; }.vjs-youtube.vjs-user-inactive .vjs-iframe-blocker { display: block; }.vjs-youtube .vjs-poster { background-size: cover; }.vjs-youtube-mobile .vjs-big-play-button { display: none; }</style><style type="text/css">
+
+body {
+  background-image: url(photo/b2.avif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  position: relative;
+  background: transparent;
+  padding: 1rem 0;
+  z-index: 999;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(90%, 800px);
+  margin-inline: auto;
+  color: #000;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav a:hover {
+  color: #4FC3F7;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  
+  .toggle {
+    transition: ease-in-out 550ms;
+    transform: translate(0px);
+    opacity: 1;
+    display: block;
+  }
+  
+  .header-container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: hsla(0, 0%, 0%, .5);
+    backdrop-filter: blur(10px);
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  
+  nav li {
+    padding: 1rem;
+    cursor: pointer;
+  }
+  
+  nav li:hover {
+    background: hsla(0, 0%, 0%, .7);
+  }
+  
+  .hamburger {
+    display: block; 
+  }
+}
+div.onlycontent {
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-right: 4px;
+    width: 58%;
+    float: left;
+    padding: 10px 15px;
+    background :none;
+  }
+  #city td {
+    color: black;
+    line-height: 1.7;
+  }
+  #city li {
+    line-height: 25px;
+    color: black;
+    margin-top: 4px;
+  }
+  *,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+	background-color: #151515;
+	padding: 80px 0;
+}
+
+.container {
+	max-width: 1170px;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer-col {
+	width: 25%;
+	padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 18px;
+	color: #FFF;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #E91E63;
+	width: 50px;
+	height: 2px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	color: #DDD;
+	display: block;
+	font-size: 1rem;
+	font-weight: 300;
+	text-transform: capitalize;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: #FFF;
+	padding-left: 7px;
+}
+
+.footer-col .social-links a {
+	color: #FFF;
+	background-color: rgba(255, 255, 255, 0.2);
+	display: inline;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	text-align: center;
+	margin: 0 10px 10px 0;
+	line-height: 100px;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #151515;
+	background-color: #FFF;
+}
+
+@media(max-width: 767px) {
+	.footer-col {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 574px) {
+	.footer-col {
+		width: 100%;
+	}
+}
+      </style>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+     <body>
+      <header>
+        <div class="header-container">
+          <span><img src="photo/logo1.png" style="height: 50px;width: 70px;overflow: hidden;backface-visibility: hidden;"></span>
+          <nav id="nav">
+            <b><ul id="nav-ul">
+              <li><a href="nigam1.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="AIservices.html">Service</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul></b>
+          </nav>
+          <span class="hamburger" id="button"><i class="fa-solid fa-bars"></i></span>
+        </div>
+      </header>
+    </body>
+    
+    </div>
+    </div>
+     
+    <div class="mobilemenu" style="clear:both">
+    
+    </div>
+    <div id="menu">
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Artificial Intelligence</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam1.html" style="color: black;"><strong>Artificial Intelligence (AI)</strong> </a>
+    <a href="nigam2.html">Applications of AI</a>
+    <a href="nigam3.html">History of AI</a>
+    <a href="nigam4.html">Types of AI</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Intelligent Agent</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam5.html">Types of Agents</a>
+    <a href="nigam6.html">Intelligent Agent</a>
+    <a href="nigam7.html">Agent Environment</a>
+    <a href="nigam8.html">Turing Test in AI</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Problem-solving</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam9.html">Search Algorithms</a>
+    <a href="nigam10.html">Uninformed Search Algorithm</a>
+    <a href="nigam11.html">Informed Search Algorithms</a>
+    <a href="nigam12.html">Hill Climbing Algorithm</a>
+    <a href="nigam13.html">Means-Ends Analysis</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Adversarial Search</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam14.html">Adversarial search</a>
+    <a href="nigam15.html">Minimax Algorithm</a>
+    <a href="nigam16.html">Alpha-Beta Pruning</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Knowledge Represent</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam17.html">Knowledge Based Agent</a>
+    <a href="nigam18.html">Knowledge Representation</a>
+    <a href="nigam19.html">Knowledge Representation Techniques</a>
+    <a href="nigam20.html">Propositional Logic</a>
+    <a href="nigam21.html">Rules of Inference</a>
+    <a href="nigam22.html">The Wumpus world</a>
+    <a href="nigam23.html">knowledge-base for Wumpus World</a>
+    <a href="nigam24.html">First-order logic</a>
+    <a href="nigam25.html">Knowledge Engineering in FOL</a>
+    <a href="nigam26.html">Inference in First-Order Logic</a>
+    <a href="nigam27.html">Unification in FOL</a>
+    <a href="nigam28.html">Resolution in FOL</a>
+    <a href="nigam29.html">Forward Chaining and backward chaining</a>
+    <a href="nigam30.html">Backward Chaining vs Forward Chaining</a>
+    <a href="nigam31.html">Reasoning in AI</a>
+    <a href="nigam32.html">Inductive vs. Deductive reasoning</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Uncertain Knowledge R.</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam33.html">Probabilistic Reasoning in AI</a>
+    <a href="nigam34.html">Bayes theorem in AI</a>
+    <a href="nigam35.html">Bayesian Belief Network</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Misc</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam36.html">Examples of AI</a>
+    <a href="nigam37.html">AI Essay</a>
+    <a href="nigam38.html">AI in Healthcare</a>
+    <a href="nigam39.html">Artificial Intelligence in Education</a>
+    <a href="nigam40.html">Artificial Intelligence in Agriculture</a>
+    <a href="nigam41.html">Engineering Applications of AI</a>
+    <a href="nigam42.html">Advantages &amp; Disadvantages of AI</a>
+    <a href="nigam43.html">Robotics and AI</a>
+    <a href="nigam44.html">Future of AI</a>
+    <a href="nigam45.html">Languages used in AI</a>
+    <a href="nigam46.html">Approaches to AI Learning</a>
+    <a href="nigam47.html">Scope of AI</a>
+    <a href="nigam48.html">Agents in AI</a>
+    <a href="nigam49.html">Artificial Intelligence Jobs</a>
+    <a href="nigam50.html">Amazon CloudFront</a>
+    <a href="nigam51.html">Goals of Artificial Intelligence</a>
+    <a href="nigam52.html">Can Artificial Intelligence replace Human Intelligence</a>
+    <a href="nigam53.html">Importance of Artificial Intelligence</a>
+    <a href="nigam54.html">Artificial Intelligence Stock in India</a>
+    <a href="nigam55.html">How to Use Artificial Intelligence in Marketing</a>
+    <a href="nigam56.html">Artificial Intelligence in Business</a>
+    <a href="nigam57.html">Companies Working on Artificial Intelligence</a>
+    <a href="nigam58.html">Artificial Intelligence Future Ideas</a>
+    <a href="nigam59.html">Government Jobs in Artificial Intelligence in India</a>
+    <a href="nigam60.html">What is the Role of Planning in Artificial Intelligence</a>
+    <a href="nigam61.html">AI as a Service</a>
+    <a href="nigam62.html">AI in Banking</a>
+    <a href="nigam63.html">AI Tools</a>
+    <a href="nigam64.html">Cognitive AI</a>
+    <a href="nigam65.html">Introduction of Seaborn</a>
+    <a href="nigam66.html">Natural Language ToolKit (NLTK)</a>
+    <a href="nigam67.html">Best books for ML</a>
+    <a href="nigam68.html">AI companies of India will lead in 2022</a>
+    <a href="nigam69.html">Constraint Satisfaction Problems in Artificial Intelligence</a>
+    <a href="nigam70.html">How artificial intelligence will change the future</a>
+    <a href="nigam71.html">Problem Solving Techniques in AI</a>
+    <a href="nigam72.html">AI in Manufacturing Industry</a>
+    <a href="nigam73.html">Artificial Intelligence in Automotive Industry</a>
+    <a href="nigam74.html">Artificial Intelligence in Civil Engineering</a>
+    <a href="nigam75.html">Artificial Intelligence in Gaming Industry</a>
+    <a href="nigam76.html">Artificial Intelligence in HR</a>
+    <a href="nigam77.html">Artificial Intelligence in Medicine</a>
+    <a href="nigam78.html">PhD in Artificial Intelligence</a>
+    <a href="nigam79.html">Activation Functions in Neural Networks</a>
+    <a href="nigam80.html">Boston Housing Kaggle Challenge with Linear Regression</a>
+    <a href="nigam81.html">What are OpenAI and ChatGPT</a>
+    <a href="nigam82.html">Chatbot vs. Conversational AI</a>
+    <a href="nigam83.html">Iterative Deepening A* Algorithm (IDA*)</a>
+    <a href="nigam84.html">Iterative Deepening Search (IDS) or Iterative Deepening Depth First Search (IDDFS)</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Subsets of AI</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam85.html">Subsets of AI</a>
+    <a href="nigam86.html">Expert Systems</a>
+    <a href="nigam87.html">Machine Learning Tutorial</a>
+    <a href="nigam88.html">NLP Tutorial</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Artificial Intelligence MCQ</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam89.html">Artificial Intelligence MCQ</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Related Tutorials</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam92.html">Data Science Tutorial</a>
+    <a href="nigam93.html">Reinforcement Learning</a>
+    </div>
+     
+</div>
+</div>
+<div class="onlycontent">
+    <div class="onlycontentad">
+    </div>
+    <div class="onlycontentinner">
+    <div id="city">
+    <table>
+    <tbody><tr><td>
+    <div id="bottomnextup">
+    
+    
+    </div>
+    <b><i><h1 class="h1">Techniques of knowledge representation</h1>
+    <p>There are mainly four ways of knowledge representation which are given as follows:</p>
+    <ol class="points">
+    <li>Logical Representation</li>
+    <li>Semantic Network Representation</li>
+    <li>Frame Representation</li>
+    <li>Production Rules</li>
+    </ol>
+    <img src="https://static.javatpoint.com/tutorial/ai/images/ai-techniques-of-knowledge-representation.png" alt="Techniques of knowledge representation">
+    <h2 class="h2">1. Logical Representation</h2>
+    <p>Logical representation is a language with some concrete rules which deals with propositions and has no ambiguity in representation. Logical representation means drawing a conclusion based on various conditions. This representation lays down some important communication rules. It consists of precisely defined syntax and semantics which supports the sound inference. Each sentence can be translated into logics using syntax and semantics. </p>
+    <h3 class="h3">Syntax: </h3>
+    <ul class="points">
+    <li>Syntaxes are the rules which decide how we can construct legal sentences in the logic.</li>
+    <li>It determines which symbol we can use in knowledge representation.</li>
+    <li>How to write those symbols.</li>
+    </ul>
+    <h3 class="h3">Semantics:</h3>
+    <ul class="points">
+    <li>Semantics are the rules by which we can interpret the sentence in the logic. </li>
+    <li>Semantic also involves assigning a meaning to each sentence. </li>
+    </ul>
+    <p>Logical representation can be categorised into mainly two logics:</p>
+    <ol class="pointsa">
+    <li>Propositional Logics</li>
+    <li>Predicate logics</li>
+    </ol>
+    <h4 class="n">Note: We will discuss Prepositional Logics and Predicate logics in later chapters. </h4>
+    <h3 class="h3">Advantages of logical representation: </h3>
+    <ol class="points">
+    <li>Logical representation enables us to do logical reasoning.</li>
+    <li>Logical representation is the basis for the programming languages.</li>
+    </ol>
+    <h3 class="h3">Disadvantages of logical Representation: </h3>
+    <ol class="points">
+    <li>Logical representations have some restrictions and are challenging to work with.</li>
+    <li>Logical representation technique may not be very natural, and inference may not be so efficient. </li>
+    </ol>
+    <h4 class="n">Note: Do not be confused with logical representation and logical reasoning as logical representation is a representation language and reasoning is a process of thinking logically.</h4>
+    <h2 class="h2">2. Semantic Network Representation</h2>
+    <p>Semantic networks are alternative of predicate logic for knowledge representation. In Semantic networks, we can represent our knowledge in the form of graphical networks. This network consists of nodes representing objects and arcs which describe the relationship between those objects. Semantic networks can categorize the object in different forms and can also link those objects. Semantic networks are easy to understand and can be easily extended. </p>
+    <p>This representation consist of mainly two types of relations:</p>
+    <ol class="pointsa">
+    <li>IS-A relation (Inheritance)</li>
+    <li>Kind-of-relation</li>
+    </ol>
+    <p><strong>Example:</strong> Following are some statements which we need to represent in the form of nodes and arcs.</p>
+    <h3 class="h3">Statements:</h3>
+    <ol class="pointsa">
+    <li>Jerry is a cat.</li>
+    <li>Jerry is a mammal</li>
+    <li>Jerry is owned by Priya. </li>
+    <li>Jerry is brown colored.</li>
+    <li>All Mammals are animal.</li>
+    </ol>
+    <img src="https://static.javatpoint.com/tutorial/ai/images/ai-techniques-of-knowledge-representation2.png" alt="Techniques of knowledge representation">
+    <p>In the above diagram, we have represented the different type of knowledge in the form of nodes and arcs. Each object is connected with another object by some relation. </p>
+    <h3 class="h3">Drawbacks in Semantic representation:</h3>
+    <ol class="points">
+    <li>Semantic networks take more computational time at runtime as we need to traverse the complete network tree to answer some questions. It might be possible in the worst case scenario that after traversing the entire tree, we find that the solution does not exist in this network.</li>
+    <li>Semantic networks try to model human-like memory (Which has 1015 neurons and links) to store the information, but in practice, it is not possible to build such a vast semantic network.</li>
+    <li>These types of representations are inadequate as they do not have any equivalent quantifier, e.g., for all, for some, none, etc.</li>
+    <li>Semantic networks do not have any standard definition for the link names.</li>
+    <li>These networks are not intelligent and depend on the creator of the system.</li>
+    </ol>
+    <h3 class="h3">Advantages of Semantic network:</h3>
+    <ol class="points">
+    <li>Semantic networks are a natural representation of knowledge.</li>
+    <li>Semantic networks convey meaning in a transparent manner.</li>
+    <li>These networks are simple and easily understandable.</li>
+    </ol>
+    <h2 class="h2">3. Frame Representation</h2>
+    <p>A frame is a record like structure which consists of a collection of attributes and its values to describe an entity in the world. Frames are the AI data structure which divides knowledge into substructures by representing stereotypes situations. It consists of a collection of slots and slot values. These slots may be of any type and sizes. Slots have names and values which are called facets. </p>
+    <p><strong>Facets:</strong> The various aspects of a slot is known as <strong>Facets</strong>. Facets are features of frames which enable us to put constraints on the frames. Example: IF-NEEDED facts are called when data of any particular slot is needed. A frame may consist of any number of slots, and a slot may include any number of facets and facets may have any number of values. A frame is also known as <strong>slot-filter knowledge representation</strong> in artificial intelligence. </p>
+    <p>Frames are derived from semantic networks and later evolved into our modern-day classes and objects. A single frame is not much useful. Frames system consist of a collection of frames which are connected. In the frame, knowledge about an object or event can be stored together in the knowledge base. The frame is a type of technology which is widely used in various applications including Natural language processing and machine visions.</p>
+    <h3 class="h3">Example: 1</h3>
+    <p>Let's take an example of a frame for a book</p>
+    <table class="alt">
+    <tbody><tr>
+    <th>Slots</th>
+    <th>Filters</th>
+    </tr>
+    <tr>
+    <td><strong>Title</strong></td>
+    <td>Artificial Intelligence</td>
+    </tr>
+    <tr>
+    <td><strong>Genre</strong></td>
+    <td>Computer Science</td>
+    </tr>
+    <tr>
+    <td><strong>Author</strong></td>
+    <td>Peter Norvig</td>
+    </tr>
+    <tr>
+    <td><strong>Edition</strong></td>
+    <td>Third Edition</td>
+    </tr>
+    <tr>
+    <td><strong>Year</strong></td>
+    <td>1996</td>
+    </tr>
+    <tr>
+    <td><strong>Page</strong></td>
+    <td>1152</td>
+    </tr>
+    </tbody></table>
+    <h3 class="h3">Example 2: </h3>
+    <p>Let's suppose we are taking an entity, Peter. Peter is an engineer as a profession, and his age is 25, he lives in city London, and the country is England. So following is the frame representation for this:</p>
+    <table class="alt">
+    <tbody><tr>
+    <th>Slots</th>
+    <th>Filter</th>
+    </tr>
+    <tr>
+    <td><strong>Name</strong></td>
+    <td>Peter</td>
+    </tr>
+    <tr>
+    <td><strong>Profession</strong></td>
+    <td>Doctor</td>
+    </tr>
+    <tr>
+    <td><strong>Age</strong></td>
+    <td>25</td>
+    </tr>
+    <tr>
+    <td><strong>Marital status</strong></td>
+    <td>Single</td>
+    </tr>
+    <tr>
+    <td><strong>Weight</strong></td>
+    <td>78</td>
+    </tr>
+    </tbody></table>
+    <h3 class="h3">Advantages of frame representation:</h3>
+    <ol class="points">
+    <li>The frame knowledge representation makes the programming easier by grouping the related data.</li>
+    <li>The frame representation is comparably flexible and used by many applications in AI.</li>
+    <li>It is very easy to add slots for new attribute and relations.</li>
+    <li>It is easy to include default data and to search for missing values.</li>
+    <li>Frame representation is easy to understand and visualize.</li>
+    </ol>
+    <h3 class="h3">Disadvantages of frame representation: </h3>
+    <ol class="points">
+    <li>In frame system inference mechanism is not be easily processed.</li>
+    <li>Inference mechanism cannot be smoothly proceeded by frame representation.</li>
+    <li>Frame representation has a much generalized approach.</li>
+    </ol>
+    <h2 class="h2">4. Production Rules</h2>
+    <p>Production rules system consist of (<strong>condition, action</strong>) pairs which mean, "If condition then action". It has mainly three parts:</p>
+    <ul class="points">
+    <li>The set of production rules</li>
+    <li>Working Memory</li>
+    <li>The recognize-act-cycle</li>
+    </ul>
+    <p>In production rules agent checks for the condition and if the condition exists then production rule fires and corresponding action is carried out. The condition part of the rule determines which rule may be applied to a problem. And the action part carries out the associated problem-solving steps. This complete process is called a recognize-act cycle.</p>
+    <p>The working memory contains the description of the current state of problems-solving and rule can write knowledge to the working memory. This knowledge match and may fire other rules.</p>
+    <p>If there is a new situation (state) generates, then multiple production rules will be fired together, this is called conflict set. In this situation, the agent needs to select a rule from these sets, and it is called a conflict resolution.</p>
+    <h3 class="h3">Example: </h3>
+    <ul class="points">
+    <li><strong>IF (at bus stop AND bus arrives) THEN action (get into the bus)</strong></li>
+    <li><strong>IF (on the bus AND paid AND empty seat) THEN action (sit down).</strong></li>
+    <li><strong>IF (on bus AND unpaid) THEN action (pay charges).</strong></li>
+    <li><strong>IF (bus arrives at destination) THEN action (get down from the bus). </strong></li>
+    </ul>
+    <h3 class="h3">Advantages of Production rule:</h3>
+    <ol class="points">
+    <li>The production rules are expressed in natural language.</li>
+    <li>The production rules are highly modular, so we can easily remove, add or modify an individual rule.</li>
+    </ol>
+    <h3 class="h3">Disadvantages of Production rule: </h3>
+    <ol class="points">
+    <li>Production rule system does not exhibit any learning capabilities, as it does not store the result of the problem for the future uses.</li>
+    <li>During the execution of the program, many rules may be active hence rule-based production systems are inefficient.</li>
+    </ol>
+    <hr>
+    <h3 class="h3">Feedback</h3>
+  <ul class="points">
+  <li>Send your Feedback to nigammishra826@gmail.com</li>
+  </ul></i></b>
+
+    <div class="nexttopicdiv">
+    <span class="nexttopictext">Next Topic</span><span class="nexttopiclink"><a href="nigam20.html">Propositional Logic</a></span>
+    </div>
+    
+    <br><br>
+    <div id="bottomnext">
+    <a style="float:left" class="next" href="nigam18.html">← prev</a>
+    <a style="float:right" class="next" href="nigam20.html">next →</a>
+    </div>
+    <br><br>
+    </td></tr>
+    </tbody></table>
+    <head>
+      <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+      <footer class="footer">
+        <div class="container row">
+          <div class="footer-col">
+            <h4>About</h4>
+            <ul>
+              <li><a href="nigam1.html">Artificial intelligence(AI)</a></li>
+              <li><a href="nigam4.html">Types of AI</a></li>
+              <li><a href="nigam8.html">Turing test of AI</a></li>
+              <li><a href="nigam22.html">The Wumpus world</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="nigam89.html">MCQ</a></li>
+              <li><a href="nigam87.html">Machine Learning</a></li>
+              <li><a href="nigam88.html">NPL</a></li>
+              <li><a href="nigam92.html">Data Science</a></li>
+              <li><a href="nigam93.html">Reinforcement learning</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Misc</h4>
+            <ul>
+              <li><a href="nigam36.html">examples</a></li>
+              <li><a href="nigam43.html">Robotioc & AI</a></li>
+              <li><a href="nigam44.html">Future of AI</a></li>
+              <li><a href="nigam47.html">Scope of AI</a></li>
+              <li><a href="nigam81.html">open AI&ChatGPT</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/nigam.mishra.710?mibextid=9R9pXO"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://twitter.com/MishraNugam?s=09"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://instagram.com/mr_nigam_8199?igshid=MXNzeGI3bmZ6b3M3NQ=="><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <a href="contact1.html"><img src="photo/logo2.jpg" style="height: 100px;width: 100px;"></a>
+          </div>
+        </div>
+      </footer>
+    </body>
+    </div>
+ 
+    </div>
+    <br><br><div class="mobilemenu" style="clear:both">
+    </div></div>

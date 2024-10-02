@@ -1,0 +1,577 @@
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>What is Artificial Intelligence (AI)? Tutorial, Meaning </title>
+<link rel="stylesheet" type="text/css" href="style.css" async="">
+          </style><meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A/ERL66fN363FkXxgDc6F1+ucRUkAhjEca9W3la6xaLnD2Y1lABsqmdaJmPNaUKPKVBRpyMKEhXYl7rSvrQw+AkAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A6OdGH3fVf4eKRDbXb4thXA4InNqDJDRhZ8U533U/roYjp4Yau0T3YSuc63vmAs/8ga1cD0E3A7LEq6AXk1uXgsAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202311090101/pubads_impl.js" async=""></script><script src="https://config.aps.amazon-adsystem.com/configs/2e7e1587-d92f-46dd-8721-80b53eccb87e" type="text/javascript" async="async"></script><style type="text/css">.vjs-youtube .vjs-iframe-blocker { display: none; }.vjs-youtube.vjs-user-inactive .vjs-iframe-blocker { display: block; }.vjs-youtube .vjs-poster { background-size: cover; }.vjs-youtube-mobile .vjs-big-play-button { display: none; }</style><style type="text/css">
+ 
+body {
+  background-image: url(photo/b2.avif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  position: relative;
+  background: transparent;
+  padding: 1rem 0;
+  z-index: 999;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(90%, 800px);
+  margin-inline: auto;
+  color: #000;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav a:hover {
+  color: #4FC3F7;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  
+  .toggle {
+    transition: ease-in-out 550ms;
+    transform: translate(0px);
+    opacity: 1;
+    display: block;
+  }
+  
+  .header-container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: darkgoldenrod;
+    backdrop-filter: blur(10px);
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  
+  nav li {
+    padding: 1rem;
+    cursor: pointer;
+  }
+  
+  nav li:hover {
+    background: darkgoldenrod;
+  }
+  
+  .hamburger {
+    display: block; 
+  }
+}
+div.onlycontent {
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-right: 4px;
+    width: 58%;
+    float: left;
+    padding: 10px 15px;
+    background :none;
+  }
+  #city td {
+    color: black;
+    line-height: 1.7;
+  }
+  #city li {
+    line-height: 25px;
+    color: black;
+    margin-top: 4px;
+  }
+  *,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+	background-color: #151515;
+	padding: 80px 0;
+}
+
+.container {
+	max-width: 1170px;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer-col {
+	width: 25%;
+	padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 18px;
+	color: #FFF;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #E91E63;
+	width: 50px;
+	height: 2px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	color: #DDD;
+	display: block;
+	font-size: 1rem;
+	font-weight: 300;
+	text-transform: capitalize;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: #FFF;
+	padding-left: 7px;
+}
+
+.footer-col .social-links a {
+	color: #FFF;
+	background-color: rgba(255, 255, 255, 0.2);
+	display: inline;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	text-align: center;
+	margin: 0 10px 10px 0;
+	line-height: 100px;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #151515;
+	background-color: #FFF;
+}
+
+@media(max-width: 767px) {
+	.footer-col {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 574px) {
+	.footer-col {
+		width: 100%;
+	}
+}
+      </style>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+     <body>
+      <header>
+        <div class="header-container">
+          <span><img src="photo/logo1.png" style="height: 50px;width: 70px;overflow: hidden;backface-visibility: hidden;"></span>
+          <nav id="nav">
+            <b><i><ul id="nav-ul">
+              <li><a href="nigam1.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="AIservices.html">Service</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul></i></b>
+          </nav>
+          <span class="hamburger" id="button"><i class="fa-solid fa-bars"></i></span>
+        </div>
+      </header>
+    </body>
+    
+    </div>
+    </div>
+    <div id="link" style="clear:both;z-index:999"> </div>
+    <div class="mobilemenu" style="clear:both">
+    
+    </div>
+    <div id="menu">
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Artificial Intelligence</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam1.html" style="color: black;"><strong>Artificial Intelligence (AI)</strong> </a>
+    <a href="nigam2.html">Applications of AI</a>
+    <a href="nigam3.html">History of AI</a>
+    <a href="nigam4.html">Types of AI</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Intelligent Agent</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam5.html">Types of Agents</a>
+    <a href="nigam6.html">Intelligent Agent</a>
+    <a href="nigam7.html">Agent Environment</a>
+    <a href="nigam8.html">Turing Test in AI</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Problem-solving</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam9.html">Search Algorithms</a>
+    <a href="nigam10.html">Uninformed Search Algorithm</a>
+    <a href="nigam11.html">Informed Search Algorithms</a>
+    <a href="nigam12.html">Hill Climbing Algorithm</a>
+    <a href="nigam13.html">Means-Ends Analysis</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Adversarial Search</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam14.html">Adversarial search</a>
+    <a href="nigam15.html">Minimax Algorithm</a>
+    <a href="nigam16.html">Alpha-Beta Pruning</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Knowledge Represent</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam17.html">Knowledge Based Agent</a>
+    <a href="nigam18.html">Knowledge Representation</a>
+    <a href="nigam19.html">Knowledge Representation Techniques</a>
+    <a href="nigam20.html">Propositional Logic</a>
+    <a href="nigam21.html">Rules of Inference</a>
+    <a href="nigam22.html">The Wumpus world</a>
+    <a href="nigam23.html">knowledge-base for Wumpus World</a>
+    <a href="nigam24.html">First-order logic</a>
+    <a href="nigam25.html">Knowledge Engineering in FOL</a>
+    <a href="nigam26.html">Inference in First-Order Logic</a>
+    <a href="nigam27.html">Unification in FOL</a>
+    <a href="nigam28.html">Resolution in FOL</a>
+    <a href="nigam29.html">Forward Chaining and backward chaining</a>
+    <a href="nigam30.html">Backward Chaining vs Forward Chaining</a>
+    <a href="nigam31.html">Reasoning in AI</a>
+    <a href="nigam32.html">Inductive vs. Deductive reasoning</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Uncertain Knowledge R.</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam33.html">Probabilistic Reasoning in AI</a>
+    <a href="nigam34.html">Bayes theorem in AI</a>
+    <a href="nigam35.html">Bayesian Belief Network</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Misc</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam36.html">Examples of AI</a>
+    <a href="nigam37.html">AI Essay</a>
+    <a href="nigam38.html">AI in Healthcare</a>
+    <a href="nigam39.html">Artificial Intelligence in Education</a>
+    <a href="nigam40.html">Artificial Intelligence in Agriculture</a>
+    <a href="nigam41.html">Engineering Applications of AI</a>
+    <a href="nigam42.html">Advantages &amp; Disadvantages of AI</a>
+    <a href="nigam43.html">Robotics and AI</a>
+    <a href="nigam44.html">Future of AI</a>
+    <a href="nigam45.html">Languages used in AI</a>
+    <a href="nigam46.html">Approaches to AI Learning</a>
+    <a href="nigam47.html">Scope of AI</a>
+    <a href="nigam48.html">Agents in AI</a>
+    <a href="nigam49.html">Artificial Intelligence Jobs</a>
+    <a href="nigam50.html">Amazon CloudFront</a>
+    <a href="nigam51.html">Goals of Artificial Intelligence</a>
+    <a href="nigam52.html">Can Artificial Intelligence replace Human Intelligence</a>
+    <a href="nigam53.html">Importance of Artificial Intelligence</a>
+    <a href="nigam54.html">Artificial Intelligence Stock in India</a>
+    <a href="nigam55.html">How to Use Artificial Intelligence in Marketing</a>
+    <a href="nigam56.html">Artificial Intelligence in Business</a>
+    <a href="nigam57.html">Companies Working on Artificial Intelligence</a>
+    <a href="nigam58.html">Artificial Intelligence Future Ideas</a>
+    <a href="nigam59.html">Government Jobs in Artificial Intelligence in India</a>
+    <a href="nigam60.html">What is the Role of Planning in Artificial Intelligence</a>
+    <a href="nigam61.html">AI as a Service</a>
+    <a href="nigam62.html">AI in Banking</a>
+    <a href="nigam63.html">AI Tools</a>
+    <a href="nigam64.html">Cognitive AI</a>
+    <a href="nigam65.html">Introduction of Seaborn</a>
+    <a href="nigam66.html">Natural Language ToolKit (NLTK)</a>
+    <a href="nigam67.html">Best books for ML</a>
+    <a href="nigam68.html">AI companies of India will lead in 2022</a>
+    <a href="nigam69.html">Constraint Satisfaction Problems in Artificial Intelligence</a>
+    <a href="nigam70.html">How artificial intelligence will change the future</a>
+    <a href="nigam71.html">Problem Solving Techniques in AI</a>
+    <a href="nigam72.html">AI in Manufacturing Industry</a>
+    <a href="nigam73.html">Artificial Intelligence in Automotive Industry</a>
+    <a href="nigam74.html">Artificial Intelligence in Civil Engineering</a>
+    <a href="nigam75.html">Artificial Intelligence in Gaming Industry</a>
+    <a href="nigam76.html">Artificial Intelligence in HR</a>
+    <a href="nigam77.html">Artificial Intelligence in Medicine</a>
+    <a href="nigam78.html">PhD in Artificial Intelligence</a>
+    <a href="nigam79.html">Activation Functions in Neural Networks</a>
+    <a href="nigam80.html">Boston Housing Kaggle Challenge with Linear Regression</a>
+    <a href="nigam81.html">What are OpenAI and ChatGPT</a>
+    <a href="nigam82.html">Chatbot vs. Conversational AI</a>
+    <a href="nigam83.html">Iterative Deepening A* Algorithm (IDA*)</a>
+    <a href="nigam84.html">Iterative Deepening Search (IDS) or Iterative Deepening Depth First Search (IDDFS)</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Subsets of AI</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam85.html">Subsets of AI</a>
+    <a href="nigam86.html">Expert Systems</a>
+    <a href="nigam87.html">Machine Learning Tutorial</a>
+    <a href="nigam88.html">NLP Tutorial</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Artificial Intelligence MCQ</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam89.html">Artificial Intelligence MCQ</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Related Tutorials</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam92.html">Data Science Tutorial</a>
+    <a href="nigam93.html">Reinforcement Learning</a>
+    </div>
+     
+</div>
+</div>
+<div class="onlycontent">
+  <div class="onlycontentad">
+  </div>
+  <div class="onlycontentinner">
+  <div id="city">
+  <table>
+  <tbody><tr><td>
+  <div id="bottomnextup">
+  
+  
+  </div>
+  <b><i><h1 class="h1">What is Unification?</h1>
+  <ul class="points">
+  <li>Unification is a process of making two different logical atomic expressions identical by finding a substitution. Unification depends on the substitution process.</li>
+  <li>It takes two literals as input and makes them identical using substitution. </li>
+  <li>Let Ψ<sub>1</sub> and Ψ<sub>2</sub> be two atomic sentences and 𝜎 be a unifier such that, <strong>Ψ<sub>1</sub>𝜎 = Ψ<sub>2</sub>𝜎</strong>, then it can be expressed as <strong>UNIFY(Ψ<sub>1</sub>, Ψ<sub>2</sub>)</strong>.</li>
+  <li><strong>Example: Find the MGU for Unify{King(x), King(John)}</strong></li>
+  </ul>
+  <p>Let Ψ<sub>1</sub> = King(x), Ψ<sub>2</sub> = King(John), </p>
+  <p><strong>Substitution θ = {John/x}</strong> is a unifier for these atoms and applying this substitution, and both expressions will be identical.</p>
+  <ul class="points">
+  <li>The UNIFY algorithm is used for unification, which takes two atomic sentences and returns a unifier for those sentences (If any exist).</li>
+  <li>Unification is a key component of all first-order inference algorithms.</li>
+  <li>It returns fail if the expressions do not match with each other.</li>
+  <li>The substitution variables are called Most General Unifier or MGU. </li>
+  </ul>
+  <p><strong>E.g.</strong> Let's say there are two different expressions, <strong>P(x, y), and P(a, f(z))</strong>. </p>
+  <p>In this example, we need to make both above statements identical to each other. For this, we will perform the substitution. </p>
+  <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; P(x, y)......... (i)<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; P(a, f(z))......... (ii)</p>
+  <ul class="points">
+  <li>Substitute x with a, and y with f(z) in the first expression, and it will be represented as <strong>a/x</strong> and f(z)/y.</li>
+  <li>With both the substitutions, the first expression will be identical to the second expression and the substitution set will be: <strong>[a/x, f(z)/y]</strong>.</li>
+  </ul>
+  <h2 class="h2">Conditions for Unification: </h2>
+  <p><strong>Following are some basic conditions for unification:</strong></p>
+  <ul class="points">
+  <li>Predicate symbol must be same, atoms or expression with different predicate symbol can never be unified.</li>
+  <li>Number of Arguments in both expressions must be identical. </li>
+  <li>Unification will fail if there are two similar variables present in the same expression.</li>
+  </ul>
+  <h2 class="h2">Unification Algorithm:</h2>
+  <p><strong>Algorithm: Unify(Ψ<sub>1</sub>, Ψ<sub>2</sub>) </strong></p>
+  <div class="codeblock"><pre>Step. 1: If Ψ<sub>1</sub> or Ψ<sub>2</sub> is a variable or constant, then:
+    a) If Ψ<sub>1</sub> or Ψ<sub>2</sub> are identical, then return NIL. 
+    b) Else if Ψ<sub>1</sub>is a variable, 
+      a. then if Ψ<sub>1</sub> occurs in Ψ<sub>2</sub>, then return FAILURE
+      b. Else return { (Ψ<sub>2</sub>/ Ψ<sub>1</sub>)}.
+    c) Else if Ψ<sub>2</sub> is a variable, 
+      a. If Ψ<sub>2</sub> occurs in Ψ<sub>1</sub> then return FAILURE,
+      b. Else return {( Ψ<sub>1</sub>/ Ψ<sub>2</sub>)}. 
+    d) Else return FAILURE. 
+  Step.2: If the initial Predicate symbol in Ψ<sub>1</sub> and Ψ<sub>2</sub> are not same, then return FAILURE.
+  Step. 3: IF Ψ<sub>1</sub> and Ψ<sub>2</sub> have a different number of arguments, then return FAILURE.
+  Step. 4: Set Substitution set(SUBST) to NIL. 
+  Step. 5: For i=1 to the number of elements in Ψ<sub>1</sub>. 
+    a) Call Unify function with the ith element of Ψ<sub>1</sub> and ith element of Ψ<sub>2</sub>, and put the result into S.
+    b) If S = failure then returns Failure
+    c) If S ≠ NIL then do,
+      a. Apply S to the remainder of both L1 and L2.
+      b. SUBST= APPEND(S, SUBST). 
+  Step.6: Return SUBST. 
+  </pre></div>
+  <h2 class="h2">Implementation of the Algorithm</h2>
+  <p><strong>Step.1:</strong> Initialize the substitution set to be empty.</p>
+  <p><strong>Step.2:</strong> Recursively unify atomic sentences:</p>
+  <ol class="pointsa">
+  <li>Check for Identical expression match.</li>
+  <li>If one expression is a variable v<sub>i</sub>, and the other is a term t<sub>i</sub> which does not contain variable v<sub>i</sub>, then:
+  <ol class="pointsa">
+  <li>Substitute t<sub>i</sub> / v<sub>i</sub> in the existing substitutions </li>
+  <li>Add t<sub>i</sub> /v<sub>i</sub> to the substitution setlist.</li>
+  <li>If both the expressions are functions, then function name must be similar, and the number of arguments must be the same in both the expression. </li>
+  </ol></li>
+  </ol>
+  <p class="pq"><strong>For each pair of the following atomic sentences find the most general unifier (If exist).</strong></p>
+  <p><strong>1. Find the MGU of {p(f(a), g(Y)) and p(X, X)} </strong></p>
+  <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Sol: S<sub>0</sub> =&gt; Here, Ψ<sub>1</sub> = p(f(a), g(Y)), and Ψ<sub>2</sub> = p(X, X)<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SUBST θ= {f(a) / X}<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; S1 =&gt; Ψ<sub>1</sub> = p(f(a), g(Y)), and Ψ<sub>2</sub> = p(f(a), f(a))<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; SUBST θ= {f(a) / g(y)}, <strong>Unification failed</strong>. </p>
+  <p>Unification is not possible for these expressions.</p>
+  <p><strong>2. Find the MGU of {p(b, X, f(g(Z))) and p(Z, f(Y), f(Y))}</strong></p>
+  <p>Here, Ψ<sub>1</sub> = p(b, X, f(g(Z))) , and Ψ<sub>2</sub> = p(Z, f(Y), f(Y))<br>
+  S<sub>0</sub> =&gt; { p(b, X, f(g(Z))); p(Z, f(Y), f(Y))}<br>
+  SUBST θ={b/Z}</p>
+  <p>S<sub>1</sub> =&gt; { p(b, X, f(g(b))); p(b, f(Y), f(Y))}<br>
+  SUBST θ={f(Y) /X}</p>
+  <p>S<sub>2</sub> =&gt; { p(b, f(Y), f(g(b))); p(b, f(Y), f(Y))}<br>
+  SUBST θ= {g(b) /Y}</p>
+  <p>S<sub>2</sub> =&gt; { p(b, f(g(b)), f(g(b)); p(b, f(g(b)), f(g(b))} <strong>Unified Successfully.<br>
+  And Unifier = { b/Z, f(Y) /X , g(b) /Y}</strong>.</p>
+  <p><strong>3. Find the MGU of {p (X, X), and p (Z, f(Z))}</strong></p>
+  <p>Here, Ψ<sub>1</sub> = {p (X, X), and Ψ<sub>2</sub> = p (Z, f(Z))<br>
+  S<sub>0</sub> =&gt; {p (X, X), p (Z, f(Z))}<br>
+  SUBST θ= {X/Z}<br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; S1 =&gt; {p (Z, Z), p (Z, f(Z))}<br>
+  SUBST θ= {f(Z) / Z}, <strong>Unification Failed</strong>.</p>
+  <p><strong>Hence, unification is not possible for these expressions.</strong></p>
+  <p><strong>4. Find the MGU of UNIFY(prime (11), prime(y))</strong></p>
+  <p>Here, Ψ<sub>1</sub> = {prime(11) , and Ψ<sub>2</sub> = prime(y)}<br>
+  S<sub>0</sub> =&gt; {prime(11) , prime(y)}<br>
+  SUBST θ= {11/y}</p>
+  <p>S<sub>1</sub> =&gt; {prime(11) , prime(11)} , <strong>Successfully unified.</strong><br>
+  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <strong>Unifier: {11/y}.</strong></p>
+  <p><strong>5. Find the MGU of Q(a, g(x, a), f(y)), Q(a, g(f(b), a), x)}</strong></p>
+  <p>Here, Ψ<sub>1</sub> = Q(a, g(x, a), f(y)), and Ψ<sub>2</sub> = Q(a, g(f(b), a), x)<br>
+  S<sub>0</sub> =&gt; {Q(a, g(x, a), f(y)); Q(a, g(f(b), a), x)}<br>
+  SUBST θ= {f(b)/x}<br>
+  S<sub>1</sub> =&gt; {Q(a, g(f(b), a), f(y)); Q(a, g(f(b), a), f(b))}</p>
+  <p>SUBST θ= {b/y}<br>
+  S<sub>1</sub> =&gt; {Q(a, g(f(b), a), f(b)); Q(a, g(f(b), a), f(b))}, <strong>Successfully Unified.</strong></p>
+  <p><strong>Unifier: [a/a, f(b)/x, b/y].</strong></p>
+  <p><strong>6. UNIFY(knows(Richard, x), knows(Richard, John))</strong></p>
+  <p>Here, Ψ<sub>1</sub> = knows(Richard, x), and Ψ<sub>2</sub> = knows(Richard, John)<br>
+  S<sub>0</sub> =&gt; { knows(Richard, x); knows(Richard, John)}<br>
+  SUBST θ= {John/x}<br>
+  S<sub>1</sub> =&gt; { knows(Richard, John); knows(Richard, John)}, <strong>Successfully Unified.</strong><br>
+  <strong>Unifier: {John/x}.</strong></p>
+  <hr>
+  <h3 class="h3">Feedback</h3>
+  <ul class="points">
+  <li>Send your Feedback to nigammishra826@gmail.com</li>
+  </ul>
+  <div class="nexttopicdiv">
+  <span class="nexttopictext">Next Topic</span><span class="nexttopiclink"><a href="nigam28.html">Resolution in FOL</a></span>
+  </div>
+  
+  <br><br>
+  <div id="bottomnext">
+  <a style="float:left" class="next" href="nigam26.html">← prev</a>
+  <a style="float:right" class="next" href="nigam28.html">next →</a>
+  </div>
+  <br><br>
+  </td></tr>
+  </tbody></table>
+  <head>
+    <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+  </head>
+  
+  <body>
+    <footer class="footer">
+      <div class="container row">
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="nigam1.html">Artificial intelligence(AI)</a></li>
+            <li><a href="nigam4.html">Types of AI</a></li>
+            <li><a href="nigam8.html">Turing test of AI</a></li>
+            <li><a href="nigam22.html">The Wumpus world</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="nigam89.html">MCQ</a></li>
+            <li><a href="nigam87.html">Machine Learning</a></li>
+            <li><a href="nigam88.html">NPL</a></li>
+            <li><a href="nigam92.html">Data Science</a></li>
+            <li><a href="nigam93.html">Reinforcement learning</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Misc</h4>
+          <ul>
+            <li><a href="nigam36.html">examples</a></li>
+            <li><a href="nigam43.html">Robotioc & AI</a></li>
+            <li><a href="nigam44.html">Future of AI</a></li>
+            <li><a href="nigam47.html">Scope of AI</a></li>
+            <li><a href="nigam81.html">open AI&ChatGPT</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/nigam.mishra.710?mibextid=9R9pXO"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/MishraNugam?s=09"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://instagram.com/mr_nigam_8199?igshid=MXNzeGI3bmZ6b3M3NQ=="><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </div>
+          <a href="contact1.html"><img src="photo/logo2.jpg" style="height: 100px;width: 100px;"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  </div>
+
+  </div>
+  <br><br><div class="mobilemenu" style="clear:both">
+  </div></div></i></b>

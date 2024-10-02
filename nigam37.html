@@ -1,0 +1,592 @@
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>What is Artificial Intelligence (AI)? Tutorial, Meaning </title>
+<link rel="stylesheet" type="text/css" href="style.css" async="">
+          </style><meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A/ERL66fN363FkXxgDc6F1+ucRUkAhjEca9W3la6xaLnD2Y1lABsqmdaJmPNaUKPKVBRpyMKEhXYl7rSvrQw+AkAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A6OdGH3fVf4eKRDbXb4thXA4InNqDJDRhZ8U533U/roYjp4Yau0T3YSuc63vmAs/8ga1cD0E3A7LEq6AXk1uXgsAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202311090101/pubads_impl.js" async=""></script><script src="https://config.aps.amazon-adsystem.com/configs/2e7e1587-d92f-46dd-8721-80b53eccb87e" type="text/javascript" async="async"></script><style type="text/css">.vjs-youtube .vjs-iframe-blocker { display: none; }.vjs-youtube.vjs-user-inactive .vjs-iframe-blocker { display: block; }.vjs-youtube .vjs-poster { background-size: cover; }.vjs-youtube-mobile .vjs-big-play-button { display: none; }</style><style type="text/css">
+ 
+body {
+  background-image: url(photo/aaa.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  position: relative;
+  background: hsla(0, 0%, 0%, .6);
+  padding: 1rem 0;
+  z-index: 999;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(90%, 800px);
+  margin-inline: auto;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover {
+  color: #4FC3F7;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  
+  .toggle {
+    transition: ease-in-out 550ms;
+    transform: translate(0px);
+    opacity: 1;
+    display: block;
+  }
+  
+  .header-container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: hsla(0, 0%, 0%, .5);
+    backdrop-filter: blur(10px);
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  
+  nav li {
+    padding: 1rem;
+    cursor: pointer;
+  }
+  
+  nav li:hover {
+    background: hsla(0, 0%, 0%, .7);
+  }
+  
+  .hamburger {
+    display: block; 
+  }
+}
+div.onlycontent {
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-right: 4px;
+    width: 58%;
+    float: left;
+    padding: 10px 15px;
+    background :none;
+  }
+  #city td {
+    color: black;
+    line-height: 1.7;
+  }
+  #city li {
+    line-height: 25px;
+    color: black;
+    margin-top: 4px;
+  }
+  *,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+	background-color: #151515;
+	padding: 80px 0;
+}
+
+.container {
+	max-width: 1170px;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer-col {
+	width: 25%;
+	padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 18px;
+	color: #FFF;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #E91E63;
+	width: 50px;
+	height: 2px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	color: #DDD;
+	display: block;
+	font-size: 1rem;
+	font-weight: 300;
+	text-transform: capitalize;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: #FFF;
+	padding-left: 7px;
+}
+
+.footer-col .social-links a {
+	color: #FFF;
+	background-color: rgba(255, 255, 255, 0.2);
+	display: inline;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	text-align: center;
+	margin: 0 10px 10px 0;
+	line-height: 100px;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #151515;
+	background-color: #FFF;
+}
+
+@media(max-width: 767px) {
+	.footer-col {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 574px) {
+	.footer-col {
+		width: 100%;
+	}
+}
+      </style>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+     <body>
+      <header>
+        <div class="header-container">
+          <span><img src="photo/logo1.png" style="height: 50px;width: 70px;overflow: hidden;backface-visibility: hidden;"></span>
+          <nav id="nav">
+            <b><i><ul id="nav-ul">
+              <li><a href="nigam1.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="AIservices.html">Service</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul></i></b>
+          </nav>
+          <span class="hamburger" id="button"><i class="fa-solid fa-bars"></i></span>
+        </div>
+      </header>
+    </body>
+    
+    </div>
+    </div>
+    <div id="link" style="clear:both;z-index:999"> </div>
+    <div class="mobilemenu" style="clear:both">
+    
+    </div>
+    <div id="menu">
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Artificial Intelligence</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam1.html" style="color: black;"><strong>Artificial Intelligence (AI)</strong> </a>
+    <a href="nigam2.html">Applications of AI</a>
+    <a href="nigam3.html">History of AI</a>
+    <a href="nigam4.html">Types of AI</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Intelligent Agent</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam5.html">Types of Agents</a>
+    <a href="nigam6.html">Intelligent Agent</a>
+    <a href="nigam7.html">Agent Environment</a>
+    <a href="nigam8.html">Turing Test in AI</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Problem-solving</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam9.html">Search Algorithms</a>
+    <a href="nigam10.html">Uninformed Search Algorithm</a>
+    <a href="nigam11.html">Informed Search Algorithms</a>
+    <a href="nigam12.html">Hill Climbing Algorithm</a>
+    <a href="nigam13.html">Means-Ends Analysis</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Adversarial Search</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam14.html">Adversarial search</a>
+    <a href="nigam15.html">Minimax Algorithm</a>
+    <a href="nigam16.html">Alpha-Beta Pruning</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Knowledge Represent</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam17.html">Knowledge Based Agent</a>
+    <a href="nigam18.html">Knowledge Representation</a>
+    <a href="nigam19.html">Knowledge Representation Techniques</a>
+    <a href="nigam20.html">Propositional Logic</a>
+    <a href="nigam21.html">Rules of Inference</a>
+    <a href="nigam22.html">The Wumpus world</a>
+    <a href="nigam23.html">knowledge-base for Wumpus World</a>
+    <a href="nigam24.html">First-order logic</a>
+    <a href="nigam25.html">Knowledge Engineering in FOL</a>
+    <a href="nigam26.html">Inference in First-Order Logic</a>
+    <a href="nigam27.html">Unification in FOL</a>
+    <a href="nigam28.html">Resolution in FOL</a>
+    <a href="nigam29.html">Forward Chaining and backward chaining</a>
+    <a href="nigam30.html">Backward Chaining vs Forward Chaining</a>
+    <a href="nigam31.html">Reasoning in AI</a>
+    <a href="nigam32.html">Inductive vs. Deductive reasoning</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Uncertain Knowledge R.</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam33.html">Probabilistic Reasoning in AI</a>
+    <a href="nigam34.html">Bayes theorem in AI</a>
+    <a href="nigam35.html">Bayesian Belief Network</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Misc</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam36.html">Examples of AI</a>
+    <a href="nigam37.html">AI Essay</a>
+    <a href="nigam38.html">AI in Healthcare</a>
+    <a href="nigam39.html">Artificial Intelligence in Education</a>
+    <a href="nigam40.html">Artificial Intelligence in Agriculture</a>
+    <a href="nigam41.html">Engineering Applications of AI</a>
+    <a href="nigam42.html">Advantages &amp; Disadvantages of AI</a>
+    <a href="nigam43.html">Robotics and AI</a>
+    <a href="nigam44.html">Future of AI</a>
+    <a href="nigam45.html">Languages used in AI</a>
+    <a href="nigam46.html">Approaches to AI Learning</a>
+    <a href="nigam47.html">Scope of AI</a>
+    <a href="nigam48.html">Agents in AI</a>
+    <a href="nigam49.html">Artificial Intelligence Jobs</a>
+    <a href="nigam50.html">Amazon CloudFront</a>
+    <a href="nigam51.html">Goals of Artificial Intelligence</a>
+    <a href="nigam52.html">Can Artificial Intelligence replace Human Intelligence</a>
+    <a href="nigam53.html">Importance of Artificial Intelligence</a>
+    <a href="nigam54.html">Artificial Intelligence Stock in India</a>
+    <a href="nigam55.html">How to Use Artificial Intelligence in Marketing</a>
+    <a href="nigam56.html">Artificial Intelligence in Business</a>
+    <a href="nigam57.html">Companies Working on Artificial Intelligence</a>
+    <a href="nigam58.html">Artificial Intelligence Future Ideas</a>
+    <a href="nigam59.html">Government Jobs in Artificial Intelligence in India</a>
+    <a href="nigam60.html">What is the Role of Planning in Artificial Intelligence</a>
+    <a href="nigam61.html">AI as a Service</a>
+    <a href="nigam62.html">AI in Banking</a>
+    <a href="nigam63.html">AI Tools</a>
+    <a href="nigam64.html">Cognitive AI</a>
+    <a href="nigam65.html">Introduction of Seaborn</a>
+    <a href="nigam66.html">Natural Language ToolKit (NLTK)</a>
+    <a href="nigam67.html">Best books for ML</a>
+    <a href="nigam68.html">AI companies of India will lead in 2022</a>
+    <a href="nigam69.html">Constraint Satisfaction Problems in Artificial Intelligence</a>
+    <a href="nigam70.html">How artificial intelligence will change the future</a>
+    <a href="nigam71.html">Problem Solving Techniques in AI</a>
+    <a href="nigam72.html">AI in Manufacturing Industry</a>
+    <a href="nigam73.html">Artificial Intelligence in Automotive Industry</a>
+    <a href="nigam74.html">Artificial Intelligence in Civil Engineering</a>
+    <a href="nigam75.html">Artificial Intelligence in Gaming Industry</a>
+    <a href="nigam76.html">Artificial Intelligence in HR</a>
+    <a href="nigam77.html">Artificial Intelligence in Medicine</a>
+    <a href="nigam78.html">PhD in Artificial Intelligence</a>
+    <a href="nigam79.html">Activation Functions in Neural Networks</a>
+    <a href="nigam80.html">Boston Housing Kaggle Challenge with Linear Regression</a>
+    <a href="nigam81.html">What are OpenAI and ChatGPT</a>
+    <a href="nigam82.html">Chatbot vs. Conversational AI</a>
+    <a href="nigam83.html">Iterative Deepening A* Algorithm (IDA*)</a>
+    <a href="nigam84.html">Iterative Deepening Search (IDS) or Iterative Deepening Depth First Search (IDDFS)</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Subsets of AI</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam85.html">Subsets of AI</a>
+    <a href="nigam86.html">Expert Systems</a>
+    <a href="nigam87.html">Machine Learning Tutorial</a>
+    <a href="nigam88.html">NLP Tutorial</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Artificial Intelligence MCQ</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam89.html">Artificial Intelligence MCQ</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Related Tutorials</span></h2>
+    </div>
+    <div class="leftmenu">z
+    <a href="nigam92.html">Data Science Tutorial</a>
+    <a href="nigam93.html">Reinforcement Learning</a>
+    </div>
+     
+</div>
+</div>
+<div class="onlycontent">
+  <div class="onlycontentad">
+  </div>
+  <div class="onlycontentinner">
+  <div id="city">
+  <table>
+  <tbody><tr><td>
+  <div id="bottomnextup">
+  
+  
+  </div>
+  <b><i><h1 class="h1">Examples of AI-Artificial Intelligence</h1>
+  <p>In this topic, we are going to provide an essay on Artificial Intelligence. This long essay on Artificial Intelligence will cover more than 1000 words, including Introduction of AI, History of AI, Advantages and disadvantages, Types of AI, Applications of AI, Challenges with AI, and Conclusion. This long essay will be helpful for students and competitive exam aspirants.</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/artificial-intelligence-essay.png" alt="Artificial Intelligence Essay">
+  <h2 class="h2">Essay on Artificial Intelligence</h2>
+  <ul class="points">
+  <li><strong>Introduction: What is Artificial Intelligence?</strong></li>
+  </ul>
+  <p>Artificial Intelligence is a combination of two words Artificial and Intelligence, which refers to man-made intelligence. Therefore, when machines are equipped with man-made intelligence to perform intelligent tasks similar to humans, it is known as Artificial Intelligence. It is all about developing intelligent machines that can simulate the human brain and work &amp; behave like human beings.</p>
+  <p>We can define AI as, "<strong><em>Artificial Intelligence is a branch of computer science that deals with developing intelligent machines which can behave like human, think like human, and has ability to take decisions by their own</em></strong>."</p>
+  <p>With AI, machines can have human-based skills such as learning, reasoning, and solving logical problems.</p>
+  <p>AI is one of the fastest-growing technology that is making human life much easier by providing solutions for complex problems. It has also brought different opportunities for everyone, and hence it is a very demanding technology in the market.</p>
+  <ul class="points">
+  <li><strong>History of Artificial Intelligence</strong></li>
+  </ul>
+  <p>Artificial intelligence is assumed a new technology, but in reality, it is not new. The researchers in the field of AI are much older. It is said that the concept of intelligent machines was found in Greek Mythology. Below are some keystones in the development of AI:</p>
+  <ul class="points">
+  <li>In the year 1943, <strong>Warren McCulloch</strong> and <strong>Walter pits</strong> proposed a model of Artificial neurons.</li>
+  <li>In the year 1950, <strong>Alan Turing published</strong> a "Computer Machinery and Intelligence" paper in which he introduced a test, known as a <strong>Turing Test.</strong> This test is used to determine intelligence in machines by checking if the machine is capable of thinking or not.</li>
+  <li>In the year 1956, for the first time, the term Artificial Intelligence was coined by the American Computer scientist <strong>John McCarthy</strong> at the Dartmouth Conference. John McCarthy is also known as the <strong>Father of AI.</strong></li>
+  <li>In the year 1972, the first full-scale intelligent humanoid robot<strong>, WABOT1,</strong> was created in Japan.</li>
+  <li>In the year 1980, AI came with the evolution of Expert Systems. These systems are computer programs, which are designed to solve complex problems.</li>
+  <li>In the year 1997, IBM Deep Blue beat world chess champion Gary Kasparov and became the first computer to defeat a world chess champion.</li>
+  <li>In the year <strong>2006</strong>, AI came into the business world. World's top companies like Facebook, Twitter, and Netflix also started using AI in their applications.</li>
+  </ul>
+  <ul class="points">
+  <li><strong>Advantages &amp; disadvantages of AI</strong></li>
+  </ul>
+  <h3 class="h3">Advantages:</h3>
+  <ul class="points">
+  <li>One of the biggest achievements of Artificial Intelligence is that it can reduce human error.</li>
+  <li>AI can be very helpful in risky situations where humans can't reach or find difficult survival. Such as exploring the deepest part of the sea.</li>
+  <li>With AI, 24*7 support can be provided to the customers using chatbots as customer care.</li>
+  <li>Repetitive actions can be boring for human beings, but with AI-enabled machines, they can be performed with full efficiency.</li>
+  <li>It is very helpful in daily activities, such as Google Assistant Alexa, and other virtual assistant technology are helping to make our life easier.</li>
+  </ul>
+  <h3 class="h3">Disadvantages:</h3>
+  <ul class="points">
+  <li>The development and maintenance of AI systems are very expensive.</li>
+  <li>The dependencies of human beings on such technologies making humans lazy.</li>
+  <li>There is always a fear with AI that if it gets advanced, it may be harmful to humanity.</li>
+  <li>If inputs are not fed correctly to AI systems, then it may cause harmful results.</li>
+  </ul>
+  <ul class="points">
+  <li><strong>Types of AI</strong></li>
+  </ul>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/artificial-intelligence-essay2.png" alt="Artificial Intelligence Essay">
+  <ul class="points">
+  <li><strong>On the basis of Capability, AI can be divided into mainly three types</strong>:</li>
+  </ul>
+  <p><strong>1. Narrow AI or Weak AI:</strong> Narrow AI or Weak AI is a basic kind of Artificial Intelligence, which is capable of completing dedicated tasks with intelligence. The current version of AI is narrow AI.</p>
+  <p>Narrow AI can only perform the specific task and not beyond its limitation, as they are trained for one task only. It is programmed to do a specific task such as Play Chess, Checking Weather, etc.</p>
+  <p><strong>2. General AI:</strong> </p>
+  <p>Artificial General intelligence or "Strong" AI defines the machines that can show human intelligence. We can say, Machines with AGI can successfully perform any intellectual task that a human can do. This is the sort of AI that we see in movies like "Her" or other sci-fi movies in which humans interact with machines and operating systems that are conscious, sentient, and driven by emotion and self-awareness.</p>
+  <p>Currently, this type of intelligence does not exist in the real world and only exist in researches and movies. However, researchers across the world are working to develop such machines, which is still a very difficult task.</p>
+  <p><strong>3. Super AI</strong></p>
+  <p>Super AI refers to AI that is self-aware, with cognitive abilities that surpass that of humans. It is a level where machines are capable of doing any task that a human can do with cognitive properties. However, Super AI is still a hypothetical concept, and it is a challenging task to develop such AI-enabled machines.</p>
+  <ul class="points">
+  <li><strong>On the basis of Functionality:</strong></li>
+  </ul>
+  <p><strong>1. Reactive Machines</strong></p>
+  <p>Reactive machines are the basic types of AI, which don't store memories or past experiences for their actions. These types of AI machines only focus on current scenarios and work as per the requirement with the best possible actions. IBM's Deep Blue is an example of a reactive machine.</p>
+  <p><strong>2. Limited Memory</strong></p>
+  <p>Limited memory can store some memory or past experiences for a limited time period. Some examples of limited memory are Self-driving cars.</p>
+  <p><strong>3. Theory of Mind</strong></p>
+  <p>Theory of Mind is the type of AI which are capable of understanding human emotions, and interact with the human in their way. However, such AI machines are yet not developed, and developers and researchers are making efforts for creating such AI-enabled machines.</p>
+  <p><strong>4. Self-awareness</strong></p>
+  <p>Self-awareness AI is the future of Artificial Intelligence, which will have its own awareness, sentiments, and consciousness. This AI is only a hypothetical concept and will take a long journey and challenges to create such AI.</p>
+  <ul class="points">
+  <li><strong>Applications of AI</strong></li>
+  </ul>
+  <p><strong>1. Game Playing:</strong></p>
+  <p>AI is widely used in Gaming. Different strategic games such as Chess, where the machine needs to think logically, and video games to provide real-time experiences use Artificial Intelligence.</p>
+  <p><strong>2. Robotics:</strong></p>
+  <p>Artificial Intelligence is commonly used in the field of Robotics to develop intelligent robots. AI implemented robots use real-time updates to sense any obstacle in their path and can change the path instantly. AI robots can be used for carrying goods in hospitals and industries and can also be used for other different purposes.</p>
+  <p><strong>3. Healthcare:</strong></p>
+  <p>In the healthcare sector, AI has diverse uses. In this field, AI can be used to detect diseases and cancer cells. It also helps in finding new drugs with the use of historical data and medical intelligence.</p>
+  <p><strong>4. Computer Vision:</strong></p>
+  <p>Computer vision enables the computer system to understand and derive meaningful information from digital images, video, and other visual input with the help of AI.</p>
+  <p><strong>5. Agriculture:</strong></p>
+  <p>AI is now widely used in Agriculture; for example, with the help of AI, we can easily identify defects and nutrient absences in the soil. To identify these defects, AI robots can be utilized. AI bots can also be used in crop harvesting at a higher speed than human workers.</p>
+  <p><strong>6. E-commerce</strong></p>
+  <p>AI is one of the widely used and demanding technologies in the E-commerce industry<strong>.</strong> With AI, e-commerce businesses are gaining more profit and grow in business by recommending products as per the user requirement.</p>
+  <p><strong>7. Social Media</strong></p>
+  <p>Different social media websites such as Facebook, Instagram, Twitter, etc., use AI to make the user experiences much better by providing different features. For example, Twitter uses AI to recommend tweets as per the user interest and search history.</p>
+  <ul class="points">
+  <li><strong>Prerequisites for Artificial Intelligence</strong></li>
+  </ul>
+  <p>As a beginner, below are some of the prerequisites that will help to get started with AI technology.</p>
+  <ul class="points">
+  <li>Strong knowledge of Mathematics mainly, Calculus, Linear Algebra, Statistics and probability.</li>
+  <li>A good experience in programming languages like Java, Python, R.</li>
+  <li>A strong understanding of algorithms.</li>
+  <li>Good background in data analytics skills.</li>
+  </ul>
+  <ul class="points">
+  <li><strong>Challenges with AI</strong>
+  <ul class="points">
+  <li><strong>Lack of data or poor-quality data</strong></li>
+  </ul>
+  </li>
+  </ul>
+  <p>One of the big challenges with AI is that we don't have enough data to work with AI systems, or data we have is of poor quality or unstructured. AI depends on data for its working and requires a huge amount of data for a good result, but in the real world, data is available either in raw form or unstructured form that contains lots of impurities and missing values that cannot be processed or analyzed. Hence the processing of such data is a big task for organizations, and it takes lots of effort and is a time-consuming process.</p>
+  <ul class="points">
+  <li><strong>Insufficient IT infrastructure</strong></li>
+  </ul>
+  <p>There is still a lack of IT infrastructures, mainly in start-ups, which is a big issue in AI researches and development.</p>
+  <ul class="points">
+  <li><strong>Lack of AI talent</strong></li>
+  </ul>
+  <p>AI is growing continuously day by day with rapid speed, and more people are accepting the proven ideas of AI. The growing rate of AI also needs developers of AI tech. However, the professionals with full scales skills to develop high-level AI implementations are still lacking, which is also one of the big challenges with AI.</p>
+  <ul class="points">
+  <li><strong>Computing Power</strong></li>
+  </ul>
+  <p>Computing power has always been a big issue in the IT industry, but day by day, this issue has been resolved. However, with the development of AI, this issue has arisen again. Deep learning and the processing of neural networks, which are part of AI, require a high level of computing power, and are a major challenge for the tech industries. Mainly for start-ups, collecting money and such high computing power to process the data is a big deal.</p>
+  <ul class="points">
+  <li><strong>Legal Issues</strong></li>
+  </ul>
+  <p>One of the latest challenges with AI is that now organizations need to be wary of AI. The legal issues are raised for concern that if AI collects sensitive data, that may be a violation of federal laws.</p>
+  <p>Although it is not illegal, industries need to be careful of any supposed impact that might negatively affect their organization.</p>
+  <ul class="points">
+  <li><strong>Conclusion</strong></li>
+  </ul>
+  <p>Artificial Intelligence is undoubtedly a trending and emerging technology. It is growing very fast day by day, <em>and it is enabling machines to mimic the human brain.</em> Due to its high performance and as it is making human life easier, it is becoming a highly demanded technology among industries. However, there are also some challenges and problems with AI. Many people around the world are still thinking of it as a risky technology, because they feel that if it overtakes humans, it will be dangerous for humanity, as shown in various sci-fi movies. However, the day-to-day development of AI is making it a comfortable technology, and people are connecting with it more. Therefore, we can conclude that it is a great technology, but each technique must be used in a limited way in order to be used effectively, without any harm.</p>
+  <hr>
+  <h3 class="h3">Feedback</h3>
+  <ul class="points">
+  <li>Send your Feedback to nigammishra826@gmail.com</li>
+  </ul>
+  <div class="nexttopicdiv">
+  <span class="nexttopictext">Next Topic</span><span class="nexttopiclink"><a href="nigam38.html">Artificial Intelligence in Healthcare</a></span>
+  </div>
+  
+  <br><br>
+  <div id="bottomnext">
+  <a style="float:left" class="next" href="nigam36.html">← prev</a>
+  <a style="float:right" class="next" href="nigam38.html">next →</a>
+  </div>
+  <br><br>
+  </td></tr>
+  </tbody></table>
+  <head>
+    <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+  </head>
+  
+  <body>
+    <footer class="footer">
+      <div class="container row">
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="nigam1.html">Artificial intelligence(AI)</a></li>
+            <li><a href="nigam4.html">Types of AI</a></li>
+            <li><a href="nigam8.html">Turing test of AI</a></li>
+            <li><a href="nigam22.html">The Wumpus world</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="nigam89.html">MCQ</a></li>
+            <li><a href="nigam87.html">Machine Learning</a></li>
+            <li><a href="nigam88.html">NPL</a></li>
+            <li><a href="nigam92.html">Data Science</a></li>
+            <li><a href="nigam93.html">Reinforcement learning</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Misc</h4>
+          <ul>
+            <li><a href="nigam36.html">examples</a></li>
+            <li><a href="nigam43.html">Robotioc & AI</a></li>
+            <li><a href="nigam44.html">Future of AI</a></li>
+            <li><a href="nigam47.html">Scope of AI</a></li>
+            <li><a href="nigam81.html">open AI&ChatGPT</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/nigam.mishra.710?mibextid=9R9pXO"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/MishraNugam?s=09"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://instagram.com/mr_nigam_8199?igshid=MXNzeGI3bmZ6b3M3NQ=="><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </div>
+          <a href="contact1.html"><img src="photo/logo2.jpg" style="height: 100px;width: 100px;"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  </div>
+ 
+  </div>
+  <br><br><div class="mobilemenu" style="clear:both">
+  </div></div></i></b>

@@ -1,0 +1,663 @@
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>What is Artificial Intelligence (AI)? Tutorial, Meaning </title>
+<link rel="stylesheet" type="text/css" href="style.css" async="">
+          </style><meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A/ERL66fN363FkXxgDc6F1+ucRUkAhjEca9W3la6xaLnD2Y1lABsqmdaJmPNaUKPKVBRpyMKEhXYl7rSvrQw+AkAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A6OdGH3fVf4eKRDbXb4thXA4InNqDJDRhZ8U533U/roYjp4Yau0T3YSuc63vmAs/8ga1cD0E3A7LEq6AXk1uXgsAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202311090101/pubads_impl.js" async=""></script><script src="https://config.aps.amazon-adsystem.com/configs/2e7e1587-d92f-46dd-8721-80b53eccb87e" type="text/javascript" async="async"></script><style type="text/css">.vjs-youtube .vjs-iframe-blocker { display: none; }.vjs-youtube.vjs-user-inactive .vjs-iframe-blocker { display: block; }.vjs-youtube .vjs-poster { background-size: cover; }.vjs-youtube-mobile .vjs-big-play-button { display: none; }</style><style type="text/css">
+ 
+body {
+  background-image: url(photo/bb.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  position: relative;
+  background: transparent;
+  padding: 1rem 0;
+  z-index: 999;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(90%, 800px);
+  margin-inline: auto;
+  color: #000;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav a:hover {
+  color: #4FC3F7;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  
+  .toggle {
+    transition: ease-in-out 550ms;
+    transform: translate(0px);
+    opacity: 1;
+    display: block;
+  }
+  
+  .header-container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: darkblue;
+    backdrop-filter: blur(10px);
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  
+  nav li {
+    padding: 1rem;
+    cursor: pointer;
+  }
+  
+  nav li:hover {
+    background: darkblue;
+  }
+  
+  .hamburger {
+    display: block; 
+  }
+}
+div.onlycontent {
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-right: 4px;
+    width: 58%;
+    float: left;
+    padding: 10px 15px;
+    background :none;
+  }
+  #city td {
+    color: black;
+    line-height: 1.7;
+  }
+  #city li {
+    line-height: 25px;
+    color: black;
+    margin-top: 4px;
+  }
+  *,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+	background-color: #151515;
+	padding: 80px 0;
+}
+
+.container {
+	max-width: 1170px;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer-col {
+	width: 25%;
+	padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 18px;
+	color: #FFF;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #E91E63;
+	width: 50px;
+	height: 2px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	color: #DDD;
+	display: block;
+	font-size: 1rem;
+	font-weight: 300;
+	text-transform: capitalize;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: #FFF;
+	padding-left: 7px;
+}
+
+.footer-col .social-links a {
+	color: #FFF;
+	background-color: rgba(255, 255, 255, 0.2);
+	display: inline;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	text-align: center;
+	margin: 0 10px 10px 0;
+	line-height: 100px;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #151515;
+	background-color: #FFF;
+}
+
+@media(max-width: 767px) {
+	.footer-col {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 574px) {
+	.footer-col {
+		width: 100%;
+	}
+}
+      </style>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+     <body>
+      <header>
+        <div class="header-container">
+          <span><img src="photo/logo1.png" style="height: 50px;width: 70px;overflow: hidden;backface-visibility: hidden;"></span>
+          <nav id="nav">
+            <b><i><ul id="nav-ul">
+              <li><a href="nigam1.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="AIservices.html">Service</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul></i></b>
+          </nav>
+          <span class="hamburger" id="button"><i class="fa-solid fa-bars"></i></span>
+        </div>
+      </header>
+    </body>
+    
+    </div>
+    </div>
+    <div id="link" style="clear:both;z-index:999"> </div>
+    <div class="mobilemenu" style="clear:both">
+    
+    </div>
+    <div id="menu">
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Artificial Intelligence</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam1.html" style="color: black;"><strong>Artificial Intelligence (AI)</strong> </a>
+    <a href="nigam2.html">Applications of AI</a>
+    <a href="nigam3.html">History of AI</a>
+    <a href="nigam4.html">Types of AI</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Intelligent Agent</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam5.html">Types of Agents</a>
+    <a href="nigam6.html">Intelligent Agent</a>
+    <a href="nigam7.html">Agent Environment</a>
+    <a href="nigam8.html">Turing Test in AI</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Problem-solving</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam9.html">Search Algorithms</a>
+    <a href="nigam10.html">Uninformed Search Algorithm</a>
+    <a href="nigam11.html">Informed Search Algorithms</a>
+    <a href="nigam12.html">Hill Climbing Algorithm</a>
+    <a href="nigam13.html">Means-Ends Analysis</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Adversarial Search</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam14.html">Adversarial search</a>
+    <a href="nigam15.html">Minimax Algorithm</a>
+    <a href="nigam16.html">Alpha-Beta Pruning</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Knowledge Represent</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam17.html">Knowledge Based Agent</a>
+    <a href="nigam18.html">Knowledge Representation</a>
+    <a href="nigam19.html">Knowledge Representation Techniques</a>
+    <a href="nigam20.html">Propositional Logic</a>
+    <a href="nigam21.html">Rules of Inference</a>
+    <a href="nigam22.html">The Wumpus world</a>
+    <a href="nigam23.html">knowledge-base for Wumpus World</a>
+    <a href="nigam24.html">First-order logic</a>
+    <a href="nigam25.html">Knowledge Engineering in FOL</a>
+    <a href="nigam26.html">Inference in First-Order Logic</a>
+    <a href="nigam27.html">Unification in FOL</a>
+    <a href="nigam28.html">Resolution in FOL</a>
+    <a href="nigam29.html">Forward Chaining and backward chaining</a>
+    <a href="nigam30.html">Backward Chaining vs Forward Chaining</a>
+    <a href="nigam31.html">Reasoning in AI</a>
+    <a href="nigam32.html">Inductive vs. Deductive reasoning</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Uncertain Knowledge R.</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam33.html">Probabilistic Reasoning in AI</a>
+    <a href="nigam34.html">Bayes theorem in AI</a>
+    <a href="nigam35.html">Bayesian Belief Network</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Misc</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam36.html">Examples of AI</a>
+    <a href="nigam37.html">AI Essay</a>
+    <a href="nigam38.html">AI in Healthcare</a>
+    <a href="nigam39.html">Artificial Intelligence in Education</a>
+    <a href="nigam40.html">Artificial Intelligence in Agriculture</a>
+    <a href="nigam41.html">Engineering Applications of AI</a>
+    <a href="nigam42.html">Advantages &amp; Disadvantages of AI</a>
+    <a href="nigam43.html">Robotics and AI</a>
+    <a href="nigam44.html">Future of AI</a>
+    <a href="nigam45.html">Languages used in AI</a>
+    <a href="nigam46.html">Approaches to AI Learning</a>
+    <a href="nigam47.html">Scope of AI</a>
+    <a href="nigam48.html">Agents in AI</a>
+    <a href="nigam49.html">Artificial Intelligence Jobs</a>
+    <a href="nigam50.html">Amazon CloudFront</a>
+    <a href="nigam51.html">Goals of Artificial Intelligence</a>
+    <a href="nigam52.html">Can Artificial Intelligence replace Human Intelligence</a>
+    <a href="nigam53.html">Importance of Artificial Intelligence</a>
+    <a href="nigam54.html">Artificial Intelligence Stock in India</a>
+    <a href="nigam55.html">How to Use Artificial Intelligence in Marketing</a>
+    <a href="nigam56.html">Artificial Intelligence in Business</a>
+    <a href="nigam57.html">Companies Working on Artificial Intelligence</a>
+    <a href="nigam58.html">Artificial Intelligence Future Ideas</a>
+    <a href="nigam59.html">Government Jobs in Artificial Intelligence in India</a>
+    <a href="nigam60.html">What is the Role of Planning in Artificial Intelligence</a>
+    <a href="nigam61.html">AI as a Service</a>
+    <a href="nigam62.html">AI in Banking</a>
+    <a href="nigam63.html">AI Tools</a>
+    <a href="nigam64.html">Cognitive AI</a>
+    <a href="nigam65.html">Introduction of Seaborn</a>
+    <a href="nigam66.html">Natural Language ToolKit (NLTK)</a>
+    <a href="nigam67.html">Best books for ML</a>
+    <a href="nigam68.html">AI companies of India will lead in 2022</a>
+    <a href="nigam69.html">Constraint Satisfaction Problems in Artificial Intelligence</a>
+    <a href="nigam70.html">How artificial intelligence will change the future</a>
+    <a href="nigam71.html">Problem Solving Techniques in AI</a>
+    <a href="nigam72.html">AI in Manufacturing Industry</a>
+    <a href="nigam73.html">Artificial Intelligence in Automotive Industry</a>
+    <a href="nigam74.html">Artificial Intelligence in Civil Engineering</a>
+    <a href="nigam75.html">Artificial Intelligence in Gaming Industry</a>
+    <a href="nigam76.html">Artificial Intelligence in HR</a>
+    <a href="nigam77.html">Artificial Intelligence in Medicine</a>
+    <a href="nigam78.html">PhD in Artificial Intelligence</a>
+    <a href="nigam79.html">Activation Functions in Neural Networks</a>
+    <a href="nigam80.html">Boston Housing Kaggle Challenge with Linear Regression</a>
+    <a href="nigam81.html">What are OpenAI and ChatGPT</a>
+    <a href="nigam82.html">Chatbot vs. Conversational AI</a>
+    <a href="nigam83.html">Iterative Deepening A* Algorithm (IDA*)</a>
+    <a href="nigam84.html">Iterative Deepening Search (IDS) or Iterative Deepening Depth First Search (IDDFS)</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Subsets of AI</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam85.html">Subsets of AI</a>
+    <a href="nigam86.html">Expert Systems</a>
+    <a href="nigam87.html">Machine Learning Tutorial</a>
+    <a href="nigam88.html">NLP Tutorial</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Artificial Intelligence MCQ</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam89.html">Artificial Intelligence MCQ</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Related Tutorials</span></h2>
+    </div>
+    <div class="leftmenu"> 
+    <a href="nigam92.html">Data Science Tutorial</a>
+    <a href="nigam93.html">Reinforcement Learning</a>
+    </div>
+     
+</div>
+</div>
+<div class="onlycontent">
+  <div class="onlycontentad">
+  </div>
+  <div class="onlycontentinner">
+  <div id="city">
+  <table>
+  <tbody><tr><td>
+  
+  <b><i><h1 class="h1">Artificial Intelligence Jobs</h1>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/artificial-intelligence-jobs.png" alt="Artificial Intelligence Jobs">
+  <h3 class="h3">What is Artificial Intelligence?</h3>
+  <p>Artificial intelligence is all around us, even in places you might not know. From music preferences to home appliances and health care, the power of AI is far-reaching.</p>
+  <blockquote>AI refers to the emulation of human intelligence in machines that are programmed to think like humans and imitate their actions. The term can also be applied to any machine that does learning or problem-solving, such as humans." Displays symptoms associated with the brain.</blockquote>
+  <h3 class="h3">Examples of Artificial Intelligence include:</h3>
+  <p>Smart assistants like <strong>Siri</strong> and <strong>Alexa</strong></p>
+  <p>Pandora and Netflix, which provide personalized song and entertainment recommendations</p>
+  <ul class="points">
+  <li>Chatbots</li>
+  <li>Robotic vacuum cleaners</li>
+  <li>Self-driving vehicles</li>
+  <li>Facial recognition software </li>
+  </ul>
+  <p>Artificial intelligence is everywhere, and the demand for AI - especially skilled, experienced AI professionals - is rising. Bernard Marr, a business and technology adviser to governments and companies, told Forbes that we now have access to more data than ever before, which means AI has become smarter, faster, and more accurate.</p>
+  <p>"As a very simple example, think of Spotify recommendations," he explained in the article. "The more music (or podcasts) you listen to through Spotify, the better Spotify is at recommending other content you might enjoy. Netflix and Amazon recommendations certainly work on the same principle."</p>
+  <h3 class="h3">What Does an AI Professional Do?</h3>
+  <p>As artificial intelligence is an increasingly widespread and growing form of technology, professionals with expertise in AI are needed now more than ever. The good news is that the AI professional field is full of different career opportunities, which means you can take on different roles and responsibilities depending on the position, your experience, and your interests.</p>
+  <p><strong>The need for skilled AI professionals spans almost every industry, including:</strong></p>
+  <ul class="points">
+  <li>Financial services</li>
+  <li>Healthcare</li>
+  <li>Technology</li>
+  <li>Media</li>
+  <li>Marketing</li>
+  <li>Government and military</li>
+  <li>National security</li>
+  <li>IoT-enabled systems</li>
+  <li>Agriculture</li>
+  <li>Gaming</li>
+  <li>Retail</li>
+  </ul>
+  <h3 class="h3">Skills an AI Professional Needs</h3>
+  <p>If you want to enter the professional world of AI, it's important to make sure you have the right skills, which sets you apart from other candidates and helps put you in the right position. First, proficiency with calculus and linear algebra is of the utmost importance. In addition, if you are interested in AI, you must have some knowledge and experience in at least one of the following programming languages:</p>
+  <ul class="points">
+  <li><strong>Python</strong></li>
+  <li><strong>C/C++</strong></li>
+  <li><strong>MATLAB</strong></li>
+  </ul>
+  <p>According to ZipRecruiter, these are the top 5 skills required for AI jobs:</p>
+  <p><strong>Communication skills</strong></p>
+  <p>Knowledge and experience with Python specifically (in general, proficiency in a programming language)</p>
+  <ul class="points">
+  <li>Digital marketing goals and strategies</li>
+  <li>Collaborating effectively with others</li>
+  <li>Analytical skills</li>
+  <li>Solid knowledge of applied mathematics and algorithms</li>
+  <li>Problem-solving skills</li>
+  <li>Industry knowledge</li>
+  <li>Management and leadership skills</li>
+  <li>Machine learning</li>
+  </ul>
+  <h3 class="h3">Steps toward a Career in Artificial Intelligence</h3>
+  <p>If you're not already in the industry, the first step is to do research, including talking to current AI professionals and researching reputable colleges and programs. According to Springboard, hiring managers will probably require you to hold at least a bachelor's degree in math and basic computer technology (but a bachelor's degree in many cases only qualifies you for entry-level positions).</p>
+  <p>A bachelor's degree in computer science or engineering is a good starting point. Nevertheless, a master's degree in Artificial Intelligence can provide direct experience and knowledge from industry experts that can help you secure a position and set you apart from other candidates.</p>
+  <p>Dan Ayoob, general manager of mixed reality education at Microsoft, pointed out in the Best Colleges article that AI is still a relatively emerging field; Colleges and universities still "vary in how much specific degrees you may be able to obtain." He added that getting familiar with computer science, data science, machine learning, and Java are good places to start, but degree programs can provide specialized training. "Every day many new undergraduate and graduate programs are emerging that are specifically designed to prepare someone to work in AI."</p>
+  <p>Those wishing to pursue a Masters's in Artificial Intelligence must have a strong base of knowledge and experience consisting of a combination of maths, science, computer, and data proficiency.</p>
+  <h3 class="h3">12 Career Paths in Artificial Intelligence</h3>
+  <p>The list below includes jobs in AI and some positions that work closely with those in AI roles.</p>
+  <table class="alt">
+  <tbody><tr>
+  <th>Career Path</th>
+  <th>Description</th>
+  <th>Median Annual Salary</th>
+  </tr>
+  <tr>
+  <td><strong>1. Data Analytics</strong></td>
+  <td>Finding meaningful patterns in the data by looking at the past to make predictions.</td>
+  <td>$130,136</td>
+  </tr>
+  <tr>
+  <td><strong>2. User Experience</strong></td>
+  <td>
+  Work with products to help customers understand and use their functions more easily.<br>
+  Understand how people use tools and how computer scientists can apply that understanding to create more advanced software.
+  </td>
+  <td>$76,950</td>
+  </tr>
+  <tr>
+  <td><strong>3. Natural Language Processing</strong></td>
+  <td>
+  Chatbots<br>
+  Virtual assistants
+  </td>
+  <td>$108,609</td>
+  </tr>
+  <tr>
+  <td><strong>4. Researcher</strong></td>
+  <td>
+  Computer science and AI research.<br>
+  Discover ways to advance AI technology.
+  </td>
+  <td>$77,576; base-level AI research roles average $93,103</td>
+  </tr>
+  <tr>
+  <td><strong>5. Research Scientist</strong></td>
+  <td>
+  Expert in Applied Math, Machine Learning, Deep Learning, and Computational Statistics.<br>
+  An advanced degree in computer science or an advanced degree in a related field supported by experience is expected.
+  </td>
+  <td>$99,809</td>
+  </tr>
+  <tr>
+  <td><strong>6. Software Engineer</strong></td>
+  <td>Develop programs on which AI tools work.</td>
+  <td>$87,403</td>
+  </tr>
+  <tr>
+  <td><strong>7. AI Engineer</strong></td>
+  <td>Build AI models from scratch and help product managers and stakeholders understand the results.</td>
+  <td>$118,573</td>
+  </tr>
+  <tr>
+  <td><strong>8. Data Mining and Analysis</strong></td>
+  <td>Detection of anomalies, patterns, etc., within large data sets, to predict outcomes.</td>
+  <td>$77,586</td>
+  </tr>
+  <tr>
+  <td><strong>9. Machine Learning Engineer</strong></td>
+  <td>Using data to design, build and manage ML software applications.</td>
+  <td>$146,085</td>
+  </tr>
+  <tr>
+  <td><strong>10. Data Scientist</strong></td>
+  <td>Collect, analyze and interpret datasets.</td>
+  <td>$115,573</td>
+  </tr>
+  <tr>
+  <td><strong>11. Business Intelligence (BI) Developer</strong></td>
+  <td>Analyze complex data sets to identify trade and market trends.</td>
+  <td>$92,278</td>
+  </tr>
+  <tr>
+  <td><strong>12. Big Data Engineer/Architect</strong></td>
+  <td>Develop systems that allow businesses to communicate and collate data.</td>
+  <td>$151,307</td>
+  </tr>
+  </tbody></table>
+  <h2 class="h2">Artificial Intelligence Job Outlook</h2>
+  <p>The job outlook for AI professionals is extremely promising, with ZipRecruiter predicting the industry "to grow explosively as it becomes able to accomplish more tasks."</p>
+  <p>In an article on built-ins, Satya Malik, founder of OpenCV.org, Big Vision LLC/Interim CEO, compared AI to "a rocket ship that is taking off". He also pointed out that even entry-level jobs can play very well. "The reason is there is a huge demand for AI talent and there are not enough people with the right expertise," he explained.</p>
+  <p>The US Bureau of Labor Statistics expects computer and information technology employment to grow 11% from 2019 to 2029 (projected to add about 531,200 new jobs).</p>
+  <h3 class="h3">Companies Currently Hiring AI Positions</h3>
+  <p>A recent search for "artificial intelligence" job openings on LinkedIn revealed more than 45,000 results at a wide variety of companies, some of which are cited below.</p>
+  <ul class="points">
+  <li>MIT Lincoln Laboratory - Artificial Intelligence Researcher</li>
+  <li>Walmart - Data Scientist</li>
+  <li>Amazon - Research Scientist</li>
+  <li>Nike - Lead Artificial Intelligence/Machine Learning Engineer</li>
+  <li>IBM - Conversational Artificial Intelligence Engineer</li>
+  <li>Samsung Electronics America - Machine Learning Engineer</li>
+  <li>Warner Bros. Entertainment - Data Scientist</li>
+  <li>Fidelity Investments - Data Scientist</li>
+  <li>PepsiCo - ML Engineer</li>
+  </ul>
+  <p>As you can see from the list above, artificial intelligence has many different positions. <strong>The most common AI-related job titles, courtesy of <a href="https://www.glassdoor.com/research/ai-jobs/" rel="nofollow" target="_blank">Glassdoor</a>, include:</strong></p>
+  <ul class="points">
+  <li>Software engineer</li>
+  <li>Data scientist</li>
+  <li>Software development engineer</li>
+  <li>Research scientist</li>
+  </ul>
+  <p>In general, tech companies (both software and hardware) dominate the list of companies hiring AI professionals. <strong><a href="https://www.glassdoor.com/research/ai-jobs/" rel="nofollow" target="_blank">Glassdoor</a> lists the following top companies to keep an eye on:</strong></p>
+  <ul class="points">
+  <li>Amazon</li>
+  <li>NVIDIA</li>
+  <li>Microsoft</li>
+  <li>IBM</li>
+  <li>Accenture</li>
+  <li>Wells Fargo</li>
+  <li>Rakuten Marketing</li>
+  <li>Facebook</li>
+  <li>Intel</li>
+  <li>Samsung</li>
+  <li>Uber</li>
+  <li>MoTek Technologies</li>
+  <li>PCO Innovation</li>
+  </ul>
+  <h3 class="h3">Artificial Intelligence Salaries</h3>
+  <p>According to our degree page, the average salary of an artificial intelligence programmer ranges from $100,000 to $150,000. Salaries for AI engineers are quite high, averaging $171,715, with the top 25% earning above $200,000.</p>
+  <p>There is a range of averages depending on the position and responsibilities, but here are the most popular:</p>
+  <p>Indeed, the average salary for "artificial intelligence" ranges from approximately $93,451 per year for research engineers to $150,683 per year for machine learning engineers.</p>
+  <p>According to Glassdoor, the median annual base salary for artificial intelligence salaries in the United States is $105,669.</p>
+  <p>According to Talent.com, the average artificial intelligence salary is $140,000 per year. Entry positions start at $110,063, and most experienced workers can earn up to $210,000 per year.</p>
+  <h2 class="h2">Jobs affected by AI</h2>
+  <p>AI can impact work in almost every business group. While research on the robotics and software of automation continues to show that less-educated, low-wage workers may be most exposed to displacement, current analysis suggests that better-educated, better-paid workers be most affected by new AI technologies, with few exceptions.</p>
+  <p>Our analysis shows that employees with bachelor's or professional degrees will be nearly four times more exposed to AI than workers with only a high school degree. Holders of a bachelor's degree would be most exposed by education level, with more than five times the exposure to AI, compared to workers with only a high school degree.</p>
+  <h3 class="h3">Artificial Intelligence Career FAQs</h3>
+  <h3 class="h3">Q: If I'm interested in a career in AI, where do I start?</h3>
+  <p>A: The first step is to conduct research, including talking to current AI professionals and researching reputable colleges and programs offering AI-related degrees. You need at least a bachelor's degree in math and basic computer technology to get started. An advanced degree in artificial intelligence is also worth considering if you want to stand out from other applicants and get real exposure from industry experts. Want to learn from the experience of the world.</p>
+  <h3 class="h3">Q: What skills and background do I need to pursue a career in artificial intelligence?</h3>
+  <p>A: It is important to have a strong background in math, science, engineering, and command of at least one of the following programming languages: Python, C, and MATLAB.</p>
+  <h3 class="h3">Q: What is the outlook for a career in AI?</h3>
+  <p>A: Very promising. There are more artificial intelligence jobs than skilled professionals to fill them, and the AI world has shown no signs of slowing down, so demand is enormous.</p>
+  <h3 class="h3">Q: Do any AI careers require a master's degree?</h3>
+  <p>A: Most top-level AI jobs typically require a master's degree, including research scientist, AI engineer, and big data engineer. Most AI roles will require applicants to have solid knowledge and skills with MATLAB, C/C++, and Python programming.</p>
+  <h3 class="h3">Q: What is the benefit of a master's degree in artificial intelligence?</h3>
+  <p>A: A master's degree is a way to expand the number of AI job opportunities available, especially since an advanced degree is required, especially for high-level jobs. A master's degree will give you greater earning potential and show that you are invested in your career and industry.</p>
+  <hr> <h3 class="h3">Feedback</h3>
+  <ul class="points">
+  <li>Send your Feedback to nigammishra826@gmail.com</li>
+  </ul>
+  <div class="nexttopicdiv">
+  <span class="nexttopictext">Next Topic</span><span class="nexttopiclink"><a href="nigam50.html">Amazon CloudFront</a></span>
+  </div>
+  
+  <br><br>
+  <div id="bottomnext">
+  <a style="float:left" class="next" href="nigam48.html">← prev</a>
+  <a style="float:right" class="next" href="nigam50.html">next →</a>
+  </div>
+  <br><br>
+  </td></tr>
+  </tbody></table>
+  <head>
+    <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+  </head>
+  
+  <body>
+    <footer class="footer">
+      <div class="container row">
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="nigam1.html">Artificial intelligence(AI)</a></li>
+            <li><a href="nigam4.html">Types of AI</a></li>
+            <li><a href="nigam8.html">Turing test of AI</a></li>
+            <li><a href="nigam22.html">The Wumpus world</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="nigam89.html">MCQ</a></li>
+            <li><a href="nigam87.html">Machine Learning</a></li>
+            <li><a href="nigam88.html">NPL</a></li>
+            <li><a href="nigam92.html">Data Science</a></li>
+            <li><a href="nigam93.html">Reinforcement learning</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Misc</h4>
+          <ul>
+            <li><a href="nigam36.html">examples</a></li>
+            <li><a href="nigam43.html">Robotioc & AI</a></li>
+            <li><a href="nigam44.html">Future of AI</a></li>
+            <li><a href="nigam47.html">Scope of AI</a></li>
+            <li><a href="nigam81.html">open AI&ChatGPT</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/nigam.mishra.710?mibextid=9R9pXO"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/MishraNugam?s=09"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://instagram.com/mr_nigam_8199?igshid=MXNzeGI3bmZ6b3M3NQ=="><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </div>
+          <a href="contact1.html"><img src="photo/logo2.jpg" style="height: 100px;width: 100px;"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  </div>
+
+  </div>
+  <br><br><div class="mobilemenu" style="clear:both">
+  </div></div></i></b>

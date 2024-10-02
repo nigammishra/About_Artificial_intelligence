@@ -1,0 +1,568 @@
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>What is Artificial Intelligence (AI)? Tutorial, Meaning </title>
+<link rel="stylesheet" type="text/css" href="style.css" async="">
+          </style><meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A/ERL66fN363FkXxgDc6F1+ucRUkAhjEca9W3la6xaLnD2Y1lABsqmdaJmPNaUKPKVBRpyMKEhXYl7rSvrQw+AkAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A6OdGH3fVf4eKRDbXb4thXA4InNqDJDRhZ8U533U/roYjp4Yau0T3YSuc63vmAs/8ga1cD0E3A7LEq6AXk1uXgsAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202311090101/pubads_impl.js" async=""></script><script src="https://config.aps.amazon-adsystem.com/configs/2e7e1587-d92f-46dd-8721-80b53eccb87e" type="text/javascript" async="async"></script><style type="text/css">.vjs-youtube .vjs-iframe-blocker { display: none; }.vjs-youtube.vjs-user-inactive .vjs-iframe-blocker { display: block; }.vjs-youtube .vjs-poster { background-size: cover; }.vjs-youtube-mobile .vjs-big-play-button { display: none; }</style><style type="text/css">
+ 
+body {
+  background-image: url(photo/yg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  position: relative;
+  background: yellow;
+  padding: 1rem 0;
+  z-index: 999;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(90%, 800px);
+  margin-inline: auto;
+  color: #000;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav a:hover {
+  color: #4FC3F7;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  
+  .toggle {
+    transition: ease-in-out 550ms;
+    transform: translate(0px);
+    opacity: 1;
+    display: block;
+  }
+  
+  .header-container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: yellow;
+    backdrop-filter: blur(10px);
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  
+  nav li {
+    padding: 1rem;
+    cursor: pointer;
+  }
+  
+  nav li:hover {
+    background: yellow;
+  }
+  
+  .hamburger {
+    display: block; 
+  }
+}
+div.onlycontent {
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-right: 4px;
+    width: 58%;
+    float: left;
+    padding: 10px 15px;
+    background :none;
+  }
+  #city td {
+    color: black;
+    line-height: 1.7;
+  }
+  #city li {
+    line-height: 25px;
+    color: black;
+    margin-top: 4px;
+  }
+  *,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+	background-color: #151515;
+	padding: 80px 0;
+}
+
+.container {
+	max-width: 1170px;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer-col {
+	width: 25%;
+	padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 18px;
+	color: #FFF;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #E91E63;
+	width: 50px;
+	height: 2px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	color: #DDD;
+	display: block;
+	font-size: 1rem;
+	font-weight: 300;
+	text-transform: capitalize;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: #FFF;
+	padding-left: 7px;
+}
+
+.footer-col .social-links a {
+	color: #FFF;
+	background-color: rgba(255, 255, 255, 0.2);
+	display: inline;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	text-align: center;
+	margin: 0 10px 10px 0;
+	line-height: 100px;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #151515;
+	background-color: #FFF;
+}
+
+@media(max-width: 767px) {
+	.footer-col {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 574px) {
+	.footer-col {
+		width: 100%;
+	}
+}
+      </style>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+     <body>
+      <header>
+        <div class="header-container">
+          <span><img src="photo/logo1.png" style="height: 50px;width: 70px;overflow: hidden;backface-visibility: hidden;"></span>
+          <nav id="nav">
+            <b><i><ul id="nav-ul">
+              <li><a href="nigam1.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="AIservices.html">Service</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul></i></b>
+          </nav>
+          <span class="hamburger" id="button"><i class="fa-solid fa-bars"></i></span>
+        </div>
+      </header>
+    </body>
+    
+    </div>
+    </div>
+    <div id="link" style="clear:both;z-index:999"> </div>
+    <div class="mobilemenu" style="clear:both">
+    
+    </div>
+    <div id="menu">
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Artificial Intelligence</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam1.html" style="color: black;"><strong>Artificial Intelligence (AI)</strong> </a>
+    <a href="nigam2.html">Applications of AI</a>
+    <a href="nigam3.html">History of AI</a>
+    <a href="nigam4.html">Types of AI</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Intelligent Agent</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam5.html">Types of Agents</a>
+    <a href="nigam6.html">Intelligent Agent</a>
+    <a href="nigam7.html">Agent Environment</a>
+    <a href="nigam8.html">Turing Test in AI</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Problem-solving</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam9.html">Search Algorithms</a>
+    <a href="nigam10.html">Uninformed Search Algorithm</a>
+    <a href="nigam11.html">Informed Search Algorithms</a>
+    <a href="nigam12.html">Hill Climbing Algorithm</a>
+    <a href="nigam13.html">Means-Ends Analysis</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Adversarial Search</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam14.html">Adversarial search</a>
+    <a href="nigam15.html">Minimax Algorithm</a>
+    <a href="nigam16.html">Alpha-Beta Pruning</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Knowledge Represent</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam17.html">Knowledge Based Agent</a>
+    <a href="nigam18.html">Knowledge Representation</a>
+    <a href="nigam19.html">Knowledge Representation Techniques</a>
+    <a href="nigam20.html">Propositional Logic</a>
+    <a href="nigam21.html">Rules of Inference</a>
+    <a href="nigam22.html">The Wumpus world</a>
+    <a href="nigam23.html">knowledge-base for Wumpus World</a>
+    <a href="nigam24.html">First-order logic</a>
+    <a href="nigam25.html">Knowledge Engineering in FOL</a>
+    <a href="nigam26.html">Inference in First-Order Logic</a>
+    <a href="nigam27.html">Unification in FOL</a>
+    <a href="nigam28.html">Resolution in FOL</a>
+    <a href="nigam29.html">Forward Chaining and backward chaining</a>
+    <a href="nigam30.html">Backward Chaining vs Forward Chaining</a>
+    <a href="nigam31.html">Reasoning in AI</a>
+    <a href="nigam32.html">Inductive vs. Deductive reasoning</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Uncertain Knowledge R.</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam33.html">Probabilistic Reasoning in AI</a>
+    <a href="nigam34.html">Bayes theorem in AI</a>
+    <a href="nigam35.html">Bayesian Belief Network</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Misc</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam36.html">Examples of AI</a>
+    <a href="nigam37.html">AI Essay</a>
+    <a href="nigam38.html">AI in Healthcare</a>
+    <a href="nigam39.html">Artificial Intelligence in Education</a>
+    <a href="nigam40.html">Artificial Intelligence in Agriculture</a>
+    <a href="nigam41.html">Engineering Applications of AI</a>
+    <a href="nigam42.html">Advantages &amp; Disadvantages of AI</a>
+    <a href="nigam43.html">Robotics and AI</a>
+    <a href="nigam44.html">Future of AI</a>
+    <a href="nigam45.html">Languages used in AI</a>
+    <a href="nigam46.html">Approaches to AI Learning</a>
+    <a href="nigam47.html">Scope of AI</a>
+    <a href="nigam48.html">Agents in AI</a>
+    <a href="nigam49.html">Artificial Intelligence Jobs</a>
+    <a href="nigam50.html">Amazon CloudFront</a>
+    <a href="nigam51.html">Goals of Artificial Intelligence</a>
+    <a href="nigam52.html">Can Artificial Intelligence replace Human Intelligence</a>
+    <a href="nigam53.html">Importance of Artificial Intelligence</a>
+    <a href="nigam54.html">Artificial Intelligence Stock in India</a>
+    <a href="nigam55.html">How to Use Artificial Intelligence in Marketing</a>
+    <a href="nigam56.html">Artificial Intelligence in Business</a>
+    <a href="nigam57.html">Companies Working on Artificial Intelligence</a>
+    <a href="nigam58.html">Artificial Intelligence Future Ideas</a>
+    <a href="nigam59.html">Government Jobs in Artificial Intelligence in India</a>
+    <a href="nigam60.html">What is the Role of Planning in Artificial Intelligence</a>
+    <a href="nigam61.html">AI as a Service</a>
+    <a href="nigam62.html">AI in Banking</a>
+    <a href="nigam63.html">AI Tools</a>
+    <a href="nigam64.html">Cognitive AI</a>
+    <a href="nigam65.html">Introduction of Seaborn</a>
+    <a href="nigam66.html">Natural Language ToolKit (NLTK)</a>
+    <a href="nigam67.html">Best books for ML</a>
+    <a href="nigam68.html">AI companies of India will lead in 2022</a>
+    <a href="nigam69.html">Constraint Satisfaction Problems in Artificial Intelligence</a>
+    <a href="nigam70.html">How artificial intelligence will change the future</a>
+    <a href="nigam71.html">Problem Solving Techniques in AI</a>
+    <a href="nigam72.html">AI in Manufacturing Industry</a>
+    <a href="nigam73.html">Artificial Intelligence in Automotive Industry</a>
+    <a href="nigam74.html">Artificial Intelligence in Civil Engineering</a>
+    <a href="nigam75.html">Artificial Intelligence in Gaming Industry</a>
+    <a href="nigam76.html">Artificial Intelligence in HR</a>
+    <a href="nigam77.html">Artificial Intelligence in Medicine</a>
+    <a href="nigam78.html">PhD in Artificial Intelligence</a>
+    <a href="nigam79.html">Activation Functions in Neural Networks</a>
+    <a href="nigam80.html">Boston Housing Kaggle Challenge with Linear Regression</a>
+    <a href="nigam81.html">What are OpenAI and ChatGPT</a>
+    <a href="nigam82.html">Chatbot vs. Conversational AI</a>
+    <a href="nigam83.html">Iterative Deepening A* Algorithm (IDA*)</a>
+    <a href="nigam84.html">Iterative Deepening Search (IDS) or Iterative Deepening Depth First Search (IDDFS)</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Subsets of AI</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam85.html">Subsets of AI</a>
+    <a href="nigam86.html">Expert Systems</a>
+    <a href="nigam87.html">Machine Learning Tutorial</a>
+    <a href="nigam88.html">NLP Tutorial</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Artificial Intelligence MCQ</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam89.html">Artificial Intelligence MCQ</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Related Tutorials</span></h2>
+    </div>
+    <div class="leftmenu"> 
+    <a href="nigam92.html">Data Science Tutorial</a>
+    <a href="nigam93.html">Reinforcement Learning</a>
+    </div>
+     
+</div>
+</div>
+<div class="onlycontent">
+  <div class="onlycontentad">
+  </div>
+  <div class="onlycontentinner">
+  <div id="city">
+  <table>
+  <tbody><tr><td>
+  <div id="bottomnextup">
+  
+  
+  </div>
+  <b><i><h1 class="h1">Artificial Intelligence in Education</h1>
+  <p>Education is an important part of life for everyone, and a good education plays a vital role to have a successful life. In order to improve the education system for the students, there are always a lot of changes happening around the world, ranging from the way of teaching to the type of curriculum. Artificial Intelligence is a thriving technology that is being used in almost every field and is changing the world. One place where artificial intelligence is poised to make </p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/artificial-intelligence-in-education1.png" alt="Artificial Intelligence in Education">
+  <p>big changes is (and in some cases already is) in education</p>
+  <p>Artificial Intelligence in Education is developing new solutions for teaching and learning for different situations. Nowadays, AI is being used by different schools and colleges across different countries. AI in education has given a completely new perspective of looking at education to teachers, students, parents, and of course, the educational institutions as well. <strong><em>AI in education is not about humanoid robots as a teacher to replace human teachers, but it is about using computer intelligence to help teachers and students and making the education system much better and effective.</em></strong> In future, the education system will have lots of AI tools that will shape the educational experience of the future. In this topic, we will discuss the impact and application of Artificial Intelligence on Education. To better understand this topic, let's first understand what AIED is?</p>
+  <h2 class="h2">Overview Of AIED(Artificial Intelligence in Education)</h2>
+  <p>Artificial Intelligence (AI) is a simulation of human intelligence into a computer machine so that it can think and act like a human. It is a technology that helps a computer machine to think like a human. Artificial Intelligence aims to mimic human behaviour. AI has various uses and applications in different sectors, including education.</p>
+  <p>In the 1970s, AIED has occurred as a specialist area to cover new technology to teaching &amp; learning, specifically for higher education. The main aim of AIED is to facilitate the learners with flexible, personalized, and engaging learning along with the basic automated task. Some popular trends in AIED include <strong>Intelligent tutor systems, smart classroom technologies, adaptive learning, and pedagogical agents.</strong> Below diagram shows the relationship between all these trends:</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/artificial-intelligence-in-education2.png" alt="Artificial Intelligence in Education">
+  <h2 class="h2">Applications/roles of Artificial Intelligence in Education</h2>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/artificial-intelligence-in-education3.png" alt="Artificial Intelligence in Education">
+  <ol class="points">
+  <li>
+  <strong>Automate basic activities in education with AI</strong><br>
+  In the education system, there are various activities which take lots of time of teachers such as grading tests and home-works. These tasks require lots of time and effort, while this time could be used in interacting with students, letting them know their errors, teaching new things, and many more. <br>
+  To save this time, Artificial Intelligence can be used. With AI tools, it is possible to automate the grading system for nearly all types of MCQ(Multiple choice questions) and fill-in-the-blank, and they are very close to being able to grade written responses. However, AI is still not possible to truly replace human grading, but it's getting improving day by day. By using AI, teachers will get more time to fill the gap in their classroom rather than investing their time in these tedious tasks.
+  </li>
+  <li>
+  <strong>Additional Support for students with AI tutor</strong><br>
+  As it is obvious that teachers can't be present with students all the time while they study, as teachers in colleges have fixed timings. But each student is not smart enough to grasp all the things at once, and they need additional supports from someone to help them in the understanding study material. This additional support can be provided by the AI tutors.<br>
+  Currently, there are various AI-driven tutoring programs that can help students in learning the basics of mathematics, writing, and other subjects.<br>
+  With these AI programs, students can learn fundamentals, but still, they are not suitable to learn high-level concepts of any subject. In order to learn such complex concepts, students still require a professor. However, in future, it is possible that AI might be able to help students with complex problems also that require analytical thinking and reasoning.
+  </li>
+  <li>
+  <strong>Helpful feedback to students and teachers with AI-driven programs</strong><br>
+  AI is not only helping the students to learn the customized course as per their requirements, but it can also give feedback to both the teachers and students about the success level of the course. Some online course providers are currently using such feedback-based AI systems to analyse the progress of the student and also alert the professors for the critical performance issue of the student.<br>
+  These type of AI-driven systems enables the student to get the proper support, and professors can determine the areas of teaching where it requires improvement. Instant feedback to students helps them understand where they are going wrong and how they can do it better.
+  </li>
+  <li>
+  <strong>Finding improvement required in course with AI</strong><br>
+  In the education system, it is very hard to find out the gaps in learning. Teachers have limited time to teach in the classroom, and they may not always know where the students are lacking and what concepts have confused the student. To solve this problem, AI-driven programs can help the education system.<br>
+  Coursera and some other learning platforms are already using AI-driven programs in practice. For example, when a large number of students are found to submit the wrong answer to a homework assignment, the system alerts the teacher and gives future students a customized message that offers hints to the correct answer. Such type of programs helps in filling the gaps while learning that can occur in courses, and also ensures that each student understands the concepts successfully. With AI, instead of waiting for feedback from the professor, students get an immediate system generated response, which helps them to understand a concept and remember their mistakes, and also how to do it correctly the next time around.
+  </li>
+  <li>
+  <strong>AI could change the role of the teacher.</strong><br>
+  Teachers always have a critical role in the education system, but this role and its requirement may change with the new technologies. As in the above points, we have already discussed that Artificial Intelligence can automate different tasks such as grading, reports, help students while learning, and may also be an option of real-world tutor in some cases. AI can be included in different aspects of teaching. AI systems can be programmed for providing expertise to students, a place where students can ask their doubts and could take the place of teacher for teaching basis course materials. In such cases, AI could change the role of the teacher as a facilitator.
+  </li>
+  <li>
+  <strong>Personalize education with AI</strong><br>
+  The main aim of Artificial Intelligence in education is not to completely replace teachers. Instead, it aims to act as helping hands for teachers as well as students.<br>
+  AI systems can be programmed to provide personalized learning to students. With personalized learning, each student can have their own way of learning as per their level of understanding and need. By understanding the needs of every student, teachers can come up with a tailor-made study plan for every student. As AI is developing day-by-day, it is possible that machines can identify the facial expressions of students while learning the concepts can understand if they are finding any difficulty in learning, and according to that make changes in the way of teaching. However, currently, such things are not possible, but they might be possible in the near future with AI-Powered machines and software.
+  </li>
+  <li>
+  <strong>Generating Smart content with AI</strong><br>
+  With AI, it is possible to generate smart content in three ways:
+  <ol class="pointsa">
+  <li><strong>Digital Lessons:</strong> Nowadays, everything is becoming digital, and so the education. Digital learning is being preferred in colleges with customization options, e-books, study guides, bite-sized lessons, and many other things with the help of AI.</li>
+  <li><strong>Information Visualization:</strong> Visualizing things rather than listening is much more efficient to understand in a better way and keep in mind for a long time. With Artificial Intelligence, the study information can be perceived in new ways of visualization, simulation, web-based study environment.</li>
+  <li><strong>Learning content Updates:</strong> Moreover, AI also helps in preparing the content of lessons, keeping information up to date, and make it adaptable as per different learning curves.</li>
+  </ol>
+  </li>
+  <li>
+  <strong>Ensure Access to Education for Students with Special Needs</strong><br>
+  Life is full of challenges for those students who have some learning disabilities such as deaf or hard of hearing, visually impaired, etc. Such students may face various difficulties while learning and studying. Moreover, they also need extra care &amp; time. With the adoption of innovative AI technology, there will be new ways of interacting with such students. AI-enabled tools can be successfully trained to help a group of students with special needs.
+  </li>
+  <li>
+  <strong>Universal Access</strong><br>
+  One of the great uses of Artificial Intelligence of digital learning in education is universal access to study material. Each student has his own grasping capability, and with the use of universal access, they can learn anywhere and anytime. Students can explore things whenever they want to learn without waiting for the tutor. Moreover, students get the facility of high-quality courses and material from all over the world at their place only without travelling away from their home.
+  </li>
+  </ol>
+  <h2 class="h2">Benefits of AI For Students</h2>
+  <ul class="points">
+  <li>
+  <strong>24*7 access to Learning</strong><br>
+  With AI-driven digital Learning, students can learn anywhere, anytime. Every learner is free to plan their schedule, rather than being linked to a specific place only. Everyone can make their learning easier and effective as per their most productive hours.
+  </li>
+  <li>
+  <strong>Better Engagement</strong><br>
+  With personalized learning, custom tasks, and digital visualisation, the study becomes more interactive and engaging. Personalized learning and great experience with AI-driven programs make students feel much confident and smarter as they can explore many things apart from their syllabus without any hesitation or fear of asking. All these things and new AI technologies are increasing the interest of students in studies.
+  </li>
+  <li>
+  <strong>Less Pressure</strong><br>
+  With AI-driven programs and personalized learning, students feel less pressure of studies. AI-enabled virtual assistants help the students whenever they ask a question, with a complete explanation. In the traditional learning methods, a student needs to ask queries in class in front of everyone, which might hesitate some students, and these issues can be resolved with the help of virtual assistants. However, all the questions can't be correctly answered by these virtual assistants. But for basic queries, they can be much helpful that can boost the confidence of each learner and reduce the pressure.
+  </li>
+  </ul>
+  <h2 class="h2">Future of AI in Education</h2>
+  <p>As per the researches, in the near future, AI in education will step in three main ways, which are:</p>
+  <ol class="points">
+  <li>
+  <strong>Performance personalization</strong><br>
+  With day-by-day development in AI technology and computing power, it will be possible to create personalized curricula through collecting and generalizing the information. Various new AI solution such as "Brightspace insights" helps the instructor to track, measure, and monitor the progress of learners, and also help them in this learning journey. It provides a complete picture of the learning journey of a learner across the platform.
+  </li>
+  <li>
+  <strong>Violation Bias</strong><br>
+  Human bias has always remained a hindrance in the education system and also an issue in AI tools. In future, AI in education will find new solutions that can evaluate work and tests exams using established criteria in order to eliminate bias.
+  </li>
+  <li>
+  <strong>Combined Assistance</strong><br>
+  Professors/teachers in colleges usually have masters in their field and have a degree in specific areas of development. But the administrative work is often a frustrating attempt at rapprochement with students. AI in education can solve this problem in the future with smart classrooms with AI assistance who can provide necessary help to the teachers to give their best.
+  </li>
+  </ol>
+  <div id="a9d156a7-075f-4e17-b533-47690b1b56b2" data-section="a9d156a7-075f-4e17-b533-47690b1b56b2" class="_ap_apex_ad" data-xpath="#city > table:eq(0) > tbody:eq(0) > tr:eq(0) > td:eq(0) > h2:eq(4)" data-section-id="" data-ap-network="adpTags" data-render-time="1700197416427" style="display: block; clear: both; text-align: center; margin: 10px auto; width: 0px; height: 0px; overflow: hidden; visibility: hidden;"><div id="ADP_37780_728X280_a9d156a7-075f-4e17-b533-47690b1b56b2" style="text-align: center; margin: 0 auto;" data-google-query-id="CPSlufqgyoIDFRr-aAodsNIOwA">
+  <script type="text/javascript">
+  window.adpushup.adpTags.que.push(function(){
+  window.adpushup.adpTags.display("ADP_37780_728X280_a9d156a7-075f-4e17-b533-47690b1b56b2");
+  });
+  </script>
+  <div id="google_ads_iframe_/103512698,22511567001/22987847942_0__container__" style="border: 0pt none; width: 728px; height: 0px;"></div></div></div><h2 class="h2">Conclusion</h2>
+  <p>Artificial intelligence and its uses in our lives are growing day by day in many segments. In the field of education, AI has started showing its influences and working as a helping tool for both the students and teachers and supporting the learning process. But still, the use of AI in education is not adapted by all the colleges completely, and it will take a long journey to do this. However, studies show that in the near future, AI will have a good impact on the education sector. It is currently transforming the education industry but is yet to show its real potential in education. Further, learning from computer systems can be much helpful, but it is unlikely to fully replacing human teaching in schools and colleges.</p>
+  <hr>
+  <h3 class="h3">Feedback</h3>
+  <ul class="points">
+  <li>Send your Feedback to nigammishra826@gmail.com</li>
+  </ul>
+  <div class="nexttopicdiv">
+  <span class="nexttopictext">Next Topic</span><span class="nexttopiclink"><a href="nigam40.html">Artificial Intelligence in Agriculture</a></span>
+  </div>
+  
+  <br><br>
+  <div id="bottomnext">
+  <a style="float:left" class="next" href="nigam38.html">← prev</a>
+  <a style="float:right" class="next" href="nigam40.html">next →</a>
+  </div>
+  <br><br>
+  </td></tr>
+  </tbody></table>
+  <head>
+    <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+  </head>
+  
+  <body>
+    <footer class="footer">
+      <div class="container row">
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="nigam1.html">Artificial intelligence(AI)</a></li>
+            <li><a href="nigam4.html">Types of AI</a></li>
+            <li><a href="nigam8.html">Turing test of AI</a></li>
+            <li><a href="nigam22.html">The Wumpus world</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="nigam89.html">MCQ</a></li>
+            <li><a href="nigam87.html">Machine Learning</a></li>
+            <li><a href="nigam88.html">NPL</a></li>
+            <li><a href="nigam92.html">Data Science</a></li>
+            <li><a href="nigam93.html">Reinforcement learning</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Misc</h4>
+          <ul>
+            <li><a href="nigam36.html">examples</a></li>
+            <li><a href="nigam43.html">Robotioc & AI</a></li>
+            <li><a href="nigam44.html">Future of AI</a></li>
+            <li><a href="nigam47.html">Scope of AI</a></li>
+            <li><a href="nigam81.html">open AI&ChatGPT</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/nigam.mishra.710?mibextid=9R9pXO"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/MishraNugam?s=09"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://instagram.com/mr_nigam_8199?igshid=MXNzeGI3bmZ6b3M3NQ=="><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </div>
+          <a href="contact1.html"><img src="photo/logo2.jpg" style="height: 100px;width: 100px;"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  </div>
+
+  </div>
+  <br><br><div class="mobilemenu" style="clear:both">
+  </div></div></i></b>

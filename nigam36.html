@@ -1,0 +1,611 @@
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>What is Artificial Intelligence (AI)? Tutorial, Meaning </title>
+<link rel="stylesheet" type="text/css" href="style.css" async="">
+          </style><meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A/ERL66fN363FkXxgDc6F1+ucRUkAhjEca9W3la6xaLnD2Y1lABsqmdaJmPNaUKPKVBRpyMKEhXYl7rSvrQw+AkAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A6OdGH3fVf4eKRDbXb4thXA4InNqDJDRhZ8U533U/roYjp4Yau0T3YSuc63vmAs/8ga1cD0E3A7LEq6AXk1uXgsAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202311090101/pubads_impl.js" async=""></script><script src="https://config.aps.amazon-adsystem.com/configs/2e7e1587-d92f-46dd-8721-80b53eccb87e" type="text/javascript" async="async"></script><style type="text/css">.vjs-youtube .vjs-iframe-blocker { display: none; }.vjs-youtube.vjs-user-inactive .vjs-iframe-blocker { display: block; }.vjs-youtube .vjs-poster { background-size: cover; }.vjs-youtube-mobile .vjs-big-play-button { display: none; }</style><style type="text/css">
+ 
+body {
+  background-image: url(photo/aa.avif);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  position: relative;
+  background: darkmagenta;
+  padding: 1rem 0;
+  z-index: 999;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(90%, 800px);
+  margin-inline: auto;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover {
+  color: #4FC3F7;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  
+  .toggle {
+    transition: ease-in-out 550ms;
+    transform: translate(0px);
+    opacity: 1;
+    display: block;
+  }
+  
+  .header-container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: darkmagenta;
+    backdrop-filter: blur(10px);
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  
+  nav li {
+    padding: 1rem;
+    cursor: pointer;
+  }
+  
+  nav li:hover {
+    background: darkmagenta;
+  }
+  
+  .hamburger {
+    display: block; 
+  }
+}
+div.onlycontent {
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-right: 4px;
+    width: 58%;
+    float: left;
+    padding: 10px 15px;
+    background :none;
+  }
+  #city td {
+    color: black;
+    line-height: 1.7;
+  }
+  #city li {
+    line-height: 25px;
+    color: black;
+    margin-top: 4px;
+  }
+  *,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+	background-color: #151515;
+	padding: 80px 0;
+}
+
+.container {
+	max-width: 1170px;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer-col {
+	width: 25%;
+	padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 18px;
+	color: #FFF;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #E91E63;
+	width: 50px;
+	height: 2px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	color: #DDD;
+	display: block;
+	font-size: 1rem;
+	font-weight: 300;
+	text-transform: capitalize;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: #FFF;
+	padding-left: 7px;
+}
+
+.footer-col .social-links a {
+	color: #FFF;
+	background-color: rgba(255, 255, 255, 0.2);
+	display: inline;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	text-align: center;
+	margin: 0 10px 10px 0;
+	line-height: 100px;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #151515;
+	background-color: #FFF;
+}
+
+@media(max-width: 767px) {
+	.footer-col {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 574px) {
+	.footer-col {
+		width: 100%;
+	}
+}
+      </style>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+     <body>
+      <header>
+        <div class="header-container">
+          <span><img src="photo/logo1.png" style="height: 50px;width: 70px;overflow: hidden;backface-visibility: hidden;"></span>
+          <b><i><nav id="nav">
+            <ul id="nav-ul">
+              <li><a href="nigam1.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="AIservices.html">Service</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul></i></b>
+          </nav>
+          <span class="hamburger" id="button"><i class="fa-solid fa-bars"></i></span>
+        </div>
+      </header>
+    </body>
+    
+    </div>
+    </div>
+    
+    <div class="mobilemenu" style="clear:both">
+    
+    </div>
+    <div id="menu">
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Artificial Intelligence</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam1.html" style="color: black;"><strong>Artificial Intelligence (AI)</strong> </a>
+    <a href="nigam2.html">Applications of AI</a>
+    <a href="nigam3.html">History of AI</a>
+    <a href="nigam4.html">Types of AI</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Intelligent Agent</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam5.html">Types of Agents</a>
+    <a href="nigam6.html">Intelligent Agent</a>
+    <a href="nigam7.html">Agent Environment</a>
+    <a href="nigam8.html">Turing Test in AI</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Problem-solving</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam9.html">Search Algorithms</a>
+    <a href="nigam10.html">Uninformed Search Algorithm</a>
+    <a href="nigam11.html">Informed Search Algorithms</a>
+    <a href="nigam12.html">Hill Climbing Algorithm</a>
+    <a href="nigam13.html">Means-Ends Analysis</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Adversarial Search</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam14.html">Adversarial search</a>
+    <a href="nigam15.html">Minimax Algorithm</a>
+    <a href="nigam16.html">Alpha-Beta Pruning</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Knowledge Represent</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam17.html">Knowledge Based Agent</a>
+    <a href="nigam18.html">Knowledge Representation</a>
+    <a href="nigam19.html">Knowledge Representation Techniques</a>
+    <a href="nigam20.html">Propositional Logic</a>
+    <a href="nigam21.html">Rules of Inference</a>
+    <a href="nigam22.html">The Wumpus world</a>
+    <a href="nigam23.html">knowledge-base for Wumpus World</a>
+    <a href="nigam24.html">First-order logic</a>
+    <a href="nigam25.html">Knowledge Engineering in FOL</a>
+    <a href="nigam26.html">Inference in First-Order Logic</a>
+    <a href="nigam27.html">Unification in FOL</a>
+    <a href="nigam28.html">Resolution in FOL</a>
+    <a href="nigam29.html">Forward Chaining and backward chaining</a>
+    <a href="nigam30.html">Backward Chaining vs Forward Chaining</a>
+    <a href="nigam31.html">Reasoning in AI</a>
+    <a href="nigam32.html">Inductive vs. Deductive reasoning</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Uncertain Knowledge R.</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam33.html">Probabilistic Reasoning in AI</a>
+    <a href="nigam34.html">Bayes theorem in AI</a>
+    <a href="nigam35.html">Bayesian Belief Network</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Misc</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam36.html">Examples of AI</a>
+    <a href="nigam37.html">AI Essay</a>
+    <a href="nigam38.html">AI in Healthcare</a>
+    <a href="nigam39.html">Artificial Intelligence in Education</a>
+    <a href="nigam40.html">Artificial Intelligence in Agriculture</a>
+    <a href="nigam41.html">Engineering Applications of AI</a>
+    <a href="nigam42.html">Advantages &amp; Disadvantages of AI</a>
+    <a href="nigam43.html">Robotics and AI</a>
+    <a href="nigam44.html">Future of AI</a>
+    <a href="nigam45.html">Languages used in AI</a>
+    <a href="nigam46.html">Approaches to AI Learning</a>
+    <a href="nigam47.html">Scope of AI</a>
+    <a href="nigam48.html">Agents in AI</a>
+    <a href="nigam49.html">Artificial Intelligence Jobs</a>
+    <a href="nigam50.html">Amazon CloudFront</a>
+    <a href="nigam51.html">Goals of Artificial Intelligence</a>
+    <a href="nigam52.html">Can Artificial Intelligence replace Human Intelligence</a>
+    <a href="nigam53.html">Importance of Artificial Intelligence</a>
+    <a href="nigam54.html">Artificial Intelligence Stock in India</a>
+    <a href="nigam55.html">How to Use Artificial Intelligence in Marketing</a>
+    <a href="nigam56.html">Artificial Intelligence in Business</a>
+    <a href="nigam57.html">Companies Working on Artificial Intelligence</a>
+    <a href="nigam58.html">Artificial Intelligence Future Ideas</a>
+    <a href="nigam59.html">Government Jobs in Artificial Intelligence in India</a>
+    <a href="nigam60.html">What is the Role of Planning in Artificial Intelligence</a>
+    <a href="nigam61.html">AI as a Service</a>
+    <a href="nigam62.html">AI in Banking</a>
+    <a href="nigam63.html">AI Tools</a>
+    <a href="nigam64.html">Cognitive AI</a>
+    <a href="nigam65.html">Introduction of Seaborn</a>
+    <a href="nigam66.html">Natural Language ToolKit (NLTK)</a>
+    <a href="nigam67.html">Best books for ML</a>
+    <a href="nigam68.html">AI companies of India will lead in 2022</a>
+    <a href="nigam69.html">Constraint Satisfaction Problems in Artificial Intelligence</a>
+    <a href="nigam70.html">How artificial intelligence will change the future</a>
+    <a href="nigam71.html">Problem Solving Techniques in AI</a>
+    <a href="nigam72.html">AI in Manufacturing Industry</a>
+    <a href="nigam73.html">Artificial Intelligence in Automotive Industry</a>
+    <a href="nigam74.html">Artificial Intelligence in Civil Engineering</a>
+    <a href="nigam75.html">Artificial Intelligence in Gaming Industry</a>
+    <a href="nigam76.html">Artificial Intelligence in HR</a>
+    <a href="nigam77.html">Artificial Intelligence in Medicine</a>
+    <a href="nigam78.html">PhD in Artificial Intelligence</a>
+    <a href="nigam79.html">Activation Functions in Neural Networks</a>
+    <a href="nigam80.html">Boston Housing Kaggle Challenge with Linear Regression</a>
+    <a href="nigam81.html">What are OpenAI and ChatGPT</a>
+    <a href="nigam82.html">Chatbot vs. Conversational AI</a>
+    <a href="nigam83.html">Iterative Deepening A* Algorithm (IDA*)</a>
+    <a href="nigam84.html">Iterative Deepening Search (IDS) or Iterative Deepening Depth First Search (IDDFS)</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Subsets of AI</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam85.html">Subsets of AI</a>
+    <a href="nigam86.html">Expert Systems</a>
+    <a href="nigam87.html">Machine Learning Tutorial</a>
+    <a href="nigam88.html">NLP Tutorial</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Artificial Intelligence MCQ</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam89.html">Artificial Intelligence MCQ</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Related Tutorials</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam92.html">Data Science Tutorial</a>
+    <a href="nigam93.html">Reinforcement Learning</a>
+    </div>
+    
+</div>
+</div>
+<div class="onlycontent">
+  <div class="onlycontentad">
+  </div>
+  <div class="onlycontentinner">
+  <div id="city">
+  <table>
+  <tbody><tr><td>
+  <div id="bottomnextup">
+  
+  
+  </div>
+  <b><i><h1 class="h1">Examples of AI-Artificial Intelligence</h1>
+  <h2 class="h2">What is AI-Artificial Intelligence?</h2>
+  <p>The term "<strong><em>Artificial Intelligence</em></strong>" refers to the simulation of human intelligence processes by machines, especially <strong>computer systems</strong>. It also includes <strong>Expert systems, voice recognition, machine vision,</strong> and <strong>natural language processing (NLP).</strong></p>
+  <p>AI programming focuses on three cognitive aspects, such as learning, reasoning, and self-correction.</p>
+  <ul class="points">
+  <li>Learning Processes</li>
+  <li>Reasoning Processes</li>
+  <li>Self-correction Processes</li>
+  </ul>
+  <h3 class="h3">Learning Processes</h3>
+  <p>This part of AI programming is concerned with gathering data and creating rules for transforming it into useful information. The rules, which are also called algorithms, offer computing devices with step-by-step instructions for accomplishing a particular job.</p>
+  <h3 class="h3">Reasoning Processes</h3>
+  <p>This part of AI programming is concerned with selecting the best algorithm to achieve the desired result.</p>
+  <h3 class="h3">Self-Correction Processes</h3>
+  <p>This part of AI programming aims to fine-tune algorithms regularly in order to ensure that they offer the most reliable results possible.</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/examples-of-ai.png" alt="Examples of AI">
+  <p><a href="https://www.javatpoint.com/artificial-intelligence-tutorial">Artificial Intelligence</a> is an extensive field of computer science which focuses on developing intelligent machines capable of doing activities that would normally require human intelligence. While AI is a multidisciplinary science with numerous methodologies, advances in deep learning and machine learning create a paradigm shift in almost every aspect of technology.</p>
+  <h2 class="h2">Examples of AI-Artificial Intelligence</h2>
+  <p>The following are the examples of AI-Artificial Intelligence:</p>
+  <ol class="points">
+  <li>Google Maps and Ride-Hailing Applications</li>
+  <li>Face Detection and recognition</li>
+  <li>Text Editors and Autocorrect</li>
+  <li>Chatbots</li>
+  <li>E-Payments</li>
+  <li>Search and Recommendation algorithms</li>
+  <li>Digital Assistant</li>
+  <li>Social media</li>
+  <li>Healthcare</li>
+  <li>Gaming</li>
+  <li>Online Ads-Network</li>
+  <li>Banking and Finance</li>
+  <li>Smart Home devices</li>
+  <li>Security and Surveillance</li>
+  <li>Smart Keyboard App</li>
+  <li>Smart Speaker</li>
+  <li>E-Commerce</li>
+  <li>Smart Email Apps</li>
+  <li>Music and Media Streaming Service</li>
+  <li>Space Exploration</li>
+  </ol>
+  <p>Let's discuss the above examples in detail.</p>
+  <h3 class="h3">1. Google Maps and Ride-Hailing Applications</h3>
+  <p>Travelling to a new destination does not require much thought any longer. Rather than relying on confusing address directions, we can now easily open our phone's map app and type in our destination.</p>
+  <p>So how does the app know about the appropriate directions, best way, and even the presence of roadblocks and traffic jams? A few years ago, only <a href="https://www.javatpoint.com/gps-full-form"><strong>GPS</strong></a> (satellite-based navigation) was used as a navigation guide. However, artificial intelligence (AI) now provides users with a much better experience in their unique surroundings.</p>
+  <p>The app algorithm uses machine learning to recall the building's edges that are supplied into the system after the person has manually acknowledged them. This enables the map to provide simple visuals of buildings. Another feature is identifying and understanding handwritten house numbers, which assists travelers in finding the exact house they need. Their outline or handwritten label can also recognize locations that lack formal street signs.</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/examples-of-ai1.png" alt="Examples of AI">
+  <p>The application has been trained to recognize and understand traffic. As a result, it suggests the best way to avoid traffic congestion and bottlenecks. The AI-based algorithm also informs users about the precise distance and time it will take them to arrive at their destination. It has been trained to calculate this based on the traffic situations. Several ride-hailing applications have emerged as a result of the use of similar AI technology. So, whenever you need to book a cab via an app by putting your location on a map, this is how it works.</p>
+  <h3 class="h3">2. Face Detection and Recognition</h3>
+  <p>Utilizing face ID for unlocking our phones and using virtual filters on our faces while taking pictures are two uses of AI that are presently essential for our day-by-day lives.</p>
+  <p>Face recognition is used in the former, which means that every human face can be recognized. Face recognition is used in the above, which recognizes a particular face.</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/examples-of-ai2.png" alt="Examples of AI">
+  <p><strong>How does it work?</strong></p>
+  <p>Intelligent machines often match-and some cases, even exceed human performance! - Human potential. Human babies begin to identifying facial features such as eyes, lips, nose, and face shapes. A face, though, is more than just that. A number of characteristics distinguish human faces. Smart machines are trained in order to recognize facial coordinates (x, y, w, and h; which form a square around the face as an area of interest), landmarks (nose, eyes, etc.), and alignment (geometric structures). This improves the human ability to identify faces by several factors. Face recognition is also used by government facilities or at the airport for <strong>monitoring</strong>, and <strong>security</strong>.</p>
+  <h3 class="h3">3. Text Editors or Autocorrect</h3>
+  <p>When typing a document, there are inbuilt or downloadable auto-correcting tools for editors of spelling errors, readability, mistakes, and plagiarism based on their difficulty level.</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/examples-of-ai3.png" alt="Examples of AI">
+  <p>It should have taken a long time for us to master our language and become fluent in it. Artificially intelligent algorithms often used <strong>deep learning, machine learning,</strong> and <strong>natural language</strong> in order to detect inappropriate language use and recommend improvements. Linguists and computer scientists collaborate in teaching machines grammar in the same way that we learned it in school. Machines are fed large volumes of high-quality data that has been structured in a way that machines can understand. Thus, when we misspell a single comma, the editor will highlight it in red and offer suggestions.</p>
+  <h3 class="h3">4. Chatbots</h3>
+  <p>Answering a customer's inquiries can take a long time. The use of algorithms to train machines to meet customer needs through chatbots is an artificially intelligent solution to this problem. This allows machines to answer as well as take and track orders.</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/examples-of-ai4.png" alt="Examples of AI"><div id="77c1a61c-863d-4c17-85a7-06d359764d71" data-section="77c1a61c-863d-4c17-85a7-06d359764d71" class="_ap_apex_ad" data-xpath="#city > table:eq(0) > tbody:eq(0) > tr:eq(0) > td:eq(0) > img:eq(4)" data-section-id="" data-ap-network="adpTags" data-render-time="1700196775604" style="display: block; clear: both; text-align: center; margin: 10px auto; width: 0px; height: 0px; overflow: hidden; visibility: hidden;"><div id="ADP_37780_728X280_77c1a61c-863d-4c17-85a7-06d359764d71" style="text-align: center; margin: 0 auto;" data-google-query-id="CKe4wseeyoIDFeMZ1QodrQIP_g">
+  <script type="text/javascript">
+  window.adpushup.adpTags.que.push(function(){
+  window.adpushup.adpTags.display("ADP_37780_728X280_77c1a61c-863d-4c17-85a7-06d359764d71");
+  });
+  </script>
+  <div id="google_ads_iframe_/103512698,22511567001/22987863470_0__container__" style="border: 0pt none; width: 728px; height: 0px;"></div></div></div>
+  <p>We used Natural Language Processing (<strong>NLP</strong>) to train chatbots to impersonate customer service agents' conversational approaches. Advanced chatbots do not require complex input formats (such as yes/o questions). They are capable of responding to complex questions that necessitate comprehensive answers. They will appear to be a customer representative, in fact, another example of artificial intelligence (AI). If you give a negative rating to a response, the bot will figure out what went wrong and fix it the next time, ensuring that you get the best possible service.</p>
+  <h3 class="h3">5. Online-Payments</h3>
+  <p>It can be a time-consuming errand to rush to the bank for any transaction. Good news! Artificial Intelligence is now being used by banks to support customers by simplifying the process of payment.</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/examples-of-ai5.png" alt="Examples of AI">
+  <p>Artificial intelligence has enabled you to deposit checks from the convenience of our own home. Since AI is capable of deciphering handwriting and making online cheque processing practicable. Artificial Intelligence can potentially be utilized to detect fraud by observing consumers' credit card spending patterns. For example, the algorithms are aware of what items User X purchases, when and where they are purchased, and in what price range they are purchased. If there is some suspicious behaviour that does not match the user's profile, then the system immediately signals user X.</p>
+  <h3 class="h3">6. Search and Recommendation Algorithms</h3>
+  <p>When we wish to listen to our favorite songs or watch our favorite movie or shop online, we have ever found that the things recommended to us perfectly match our interests? This is the beauty of artificial intelligence.</p>
+  <p>These intelligent recommendation systems analyze our online activity and preferences to provide us with similar content. Continuous training allows us to have a customized experience. The data is obtained from the front-end, saved as <strong>big data</strong>, and analysed using machine learning and deep learning. Then it can predict your preferences and make suggestions to keep you amused without having to look for something else. Artificial intelligence can also be utilized to improve the user experience of a search engine. Generally, the answer we are searching for is found in the top search results. What cause this?</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/examples-of-ai6.png" alt="Examples of AI">
+  <p>Data is fed into a quality control algorithm to identify high-quality content from <strong>SEO-spammed, low-quality content</strong>. This aids in creating an ascending order of search results on the basis of the quality for the greatest user experience. Since search engines are made up of codes, natural language processing technology aids in understanding humans by these applications. In reality, they can predict what a person wants to ask by compiling top-ranked searches and guessing their questions when they begin to type.</p>
+  <p>Machines are constantly being updated with new features such as image search and voice search. If we need to find out a song that is playing at a mall, all we have to do is hold the phone up to it, and a music-identifying app will tell us what it is within a few seconds. The machine will also offer you song details after searching through an extensive collection of tunes.</p>
+  <h3 class="h3">7. Digital Assistants</h3>
+  <p>When our hands are full, we often enlist the help of digital assistants to complete tasks on our behalf. We might ask the assistant to call our father while we are driving with a cup of tea in one hand. For instance, Siri would look at our contacts, recognize the word "father," and dial the number.</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/examples-of-ai7.png" alt="Examples of AI">
+  <p>Siri is an example of a <strong>lower-tier model</strong> which can only respond to voice commands and cannot deliver complex responses. The new digital assistant is fluent in human language and uses advanced NLP (Natural Language Processing) and ML (Machine Learning) techniques. They are capable of understanding complex command inputs and providing acceptable results. They have adaptive abilities which can examine <strong>preferences, habits,</strong> and <strong>schedules</strong>. It enables them to use <strong>prompts, schedules,</strong> and <strong>reminders</strong> to help us systemize, coordinate, and plan things.</p>
+  <h3 class="h3">8. Social Media</h3>
+  <p>The advent of social media gave the world a new narrative with immense freedom of speech. Although, it brought certain social ills like cyberbullying, cybercrime, and abuse of language. Several social media apps are using AI to help solve these issues while also providing users with other enjoyable features.</p>
+  <p>AI algorithms are much quicker than humans at detecting and removing hate speech-containing messages. It is made possible by their ability to recognize hostile terms, keywords, and symbols in a variety of languages. These have been entered into the system, which can also contribute neologisms to its dictionary. Deep learning's neural network architecture is a vital part of the process.</p>
+  <p>Emojis have become the most common way to express a wide range of emotions. This digital language is also understood by AI technology because it can understand the meaning of a certain piece of text and guess the exact emoji.</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/examples-of-ai8.png" alt="Examples of AI">
+  <p>Social networking, a perfect example of artificial intelligence, may even figure out what kind of content a user likes and recommends similar content. Facial recognition is also used in social media profiles, assisting users in tagging their friends via automatic suggestions. Smart filters can recognize spam and undesirable messages and automatically filter them out. Users may also take advantage of smart answers.</p>
+  <p>The social media sector could use artificial intelligence to detect mental health issues such as suicidal thoughts by analyzing the information published and consumed. This information can be shared with mental health professionals.</p>
+  <h3 class="h3">9. Healthcare</h3>
+  <p><strong>Infervision</strong> is using artificial intelligence and deep learning to save lives. In China, where there are insufficient radiologists to keep up with the demand for checking 1.4 billion CT scans each year for early symptoms of lung cancer. Radiologists essential to review many scans every day, which isn't just dreary, yet human weariness can prompt errors. Infervision trained and instructed algorithms to expand the work of radiologists in order to permit them to diagnose cancer more proficiently and correctly.</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/examples-of-ai9.png" alt="Examples of AI">
+  <p>The inspiration and foundation for Google's DeepMind are Neuroscience, which aims to create a machine that can replicate the thinking processes in our own brains. While DeepMind has effectively beaten people at games, what are truly captivating are the opportunities for medical care applications. For example, lessening the time it takes to plan treatments and utilizing machines to help diagnose ailments.</p>
+  <h3 class="h3">10. Gaming</h3>
+  <p>Artificial Intelligence has been an important part of the gaming industry in recent years. In reality, one of AI's most significant achievements is in the gaming industry.</p>
+  <p>One of the most important achievements in the field of AI is DeepMind's AI-based AlphaGo software, which is famous for defeating Lee Sedol, the world champion in the game of GO. Shortly after the win, DeepMind released <strong>AlphaGo</strong>, which trounced its predecessor in an AI-AI face off. The advanced machine, AlphaGo Zero, taught itself to master the game, unlike the original AlphaGo, which DeepMind learned over time using a vast amount of data and supervision.</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/examples-of-ai10.png" alt="Examples of AI">
+  <p>Not at all like the first AlphaGo, which DeepMind prepared over the long run by utilizing a lot of information and oversight, the high-level framework, AlphaGo Zero instructed itself to dominate the game. Another example of Artificial Intelligence in gaming comprises the First Encounter Assault Recon, also known as F.E.A.R that is the first-person shooter video game.</p>
+  <h3 class="h3">11. Online Ads Network</h3>
+  <p>The online advertising industry is the most significant user of artificial intelligence that uses AI (<strong>Artificial Intelligence</strong>) to not only monitor user statistics but also to advertise us on the basis of the statistics. The online advertising industry will struggle if AI is not implemented, as users will be shown random advertisements that have no relation to their interests.</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/examples-of-ai11.png" alt="Examples of AI">
+  <p>Since AI has been so good at determining our preferences and serving us ads, the worldwide digital ad industry has crossed 250 billion US dollars, with the business projected to cross the 300 billion mark in 2019. So, the next time remembers that AI is changing your life while you browse the internet and encounter adverts or product recommendations.</p>
+  <h3 class="h3">12. Banking and Finance</h3>
+  <p>The banking and finance industry has a major impact on our daily lives which means the world runs on liquidity, and banks are the gatekeepers who control the flow. Did you know that artificial intelligence is heavily used in the banking and finance industry for things such as customer service, investment, fraud protection, and so on? The automatic emails we get from banks if we make an ordinary transaction, are a simple example. That's AI keeping an eye on our account and trying to alert us regarding any potential fraud. AI is now being trained to examine vast samples of fraud data in order to identify patterns so that we can be alerted before it happens to us. If we run into a snag and contact our bank's customer service, we are probably speaking with an AI bot. Even the largest financial industry use AI to analyse data in order to find the best ways to invest capital in order to maximize returns while minimizing risk.</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/examples-of-ai12.png" alt="Examples of AI">
+  <p>Not only that, but AI is set to play an even larger role in the industry, with major banks around the world investing billions of dollars in AI technology, and we will be able to see the results sooner rather than later.</p>
+  <h3 class="h3">13. Smart Home Devices</h3>
+  <p>Another popular example of AI (Artificial Intelligence) is smart home devices. Artificial intelligence is even being welcomed into our homes. Most of the smart home gadgets we purchase use artificial intelligence to learn our habits and automatically change settings to make our experience as seamless as possible.</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/examples-of-ai13.png" alt="Examples of AI">
+  <p>We have effectively examined how we utilize savvy voice assistants to control these smart home gadgets. We probably are aware that it is a great example of AI's impact on our lives. That is to say, there are smart thermostats that change the temperature-dependent on our preferences, smart lights which change the colour and intensity of lights dependent on time, and much more. This will not happen when our primary interaction with all our smart home devices is only through AI.</p>
+  <h3 class="h3">14. curity and Surveillance</h3>
+  <p>Although we all can debate about the ethics of using a large surveillance system, there's no denying that it's being used, and AI is playing a significant role in it. It isn't workable for people to keep monitoring many monitors simultaneously, and thus, utilizing AI makes well. With technologies such as <strong>facial recognition</strong> and <strong>object recognition</strong> improving every day, it won't be long when all the security camera deals with are being checked by an AI and not a human. Right now, before AI can be completely implemented, this is going to be our future.</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/examples-of-ai14.png" alt="Examples of AI">
+  <h3 class="h3">15. Smart Keyboard Apps</h3>
+  <p>Smart keyboard apps are another example of AI (Artificial Intelligence). In all actuality, not every person loves managing on-screen keyboards. Although, they have become far more intuitive, permitting clients to type comfortably and quickly. What has likely ended up being a catalyst for them is the integration of AI. The smart keyboard applications keep a tab on the composing style of a client and predict words and emojis based on that. Consequently, typing on the touchscreen has gotten quicker and more advantageous. Not to mention that artificial intelligence is crucial in detecting misspellings and typos.</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/examples-of-ai15.png" alt="Examples of AI">
+  <h3 class="h3">16. Smart Speakers</h3>
+  <p>Not in vain, many thinks that smart speakers are good to go for a major blast in technology. Besides controlling smart home gadgets, they are likewise capable of various things like sending fast messages, setting updates, checking the climate, and getting the most recent news.</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/examples-of-ai16.png" alt="Examples of AI">
+  <p>Also, it's this flexibility that is ending up being a conclusive factor for them. Driven by the hugely popular Amazon Echo series, the worldwide brilliant speaker market arrived at an exceptional high in 2019 with sales of 149.9 million units, which is a huge increment of 70% in 2018. Additionally, the sales in Q4 2019 also saw another record with an incredible 55.7 million units. Smart speakers are likely the most unmistakable instances of the utilization of AI in our reality.</p>
+  <h3 class="h3">17. E-Commerce</h3>
+  <p>Artificial intelligence algorithms have given the necessary vital impulse to web-based businesses to give a more customized insight. According to many sources, its use has significantly improved sales and has also aided in developing long-term consumer relationships. Thus, organizations take advantage of AI to deploy chatbots to gather urgent information and predict purchases to make a client-centric experience.</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/examples-of-ai17.png" alt="Examples of AI">
+  <p>On the way across this shift of technique? Simply invest some time on websites such as Amazon, and eBay and we will soon see how quickly the scene around you is improving rapidly!</p>
+  <h3 class="h3">18. Smart Email Apps</h3>
+  <p>In the event that you actually find your inbox cluttered with an excessive number of undesirable messages, the possibility is quite high that we can yet stay with an old-fashioned email application.</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/examples-of-ai18.png" alt="Examples of AI">
+  <p>Present-day email applications such as <strong>Spark</strong> make several AI to filter out spam messages and furthermore arrange messages so you can rapidly get to the significant ones. Likewise, it additionally provides smart answers dependent on the messages we get to help us answer to any email rapidly. The "Smart Reply" highlight of Gmail is an extraordinary illustration of this. It utilizes AI to filter the content of the email and gives you context-oriented answers.</p>
+  <h3 class="h3">19. Music and Media Streaming Service</h3>
+  <p>Another amazing illustration of how AI affects our lives is the music and media streaming features that we utilize reliably. Whether or not you are utilizing <strong>Spotify, Netflix,</strong> or <strong>YouTube</strong>, AI is making the decisions for you.</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/examples-of-ai19.png" alt="Examples of AI">
+  <p>All things considered as everything, once in a while is great and some of the time is awful. For instance, I enjoy Spotify's Discover Weekly playlist since it has acquainted me with a few new artists who I would not have known about if it weren't for Spotify's AI divine beings.</p>
+  <p>Then again, I additionally remember going down the YouTube rabbit hole, wasting uncountable hours simply watching the suggested videos. That suggested videos section has become so great at knowing my taste that it's alarming. Thus, keep in mind that AI is at work whenever you are watching a suggested video on YouTube, viewing a suggested show on Netflix, listening to a pre-made playlist on Spotify, or using any other media and music streaming service.<div id="f49e589f-fbc5-463d-999f-47c781c68759" data-section="f49e589f-fbc5-463d-999f-47c781c68759" class="_ap_apex_ad" data-xpath="  #city > table:eq(0) > tbody:eq(0) > tr:eq(0) > td:eq(0) > p:eq(54)  " data-section-id="" data-ap-network="adpTags" data-render-time="1700196775671" style="display: block; clear: both; text-align: center; margin: 10px auto; width: 0px; height: 0px; overflow: hidden; visibility: hidden;"><div id="ADP_37780_728X280_f49e589f-fbc5-463d-999f-47c781c68759" style="text-align: center; margin: 0 auto;" data-google-query-id="CIPewMieyoIDFQoFaAodUHoOyw">
+  <script type="text/javascript">
+  window.adpushup.adpTags.que.push(function(){
+  window.adpushup.adpTags.display("ADP_37780_728X280_f49e589f-fbc5-463d-999f-47c781c68759");
+  });
+  </script>
+  <div id="google_ads_iframe_/103512698,22511567001/22794806204_0__container__" style="border: 0pt none; width: 728px; height: 0px;"></div></div></div></p>
+  <h3 class="h3">20. Space Exploration</h3>
+  <p>Space expeditions and discoveries consistently require investigating immense measures of information. Artificial Intelligence and Machine learning are the best approach for dealing with and measure information on this scale. After thorough astronomers, and research utilized Artificial Intelligence to filter through long periods of information got by the Kepler telescope to distinguish an inaccessible eight-planet solar system.'</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/examples-of-ai20.png" alt="Examples of AI">
+  <hr>
+  <h3 class="h3">Feedback</h3>
+  <ul class="points">
+  <li>Send your Feedback to nigammishra826@gmail.com</li>
+  </ul>
+  <div class="nexttopicdiv">
+  <span class="nexttopictext">Next Topic</span><span class="nexttopiclink"><a href="nigam37.html">Artificial Intelligence Essay</a></span>
+  </div>
+  
+  <br><br>
+  <div id="bottomnext">
+  <a style="float:left" class="next" href="nigam35.html">← prev</a>
+  <a style="float:right" class="next" href="nigam37.html">next →</a>
+  </div>
+  <br><br>
+  </td></tr>
+  </tbody></table>
+  <head>
+    <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+  </head>
+  
+  <body>
+    <footer class="footer">
+      <div class="container row">
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="nigam1.html">Artificial intelligence(AI)</a></li>
+            <li><a href="nigam4.html">Types of AI</a></li>
+            <li><a href="nigam8.html">Turing test of AI</a></li>
+            <li><a href="nigam22.html">The Wumpus world</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="nigam89.html">MCQ</a></li>
+            <li><a href="nigam87.html">Machine Learning</a></li>
+            <li><a href="nigam88.html">NPL</a></li>
+            <li><a href="nigam92.html">Data Science</a></li>
+            <li><a href="nigam93.html">Reinforcement learning</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Misc</h4>
+          <ul>
+            <li><a href="nigam36.html">examples</a></li>
+            <li><a href="nigam43.html">Robotioc & AI</a></li>
+            <li><a href="nigam44.html">Future of AI</a></li>
+            <li><a href="nigam47.html">Scope of AI</a></li>
+            <li><a href="nigam81.html">open AI&ChatGPT</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/nigam.mishra.710?mibextid=9R9pXO"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/MishraNugam?s=09"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://instagram.com/mr_nigam_8199?igshid=MXNzeGI3bmZ6b3M3NQ=="><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </div>
+          <a href="contact1.html"><img src="photo/logo2.jpg" style="height: 100px;width: 100px;"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  </div>
+
+  </div>
+  <br><br><div class="mobilemenu" style="clear:both">
+  </div></div></i></b>

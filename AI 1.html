@@ -1,0 +1,509 @@
+<html lang="en"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>What is Artificial Intelligence (AI)? Tutorial, Meaning </title>
+  <link rel="stylesheet" href="style.css">
+<style>
+  body {
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  header {
+    position: relative;
+    background: hsla(0, 0%, 0%, .6);
+    padding: 1rem 0;
+    z-index: 999;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: min(90%, 800px);
+    margin-inline: auto;
+    color: #fff;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  nav a:hover {
+    color: #4FC3F7;
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 600px) {
+    
+    .toggle {
+      transition: ease-in-out 550ms;
+      transform: translate(0px);
+      opacity: 1;
+      display: block;
+    }
+    
+    .header-container {
+      width: 100%;
+      padding: 0 1rem;
+    }
+    
+    nav ul {
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: hsla(0, 0%, 0%, .5);
+      backdrop-filter: blur(10px);
+      transform: translateX(-500px);
+      opacity: 0;
+    }
+    
+    nav li {
+      padding: 1rem;
+      cursor: pointer;
+    }
+    
+    nav li:hover {
+      background: hsla(0, 0%, 0%, .7);
+    }
+    
+    .hamburger {
+      display: block; 
+    }
+  }
+  
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+	background-color: #151515;
+	padding: 80px 0;
+}
+
+.container {
+	max-width: 1170px;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer-col {
+	width: 25%;
+	padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 18px;
+	color: #FFF;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #E91E63;
+	width: 50px;
+	height: 2px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	color: #DDD;
+	display: block;
+	font-size: 1rem;
+	font-weight: 300;
+	text-transform: capitalize;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: #FFF;
+	padding-left: 7px;
+}
+
+.footer-col .social-links a {
+	color: #FFF;
+	background-color: rgba(255, 255, 255, 0.2);
+	display: inline;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	text-align: center;
+	margin: 0 10px 10px 0;
+	line-height: 100px;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #151515;
+	background-color: #FFF;
+}
+
+@media(max-width: 767px) {
+	.footer-col {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 574px) {
+	.footer-col {
+		width: 100%;
+	}
+}
+        </style>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+       
+       </head><body>
+        <header>
+          <div class="header-container">
+            <span><img src="photo/logo1.png" style="height: 50px;width: 70px;overflow: hidden;backface-visibility: hidden;"></span>
+            <nav id="nav">
+              <ul id="nav-ul">
+                <li><a href="nigam1.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="AIservices.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+            <span class="hamburger" id="button"><i class="fa-solid fa-bars" aria-hidden="true"></i></span>
+          </div>
+        </header>
+      <!-- Code injected by live-server -->
+  
+      
+     
+      
+      
+      <div id="menu">
+      <div class="leftmenu2">
+      <h2 class="spanh2"><span class="spanh2">Artificial Intelligence</span></h2>
+      </div>
+      <div class="leftmenu">
+      <a href="nigam1.html" style="color: black;"><strong>Artificial Intelligence (AI)</strong> </a>
+    </div>
+        <div class="leftmenu2">
+        <h2 class="spanh2"><span class="spanh2">definations and small descriptions</span></h2>
+        </div>
+        <div class="leftmenu">
+          <a href=" " style="color: black;"><strong> what is artificial Intelligence?</strong> </a><br>
+          <a href=" " style="color: black;"><strong> what-is-machine-learning?</strong> </a><br>
+          <a href=" " style="color: black;"><strong> what is Deep-Learning?</strong> </a>
+          <a href=" " style="color: black;"><strong> What-is-Neural-Networks?</strong> </a>
+          <a href=" " style="color: black;"><strong> what is data Science?</strong> </a>
+          <a href=" " style="color: black;"><strong> </strong> </a>
+        </div>
+        <br>
+          
+           
+        <div class="adp_interactive_ad" style="width: 160px; height: 600px;"><div id="75781991-c109-4107-b6cd-bcaebbbb369d" class="_ap_apex_ad" data-section="75781991-c109-4107-b6cd-bcaebbbb369d" data-ad-type="docked" data-render-time="1700410671864" data-ap-network="adpTags" data-refresh-time="1700410671865" data-timeout="179" style="background: transparent; width: 0px; height: 0px; display: block; text-align: center; position: relative; bottom: auto; margin: 50px auto 10px; clear: both; visibility: hidden;"><div id="ADP_37780_160X600_75781991-c109-4107-b6cd-bcaebbbb369d" style="text-align: center; margin: 0 auto;" data-google-query-id="COjL1rS70IIDFRnyaAodjv8IYw">
+        <script type="text/javascript">
+        window.adpushup.adpTags.que.push(function(){
+        window.adpushup.adpTags.display("ADP_37780_160X600_75781991-c109-4107-b6cd-bcaebbbb369d");
+        });
+        </script>
+        <div id="google_ads_iframe_/103512698,22511567001/21929136915_0__container__" style="border: 0pt none; width: 160px; height: 0px;"></div></div></div></div></div>
+        
+        <br>
+        
+        <b><i><div class="onlycontent">
+          <div class="onlycontentad">
+          </div>
+          <div class="onlycontentinner">
+          <div id="city">
+          <table>
+          <tbody><tr><td>
+            <b><i>  <div id="header">
+              <h1>ARTIFICIAL INTELIGENCE</h1><h1>What is Artificial Intelligence (AI)? - Definition and Applications</h1>
+          </div>
+          </i></b><div id="content"><b><i>
+              </i></b><div id="history" class="animate"><b><i>
+                  
+                              <img src="pic/What-is-Artificial-Intelligence-AI.webp" style="height: 500px;width: 770px;" alt="What is Artificial Intelligence (AI)? - Definition and Applications">
+                          
+                          </i></b><div class="d-flex align-items-center justify-content-between"><b><i>
+                              
+                  Usually, intelligence is associated with human beings because they have brains. But, as of today, we have seen technological advancements in the field of robotics and machine learning, which leads to an important term: artificial intelligence. Artificial intelligence is the intelligence possessed by machines to do tasks that a human being may or may not be able to do.
+          <p></p>
+          <p>
+          The main goal of AI is to enable machines to perceive and think like humans and solve problems as a human would. It is a broad term that includes Natural Language Processing (e.g., Alexa, Cortana), Computer vision (e.g., self-driving cars), and Robotics.
+          </p>
+          <p>
+          A common example is a robot that can accurately serve food to customers, deliver the right medicines to patients or perform daily chores like folding clothes, giving reminders, or making tea! AI will enable humans to interact with machines (computers) and enable newer learning mechanisms and better communication.
+          </p>
+          <h2 id="goto history-of-artificial-intelligence">
+          <strong>
+          History of Artificial Intelligence
+          </strong>
+          </h2>
+          <p>
+          Although we hear more about AI and machine learning only a few years ago, these have been around for many decades. The idea of AI was first introduced around 1950 by Alan Turing, who is considered the father of computer science. He developed a test named the Turing test (or T-test), which is a measure of the intelligence of a machine when compared to a human.
+          </p>
+          <p>
+          In the 1970s, not much progress was seen, and the research funds started to dry up, thus stopping every possibility of further research. The main boost to AI came with the advent of big data in around 1993. By this time, computers were much more advanced and could run complex algorithms.
+          </p>
+          <p>
+          The first major event was a chess game in 1997 between Microsoft’s Deep blue AI-powered system and the reigning champion, where the computer won! As of today, AI is developing fast, with many areas being explored and many already functional. Most of the AI systems that are useful today are a part of narrow AI (which we will discuss shortly).
+          </p>
+          <h2 id="goto ai-and-big-data">
+          <strong>
+          AI and Big data
+          </strong>
+          </h2>
+          <img src="pic/AI and Big data.png" style="height: 500px;width: 770px;" alt="">
+          <p>
+          AI and big data go hand in hand. Just as a child gets trained to see the outside world and differentiates between different objects and persons – colors, shapes, sizes, men, women, etc., machines can do the same when a lot of data is fed into it. This huge amount of data called big data, thus forms the basis of artificial intelligence and trains the AI system.
+          </p>
+          <h2 id="goto important-terms">
+          <strong>
+          Important terms
+          </strong>
+          </h2>
+          <h3 id="goto 1-turing-machine">
+          <strong>
+          1. Turing machine
+          </strong>
+          </h3>
+          <img src="pic/turing-test-in-AI (1).png" style="height: 500px;width: 770px;" alt="">
+          <p>
+          It is a machine developed by Alan Turing in 1936. It is a blueprint for computation. All AI systems are tested against the Turing machine, and if their data manipulation rule sets can simulate what a Turing machine can, the systems are said to be Turing complete and rational systems. Programming languages are a good example of Turing complete systems.
+          </p>
+          <h3 id="goto 2-data-science">
+          <strong>
+          2. Data Science
+          </strong>
+          </h3>
+          <img src="pic/Data Science.jpg" style="height: 500px;width: 770px;" alt="">
+          <p>
+          To perform AI, we need data that can be understood by the machine. This makes data science the most important factor for performing purposeful AI. From data collection, preparation, analysis, transformation, and pattern detection, data science helps develop truly intelligent systems. We will learn some more terms in the next few sections under different headings.
+          </p>
+          <h2 id="goto types-of-ai">
+          <a href="https://www.techgeekbuzz.com/blog/types-of-artificial-intelligence/">
+          <strong>
+          Types of AI
+          </strong>
+          </a>
+          </h2>
+          <p>
+          AI can be categorized into different types based on:
+          </p>
+          <ul>
+          <li>
+          Capabilities
+          </li>
+          <li>
+          Functionality
+          </li>
+          </ul>
+          <p>
+          <img alt="Types of AI" src="pic/types-of-ai.jpg" style="height: 500px;width: 770px;" class="img-fluid img-center">
+          </p>
+          <h3 id="goto narrow-ai-weak-ai">
+          <strong>
+          Narrow AI (Weak AI)
+          </strong>
+          </h3>
+          <img src="pic/Narrow AI (Weak AI).jpeg" style="height: 500px;width: 770px;" alt="">
+          <p>
+          Narrow AI is also called weak AI and consists of systems that perform a dedicated task using their intelligence. Most of the AI systems we see today are Narrow AI. Narrow AI has limitations and cannot perform on its own beyond what it is designed for.
+          </p>
+          <p>
+          For example, voice-based assistants like Alexa, Cortana, and Siri are intelligent but have limitations. They can only perform certain predefined functions. Other examples of weak or narrow AI are a game of chess, self-driving cars, speech recognition, image recognition, and shopping suggestions.
+          </p>
+          <h3 id="goto general-ai-machine-learning">
+          <strong>
+          General AI (Machine learning)
+          </strong>
+          </h3>
+          <img src="pic/General AI.webp" style="height: 500px;width: 770px;" alt="">
+          <p>
+          General AI is the type of AI in which machines are able to perform tasks with the efficiency of human beings. It is somewhat similar to supervised and unsupervised machine learning, where the machine is able to derive patterns and algorithms based on training data and can think on its own. Although many algorithms are in use as of today, no algorithm gives 100% accuracy. General AI has not yet been utilized to its full potential and is much in the research phase.
+          </p>
+          <h3 id="goto strong-ai-super-ai">
+          <strong>
+          Strong AI (Super AI)
+          </strong>
+          </h3>
+          <img src="pic/Strong AI (Super AI).webp" style="height: 500px;width: 770px;" alt="">
+          <p>
+          This would be a turning point in the history of AI because, at this stage, machines will be able to think better than humans and perform complex tasks that require cognitive abilities. Super AI could be a potential outcome of general AI. Machines in this stage would be able to think, plan, reason, resolve, make decisions, learn, and communicate independently. Well, as dangerous as it sounds, there is still a long way to go to reach that level.
+          </p>
+          <h3 id="goto reactive-machines">
+          <strong>
+          Reactive machines
+          </strong>
+          </h3>
+          <p>
+          These are the most basic types of intelligent machines, which do not store any past experiences or memories. They act upon current data for future decisions and actions; this is why the name ‘reactive’. These machines use static data. They can perform certain tasks within limits and cannot learn or improvise—for example, a game of chess. A robot designed to play chess knows a set of pre-defined moves and plays accordingly when similar situations are encountered.
+          </p>
+          <h3 id="goto limited-memory">
+          <strong>
+          Limited memory
+          </strong>
+          </h3>
+          <p>
+          The next step to reactive machines, is limited memory AI can store certain past data (immediate past) and act based on current data as well as data collected over some time. These machines are able to make some adjustments based on past observations and current data both.
+          </p>
+          <p>
+          Most of the current AI is a limited memory AI that uses a huge amount of data for deep learning algorithms. Using these algorithms, machines can classify and personalize user preferences.
+          </p>
+          <p>
+          Self-driving cars are a good example of limited memory AI systems. These cars can store data about traffic signals, use sensors to identify pedestrians, and store data about road conditions for better driving. Some other examples are email spam detection, image/face recognition, drones, product/movie recommendation systems, etc.
+          </p>
+          <h3 id="goto theory-of-mind">
+          <strong>
+          Theory of mind
+          </strong>
+          </h3>
+          <img src="pic/Theory of mind.png" style="height: 500px;width: 770px;" alt="">
+          <p>
+          Although in the theoretical stage, AI systems powered by the theory of mind will be able to communicate with human beings like human beings (in natural language) and explain their behavior or actions. These systems will be able to understand the intent of other similar systems or robots.
+          </p>
+          <p>
+          Theory of mind is in the research stage, and scientists are using Artificial Neural Networks (ANN) to simulate the human brain and observe how it works. ANNs then acquire new data and apply algorithms that make these systems learn.
+          </p>
+          <p>
+          For example, robots can recognize human emotions and mimic them. Theory of mind AI will enable social interaction between humans and robots and create a world where robots and humans will co-exist! This could be particularly useful for people who live alone or sick or elderly persons who need assistance. A recent Malayalam movie
+          <em>
+          Android Kunjappan Version 5.25,
+          </em>
+          shows a glimpse of this concept.
+          </p>
+          <h3 id="goto self-aware-ai">
+          <strong>
+          Self-aware AI
+          </strong>
+          </h3>
+          <img src="pic/Self-aware.jpg" style="height: 500px;width: 770px;" alt="">
+          <p>
+          Self-aware systems are an extension of the theory of mind, where the system can make certain decisions on its own, which may conflict with the initial instructions given to it. For example, a robot goes grocery shopping and notices an item XYZ that is not on the list but would be useful if he buys it.
+          </p>
+          <p>
+          He sees that there are offers on purchasing XYZ items and hence decides to buy the item – just like a human would do. These systems are going to be super intelligent and have emotions, consciousness, and self-awareness. This type of AI is in a hypothetical stage and will take a long time to become a complete reality.
+          </p>
+          <h2 id="goto applications-of-ai">
+          <strong>
+          Applications of AI
+          </strong>
+          </h2>
+          <img src="pic/aaaa.webp" style="height: 500px;width: 770px;" alt="">
+          <p>
+          There are already many applications of AI in different fields. The best examples are chatbots and robots, which have been helping a lot of people, especially during the lockdown period. Chatbot: Chatbots can solve common customer queries using a set of pre-programmed questions. This helps customer care executives to resolve queries in a more efficient and faster manner. Robotics: Robots help in hospitals by delivering medicines to patients.
+          </p>
+          <p>
+          Drones are dropping food packets in areas affected by natural calamities, containment zones due to numerous COVID-19 cases, and so on. Speech recognition: Systems like Alexa, Siri, and Cortana recognize natural language, process it, and respond to the questions posed by the speaker in the best possible manner.
+          </p>
+          <p>
+          Self-driving cars: As we discussed before, these cars store a large amount of data to derive driving decisions. Self-driving cars use the computer vision technology of AI. To know more about these applications, and read about many other AI applications, read our article on
+          <a href="https://www.techgeekbuzz.com/blog/artificial-intelligence-technologies/">
+          Artificial Intelligence technologies
+          </a>
+          
+          </p>
+          <h2 id="goto more-learning">
+          
+          
+          <p></p>
+          <p>
+            </p></h2><h3 class="h3">Feedback</h3>
+            <ul class="points">
+            <li>Send your Feedback to nigammishra826@gmail.com</li>
+            </ul></i></b>   
+            </div>
+            <head>
+              <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+            </head>
+            
+            <body>
+              <footer class="footer">
+                <div class="container row">
+                  <div class="footer-col">
+                    <h4>About</h4>
+                    <ul>
+                      <li><a href="nigam1.html">Artificial intelligence(AI)</a></li>
+                      <li><a href="nigam4.html">Types of AI</a></li>
+                      <li><a href="nigam8.html">Turing test of AI</a></li>
+                      <li><a href="nigam22.html">The Wumpus world</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                      <li><a href="nigam89.html">MCQ</a></li>
+                      <li><a href="nigam87.html">Machine Learning</a></li>
+                      <li><a href="nigam88.html">NPL</a></li>
+                      <li><a href="nigam92.html">Data Science</a></li>
+                      <li><a href="nigam93.html">Reinforcement learning</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-col">
+                    <h4>Misc</h4>
+                    <ul>
+                      <li><a href="nigam36.html">examples</a></li>
+                      <li><a href="nigam43.html">Robotioc & AI</a></li>
+                      <li><a href="nigam44.html">Future of AI</a></li>
+                      <li><a href="nigam47.html">Scope of AI</a></li>
+                      <li><a href="nigam81.html">open AI&ChatGPT</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                      <a href="https://www.facebook.com/nigam.mishra.710?mibextid=9R9pXO"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="https://twitter.com/MishraNugam?s=09"><i class="fa-brands fa-twitter"></i></a>
+                      <a href="https://instagram.com/mr_nigam_8199?igshid=MXNzeGI3bmZ6b3M3NQ=="><i class="fa-brands fa-instagram"></i></a>
+                      <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <a href="contact1.html"><img src="photo/logo2.jpg" style="height: 100px;width: 100px;"></a>
+                  </div>
+                </div>
+              </footer>
+            </body>
+          </div></div>
+            
+            </html>
+              

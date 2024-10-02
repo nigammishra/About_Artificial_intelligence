@@ -1,0 +1,711 @@
+<html lang="en"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>What is Artificial Intelligence (AI)? Tutorial, Meaning </title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+  body {
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  header {
+    position: relative;
+    background: hsla(0, 0%, 0%, .6);
+    padding: 1rem 0;
+    z-index: 999;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: min(90%, 800px);
+    margin-inline: auto;
+    color: #fff;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  nav a:hover {
+    color: #4FC3F7;
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 600px) {
+    
+    .toggle {
+      transition: ease-in-out 550ms;
+      transform: translate(0px);
+      opacity: 1;
+      display: block;
+    }
+    
+    .header-container {
+      width: 100%;
+      padding: 0 1rem;
+    }
+    
+    nav ul {
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: hsla(0, 0%, 0%, .5);
+      backdrop-filter: blur(10px);
+      transform: translateX(-500px);
+      opacity: 0;
+    }
+    
+    nav li {
+      padding: 1rem;
+      cursor: pointer;
+    }
+    
+    nav li:hover {
+      background: hsla(0, 0%, 0%, .7);
+    }
+    
+    .hamburger {
+      display: block; 
+    }
+  }
+  *,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+	background-color: #151515;
+	padding: 80px 0;
+}
+
+.container {
+	max-width: 1170px;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer-col {
+	width: 25%;
+	padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 18px;
+	color: #FFF;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #E91E63;
+	width: 50px;
+	height: 2px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	color: #DDD;
+	display: block;
+	font-size: 1rem;
+	font-weight: 300;
+	text-transform: capitalize;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: #FFF;
+	padding-left: 7px;
+}
+
+.footer-col .social-links a {
+	color: #FFF;
+	background-color: rgba(255, 255, 255, 0.2);
+	display: inline;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	text-align: center;
+	margin: 0 10px 10px 0;
+	line-height: 100px;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #151515;
+	background-color: #FFF;
+}
+
+@media(max-width: 767px) {
+	.footer-col {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 574px) {
+	.footer-col {
+		width: 100%;
+	}
+}
+        </style>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+       
+       </head><body>
+        <header>
+          <div class="header-container">
+            <span><img src="photo/logo1.png" style="height: 50px;width: 70px;overflow: hidden;backface-visibility: hidden;"></span>
+            <nav id="nav">
+              <ul id="nav-ul">
+                <li><a href="nigam1.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="AIservices.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+            <span class="hamburger" id="button"><i class="fa-solid fa-bars"></i></span>
+          </div>
+        </header>
+      <!-- Code injected by live-server -->
+  
+      
+     
+      
+      
+      <div id="menu">
+      <div class="leftmenu2">
+      <h2 class="spanh2"><span class="spanh2">Artificial Intelligence</span></h2>
+      </div>
+      <div class="leftmenu">
+      <a href="nigam1.html" style="color: black;"><strong>Artificial Intelligence (AI)</strong> </a>
+    </div>
+    <div class="leftmenu2">
+      <h2 class="spanh2"><span class="spanh2">definations and small descriptions</span></h2>
+      </div>
+      <div class="leftmenu">
+        <a href=" " style="color: black;"><strong> what is artificial Intelligence?</strong> </a><br>
+        <a href=" " style="color: black;"><strong> what-is-machine-learning?</strong> </a><br>
+        <a href=" " style="color: black;"><strong> what is Deep-Learning?</strong> </a>
+        <a href=" " style="color: black;"><strong> What-is-Neural-Networks?</strong> </a>
+        <a href=" " style="color: black;"><strong> what is data Science?</strong> </a>
+        <a href=" " style="color: black;"><strong> </strong> </a>
+        
+          </div>
+          <a href="contact.html"><img src="photo/logo2.jpg"style="height: 200px;width: 220px;" alt=""></a>
+<br>
+        
+        </div>
+        <b><i><div class="onlycontent">
+          <div class="onlycontentad">
+          </div>
+          <div class="onlycontentinner">
+          <div id="city">
+          <table>
+          <tbody><tr><td>
+            <b><i><div id="header">
+              <h1>What is Machine Learning?</h1>
+            </div>
+            <div id="content">
+              <div id="history" class="animate">
+                  
+                                        
+                                        
+                                            <img src="pic\What-is-Machine-Learning.webp" class="img-fluid" alt="What is Machine Learning?">
+                  
+                  What is the difference between humans and machines? Well, the main difference is – or wait – was – that humans have brains while machines – do not! Machines were known to follow instructions until a revolutionary term, "Artificial Intelligence," came up! Machines nowadays can gain intelligence artificially through training and modeling.
+            </p>
+            <h2 id="goto what-is-machine-learning-definition">
+             <strong>
+              What is Machine Learning? - Definition
+             </strong>
+            </h2>
+            <p>
+             Why is it called artificial? Because machines can still learn only based on information and facts – they don't have emotions yet. A machine learns from past experiences, data collected from various sources, or even from some form of interaction with humans. This process where a machine learns is called machine learning.
+            </p>
+            <p>
+             <strong>
+              A simple definition of machine learning
+             </strong>
+             Machine learning is a type of Artificial Intelligence where machines can learn on their own by experience, without any explicit programming. The experience comes from learning and training with the help of huge datasets collected from various sources. The learning and training process starts with processing and analysis of the data, like finding similar patterns, trends, and instructions that help machines give better results with each iteration, eventually making better business decisions without any human intervention.
+            </p>
+            <p>
+             <!--<iframe frameborder="0" height="315" src="./machine learning1_files/f_uwKZIAeM0.html" width="560">-->
+             </iframe>
+            </p>
+            <h2 id="goto applications-of-machine-learning">
+             <strong>
+              Applications of Machine Learning
+             </strong>
+            </h2>
+            <img src="pic/Applications_of_Machine_Learning.webp"style="height: 500px;width: 770px;" alt="">
+            <p>
+             Before we set on to describing more about machine learning, let me give you some examples of ML which we use almost every day:
+            </p>
+            <h3 id="goto 1-amazonnetflix-recommendation-system">
+             <strong>
+              1. Amazon/Netflix recommendation system
+             </strong>
+            </h3>
+            <img src="pic/AmazonandNetflix recommendation system.png"style="height: 500px;width: 770px;" alt="">
+            <p>
+             Whenever we buy a product on Amazon, the site gives recommendations to purchase related items. For example, if you purchase a phone, Amazon suggests you buy a cover, earphones, or some other accessories that go with the phone. How does it know what to recommend? Why doesn't it recommend you buy a book? That's because its ML algorithm would have understood the trends from users who have purchased similar items along with the phone.
+            </p>
+            <p>
+             So, now it knows that a phone can be related to a charger, Bluetooth device, headset, flip cover, and more. Amazon also shows you what other phones were viewed by the other customers who viewed this phone. This helps you make better choices and understand the general preferences of many people.
+            </p>
+            <p>
+             Netflix's recommender system works on the same lines. It tries to understand what kind of movies or shows you like to watch and then suggests and shows you other shows with a similar genre. This makes it easier to filter out what you like rather than searching through n number of shows to find the one you want.
+            </p>
+            <h3 id="goto 2-search-engine-results">
+             <strong>
+              2. Search engine results
+             </strong>
+            </h3>
+            <img src="pic/AI-plus-Search-Engine-1.jpg"style="height: 500px;width: 770px;" alt="">
+            <p>
+             There has been a tremendous amount of improvement in the way we receive search engine results from Google, Bing, and other engines. These engines collect data and understand how the thought process of a user works.
+            </p>
+            <p>
+             For example, if someone searches for 'Apple,' are they searching for the fruit apple or Apple, the company? It displays results based on how many users have previously searched for the 'fruit' and the 'company'; if more people have searched for 'Apple Inc' in the past, it would know that there are more chances that this user is searching for 'Apple Inc' too. Search engines display results based on various complex algorithms and criteria where the page with the best ranking is shown on top.
+            </p>
+            <h3 id="goto 3-alexasiricortana">
+             <strong>
+              3. Alexa/Siri/Cortana
+             </strong>
+            </h3>
+            <img src="pic/asc.png"style="height: 500px;width: 770px;" alt="">
+            <p>
+             "Alexa, what is the weather like today in Bengaluru?" "Today, in Bengaluru, Karnataka, the temperature is 26 degrees…." Are you familiar with this? Alexa, the voice-based system, can answer our questions and talk interactively with humans. It is built on NLP (Natural Language Processing), which means converting speech into words and sounds.
+            </p>
+            <p>
+             Your speech pattern is then analyzed by various speech-recognition systems, and the correct output is generated, which is spoken by Alexa to you. You can connect it to your home through an existing Wi-fi connection and have an individual account that you can manage through an app.
+            </p>
+            <p>
+             With that, you can keep reminders, set notifications, pre-set and play songs of your choice at different times and get real-time information.
+            </p>
+            <h3 id="goto 3-face-detection-phone-and-facebook">
+             <strong>
+              3. Face detection (phone and Facebook)
+             </strong>
+            </h3>
+            <img src="pic/Face detection (phone and Facebook).png"style="height: 500px;width: 770px;" alt="">
+            <p>
+             Most smartphones now come with a face lock. The first time, you have to take your pictures from different angles, and the machine records essential parameters in the form of numerical code.
+            </p>
+            <p>
+             Next time, it recognizes your face, and you don't have to type a password to unlock your phone. Some phones have infrared sensors to detect the face in the dark. Facebook identifies you and your friends based on your previous photos. How? The face recognition system makes use of biometrics and 3D sensors to compare your facial features with those that it already has in its database.
+            </p>
+            <h3 id="goto 4-doctor-phone-apps">
+             <strong>
+              4. Doctor phone apps
+             </strong>
+            </h3>
+            <img src="pic/Doctor phone apps.jpg"style="height: 500px;width: 770px;" alt="">
+            <p>
+             Phone apps that help patients identify medical problems based on a given set of symptoms are powered by AI. These apps ask simple questions to users that help in identifying and explaining the reasons for the symptoms. The apps then query their backend systems to get the relevant issue and suggest remedies.
+            </p>
+            <p>
+             If a patient needs assistance, the apps can also help get an appointment with the nearest available doctor. 80% of the time, these apps are as accurate as human doctors. This saves much of the time of the doctors as well as patients as simple medical issues no longer need a hospital visit.
+            </p>
+            <h3 id="goto 5-email-spam-detection-and-filtering">
+             <strong>
+              5. Email spam detection and filtering
+             </strong>
+            </h3>
+            <img src="pic/Email spam detection and filtering.jpg"style="height: 500px;width: 770px;" alt="">
+            <p>
+             How does Gmail filter out spam messages from other essential and useful conversations on your email? Spam filter programs use algorithms and filters like Bayesian filters or heuristic filters to determine words that are unusual or suspicious, emails sent by suspicious or unknown ids, the reputation of the email sender, or subscriber engagement. Algorithms here are nothing but a set of rules that determine what has to be done when an email arrives.
+            </p>
+            <p>
+             There are many more applications of machine learning, like self-driving cars, detecting new diseases, dynamic pricing on ticket booking websites, fraud and risk detection, digital marketing, and more. Machine learning has put its foot into every possible domain, and technologists are trying their best to make machines self-sufficient and more intelligent through building and training models.
+            </p>
+            <p>
+             Machine learning can be done in 3 ways – when humans train the machine to give results in a particular way when the machine learns on its own without any intervention from humans, when the machine learns from experience (like a feedback system), and dynamically decides what to do to fetch maximum rewards and results.
+            </p>
+            <h2 id="goto types-of-machine-learning">
+             <strong>
+              Types of Machine learning
+             </strong>
+            </h2>
+            <p>
+             There are Three types of Machine learning :
+            </p>
+            <ul>
+             <li>
+              Supervised learning
+             </li>
+             <li>
+              Unsupervised learning
+             </li>
+             <li>
+              Reinforcement learning
+             </li>
+            </ul>
+            <p>
+             <img alt="Machine Learning Types" class="aligncenter size-full wp-image-3063 img-fluid img-center" src="pic\Machine-Learning-Types.png" style="height:498px; width: 770px;">
+            </p>
+            <h3 id="goto 1-supervised-learning">
+             <strong>
+              1. Supervised learning
+             </strong>
+            </h3>
+            <p>
+             How does a kid learn addition? There is a book a teacher solves some sums written in the book to show the children how to solve the sums, and then the children solve some more for practice. The teacher uses a 'training dataset' to 'train' the children (model or machine). Once the children (model) get trained, they start solving the problems on their own using a new dataset.
+            </p>
+            <p>
+             Same way, once a model is trained, it can make its predictions and give output for new datasets. Some common examples of supervised learning are the recommendation systems used by Amazon, Netflix, and more, as commute time prediction based on maps, traffic, weather, time, and other factors.
+            </p>
+            <p>
+             <strong>
+              Classification
+             </strong>
+             – In a classification problem, the output variable is a category and not a continuous one. The model draws a conclusion from the values observed and predicts one or more values as an outcome — for example, speech recognition, biometric identification, and more.
+            </p>
+            <p>
+             <strong>
+              Regression
+             </strong>
+             – In a regression problem, the output is a real value or a continuous value produced as a result of Y = f(X), where Y is the output obtained by using algorithms on X. The most common regression technique is the linear regression model.
+            </p>
+            <p>
+             Some examples of regression tasks are predicting the value of the home loan for a customer, predicting the age of a person, getting the sales number for the next couple of months, and more. In short, regression is all about a single value, whereas classification is about classifying the data based on input data.
+            </p>
+            <h3 id="goto 2-unsupervised-learning">
+             <strong>
+              2. Unsupervised learning
+             </strong>
+            </h3>
+            <p>
+             This type of machine learning algorithm uses datasets that have input data without any labeled responses, unlike supervised learning. There is no need to supervise the model, and no manual intervention is required. The algorithm draws its conclusion by finding patterns or groupings in the dataset. This method is used in data mining for pattern mining and sequencing, medical imaging, object recognition, and; in genetic clustering.
+            </p>
+            <p>
+             <strong>
+              Clustering
+             </strong>
+             – With clustering, similar items are grouped, and patterns are formed. This helps to understand similarities in a particular group and hence, various groups. For example, trends in the browsing pattern can be identified and clustered – how many people of the age group 20-30 years check their Facebook accounts during day time, what are the most trending topics on Instagram and Twitter, what are the nearby restaurants that serve Biryani, and more. The most popular clustering algorithms used today are K-mean clustering and Hierarchical clustering.
+            </p>
+            <p>
+             <strong>
+              Association
+             </strong>
+             - For considerable datasets in the database, the association helps to find relationships between the variables in the dataset. For example, customers who recently booked a flight ticket might also need airport pick-up and drop and hotel accommodation, a person who just bought a laptop online, may need a laptop bag or a stand, unusual login, activities on a website, and more.
+            </p>
+            <h3 id="goto 3-reinforcement-learning">
+             <strong>
+              3. Reinforcement learning
+             </strong>
+            </h3>
+            <p>
+             Reinforcement learning is like a trial-and-error method to solve complex problems. For example, a child tries to jump a wall and fails many times but eventually learns how to do it. Same way, the learning models try to achieve a goal in a complex environment and try to fetch the maximum rewards.
+            </p>
+            <p>
+             Think of reinforcement learning as a game of 'Dave' or 'Mario' where you keep collecting points and move ahead to more complex levels. Some levels can be cleared in one go, whereas some need a higher number of trials and strategies. Machines now – can do this – without human intervention!
+            </p>
+            <p>
+             However, the current computer infrastructure is somewhat weak in exploring this superpower of a machine fully. A self-driving car is an example of reinforcement learning. In the future, this type of machine learning can prove to be the most powerful form of artificial intelligence.
+            </p>
+            <h2 id="goto why-should-you-learn-machine-learning">
+             <strong>
+              Why should you learn Machine Learning?
+             </strong>
+            </h2>
+            <img src="pic/Learn+Machine+Learning.png"style="height: 500px;width: 770px;" alt="">
+            <p>
+             Machine learning forms the core of Data Science, which is becoming a great career option now. With loads of data being analyzed every hour, every day, to provide new business insights, there would be no dearth of data science jobs in the years to come. All the business for data science comes from machine learning.
+            </p>
+            <p>
+             Even if you aim to become a data analyst or a data scientist in the future, Machine learning could be your starting point. It would give you the necessary exposure to see the big picture of the
+             <a href="https://www.techgeekbuzz.com/blog/data-science-lifecycle/">
+              data science lifecycle
+             </a>
+             . If you know ML, you can work in any domain in the future. Here are some key skills you need to learn to get machine learning job:
+            </p>
+            <ul>
+             <li>
+              Programming language (
+              <a href="https://www.techgeekbuzz.com/tutorial/python/learn-python-programming/">
+               Python
+              </a>
+              /R/
+              <a href="https://www.techgeekbuzz.com/tutorial/java/what-is-java/">
+               Java
+              </a>
+              )
+             </li>
+             <li>
+              Statistics and probability
+             </li>
+             <li>
+              Machine learning algorithms
+             </li>
+             <li>
+              Data modeling, evaluation
+             </li>
+             <li>
+              Distributed computing
+             </li>
+            </ul>
+            <h2 id="goto ml-algorithms">
+             <strong>
+              ML algorithms
+             </strong>
+            </h2>
+            <p>
+             There are many algorithms used for machine learning each of which falls into one or more of the above learning types. Here are some of the top machine learning algorithms to start your ML journey –
+            </p>
+            <ol>
+             <li>
+              <strong>
+               Linear regression –
+              </strong>
+              Suppose there are x input variables that determine the value of output variable Y. In linear regression, the relationship between Y and X is represented as a linear equation or a line, Y = a + bX, where a and b are intercept and slope of the line respectively.
+             </li>
+             <li>
+              <strong>
+               Logistic regression –
+              </strong>
+              For a binary classification of values, like true/false, yes/no, logistic regression is much suitable. The output is an S-shaped curve defined using the logistic function, h(x) = 1/(1 + e-x)
+             </li>
+             <li>
+              <strong>
+               Naïve Bayes –
+              </strong>
+              This method determines the probability of an event occurring (B) when the occurrence of another related event is known (A). The prior event A is true, and to determine whether the hypothesis B is also true (given P(A) is true), we use the formula, P(B/A) = (P(A/B)*P(B))/P(A)
+             </li>
+             <li>
+              <strong>
+               Classification and Regression trees (Decision trees) –
+              </strong>
+              One of the most powerful algorithms, decision trees are based on the answer to several questions to determine an outcome. For example, to know if a person aged 20 years will prefer to buy a laptop or groceries, the system will ask a few simple questions, like, is the person married, is he living with friends, does he have provision to cook, does he watch movies or pay bills online, etc…
+             </li>
+             <li>
+              <strong>
+               K-nearest neighbor –
+              </strong>
+              In this method, all the data is used for training (and none for testing). When a new instance is encountered, k nearest instances to the new instance are determined and the new instance is categorized as part of the nearest old instance.
+             </li>
+             <li>
+              <strong>
+               Random forests –
+              </strong>
+              Random forests combine several decision trees. The output of a random forest is the mean or median of the individual decision trees, by finding the random sampling or random subset of data.
+             </li>
+             <li>
+              <strong>
+               Principal Component Analysis (PCA) –
+              </strong>
+              In this method, the number of variables is reduced to make data exploration easy. These reduced set of variables are called principal components which are determined by capturing the maximum variance in the data. There is orthogonality between the components thereby creating zero or no correlation between the components.
+             </li>
+             <li>
+              <strong>
+               Apriori –
+              </strong>
+              This method operates on a database that contains lots of transactions, mines data to find associations between data. For example, if a person purchases a laptop, it is likely that he also purchases accessories like a laptop bag or headphones.
+             </li>
+            </ol>
+            <p>
+             There are many more complex algorithms like SVM (support vector machines), deep learning algorithms like CNN (Convolutional Neural Network), DBM (Deep Boltzmann Machine), clustering algorithms like k-means and so on, which are out of scope for this article. You can choose to learn the algorithms based on their learning style or similarity between the algorithms. For example, you can learn all the supervised learning algorithms first, or you can choose similar algorithms like decision trees and random forest, or, linear regression and SVM, etc.
+            </p>
+            <h2 id="goto choosing-your-language-to-write-ml-algorithms">
+             <strong>
+              Choosing your language to write ML algorithms
+             </strong>
+            </h2>
+            <p>
+             The most popular programming languages as of today, to write ML algorithms are
+             <a href="https://www.techgeekbuzz.com/blog/r-vs-python/">
+              Python and R
+             </a>
+             . Other languages that are also popular and widely used are C++, Java, C# and JavaScript. These languages have loads of libraries and tools that help build complex algorithms. If you haven’t worked on any of the above languages, Python will be your best starting point.
+            </p>
+            <h2 id="goto how-to-start-learning-ml">
+             <strong>
+              How to start learning ML
+             </strong>
+            </h2>
+            <p>
+             Machine learning is certainly an exhaustive subject and requires a lot of technical knowledge. But if you follow a proper approach to learn, you can overcome all the obstacles and make your learning interesting –
+            </p>
+            <ul>
+             <li>
+              <strong>
+               Identify the prerequisites –
+              </strong>
+              Knowing linear algebra, calculus, statistics and Python (or R) is essential. Just the basics (working knowledge).
+             </li>
+             <li>
+              <strong>
+               Learn the ML terminologies –
+              </strong>
+              some common terms used are model, learning, target, training, prediction/predictive, feature, labeling, etc… Know the meanings of these and other similar jargons.
+             </li>
+             <li>
+              <strong>
+               Types of machine learning –
+              </strong>
+              understanding each type will help you figure out which type you want to start your learning with. Generally, supervised learning algorithms are the easiest to start with.
+             </li>
+             <li>
+              <strong>
+               Learn the basics of data science –
+              </strong>
+              to fully appreciate the usefulness of ML, you should understand the
+              <a href="https://www.techgeekbuzz.com/blog/data-science-lifecycle/">
+               data science lifecycle
+              </a>
+              and understand various real-life examples where ML is used for business.
+             </li>
+             <li>
+              <strong>
+               Delve deeply into ML, one algorithm at a time
+              </strong>
+              – and don’t confuse yourself with others till you have fully grasped one.
+             </li>
+            </ul>
+            <p>
+             Of course, there are plenty of tutorials and courses available on the internet. But, we would suggest you
+             <a href="https://www.techgeekbuzz.com/blog/best-machine-learning-books/">
+              learn through books
+             </a>
+             , which you can keep as a reference too. Online materials can further your knowledge by providing you access to real data sets for practice and mastering the field.
+            </p>
+            <h2 id="goto machine-learning-vs-data-science">
+             <strong>
+              Machine learning vs Data Science
+             </strong>
+            </h2>
+            <img src="pic/Data_Science_vs._Machine_Learning.png"style="height: 500px;width: 770px;" alt="">
+            <p>
+             Data Science and machine learning go hand in hand. That is why it is essential to know where ML fits in the data science industry. ML is the core of data science where, based on the set of data, algorithms are built, machines are trained (or trained themselves), and the model is tested for accuracy and efficiency. Read this blog on the differences between ML and Data Science to get some insights into how the entire system works.
+            </p>
+            <h2 id="goto summary">
+             <strong>
+              Summary
+             </strong>
+            </h2>
+            <p>
+             This article introduced you to the concepts and jargon of Machine learning, and some important pointers to where exactly ML fits into the entire
+             <a href="https://www.techgeekbuzz.com/blog/what-is-data-science/">
+              data science process
+             </a>
+             . We also learned about the usefulness and types of ML, and gently introduced ourselves to the various algorithms that are widely used. Learning about the applications of ML helped us understand why we should learn ML. Note that this is just an introductory article and in no way covers every aspect of machine learning. As a quick recap, here are some important characteristics of Machine learning –
+            </p>
+            <ul>
+             <li>
+              Machines can learn and enhance based on experience and observations.
+             </li>
+             <li>
+              Increase in efficiency of utilization of structured and unstructured data to identify patterns, trends and perform predictive data analytics.
+             </li>
+             <li>
+              Boost business operations by enabling better business decisions and accurate forecasting.
+             </li>
+             <li>
+              Brings us one step closer to Artificial Intelligence, where humans and machines can be at par with each other in terms of thinking capabilities.
+             </li>
+            </ul>
+            <h3 class="h3">Feedback</h3>
+            <ul class="points">
+            <li>Send your Feedback to nigammishra826@gmail.com</li>
+            </ul></i></b>
+              </div>
+              <div id="future" class="animate">
+                  <h2></h2>
+                  <p></p>
+              </div>
+            </div>
+            <head>
+              <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+            </head>
+            
+            <body>
+              <footer class="footer">
+                <div class="container row">
+                  <div class="footer-col">
+                    <h4>About</h4>
+                    <ul>
+                      <li><a href="nigam1.html">Artificial intelligence(AI)</a></li>
+                      <li><a href="nigam4.html">Types of AI</a></li>
+                      <li><a href="nigam8.html">Turing test of AI</a></li>
+                      <li><a href="nigam22.html">The Wumpus world</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                      <li><a href="nigam89.html">MCQ</a></li>
+                      <li><a href="nigam87.html">Machine Learning</a></li>
+                      <li><a href="nigam88.html">NPL</a></li>
+                      <li><a href="nigam92.html">Data Science</a></li>
+                      <li><a href="nigam93.html">Reinforcement learning</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-col">
+                    <h4>Misc</h4>
+                    <ul>
+                      <li><a href="nigam36.html">examples</a></li>
+                      <li><a href="nigam43.html">Robotioc & AI</a></li>
+                      <li><a href="nigam44.html">Future of AI</a></li>
+                      <li><a href="nigam47.html">Scope of AI</a></li>
+                      <li><a href="nigam81.html">open AI&ChatGPT</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                      <a href="https://www.facebook.com/nigam.mishra.710?mibextid=9R9pXO"><i class="fa-brands fa-facebook-f"></i></a>
+                      <a href="https://twitter.com/MishraNugam?s=09"><i class="fa-brands fa-twitter"></i></a>
+                      <a href="https://instagram.com/mr_nigam_8199?igshid=MXNzeGI3bmZ6b3M3NQ=="><i class="fa-brands fa-instagram"></i></a>
+                      <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <a href="contact1.html"><img src="photo/logo2.jpg" style="height: 100px;width: 100px;"></a>
+                  </div>
+                </div>
+              </footer>
+            </body>

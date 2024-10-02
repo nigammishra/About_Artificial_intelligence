@@ -1,0 +1,926 @@
+<html lang="en"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>What is Artificial Intelligence (AI)? Tutorial, Meaning </title>
+  <link rel="stylesheet" href="style.css">
+<style>   
+  body {
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  header {
+    position: relative;
+    background: hsla(0, 0%, 0%, .6);
+    padding: 1rem 0;
+    z-index: 999;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: min(90%, 800px);
+    margin-inline: auto;
+    color: #fff;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  nav a:hover {
+    color: #4FC3F7;
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 600px) {
+    
+    .toggle {
+      transition: ease-in-out 550ms;
+      transform: translate(0px);
+      opacity: 1;
+      display: block;
+    }
+    
+    .header-container {
+      width: 100%;
+      padding: 0 1rem;
+    }
+    
+    nav ul {
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: hsla(0, 0%, 0%, .5);
+      backdrop-filter: blur(10px);
+      transform: translateX(-500px);
+      opacity: 0;
+    }
+    
+    nav li {
+      padding: 1rem;
+      cursor: pointer;
+    }
+    
+    nav li:hover {
+      background: hsla(0, 0%, 0%, .7);
+    }
+    
+    .hamburger {
+      display: block; 
+    }
+  }
+  *,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+	background-color: #151515;
+	padding: 80px 0;
+}
+
+.container {
+	max-width: 1170px;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer-col {
+	width: 25%;
+	padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 18px;
+	color: #FFF;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #E91E63;
+	width: 50px;
+	height: 2px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	color: #DDD;
+	display: block;
+	font-size: 1rem;
+	font-weight: 300;
+	text-transform: capitalize;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: #FFF;
+	padding-left: 7px;
+}
+
+.footer-col .social-links a {
+	color: #FFF;
+	background-color: rgba(255, 255, 255, 0.2);
+	display: inline;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	text-align: center;
+	margin: 0 10px 10px 0;
+	line-height: 100px;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #151515;
+	background-color: #FFF;
+}
+
+@media(max-width: 767px) {
+	.footer-col {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 574px) {
+	.footer-col {
+		width: 100%;
+	}
+} *,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+	background-color: #151515;
+	padding: 80px 0;
+}
+
+.container {
+	max-width: 1170px;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer-col {
+	width: 25%;
+	padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 18px;
+	color: #FFF;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #E91E63;
+	width: 50px;
+	height: 2px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	color: #DDD;
+	display: block;
+	font-size: 1rem;
+	font-weight: 300;
+	text-transform: capitalize;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: #FFF;
+	padding-left: 7px;
+}
+
+.footer-col .social-links a {
+	color: #FFF;
+	background-color: rgba(255, 255, 255, 0.2);
+	display: inline;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	text-align: center;
+	margin: 0 10px 10px 0;
+	line-height: 100px;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #151515;
+	background-color: #FFF;
+}
+
+@media(max-width: 767px) {
+	.footer-col {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 574px) {
+	.footer-col {
+		width: 100%;
+	}
+}
+        </style>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+       
+       </head><body>
+        <header>
+          <div class="header-container">
+            <span><img src="photo/logo1.png" style="height: 50px;width: 70px;overflow: hidden;backface-visibility: hidden;"></span>
+            <nav id="nav">
+              <ul id="nav-ul">
+                <li><a href="nigam1.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="AIservices.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+            <span class="hamburger" id="button"><i class="fa-solid fa-bars"></i></span>
+          </div>
+        </header>
+      <!-- Code injected by live-server -->
+  
+      
+     
+      
+      
+      <div id="menu">
+      <div class="leftmenu2">
+      <h2 class="spanh2"><span class="spanh2">Artificial Intelligence</span></h2>
+      </div>
+      <div class="leftmenu">
+      <a href="nigam1.html" style="color: black;"><strong>Artificial Intelligence (AI)</strong> </a>
+    </div>
+    <div class="leftmenu2">
+      <h2 class="spanh2"><span class="spanh2">definations and small descriptions</span></h2>
+      </div>
+      <div class="leftmenu">
+        <a href="AI 1.html" style="color: black;"><strong> what is artificial Intelligence?</strong> </a><br>
+        <a href="AI 2.html" style="color: black;"><strong> what-is-machine-learning?</strong> </a><br>
+        <a href="AI 3.html" style="color: black;"><strong> what is Deep-Learning?</strong> </a>
+        <a href="AI 4.HTML" style="color: black;"><strong> What-is-Neural-Networks?</strong> </a>
+        <a href="AI 5.html" style="color: black;"><strong> what is data Science?</strong> </a>
+        <a href=" " style="color: black;"><strong> </strong> </a>
+        
+          </div>
+         
+        </div>
+        <b><i><div class="onlycontent">
+          <div class="onlycontentad">
+          </div>
+          <div class="onlycontentinner">
+          <div id="city">
+          <table>
+          <tbody><tr><td>
+            <b><i><div id="header">
+              <h1>What is a Neural Network?</h1>
+          </div>
+          <div id="content">
+              <div id="history" class="animate">
+                  
+                                        
+                                        
+                                           
+                  
+                                            <div class="row article-container">
+                      
+                                              <aside class="col-lg-2 col-12 order-lg-1 order-2 text-center" style="overflow-x: hidden; max-width: 100%;">
+                                                  <div class="ads-1-left">
+                                                  </div>
+                                              </aside>
+                                              <div class="col-lg-8 col-12 order-lg-2 order-1">
+                                                  <div class="blog-post row">
+                                                      
+                                                      <div class="col-12 blog-post-header">
+                                                          <div class="container text-center mb-3">
+                                                             
+                                                          </div>
+                                                         
+                                                          
+                                                          
+                                                              <img src="pic/What-is-Neural-Networks.webp" class="img-fluid" alt="What is a Neural Network?">
+                                                          
+                                                          <div class="d-flex align-items-center justify-content-between">
+                                                              <div class="author-section d-flex align-items-center">
+                                                                  
+                                                                      
+                                                                  
+                                                                  
+                                                              </div>
+                                                              
+                                                          </div>
+                                                      </div>
+                                      
+                                      
+                                                      <article class="col-12">
+                                                          <div class="row tbc">
+                                                              <div class="col-12">
+                                                                  <div class="accordion">
+                                                                      <div class="accordion-item">
+                                                                          <h2 class="accordion-header">
+                                                                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#tableofcontent" aria-expanded="false" fdprocessedid="epkyqr">
+                                                                                  Table of Content
+                                                                              </button>
+                                                                          </h2>
+                                                                          <div id="tableofcontent" class="accordion-collapse collapse ">
+                                                                              <div class="accordion-body">
+                                                                                  <ul class="tbclist"><li class="i-H2"><a href="#goto what-is-a-neural-network">
+                                      
+                                      What is a Neural Network?
+                                      
+                                      </a></li><li class="i-H2"><a href="#goto how-does-an-artificial-neural-network-work">
+                                      
+                                      How Does an Artificial Neural Network Work?
+                                      
+                                      </a></li><li class="i-H3"><a href="#goto an-example-of-an-artificial-neural-network">
+                                      
+                                      An Example of an Artificial Neural Network
+                                      
+                                      </a></li><li class="i-H2"><a href="#goto types-of-artificial-neural-networks">
+                                      Types of Artificial Neural Networks
+                                      </a></li><li class="i-H3"><a href="#goto 1-perceptron">
+                                      1. Perceptron
+                                      </a></li><li class="i-H3"><a href="#goto 2-feed-forward-neural-network">
+                                      2. Feed-forward Neural Network
+                                      </a></li><li class="i-H3"><a href="#goto 3-radial-basis-functions-rbf-neural-network">
+                                      3. Radial Basis Functions (RBF) Neural Network
+                                      </a></li><li class="i-H3"><a href="#goto 4-recurrent-neural-network">
+                                      4. Recurrent Neural Network
+                                      </a></li><li class="i-H3"><a href="#goto 5-convolution-neural-network">
+                                      5. Convolution Neural Network
+                                      </a></li><li class="i-H3"><a href="#goto 6-modular-neural-network">
+                                      6. Modular Neural Network
+                                      </a></li><li class="i-H2"><a href="#goto pros-and-cons-of-artificial-neural-networks">
+                                      Pros and Cons of Artificial Neural Networks
+                                      </a></li><li class="i-H3"><a href="#goto pros">
+                                      Pros
+                                      </a></li><li class="i-H3"><a href="#goto cons">
+                                      Cons
+                                      </a></li><li class="i-H2"><a href="#goto conclusion">
+                                      Conclusion
+                                      </a></li></ul>
+                                                                              </div>
+                                                                          </div>
+                                                                      </div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <!-- Article start -->
+                                                          <p>
+                                      Many people have confusion between a neural network (artificial neural network) and deep learning. While neural networks are composed of multiple layers, ‘deep’ in deep learning refers to the depth of these layers. If layers in a neural net are two or three, then it is simply called a neural network. On the other hand, if there are more than three layers, it is considered a deep learning algorithm.
+                                      </p>
+                                      <p>
+                                      Neural networks have come a long way since their inception. They have the ability to provide solutions to many complex issues in real-life. They learn the data provided and map relationships between non-linear and complex input and output to reveal hidden patterns and help businesses improve their decision-making process.
+                                      </p>
+                                      <p>
+                                      In this article, we shall discuss what exactly a neural network is and how it works. Also, you will get familiar with the significant applications of neural networks along with their pros and cons.
+                                      </p>
+                                      <h2 id="goto what-is-a-neural-network">
+                                      <strong>
+                                      What is a Neural Network?
+                                      </strong>
+                                      </h2>
+                                      <p>
+                                      A neural network, also known as an Artificial Neural Network (ANN), a Simulated Neural Network (SNN), or a neural net, is a computing system composed of several interconnected processing components that utilize mathematical models to process information.
+                                      </p>
+                                      <p>
+                                      An artificial neural network (ANN) is the heart of deep learning and is also a subset of
+                                      <a href="https://www.techgeekbuzz.com/blog/what-is-machine-learning/">
+                                      machine learning
+                                      </a>
+                                      . Its structure is inspired by the human brain. Artificial neural networks imitate the way biological neurons transmit information or signals to one another.
+                                      </p>
+                                      <p>
+                                      A neural net is a connection of nodes or units called neurons or artificial neurons that are analogous to synapses of biological neurons in the human brain. The connections between the artificial neurons are known as edges. Moreover, the collection of nodes or neurons forms a network and hence, the name neural network.
+                                      </p>
+                                      <h2 id="goto how-does-an-artificial-neural-network-work">
+                                      <strong>
+                                      How Does an Artificial Neural Network Work?
+                                      </strong>
+                                      </h2>
+                                      <p>
+                                      An artificial neural network starts functioning when we feed data to it. Neurons are responsible for receiving and processing the data we feed and producing the desired output. There are three different layers in artificial neural networks, namely an input layer, one or more hidden layers, and an output layer. Each one of them is composed of neurons.
+                                      </p>
+                                      <p>
+                                      The input layer accepts the input data from the outside world, represented in a numeric value, and redirects it to the hidden layer for performing computations. Finally, the output layer predicts the output and makes it available for the outside world.
+                                      </p>
+                                      <p>
+                                      Each artificial neuron in a network has five components: weight, threshold, input, activation function, and output. After a neuron in the input layer receives the input data, a weight is assigned to each input value. A neuron then multiplies all input values with their corresponding weights and sums all the resulting outputs.
+                                      </p>
+                                      <p>
+                                      The activation function takes the sum value or output and decides whether to activate a neuron or not. If a neuron produces the output above its corresponding threshold value, it gets activated and transmits the data to a network’s next layer. Therefore, an output of one node or neuron acts as the input for another neuron in a network.
+                                      </p>
+                                      <h3 id="goto an-example-of-an-artificial-neural-network">
+                                      <strong>
+                                      An Example of an Artificial Neural Network
+                                      </strong>
+                                      </h3>
+                                      <p>
+                                      Consider that you are planning to go surfing but are unable to decide whether to go or not. Let us now see how a neural net works for this example.
+                                      </p>
+                                      <p>
+                                      Say that a single node in a neural network takes binary values, 0 and 1, to predict the output in the form of ‘Yes: 1 or No: 0’. We shall consider three factors that can affect the decision of whether to go or not to go surfing.
+                                      </p>
+                                      <ol>
+                                      <li>
+                                      Are the waves good? (Yes: 1, No: 0)
+                                      </li>
+                                      <li>
+                                      Has there been any recent shark attack? (Yes: 0, No: 1)
+                                      </li>
+                                      <li>
+                                      Is the line-up empty? (Yes: 1, No: 0)
+                                      </li>
+                                      </ol>
+                                      <p>
+                                      Now, assume that we are giving the input data to the node. As we have considered three factors, we shall provide three input values as follows:
+                                      </p>
+                                      <ul>
+                                      <li>
+                                      X1 = 1, indicating that the waves are good.
+                                      </li>
+                                      <li>
+                                      X2 = 0, indicating that there has not been any shark attack recently.
+                                      </li>
+                                      <li>
+                                      X3 = 1, indicating that crowds are out.
+                                      </li>
+                                      </ul>
+                                      <p>
+                                      The next step is to assign a weight to each input value. Assigning higher weights to an input value indicates that it is of greater importance to making decisions. Let W1, W2, and W3 be the weights of X1, X2, and X3, respectively.
+                                      </p>
+                                      <ul>
+                                      <li>
+                                      W1 = 5, as there are no large swells often.
+                                      </li>
+                                      <li>
+                                      W2 = 2, as you are used to the crowds.
+                                      </li>
+                                      <li>
+                                      W3 =4, you fear sharks a lot.
+                                      </li>
+                                      </ul>
+                                      <p>
+                                      Now, it is time to assign a threshold value. Let us assign a threshold value of 3. The predicted outcome or Y-hat = (1*5) + (0*2) + (1*4) &gt; 3 = (1*5) + (0*2) + (1*4) -3 &gt; 0 = 6 &gt; 0 Therefore, the decision would be Yes: 1.
+                                      </p>
+                                      <h2 id="goto types-of-artificial-neural-networks">
+                                      Types of Artificial Neural Networks
+                                      </h2>
+                                      <p>
+                                      There are different types of neural networks that are suitable for different purposes. Here, we have listed some of the most common types of neural networks.
+                                      </p>
+                                      <h3 id="goto 1-perceptron">
+                                      1. Perceptron
+                                      </h3>
+                                      <p>
+                                      Perceptron, also known as a single-layer artificial neural network, is among the oldest neural networks consisting of only a single neuron. Also, it only has two node layers: the input layer and the output layer. In the input layer, a neuron sums up the multiplication of all input values and their specific weights. Later,
+                                      <a href="https://en.wikipedia.org/wiki/Activation_function" target="_blank">
+                                      the activation function
+                                      </a>
+                                      takes the sum, compares it with the threshold value, and then sends it to the output layer to produce the output.
+                                      </p>
+                                      <p>
+                                      <strong>
+                                      Pros
+                                      </strong>
+                                      </p>
+                                      <ul>
+                                      <li>
+                                      Perceptron is capable of implementing logic gates, like NAND, AND, and OR.
+                                      </li>
+                                      </ul>
+                                      <p>
+                                      <strong>
+                                      Cons
+                                      </strong>
+                                      </p>
+                                      <ul>
+                                      <li>
+                                      It is not suitable for non-linear problems like Boolean XOR.
+                                      </li>
+                                      </ul>
+                                      <h3 id="goto 2-feed-forward-neural-network">
+                                      2. Feed-forward Neural Network
+                                      </h3>
+                                      <p>
+                                      It is one of the simplest types of neural nets and is also known as multi-layer perceptron (MLP). Though it is called a multi-layer perceptron, it consists of sigmoid neurons. In this type of neural net, the input data moves in a single direction, i.e., it enters through the input layer and leaves the network via the output layer.
+                                      </p>
+                                      <p>
+                                      A feed-forward neural network consists of three layers: an input layer, one or more hidden layers, and an output layer. The working and the example we discussed earlier is a feed-forward neural network. This type of neural network is widely used in speech recognition and facial recognition.
+                                      </p>
+                                      <p>
+                                      <strong>
+                                      Pros
+                                      </strong>
+                                      </p>
+                                      <ul>
+                                      <li>
+                                      It is easy to implement and maintain, and it is also less complex.
+                                      </li>
+                                      <li>
+                                      As it does not support backpropagation, it is fast.
+                                      </li>
+                                      <li>
+                                      It can handle noisy data effectively and quickly.
+                                      </li>
+                                      </ul>
+                                      <p>
+                                      <strong>
+                                      Cons
+                                      </strong>
+                                      </p>
+                                      <ul>
+                                      <li>
+                                      Being unidirectional, it can’t be used for deep learning.
+                                      </li>
+                                      </ul>
+                                      <h3 id="goto 3-radial-basis-functions-rbf-neural-network">
+                                      3. Radial Basis Functions (RBF) Neural Network
+                                      </h3>
+                                      <p>
+                                      The RBF neural network also consists of three layers: an input vector, a layer of RBF neurons, and an output layer. It uses a radial basis function as an activation function. The common application of the RBF neural network is power restoration. This neural net performs classification by computing the input’s similarity to the data points present in the training set.
+                                      </p>
+                                      <p>
+                                      Each neuron in RBF stores a 'prototype,’ one of the data points from the training set. When you need to classify any new vector, each neuron in RBF computes the Euclidean distance between its prototype and the input.
+                                      </p>
+                                      <p>
+                                      If there are two classes, let’s say A and B, and an input resembles class B closely, RBF will classify it as class B. Each RBF neuron, when comparing the input with its prototype, produces a response in the form of 0 and 1, which are the measures of similarity. If a neuron produces 1, the input and its prototype are equal. Otherwise, the response exponentially falls to 0.
+                                      </p>
+                                      <p>
+                                      <strong>
+                                      Pros
+                                      </strong>
+                                      </p>
+                                      <ul>
+                                      <li>
+                                      An RBF neural network can be trained faster than a multi-layer perceptron (MLP).
+                                      </li>
+                                      </ul>
+                                      <ul>
+                                      <li>
+                                      A hidden layer in RBF is easier to interpret than in MLP.
+                                      </li>
+                                      </ul>
+                                      <p>
+                                      <strong>
+                                      Cons
+                                      </strong>
+                                      </p>
+                                      <ul>
+                                      <li>
+                                      Though RBF trains faster than MLP, it works slower than MLP once the training is finished.
+                                      </li>
+                                      </ul>
+                                      <h3 id="goto 4-recurrent-neural-network">
+                                      4. Recurrent Neural Network
+                                      </h3>
+                                      <p>
+                                      Recurrent Neural Network processes sequential or time-series data. It has applications in speech recognition, image captioning, language translation, and
+                                      <a href="https://www.ibm.com/cloud/learn/natural-language-processing" rel="nooepener" target="_blank">
+                                      natural language processing (NLP)
+                                      </a>
+                                      . In addition, some popular applications, like Siri, Google Translate, and Google Voice Search, use RNN.
+                                      </p>
+                                      <p>
+                                      The feed-forward neural network does not support backpropagation, and hence, it does not remember data in the previous inputs. But in RNN, the input for the current step is the output of the previous step. As the output of each step is saved in RNN, it helps in making better decisions.
+                                      </p>
+                                      <p>
+                                      <strong>
+                                      Pros
+                                      </strong>
+                                      </p>
+                                      <ul>
+                                      <li>
+                                      We can provide any length of input to RNN for processing.
+                                      </li>
+                                      <li>
+                                      Even if the input size increases, the mode size remains the same.
+                                      </li>
+                                      <li>
+                                      RNN can process the arbitrary series of inputs by using its internal memory.
+                                      </li>
+                                      </ul>
+                                      <p>
+                                      <strong>
+                                      Cons
+                                      </strong>
+                                      </p>
+                                      <ul>
+                                      <li>
+                                      The computation speed of RNN is relatively slower than other neural networks, as it is recurrent in nature.
+                                      </li>
+                                      <li>
+                                      It is highly prone to gradient vanishing and exploding.
+                                      </li>
+                                      </ul>
+                                      <h3 id="goto 5-convolution-neural-network">
+                                      5. Convolution Neural Network
+                                      </h3>
+                                      <p>
+                                      The convolution neural network (CNN) consists of neurons arranged in three dimensions. Image recognition is the primary application of CNN. Because of this fact, it is one of the widely used neural nets. In the first layer, called the convolutional layer, a neuron takes only a tiny portion of the visual field, i.e., an image, and processes it. Also, it takes input features in batches.
+                                      </p>
+                                      <p>
+                                      After that, the pooling stage reduces each feature’s dimensions to sustain valuable data. The final step analyzes probabilities and decides the class of an image. Image processing in a convolutional neural net involves the conversion from RGB to grey-scale. CNN has its application primarily in signal and image processing.
+                                      </p>
+                                      <p>
+                                      <strong>
+                                      Pros
+                                      </strong>
+                                      </p>
+                                      <ul>
+                                      <li>
+                                      CNN does not involve human intervention to identify the significant features of the given input data.
+                                      </li>
+                                      </ul>
+                                      <p>
+                                      <strong>
+                                      Cons
+                                      </strong>
+                                      </p>
+                                      <ul>
+                                      <li>
+                                      As compared to the above types, CNN is relatively more complex to design and maintain.
+                                      </li>
+                                      <li>
+                                      It is comparatively slow, and its speed depends upon the number of hidden layers.
+                                      </li>
+                                      </ul>
+                                      <h3 id="goto 6-modular-neural-network">
+                                      6. Modular Neural Network
+                                      </h3>
+                                      <p>
+                                      The modular neural network consists of multiple independently functioning networks monitored by some intermediary. Each network serves as a module and operates on a unique set of inputs. Large and complex processes are split into multiple independent components, and each component is assigned to a single network or module.
+                                      </p>
+                                      <p>
+                                      Therefore, an MNN increases the computation speed. The intermediary takes the output from all modules, processes them, and produces the output as a whole.
+                                      </p>
+                                      <p>
+                                      <strong>
+                                      Pros
+                                      </strong>
+                                      </p>
+                                      <ul>
+                                      <li>
+                                      It is comparatively faster than other neural networks.
+                                      </li>
+                                      <li>
+                                      MNN is robust and efficient, as each network in it functions independently.
+                                      </li>
+                                      </ul>
+                                      <p>
+                                      <strong>
+                                      Cons
+                                      </strong>
+                                      </p>
+                                      <ul>
+                                      <li>
+                                      It is essential to have a control system that enables modules in a network to function together.
+                                      </li>
+                                      </ul>
+                                      <h2 id="goto pros-and-cons-of-artificial-neural-networks">
+                                      Pros and Cons of Artificial Neural Networks
+                                      </h2>
+                                      <p>
+                                      Below are some of the significant advantages and disadvantages of neural networks.
+                                      </p>
+                                      <h3 id="goto pros">
+                                      Pros
+                                      </h3>
+                                      <ul>
+                                      <li>
+                                      The improper functioning of a few neurons in a neural net does not prevent it from producing the output. Therefore, artificial neural networks (ANNs) are fault-tolerant.
+                                      </li>
+                                      <li>
+                                      Neural networks can produce output even with incomplete information.
+                                      </li>
+                                      <li>
+                                      The parallel processing ability of neural nets enables them to perform multiple tasks at the same time.
+                                      </li>
+                                      <li>
+                                      Any problem in a neural network does not lead to immediate corruption, but it makes a network slow over time.
+                                      </li>
+                                      </ul>
+                                      <h3 id="goto cons">
+                                      Cons
+                                      </h3>
+                                      <ul>
+                                      <li>
+                                      We know that a neural net offers a solution to a problem. But it does not state why and how it produces a specific output, primarily due to the complexity of a network. Therefore, neural networks are black boxes.
+                                      </li>
+                                      <li>
+                                      Determining the appropriate structure of a neural network is challenging as there are no specific rules for that. Trial and error and experience are the only ways to determine the structure of a neural net.
+                                      </li>
+                                      <li>
+                                      ANNs require or are dependent on processors with high processing capacity.
+                                      </li>
+                                      </ul>
+                                      <h2 id="goto conclusion">
+                                      Conclusion
+                                      </h2>
+                                      <p>
+                                      Neural networks are changing the way people and organizations make decisions, solve problems, and interact with systems. They mimic the behavior of the human brain and provide solutions to problems in the domain of
+                                      <a href="https://www.techgeekbuzz.com/blog/ai-vs-ml-vs-deep-learning/">
+                                      artificial intelligence, deep learning, and machine learning
+                                      </a>
+                                      . In addition, neural networks have the ability to identify the hidden patterns in clusters and unstructured data and classify them.
+                                      </p>
+                                      <p>
+                                      Like humans, they are able to learn more over time and provide better outputs with more data utilization. With different types of neural networks being available, there are so many options for an AI developer to choose from. Each type has its own specific purpose, though.
+                                      </p>
+                                      <p>
+                                      This article covers some of the most typical neural networks with their advantages and concerns. We hope that this article helped you in understanding neural networks and their working a little better.
+                                      </p>
+                                      <h3 class="h3">Feedback</h3>
+                    <ul class="points">
+                    <li>Send your Feedback to nigammishra826@gmail.com</li>
+                    </ul></i></b>
+                                      
+                                                          <!-- Article ends -->
+                                                      </article>
+                                                      
+                                                  </div>
+                                                  
+                                                  
+                                                  
+                                                      <div class="faqs my-5">
+                                                          
+                                                      </div>
+                                                  
+             
+          </div>
+               
+          <script>
+              // You can add JavaScript for more complex animations or interactions here
+          </script>
+          <!-- Code injected by live-server -->
+          <script>
+            // <![CDATA[  <-- For SVG support
+            if ('WebSocket' in window) {
+              (function () {
+                function refreshCSS() {
+                  var sheets = [].slice.call(document.getElementsByTagName("link"));
+                  var head = document.getElementsByTagName("head")[0];
+                  for (var i = 0; i < sheets.length; ++i) {
+                    var elem = sheets[i];
+                    var parent = elem.parentElement || head;
+                    parent.removeChild(elem);
+                    var rel = elem.rel;
+                    if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                      var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                      elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                    }
+                    parent.appendChild(elem);
+                  }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function (msg) {
+                  if (msg.data == 'reload') window.location.reload();
+                  else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                  console.log('Live reload enabled.');
+                  sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+              })();
+            }
+            else {
+              console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+            }
+            // ]]>
+          </script>
+          
+          
+          </div></div></div></body>
+          <head>
+            <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+          </head>
+          
+          <body>
+            <footer class="footer">
+              <div class="container row">
+                <div class="footer-col">
+                  <h4>About</h4>
+                  <ul>
+                    <li><a href="nigam1.html">Artificial intelligence(AI)</a></li>
+                    <li><a href="nigam4.html">Types of AI</a></li>
+                    <li><a href="nigam8.html">Turing test of AI</a></li>
+                    <li><a href="nigam22.html">The Wumpus world</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>get help</h4>
+                  <ul>
+                    <li><a href="nigam89.html">MCQ</a></li>
+                    <li><a href="nigam87.html">Machine Learning</a></li>
+                    <li><a href="nigam88.html">NPL</a></li>
+                    <li><a href="nigam92.html">Data Science</a></li>
+                    <li><a href="nigam93.html">Reinforcement learning</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>Misc</h4>
+                  <ul>
+                    <li><a href="nigam36.html">examples</a></li>
+                    <li><a href="nigam43.html">Robotioc & AI</a></li>
+                    <li><a href="nigam44.html">Future of AI</a></li>
+                    <li><a href="nigam47.html">Scope of AI</a></li>
+                    <li><a href="nigam81.html">open AI&ChatGPT</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>follow us</h4>
+                  <div class="social-links">
+                    <a href="https://www.facebook.com/nigam.mishra.710?mibextid=9R9pXO"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/MishraNugam?s=09"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://instagram.com/mr_nigam_8199?igshid=MXNzeGI3bmZ6b3M3NQ=="><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                  </div>
+                  <a href="contact1.html"><img src="photo/logo2.jpg" style="height: 100px;width: 100px;"></a>
+                </div>
+              </div>
+            </footer>
+          </body>
+          </html>

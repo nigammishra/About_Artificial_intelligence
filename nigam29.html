@@ -1,0 +1,582 @@
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>What is Artificial Intelligence (AI)? Tutorial, Meaning </title>
+<link rel="stylesheet" type="text/css" href="style.css" async="">
+          </style><meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A/ERL66fN363FkXxgDc6F1+ucRUkAhjEca9W3la6xaLnD2Y1lABsqmdaJmPNaUKPKVBRpyMKEhXYl7rSvrQw+AkAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A6OdGH3fVf4eKRDbXb4thXA4InNqDJDRhZ8U533U/roYjp4Yau0T3YSuc63vmAs/8ga1cD0E3A7LEq6AXk1uXgsAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202311090101/pubads_impl.js" async=""></script><script src="https://config.aps.amazon-adsystem.com/configs/2e7e1587-d92f-46dd-8721-80b53eccb87e" type="text/javascript" async="async"></script><style type="text/css">.vjs-youtube .vjs-iframe-blocker { display: none; }.vjs-youtube.vjs-user-inactive .vjs-iframe-blocker { display: block; }.vjs-youtube .vjs-poster { background-size: cover; }.vjs-youtube-mobile .vjs-big-play-button { display: none; }</style><style type="text/css">
+ 
+body {
+  background-image: url(photo/yg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  position: relative;
+  background: darkgreen;
+  padding: 1rem 0;
+  z-index: 999;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(90%, 800px);
+  margin-inline: auto;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover {
+  color: #4FC3F7;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  
+  .toggle {
+    transition: ease-in-out 550ms;
+    transform: translate(0px);
+    opacity: 1;
+    display: block;
+  }
+  
+  .header-container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: darkgreen;
+    backdrop-filter: blur(10px);
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  
+  nav li {
+    padding: 1rem;
+    cursor: pointer;
+  }
+  
+  nav li:hover {
+    background: darkgreen;
+  }
+  
+  .hamburger {
+    display: block; 
+  }
+}
+div.onlycontent {
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-right: 4px;
+    width: 58%;
+    float: left;
+    padding: 10px 15px;
+    background :none;
+  }
+  #city td {
+    color: black;
+    line-height: 1.7;
+  }
+  #city li {
+    line-height: 25px;
+    color: black;
+    margin-top: 4px;
+  }
+  *,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+	background-color: #151515;
+	padding: 80px 0;
+}
+
+.container {
+	max-width: 1170px;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer-col {
+	width: 25%;
+	padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 18px;
+	color: #FFF;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #E91E63;
+	width: 50px;
+	height: 2px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	color: #DDD;
+	display: block;
+	font-size: 1rem;
+	font-weight: 300;
+	text-transform: capitalize;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: #FFF;
+	padding-left: 7px;
+}
+
+.footer-col .social-links a {
+	color: #FFF;
+	background-color: rgba(255, 255, 255, 0.2);
+	display: inline;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	text-align: center;
+	margin: 0 10px 10px 0;
+	line-height: 100px;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #151515;
+	background-color: #FFF;
+}
+
+@media(max-width: 767px) {
+	.footer-col {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 574px) {
+	.footer-col {
+		width: 100%;
+	}
+}
+      </style>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+     <body>
+      <header>
+        <div class="header-container">
+          <span><img src="photo/logo1.png" style="height: 50px;width: 70px;overflow: hidden;backface-visibility: hidden;"></span>
+          <nav id="nav">
+            <b><i><ul id="nav-ul">
+              <li><a href="nigam1.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="AIservices.html">Service</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul></i></b>
+          </nav>
+          <span class="hamburger" id="button"><i class="fa-solid fa-bars"></i></span>
+        </div>
+      </header>
+    </body>
+    
+    </div>
+    </div>
+    <div id="link" style="clear:both;z-index:999"> </div>
+    <div class="mobilemenu" style="clear:both">
+    
+    </div>
+    <div id="menu">
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Artificial Intelligence</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam1.html" style="color: black;"><strong>Artificial Intelligence (AI)</strong> </a>
+    <a href="nigam2.html">Applications of AI</a>
+    <a href="nigam3.html">History of AI</a>
+    <a href="nigam4.html">Types of AI</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Intelligent Agent</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam5.html">Types of Agents</a>
+    <a href="nigam6.html">Intelligent Agent</a>
+    <a href="nigam7.html">Agent Environment</a>
+    <a href="nigam8.html">Turing Test in AI</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Problem-solving</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam9.html">Search Algorithms</a>
+    <a href="nigam10.html">Uninformed Search Algorithm</a>
+    <a href="nigam11.html">Informed Search Algorithms</a>
+    <a href="nigam12.html">Hill Climbing Algorithm</a>
+    <a href="nigam13.html">Means-Ends Analysis</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Adversarial Search</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam14.html">Adversarial search</a>
+    <a href="nigam15.html">Minimax Algorithm</a>
+    <a href="nigam16.html">Alpha-Beta Pruning</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Knowledge Represent</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam17.html">Knowledge Based Agent</a>
+    <a href="nigam18.html">Knowledge Representation</a>
+    <a href="nigam19.html">Knowledge Representation Techniques</a>
+    <a href="nigam20.html">Propositional Logic</a>
+    <a href="nigam21.html">Rules of Inference</a>
+    <a href="nigam22.html">The Wumpus world</a>
+    <a href="nigam23.html">knowledge-base for Wumpus World</a>
+    <a href="nigam24.html">First-order logic</a>
+    <a href="nigam25.html">Knowledge Engineering in FOL</a>
+    <a href="nigam26.html">Inference in First-Order Logic</a>
+    <a href="nigam27.html">Unification in FOL</a>
+    <a href="nigam28.html">Resolution in FOL</a>
+    <a href="nigam29.html">Forward Chaining and backward chaining</a>
+    <a href="nigam30.html">Backward Chaining vs Forward Chaining</a>
+    <a href="nigam31.html">Reasoning in AI</a>
+    <a href="nigam32.html">Inductive vs. Deductive reasoning</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Uncertain Knowledge R.</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam33.html">Probabilistic Reasoning in AI</a>
+    <a href="nigam34.html">Bayes theorem in AI</a>
+    <a href="nigam35.html">Bayesian Belief Network</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Misc</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam36.html">Examples of AI</a>
+    <a href="nigam37.html">AI Essay</a>
+    <a href="nigam38.html">AI in Healthcare</a>
+    <a href="nigam39.html">Artificial Intelligence in Education</a>
+    <a href="nigam40.html">Artificial Intelligence in Agriculture</a>
+    <a href="nigam41.html">Engineering Applications of AI</a>
+    <a href="nigam42.html">Advantages &amp; Disadvantages of AI</a>
+    <a href="nigam43.html">Robotics and AI</a>
+    <a href="nigam44.html">Future of AI</a>
+    <a href="nigam45.html">Languages used in AI</a>
+    <a href="nigam46.html">Approaches to AI Learning</a>
+    <a href="nigam47.html">Scope of AI</a>
+    <a href="nigam48.html">Agents in AI</a>
+    <a href="nigam49.html">Artificial Intelligence Jobs</a>
+    <a href="nigam50.html">Amazon CloudFront</a>
+    <a href="nigam51.html">Goals of Artificial Intelligence</a>
+    <a href="nigam52.html">Can Artificial Intelligence replace Human Intelligence</a>
+    <a href="nigam53.html">Importance of Artificial Intelligence</a>
+    <a href="nigam54.html">Artificial Intelligence Stock in India</a>
+    <a href="nigam55.html">How to Use Artificial Intelligence in Marketing</a>
+    <a href="nigam56.html">Artificial Intelligence in Business</a>
+    <a href="nigam57.html">Companies Working on Artificial Intelligence</a>
+    <a href="nigam58.html">Artificial Intelligence Future Ideas</a>
+    <a href="nigam59.html">Government Jobs in Artificial Intelligence in India</a>
+    <a href="nigam60.html">What is the Role of Planning in Artificial Intelligence</a>
+    <a href="nigam61.html">AI as a Service</a>
+    <a href="nigam62.html">AI in Banking</a>
+    <a href="nigam63.html">AI Tools</a>
+    <a href="nigam64.html">Cognitive AI</a>
+    <a href="nigam65.html">Introduction of Seaborn</a>
+    <a href="nigam66.html">Natural Language ToolKit (NLTK)</a>
+    <a href="nigam67.html">Best books for ML</a>
+    <a href="nigam68.html">AI companies of India will lead in 2022</a>
+    <a href="nigam69.html">Constraint Satisfaction Problems in Artificial Intelligence</a>
+    <a href="nigam70.html">How artificial intelligence will change the future</a>
+    <a href="nigam71.html">Problem Solving Techniques in AI</a>
+    <a href="nigam72.html">AI in Manufacturing Industry</a>
+    <a href="nigam73.html">Artificial Intelligence in Automotive Industry</a>
+    <a href="nigam74.html">Artificial Intelligence in Civil Engineering</a>
+    <a href="nigam75.html">Artificial Intelligence in Gaming Industry</a>
+    <a href="nigam76.html">Artificial Intelligence in HR</a>
+    <a href="nigam77.html">Artificial Intelligence in Medicine</a>
+    <a href="nigam78.html">PhD in Artificial Intelligence</a>
+    <a href="nigam79.html">Activation Functions in Neural Networks</a>
+    <a href="nigam80.html">Boston Housing Kaggle Challenge with Linear Regression</a>
+    <a href="nigam81.html">What are OpenAI and ChatGPT</a>
+    <a href="nigam82.html">Chatbot vs. Conversational AI</a>
+    <a href="nigam83.html">Iterative Deepening A* Algorithm (IDA*)</a>
+    <a href="nigam84.html">Iterative Deepening Search (IDS) or Iterative Deepening Depth First Search (IDDFS)</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Subsets of AI</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam85.html">Subsets of AI</a>
+    <a href="nigam86.html">Expert Systems</a>
+    <a href="nigam87.html">Machine Learning Tutorial</a>
+    <a href="nigam88.html">NLP Tutorial</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Artificial Intelligence MCQ</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam89.html">Artificial Intelligence MCQ</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Related Tutorials</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam92.html">Data Science Tutorial</a>
+    <a href="nigam93.html">Reinforcement Learning</a>
+    </div>
+     
+</div>
+</div>
+<div class="onlycontent">
+  <div class="onlycontentad">
+  </div>
+  <div class="onlycontentinner">
+  <div id="city">
+  <table>
+  <tbody><tr><td>
+  
+  <b><i><h1 class="h1">Forward Chaining and backward chaining in AI</h1>
+  <p>In artificial intelligence, forward and backward chaining is one of the important topics, but before understanding forward and backward chaining lets first understand that from where these two terms came.</p>
+  <h2 class="h2">Inference engine:</h2>
+  <p>The inference engine is the component of the intelligent system in artificial intelligence, which applies logical rules to the knowledge base to infer new information from known facts. The first inference engine was part of the expert system.
+  Inference engine commonly proceeds in two modes, which are:</p>
+  <ol class="pointsa">
+  <li><strong>Forward chaining</strong></li>
+  <li><strong>Backward chaining</strong></li>
+  </ol>
+  <p><strong>Horn Clause and Definite clause:</strong></p>
+  <p>Horn clause and definite clause are the forms of sentences, which enables knowledge base to use a more restricted and efficient inference algorithm. Logical inference algorithms use forward and backward chaining approaches, which require KB in the form of the <strong>first-order definite clause</strong>.</p>
+  <p><strong>Definite clause:</strong> A clause which is a disjunction of literals with <strong>exactly one positive literal</strong> is known as a definite clause or strict horn clause.</p>
+  <p><strong>Horn clause:</strong> A clause which is a disjunction of literals with <strong>at most one positive literal</strong> is known as horn clause. Hence all the definite clauses are horn clauses.</p>
+  <p><strong>Example: (¬ p V ¬ q V k)</strong>. It has only one positive literal k.</p>
+  It is equivalent to p ∧ q → k.<p></p>
+  <h2 class="h2">A. Forward Chaining</h2>
+  <p>Forward chaining is also known as a forward deduction or forward reasoning method when using an inference engine. Forward chaining is a form of reasoning which start with atomic sentences in the knowledge base and applies inference rules (Modus Ponens) in the forward direction to extract more data until a goal is reached.</p>
+  <p>The Forward-chaining algorithm starts from known facts, triggers all rules whose premises are satisfied, and add their conclusion to the known facts. This process repeats until the problem is solved.</p>
+  <p><strong>Properties of Forward-Chaining: </strong></p>
+  <ul class="points">
+  <li>It is a down-up approach, as it moves from bottom to top.</li>
+  <li>It is a process of making a conclusion based on known facts or data, by starting from the initial state and reaches the goal state.</li>
+  <li>Forward-chaining approach is also called as data-driven as we reach to the goal using available data.</li>
+  <li>Forward -chaining approach is commonly used in the expert system, such as CLIPS, business, and production rule systems.</li>
+  </ul>
+  <p>Consider the following famous example which we will use in both approaches:</p>
+  <h3 class="h3">Example: </h3>
+  <p><strong>"As per the law, it is a crime for an American to sell weapons to hostile nations. Country A, an enemy of America, has some missiles, and all the missiles were sold to it by Robert, who is an American citizen."</strong></p>
+  <p>Prove that <strong>"Robert is criminal."</strong></p>
+  <p>To solve the above problem, first, we will convert all the above facts into first-order definite clauses, and then we will use a forward-chaining algorithm to reach the goal.</p>
+  <h3 class="h3">Facts Conversion into FOL: </h3>
+  <ul class="points">
+  <li>It is a crime for an American to sell weapons to hostile nations. (Let's say p, q, and r are variables)<br>
+  <strong>American (p) ∧ weapon(q) ∧ sells (p, q, r) ∧ hostile(r) → Criminal(p) &nbsp; &nbsp; &nbsp; ...(1)</strong></li>
+  <li>Country A has some missiles.
+  <strong>?p Owns(A, p) ∧ Missile(p)</strong>. It can be written in two definite clauses by using Existential Instantiation, introducing new Constant T1. <br>
+  <strong>Owns(A, T1) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ......(2)</strong><br>
+  <strong>Missile(T1) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .......(3)</strong></li>
+  <li>All of the missiles were sold to country A by Robert.<br>
+  <strong>?p Missiles(p) ∧ Owns (A, p) → Sells (Robert, p, A) &nbsp; &nbsp; &nbsp; ......(4)</strong></li>
+  <li>Missiles are weapons.<br>
+  <strong>Missile(p) → Weapons (p) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .......(5)</strong></li>
+  <li>Enemy of America is known as hostile.<br>
+  <strong>Enemy(p, America) →Hostile(p) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ........(6)</strong></li>
+  <li>Country A is an enemy of America.<br>
+  <strong>Enemy (A, America) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .........(7)</strong></li>
+  <li>Robert is American<br>
+  <strong>American(Robert). &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ..........(8)</strong></li>
+  </ul>
+  <h2 class="h2">Forward chaining proof:</h2>
+  <p><strong>Step-1:</strong></p>
+  <p>In the first step we will start with the known facts and will choose the sentences which do not have implications, such as: <strong>American(Robert), Enemy(A, America), Owns(A, T1), and Missile(T1)</strong>. All these facts will be represented as below.</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/forward-chaining-and-backward-chaining-in-ai.png" alt="Forward Chaining and backward chaining in AI">
+  <p><strong>Step-2:</strong></p>
+  <p>At the second step, we will see those facts which infer from available facts and with satisfied premises.</p>
+  <p>Rule-(1) does not satisfy premises, so it will not be added in the first iteration.</p>
+  <p>Rule-(2) and (3) are already added.</p>
+  <p>Rule-(4) satisfy with the substitution {p/T1}, <strong>so Sells (Robert, T1, A)</strong> is added, which infers from the conjunction of Rule (2) and (3).</p>
+  <p>Rule-(6) is satisfied with the substitution(p/A), so Hostile(A) is added and which infers from Rule-(7).</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/forward-chaining-and-backward-chaining-in-ai2.png" alt="Forward Chaining and backward chaining in AI">
+  <p><strong>Step-3: </strong></p>
+  <p>At step-3, as we can check Rule-(1) is satisfied with the substitution <strong>{p/Robert, q/T1, r/A}, so we can add Criminal(Robert)</strong> which infers all the available facts. And hence we reached our goal statement. </p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/forward-chaining-and-backward-chaining-in-ai3.png" alt="Forward Chaining and backward chaining in AI">
+  <p><strong>Hence it is proved that Robert is Criminal using forward chaining approach.</strong></p>
+  <h2 class="h2">B. Backward Chaining:</h2>
+  <p>Backward-chaining is also known as a backward deduction or backward reasoning method when using an inference engine. A backward chaining algorithm is a form of reasoning, which starts with the goal and works backward, chaining through rules to find known facts that support the goal.</p>
+  <p><strong>Properties of backward chaining:</strong></p>
+  <ul class="points">
+  <li>It is known as a top-down approach.</li>
+  <li>Backward-chaining is based on modus ponens inference rule.</li>
+  <li>In backward chaining, the goal is broken into sub-goal or sub-goals to prove the facts true.</li>
+  <li>It is called a goal-driven approach, as a list of goals decides which rules are selected and used.</li>
+  <li>Backward -chaining algorithm is used in game theory, automated theorem proving tools, inference engines, proof assistants, and various AI applications.</li>
+  <li>The backward-chaining method mostly used a <strong>depth-first search</strong> strategy for proof.</li>
+  </ul>
+  <h3 class="h3">Example:</h3>
+  <p>In backward-chaining, we will use the same above example, and will rewrite all the rules.</p>
+  <ul class="points">
+  <li><strong>American (p) ∧ weapon(q) ∧ sells (p, q, r) ∧ hostile(r) → Criminal(p) ...(1)</strong><br>
+  <strong>Owns(A, T1) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ........(2)</strong></li>
+  <li><strong>Missile(T1)</strong></li>
+  <li><strong>?p Missiles(p) ∧ Owns (A, p) → Sells (Robert, p, A) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ......(4) </strong></li>
+  <li><strong>Missile(p) → Weapons (p) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .......(5)</strong></li>
+  <li><strong>Enemy(p, America) →Hostile(p) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ........(6)</strong></li>
+  <li><strong>Enemy (A, America) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; .........(7)</strong></li>
+  <li><strong>American(Robert). &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ..........(8)</strong></li>
+  </ul>
+  <div id="a9d156a7-075f-4e17-b533-47690b1b56b2" data-section="a9d156a7-075f-4e17-b533-47690b1b56b2" class="_ap_apex_ad" data-xpath="#city > table:eq(0) > tbody:eq(0) > tr:eq(0) > td:eq(0) > h2:eq(4)" data-section-id="" data-ap-network="adpTags" data-render-time="1700195272356" style="display: block; clear: both; text-align: center; margin: 10px auto; width: 0px; height: 0px; overflow: hidden; visibility: hidden;"><div id="ADP_37780_728X280_a9d156a7-075f-4e17-b533-47690b1b56b2" style="text-align: center; margin: 0 auto;" data-google-query-id="COma6PuYyoIDFfOerAId0QAP7Q">
+  <script type="text/javascript">
+  window.adpushup.adpTags.que.push(function(){
+  window.adpushup.adpTags.display("ADP_37780_728X280_a9d156a7-075f-4e17-b533-47690b1b56b2");
+  });
+  </script>
+  <div id="google_ads_iframe_/103512698,22511567001/22987847942_0__container__" style="border: 0pt none; width: 728px; height: 0px;"></div></div></div><h2 class="h2">Backward-Chaining proof:</h2>
+  <p>In Backward chaining, we will start with our goal predicate, which is <strong>Criminal(Robert)</strong>, and then infer further rules.</p>
+  <p><strong>Step-1:</strong></p>
+  <p>At the first step, we will take the goal fact. And from the goal fact, we will infer other facts, and at last, we will prove those facts true. So our goal fact is "Robert is Criminal," so following is the predicate of it.</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/forward-chaining-and-backward-chaining-in-ai4.png" alt="Forward Chaining and backward chaining in AI">
+  <p><strong>Step-2:</strong></p>
+  <p>At the second step, we will infer other facts form goal fact which satisfies the rules. So as we can see in Rule-1, the goal predicate Criminal (Robert) is present with substitution {Robert/P}. So we will add all the conjunctive facts below the first level and will replace p with Robert.</p>
+  <p><strong>Here we can see American (Robert) is a fact, so it is proved here.</strong></p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/forward-chaining-and-backward-chaining-in-ai5.png" alt="Forward Chaining and backward chaining in AI"><div id="77c1a61c-863d-4c17-85a7-06d359764d71" data-section="77c1a61c-863d-4c17-85a7-06d359764d71" class="_ap_apex_ad" data-xpath="#city > table:eq(0) > tbody:eq(0) > tr:eq(0) > td:eq(0) > img:eq(4)" data-section-id="" data-ap-network="adpTags" data-render-time="1700195272283" style="display: block; clear: both; text-align: center; margin: 10px auto; width: 0px; height: 0px; overflow: hidden; visibility: hidden;"><div id="ADP_37780_728X280_77c1a61c-863d-4c17-85a7-06d359764d71" style="text-align: center; margin: 0 auto;" data-google-query-id="CPyRsvuYyoIDFeOJrAIdfBQJUQ">
+  <script type="text/javascript">
+  window.adpushup.adpTags.que.push(function(){
+  window.adpushup.adpTags.display("ADP_37780_728X280_77c1a61c-863d-4c17-85a7-06d359764d71");
+  });
+  </script>
+  <div id="google_ads_iframe_/103512698,22511567001/22987863470_0__container__" style="border: 0pt none; width: 728px; height: 0px;"></div></div></div>
+  <p><strong>Step-3:</strong>t At step-3, we will extract further fact Missile(q) which infer from Weapon(q), as it satisfies Rule-(5). Weapon (q) is also true with the substitution of a constant T1 at q. </p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/forward-chaining-and-backward-chaining-in-ai6.png" alt="Forward Chaining and backward chaining in AI">
+  <p><strong>Step-4:</strong></p>
+  <p>At step-4, we can infer facts Missile(T1) and Owns(A, T1) form Sells(Robert, T1, r) which satisfies the <strong>Rule- 4</strong>, with the substitution of A in place of r. So these two statements are proved here. </p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/forward-chaining-and-backward-chaining-in-ai7.png" alt="Forward Chaining and backward chaining in AI">
+  <p><strong>Step-5: </strong></p>
+  <p>At step-5, we can infer the fact <strong>Enemy(A, America)</strong> from <strong>Hostile(A)</strong> which satisfies Rule- 6. And hence all the statements are proved true using backward chaining. </p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/forward-chaining-and-backward-chaining-in-ai8.png" alt="Forward Chaining and backward chaining in AI">
+  <hr>
+  <h3 class="h3">Feedback</h3>
+  <ul class="points">
+  <li>Send your Feedback to nigammishra826@gmail.com</li>
+  </ul>
+  <div class="nexttopicdiv">
+  <span class="nexttopictext">Next Topic</span><span class="nexttopiclink"><a href="nigam30.html">backward chaining vs forward chaining</a></span>
+  </div>
+  
+  <br><br>
+  <div id="bottomnext">
+  <a style="float:left" class="next" href="nigam28.html">← prev</a>
+  <a style="float:right" class="next" href="nigam30.html">next →</a>
+  </div>
+  <br><br>
+  </td></tr>
+  </tbody></table>
+  <head>
+    <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+  </head>
+  
+  <body>
+    <footer class="footer">
+      <div class="container row">
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="nigam1.html">Artificial intelligence(AI)</a></li>
+            <li><a href="nigam4.html">Types of AI</a></li>
+            <li><a href="nigam8.html">Turing test of AI</a></li>
+            <li><a href="nigam22.html">The Wumpus world</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="nigam89.html">MCQ</a></li>
+            <li><a href="nigam87.html">Machine Learning</a></li>
+            <li><a href="nigam88.html">NPL</a></li>
+            <li><a href="nigam92.html">Data Science</a></li>
+            <li><a href="nigam93.html">Reinforcement learning</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Misc</h4>
+          <ul>
+            <li><a href="nigam36.html">examples</a></li>
+            <li><a href="nigam43.html">Robotioc & AI</a></li>
+            <li><a href="nigam44.html">Future of AI</a></li>
+            <li><a href="nigam47.html">Scope of AI</a></li>
+            <li><a href="nigam81.html">open AI&ChatGPT</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/nigam.mishra.710?mibextid=9R9pXO"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/MishraNugam?s=09"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://instagram.com/mr_nigam_8199?igshid=MXNzeGI3bmZ6b3M3NQ=="><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </div>
+          <a href="contact1.html"><img src="photo/logo2.jpg" style="height: 100px;width: 100px;"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  </div>
+
+  </div>
+  <br><br><div class="mobilemenu" style="clear:both">
+  </div></div></i></b>

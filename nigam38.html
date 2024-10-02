@@ -1,0 +1,546 @@
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>What is Artificial Intelligence (AI)? Tutorial, Meaning </title>
+<link rel="stylesheet" type="text/css" href="style.css" async="">
+          </style><meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A/ERL66fN363FkXxgDc6F1+ucRUkAhjEca9W3la6xaLnD2Y1lABsqmdaJmPNaUKPKVBRpyMKEhXYl7rSvrQw+AkAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A6OdGH3fVf4eKRDbXb4thXA4InNqDJDRhZ8U533U/roYjp4Yau0T3YSuc63vmAs/8ga1cD0E3A7LEq6AXk1uXgsAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202311090101/pubads_impl.js" async=""></script><script src="https://config.aps.amazon-adsystem.com/configs/2e7e1587-d92f-46dd-8721-80b53eccb87e" type="text/javascript" async="async"></script><style type="text/css">.vjs-youtube .vjs-iframe-blocker { display: none; }.vjs-youtube.vjs-user-inactive .vjs-iframe-blocker { display: block; }.vjs-youtube .vjs-poster { background-size: cover; }.vjs-youtube-mobile .vjs-big-play-button { display: none; }</style><style type="text/css">
+ 
+body {
+  background-image: url(photo/qq.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  position: relative;
+  background: transparent;
+  padding: 1rem 0;
+  z-index: 999;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(90%, 800px);
+  margin-inline: auto;
+  color: #000;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav a:hover {
+  color: #4FC3F7;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  
+  .toggle {
+    transition: ease-in-out 550ms;
+    transform: translate(0px);
+    opacity: 1;
+    display: block;
+  }
+  
+  .header-container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: firebrick;
+    backdrop-filter: blur(10px);
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  
+  nav li {
+    padding: 1rem;
+    cursor: pointer;
+  }
+  
+  nav li:hover {
+    background: firebrick;
+  }
+  
+  .hamburger {
+    display: block; 
+  }
+}
+div.onlycontent {
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-right: 4px;
+    width: 58%;
+    float: left;
+    padding: 10px 15px;
+    background :none;
+  }
+  #city td {
+    color: black;
+    line-height: 1.7;
+  }
+  #city li {
+    line-height: 25px;
+    color: black;
+    margin-top: 4px;
+  }
+  *,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+	background-color: #151515;
+	padding: 80px 0;
+}
+
+.container {
+	max-width: 1170px;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer-col {
+	width: 25%;
+	padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 18px;
+	color: #FFF;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #E91E63;
+	width: 50px;
+	height: 2px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	color: #DDD;
+	display: block;
+	font-size: 1rem;
+	font-weight: 300;
+	text-transform: capitalize;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: #FFF;
+	padding-left: 7px;
+}
+
+.footer-col .social-links a {
+	color: #FFF;
+	background-color: rgba(255, 255, 255, 0.2);
+	display: inline;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	text-align: center;
+	margin: 0 10px 10px 0;
+	line-height: 100px;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #151515;
+	background-color: #FFF;
+}
+
+@media(max-width: 767px) {
+	.footer-col {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 574px) {
+	.footer-col {
+		width: 100%;
+	}
+}
+      </style>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     
+     <body>
+      <header>
+        <div class="header-container">
+          <span><img src="photo/logo1.png" style="height: 50px;width: 70px;overflow: hidden;backface-visibility: hidden;"></span>
+          <b><i><nav id="nav">
+            <ul id="nav-ul">
+              <li><a href="nigam1.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="AIservices.html">Service</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul></i></b>
+          </nav>
+          <span class="hamburger" id="button"><i class="fa-solid fa-bars"></i></span>
+        </div>
+      </header>
+    </body>
+    
+    </div>
+    </div>
+    <div id="link" style="clear:both;z-index:999"> </div>
+    <div class="mobilemenu" style="clear:both">
+    
+    </div>
+    <div id="menu">
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Artificial Intelligence</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam1.html" style="color: black;"><strong>Artificial Intelligence (AI)</strong> </a>
+    <a href="nigam2.html">Applications of AI</a>
+    <a href="nigam3.html">History of AI</a>
+    <a href="nigam4.html">Types of AI</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Intelligent Agent</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam5.html">Types of Agents</a>
+    <a href="nigam6.html">Intelligent Agent</a>
+    <a href="nigam7.html">Agent Environment</a>
+    <a href="nigam8.html">Turing Test in AI</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Problem-solving</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam9.html">Search Algorithms</a>
+    <a href="nigam10.html">Uninformed Search Algorithm</a>
+    <a href="nigam11.html">Informed Search Algorithms</a>
+    <a href="nigam12.html">Hill Climbing Algorithm</a>
+    <a href="nigam13.html">Means-Ends Analysis</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Adversarial Search</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam14.html">Adversarial search</a>
+    <a href="nigam15.html">Minimax Algorithm</a>
+    <a href="nigam16.html">Alpha-Beta Pruning</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Knowledge Represent</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam17.html">Knowledge Based Agent</a>
+    <a href="nigam18.html">Knowledge Representation</a>
+    <a href="nigam19.html">Knowledge Representation Techniques</a>
+    <a href="nigam20.html">Propositional Logic</a>
+    <a href="nigam21.html">Rules of Inference</a>
+    <a href="nigam22.html">The Wumpus world</a>
+    <a href="nigam23.html">knowledge-base for Wumpus World</a>
+    <a href="nigam24.html">First-order logic</a>
+    <a href="nigam25.html">Knowledge Engineering in FOL</a>
+    <a href="nigam26.html">Inference in First-Order Logic</a>
+    <a href="nigam27.html">Unification in FOL</a>
+    <a href="nigam28.html">Resolution in FOL</a>
+    <a href="nigam29.html">Forward Chaining and backward chaining</a>
+    <a href="nigam30.html">Backward Chaining vs Forward Chaining</a>
+    <a href="nigam31.html">Reasoning in AI</a>
+    <a href="nigam32.html">Inductive vs. Deductive reasoning</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Uncertain Knowledge R.</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam33.html">Probabilistic Reasoning in AI</a>
+    <a href="nigam34.html">Bayes theorem in AI</a>
+    <a href="nigam35.html">Bayesian Belief Network</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Misc</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam36.html">Examples of AI</a>
+    <a href="nigam37.html">AI Essay</a>
+    <a href="nigam38.html">AI in Healthcare</a>
+    <a href="nigam39.html">Artificial Intelligence in Education</a>
+    <a href="nigam40.html">Artificial Intelligence in Agriculture</a>
+    <a href="nigam41.html">Engineering Applications of AI</a>
+    <a href="nigam42.html">Advantages &amp; Disadvantages of AI</a>
+    <a href="nigam43.html">Robotics and AI</a>
+    <a href="nigam44.html">Future of AI</a>
+    <a href="nigam45.html">Languages used in AI</a>
+    <a href="nigam46.html">Approaches to AI Learning</a>
+    <a href="nigam47.html">Scope of AI</a>
+    <a href="nigam48.html">Agents in AI</a>
+    <a href="nigam49.html">Artificial Intelligence Jobs</a>
+    <a href="nigam50.html">Amazon CloudFront</a>
+    <a href="nigam51.html">Goals of Artificial Intelligence</a>
+    <a href="nigam52.html">Can Artificial Intelligence replace Human Intelligence</a>
+    <a href="nigam53.html">Importance of Artificial Intelligence</a>
+    <a href="nigam54.html">Artificial Intelligence Stock in India</a>
+    <a href="nigam55.html">How to Use Artificial Intelligence in Marketing</a>
+    <a href="nigam56.html">Artificial Intelligence in Business</a>
+    <a href="nigam57.html">Companies Working on Artificial Intelligence</a>
+    <a href="nigam58.html">Artificial Intelligence Future Ideas</a>
+    <a href="nigam59.html">Government Jobs in Artificial Intelligence in India</a>
+    <a href="nigam60.html">What is the Role of Planning in Artificial Intelligence</a>
+    <a href="nigam61.html">AI as a Service</a>
+    <a href="nigam62.html">AI in Banking</a>
+    <a href="nigam63.html">AI Tools</a>
+    <a href="nigam64.html">Cognitive AI</a>
+    <a href="nigam65.html">Introduction of Seaborn</a>
+    <a href="nigam66.html">Natural Language ToolKit (NLTK)</a>
+    <a href="nigam67.html">Best books for ML</a>
+    <a href="nigam68.html">AI companies of India will lead in 2022</a>
+    <a href="nigam69.html">Constraint Satisfaction Problems in Artificial Intelligence</a>
+    <a href="nigam70.html">How artificial intelligence will change the future</a>
+    <a href="nigam71.html">Problem Solving Techniques in AI</a>
+    <a href="nigam72.html">AI in Manufacturing Industry</a>
+    <a href="nigam73.html">Artificial Intelligence in Automotive Industry</a>
+    <a href="nigam74.html">Artificial Intelligence in Civil Engineering</a>
+    <a href="nigam75.html">Artificial Intelligence in Gaming Industry</a>
+    <a href="nigam76.html">Artificial Intelligence in HR</a>
+    <a href="nigam77.html">Artificial Intelligence in Medicine</a>
+    <a href="nigam78.html">PhD in Artificial Intelligence</a>
+    <a href="nigam79.html">Activation Functions in Neural Networks</a>
+    <a href="nigam80.html">Boston Housing Kaggle Challenge with Linear Regression</a>
+    <a href="nigam81.html">What are OpenAI and ChatGPT</a>
+    <a href="nigam82.html">Chatbot vs. Conversational AI</a>
+    <a href="nigam83.html">Iterative Deepening A* Algorithm (IDA*)</a>
+    <a href="nigam84.html">Iterative Deepening Search (IDS) or Iterative Deepening Depth First Search (IDDFS)</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Subsets of AI</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam85.html">Subsets of AI</a>
+    <a href="nigam86.html">Expert Systems</a>
+    <a href="nigam87.html">Machine Learning Tutorial</a>
+    <a href="nigam88.html">NLP Tutorial</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Artificial Intelligence MCQ</span></h2>
+    </div>
+    <div class="leftmenu">
+    <a href="nigam89.html">Artificial Intelligence MCQ</a>
+    </div>
+    <div class="leftmenu2">
+    <h2 class="spanh2"><span class="spanh2">Related Tutorials</span></h2>
+    </div>
+    <div class="leftmenu">
+      
+    <a href="nigam92.html">Data Science Tutorial</a>
+    <a href="nigam93.html">Reinforcement Learning</a>
+    </div>
+     
+</div>
+</div>
+<div class="onlycontent">
+  <div class="onlycontentad">
+  </div>
+  <div class="onlycontentinner">
+  <div id="city">
+  <table>
+  <tbody><tr><td>
+  <div id="bottomnextup">
+  
+  
+  </div>
+  <b><i><h1 class="h1">Artificial Intelligence in Healthcare</h1>
+  <p>Artificial Intelligence (AI) is transforming industries around the world, and currently, its application is rapidly increasing in the healthcare sector. AI in healthcare describes the use of AI or machine-learning algorithms to mimic human cognition for gathering and understanding complex medical and health care data.AI does this by various <strong>Machine Learning algorithms, Computer Vision, Natural Language Processing, Robotics, and Deep Learning</strong>. These algorithms recognize a pattern in behaviour and then create their own logic to give well-defined output to end-users. Machine Learning helps to gain important insights and predictions using extensive amounts of input data. Further, they also instruct experts on how to build companions for expensive clinical preliminaries.</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/artificial-intelligence-in-healthcare.png" alt="Artificial Intelligence in Healthcare">
+  <p>In this topic, we are going to discuss the impact of Artificial Intelligence on the healthcare sector. But before starting, let's first understand the brief introduction of AI.</p>
+  <h2 class="h2">Introduction to Artificial Intelligence</h2>
+  <p><strong><em>Artificial Intelligence (AI) is defined as a branch of computer science that aims to enable computer systems to perform various tasks with intelligence similar to humans.</em></strong> It is also an ability of computers or machines to display intellectual processes and characteristics of humans such as reasoning, generalizing and learning from past experience, etc.</p>
+  <h2 class="h2">AI in Healthcare</h2>
+  <p><em>Artificial Intelligence in Healthcare is used to analyze the treatment techniques of various diseases and to prevent them.</em> AI is used in various areas of healthcare such as <strong>diagnosis processes, drug research sector, medicine, patient monitoring care centre</strong>, etc. In the healthcare industry, AI helps to gather past data through electronic health records for disease prevention and diagnosis. There are various medical institutes that have developed their own AI algorithms for their department, such as <em>Memorial Sloan Kettering Cancer Center</em> and <em>The Mayo clinic</em>, etc. Further, <strong>IBM</strong> and <strong>Google</strong> have also developed AI algorithms for the healthcare industry that help to support operational initiatives that increase cost-saving, improve patient satisfaction, and satisfy their staffing and workforce needs.</p>
+  <h2 class="h2">AI technologies used in healthcare</h2>
+  <p><a href="https://www.javatpoint.com/artificial-intelligence-tutorial">Artificial Intelligence</a> uses various technologies or algorithms in healthcare industries, and these are as follows:</p>
+  <ul class="points">
+  <li><strong>Machine Learning(Neural Network and Deep Learning):</strong> In healthcare, the main use of machine learning technology is precision medicine, which means to predict the best treatment protocols that are likely to be successful on a patient based on different patient characteristics and treatment context.</li>
+  <li><strong>Natural Language Processing:</strong> The main use of NLP(Natural language processing) includes creating, understanding, and classifying clinical documents and published research. It also helps in analysing unstructured clinical notes on patients and preparing reports.</li>
+  <li><strong>Robotics:</strong> Various physical robots are enabled with AI to perform different tasks in the healthcare sector. Nowadays, surgical robots are being used to provide help to surgeons for improving their ability to see, stitch wounds, and so on. Some surgical procedures that use robotic surgery are gynaecologic surgery, prostate surgery and head and neck surgery.</li>
+  <li><strong>Rule-based expert System:</strong> Rule-based expert system is based on a collection of it-then rules and is most widely used in the commercial sector. It is also used in Electronic Health Care (EHR) with some set of rules in their system. First, a set of rules is created by human experts and knowledge engineers, and then they implement an easy-to-understand rule-based expert system. This rule is directly proportional to the knowledge domain means if the knowledge is changing, then the rule can be complex and time taking. Hence, Artificial Intelligence is being used to overcome this drawback of a rule-based expert system in the healthcare sector.</li>
+  <li><strong>RPA:</strong> In the healthcare sector, Robotic process automation is used to perform repetitive tasks such as updating patient records or billing. It can also be used to extracting data when combined with other technologies.</li>
+  </ul>
+  <h2 class="h2">AI-based healthcare system vs. Traditional healthcare system</h2>
+  <h3 class="h3">AI-based Healthcare system:</h3>
+  <p>AI helps to predict and analyze data through electronic health records for disease prevention, diagnosis, and treatment of diseases, illness and other physical and mental impairments in human beings.</p>
+  <h3 class="h3">Traditional Healthcare System:</h3>
+  <ul class="points">
+  <li>In the existing healthcare system, treatments are only based on the current study.</li>
+  <li>It is very challenging to find the right doctor who knows you.</li>
+  <li>Lack of knowledge</li>
+  <li>Unexpected death due to human errors.</li>
+  </ul>
+  <h2 class="h2">Roles of Artificial Intelligence (AI) in healthcare</h2>
+  <p>Nowadays, AI is a widely used technology worldwide, which plays a very crucial role in each sector, such as gaming, banking, agriculture, etc. AI also plays a very important role in the healthcare sector, such as <em>deceases prediction and prevention, Drug research and manufacturing, deceases treatments, surgery and patient monitoring</em>, etc.</p>
+  <img src="https://static.javatpoint.com/tutorial/ai/images/artificial-intelligence-in-healthcare2.png" alt="Artificial Intelligence in Healthcare">
+  <p>Artificial Intelligence helps to analyze and predict the type of deceases, and it's a method of prevention based on gathering past data through electronic health records for disease prevention and diagnosis and later used in various decease prediction and their treatment. However, AI also gathers this data from the traditional approach of doctors, such as X-Ray.</p>
+  <p>Further, AI uses robotics technology in the research and manufacturing of drugs and surgery.</p>
+  <p><strong>Current Research of AI in healthcare:</strong> AI has developed exponential growth in the research industry. The government of the United States of America is estimated to invest more than $2 billion in AI-related to healthcare sectors like Dermatology, Radiology, Screening, Psychiatry and Drug Interactions, etc., over the next five years.</p>
+  <ul class="points">
+  <li><strong>Radiology:</strong><br>
+    <img src="photo/Radiology.webp" alt="">
+  The use of Artificial Intelligence in the radiology department is continuously increasing in recent years. AI is being used in various radiology fields to detect and diagnose diseases through technology such as <strong>Computerized Tomography (CT) and Magnetic Resonance (MR) imaging</strong>. Through AI algorithm in radiology, we can detect pneumonia in patients with better accuracy and recall in comparison to radiologists involved in the trial. Similarly, AI is also being used in <strong>Oncology</strong> to detect two key factors in oncology health, i.e., abnormalities and monitoring change over time. Hence, AI in radiology will cut down on the interaction time and allow doctors to see more patients at the same time.</li>
+  <li><strong>Screening:</strong><br>
+    <img src="photo/Screening.jpg" alt="">
+  AI is also most widely used in the screening field for the healthcare department. Some of the resources say that skin cancer could be detected more accurately by an artificial intelligence system in comparison to a dermatologist or human specialist. For example, normally, a dermatologist can detect 86% accurately, while through CNN machine, it can be increased up to 96%. Similarly, an AI algorithm named <strong><em>Google DeepMind</em></strong> is also used to detect breast cancer at a very early stage than human experts, so it can be prevented from reaching a severe stage. Further, AI algorithm also helps to detect prostate cancer with more accuracy than human experts.</li>
+  <li><strong>Psychiatry:</strong><br>
+    <img src="photo/Psychiatry.jpg" alt="">
+  AI applications are used to study anxiety and depression and are still in a phase of proof-of-concept. A big company Facebook implemented the screening for suicidal ideation. These types of applications raised various professional, ethical and regulatory questions for the professionals of the healthcare industry.</li>
+  <li><strong>Primary Care:</strong><br>
+    <img src="photo/Primary Care.jpg" alt="">
+  Primary care is one of the key development areas for AI technologies such as predictive modelling, business analytics, supportive decision making, etc.</li>
+  <li><strong>Decease Diagnosis:</strong><br>
+    <img src="photo/Decease Diagnosis.jpg" alt="">
+  AI technologies like support vector machines, neural networks, and decision trees are rapidly growing to diagnose various diseases in the healthcare industry.<br>
+  Artificial Intelligence (AI) uses <strong>Medical Learning Classifiers (MLC's)</strong> to substantially aid doctors in patient diagnosis with the help of mass Electronic Health Records.</li>
+  <li><strong>Dermatology:</strong><br>
+    <img src="photo/Dermatology.jpeg" alt="">
+  Dermatology is an ample imaging technique that is also more enhanced with the use of Deep Learning in Image Processing. Hence, Dermatology and Deep Learning makes a strong bonding in the healthcare sector. However, Dermatology is a technique of image processing, and deep learning is an Artificial Intelligence (AI) algorithm that makes it more efficient and easier as compare to other traditional ways.<br>
+  Image Processing in Dermatology: There are mainly three types of image processing in Dermatology as follows:
+  <ul class="points">
+  <li>Contextual Image</li>
+  <img src="photo/Contextual Image.png" alt="">
+  <li>Macro Image</li>
+  <img src="photo/Macro Image.avif" alt="">
+  <li>Micro Image</li>
+  <img src="photo/Micro Image.jpg" style="height: 500px;width: 770px;" alt="">
+  </ul>
+  Through the use of AI in image processing, keratinocytes skin cancer has been possible to be detected by face photography. Further, Dermatology levels classification of skin cancer can be demonstrated by festering images. Similarly, through a neural network, we can identify the skin cells from a microscope as well.</li>
+  <li><strong>Drug Interaction:</strong><br>
+    <img src="photo/Drug Interaction.avif" alt="">
+  In the healthcare sector, AI algorithm to identify the drug-drug interaction can be improved with the use of Natural Language Processing (NLP). Drug interaction increases the number of medications being taken by a human who takes multiple medicines for their disease. Through Machine Learning, medical science has developed some techniques to extract the drug-drug interaction and their possible effects and causes. Further, Drug-drug interaction can also be identifying through the use of Deep Learning.</li>
+  <li><strong>Manufacturing of Drugs:</strong><br>
+    <img src="photo/Manufacturing of Drugs.jpg" alt="">
+  Manufacturing new drugs also become easy and less time consuming through AI. With the help of Artificial Intelligence (AI), a molecule of a drug for OCD (obsessive-compulsive disorder), treatment becomes easier, which is not feasible in approx. Five years through traditional approaches.</li>
+  <li><strong>Electronic Health Records (EHR):</strong><br>
+    <img src="photo/Electronic Health Records (EHR).jpg" alt="">
+  Electronic Health records are the main key factor to develop and digitalize the healthcare sector. Artificial Intelligence helps to interpret the records and provide updated information about the diseases. Also, it helps to differentiate same deceases that mostly medical specialist treats similar like <strong>heart attack and myocardial infarction</strong>. Natural Language Processing has consolidated the difference between these diseases and also helps to prepare relevant prescription notes for other patients in future. Further, it also helps to analyze the information entered by different physicians to remember all relevant details in the same decease.<br>
+  Further through some algorithms of Artificial Intelligence, EHR can be modified to predict the risk of a decease based on prior data of a patient and their family. There is also an algorithm that is a bit similar to the traditional approach that human uses generally. In this rule-based system, the machine also predicts and takes decisions according to a flow chart. The machine collects a large number of data and creates a new rule set based on observations, then concludes the diagnosis. This approach helps to collect patient data and find outstanding issues and saves time as compared to other traditional alternatives. Some studies said, predictive modelling of EHR can achieve up to 75% accurate data, and this results in the number of online health records double every five years.</li>
+  </ul>
+  <h2 class="h2">Conclusion</h2>
+  <p><strong><em>In the healthcare sector, Artificial Intelligence helps to decrease medication costs with a more accurate diagnosis, better prediction and treatment of diseases.</em></strong> The researchers are also working on an AI project that can be a boon for humans in the upcoming years. The brain-computer interface can help patients who are physically disabled or suffering spinal cord injury as well.</p>
+  <p>Hence, the Healthcare industry is fully ripe for some major changes. From chronic disease and cancer to radiology and risk assessment, it can be deployed with new AI-based technologies with more precise, efficient, and cost-efficient inventions. The Healthcare industry is treated as a complicated science bound by legal, ethical, economical and social constraints and can be implemented with AI by making parallel changes in the environment.</p>
+  <hr> <h3 class="h3">Feedback</h3>
+  <ul class="points">
+  <li>Send your Feedback to nigammishra826@gmail.com</li>
+  </ul>
+  <div class="nexttopicdiv">
+  <span class="nexttopictext">Next Topic</span><span class="nexttopiclink"><a href="nigam39.html">Artificial Intelligence in Education</a></span>
+  </div>
+  
+  <br><br>
+  <div id="bottomnext">
+  <a style="float:left" class="next" href="nigam37.html">← prev</a>
+  <a style="float:right" class="next" href="nigam39.html">next →</a>
+  </div>
+  <br><br>
+  </td></tr>
+  </tbody></table>
+  <head>
+    <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+  </head>
+  
+  <body>
+    <footer class="footer">
+      <div class="container row">
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="nigam1.html">Artificial intelligence(AI)</a></li>
+            <li><a href="nigam4.html">Types of AI</a></li>
+            <li><a href="nigam8.html">Turing test of AI</a></li>
+            <li><a href="nigam22.html">The Wumpus world</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="nigam89.html">MCQ</a></li>
+            <li><a href="nigam87.html">Machine Learning</a></li>
+            <li><a href="nigam88.html">NPL</a></li>
+            <li><a href="nigam92.html">Data Science</a></li>
+            <li><a href="nigam93.html">Reinforcement learning</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Misc</h4>
+          <ul>
+            <li><a href="nigam36.html">examples</a></li>
+            <li><a href="nigam43.html">Robotioc & AI</a></li>
+            <li><a href="nigam44.html">Future of AI</a></li>
+            <li><a href="nigam47.html">Scope of AI</a></li>
+            <li><a href="nigam81.html">open AI&ChatGPT</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <a href="https://www.facebook.com/nigam.mishra.710?mibextid=9R9pXO"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://twitter.com/MishraNugam?s=09"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://instagram.com/mr_nigam_8199?igshid=MXNzeGI3bmZ6b3M3NQ=="><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+          </div>
+          <a href="contact1.html"><img src="photo/logo2.jpg" style="height: 100px;width: 100px;"></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  </div>
+ 
+  </div>
+  <br><br><div class="mobilemenu" style="clear:both">
+  </div></div></i></b>

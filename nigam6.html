@@ -1,0 +1,619 @@
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>What is Artificial Intelligence (AI)? Tutorial, Meaning </title>
+<link rel="stylesheet" type="text/css" href="style.css" async="">
+          </style><meta http-equiv="origin-trial" content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A/ERL66fN363FkXxgDc6F1+ucRUkAhjEca9W3la6xaLnD2Y1lABsqmdaJmPNaUKPKVBRpyMKEhXYl7rSvrQw+AkAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A6OdGH3fVf4eKRDbXb4thXA4InNqDJDRhZ8U533U/roYjp4Yau0T3YSuc63vmAs/8ga1cD0E3A7LEq6AXk1uXgsAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202311090101/pubads_impl.js" async=""></script><script src="https://config.aps.amazon-adsystem.com/configs/2e7e1587-d92f-46dd-8721-80b53eccb87e" type="text/javascript" async="async"></script><style type="text/css">.vjs-youtube .vjs-iframe-blocker { display: none; }.vjs-youtube.vjs-user-inactive .vjs-iframe-blocker { display: block; }.vjs-youtube .vjs-poster { background-size: cover; }.vjs-youtube-mobile .vjs-big-play-button { display: none; }</style><style type="text/css">
+
+body {
+  background-image: url(photo/b5.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header {
+  position: relative;
+  background: darkgreen;
+  padding: 1rem 0;
+  z-index: 999;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(90%, 800px);
+  margin-inline: auto;
+  color: #fff;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover {
+  color: #4FC3F7;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  
+  .toggle {
+    transition: ease-in-out 550ms;
+    transform: translate(0px);
+    opacity: 1;
+    display: block;
+  }
+  
+  .header-container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: darkgreen;
+    backdrop-filter: blur(10px);
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  
+  nav li {
+    padding: 1rem;
+    cursor: pointer;
+  }
+  
+  nav li:hover {
+    background: darkgreen;
+  }
+  
+  .hamburger {
+    display: block; 
+  }
+}
+div.onlycontent {
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-right: 4px;
+    width: 58%;
+    float: left;
+    padding: 10px 15px;
+    background :none;
+  }
+  #city td {
+    color: black;
+    line-height: 1.7;
+  }
+  #city li {
+    line-height: 25px;
+    color: black;
+    margin-top: 4px;
+  }
+  *,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+	background-color: #151515;
+	padding: 80px 0;
+}
+
+.container {
+	max-width: 1170px;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer-col {
+	width: 25%;
+	padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 18px;
+	color: #FFF;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #E91E63;
+	width: 50px;
+	height: 2px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	color: #DDD;
+	display: block;
+	font-size: 1rem;
+	font-weight: 300;
+	text-transform: capitalize;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: #FFF;
+	padding-left: 7px;
+}
+
+.footer-col .social-links a {
+	color: #FFF;
+	background-color: rgba(255, 255, 255, 0.2);
+	display: inline;
+	height: 100px;
+	width: 100px;
+	border-radius: 100%;
+	text-align: center;
+	margin: 0 10px 10px 0;
+	line-height: 100px;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #151515;
+	background-color: #FFF;
+}
+
+@media(max-width: 767px) {
+	.footer-col {
+		width: 50%;
+		margin-bottom: 30px;
+	}
+}
+
+@media(max-width: 574px) {
+	.footer-col {
+		width: 100%;
+	}
+}
+      </style>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" integrity="sha512-W/zrbCncQnky/EzL+/AYwTtosvrM+YG/V6piQLSe2HuKS6cmbw89kjYkp3tWFn1dkWV7L1ruvJyKbLz73Vlgfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      
+      <body>
+        <header>
+          <div class="header-container">
+            <span><img src="photo/logo1.png" style="height: 50px;width: 70px;overflow: hidden;backface-visibility: hidden;"></span>
+            <nav id="nav">
+              <ul id="nav-ul">
+                <li><a href="nigam1.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="AIservices.html">Service</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+            <span class="hamburger" id="button"><i class="fa-solid fa-bars"></i></span>
+          </div>
+        </header>
+      </body>
+      
+      </div>
+      </div>
+      <div id="link" style="clear:both;z-index:999"> </div>
+      <div class="mobilemenu" style="clear:both">
+      
+      </div>
+      <div id="menu">
+      <div class="leftmenu2">
+      <h2 class="spanh2"><span class="spanh2">Artificial Intelligence</span></h2>
+      </div>
+      <div class="leftmenu">
+      <a href="nigam1.html" style="color: black;"><strong>Artificial Intelligence (AI)</strong> </a>
+      <a href="nigam2.html">Applications of AI</a>
+      <a href="nigam3.html">History of AI</a>
+      <a href="nigam4.html">Types of AI</a>
+      </div>
+      <div class="leftmenu2">
+      <h2 class="spanh2"><span class="spanh2">Intelligent Agent</span></h2>
+      </div>
+      <div class="leftmenu">
+      <a href="nigam5.html">Types of Agents</a>
+      <a href="nigam6.html">Intelligent Agent</a>
+      <a href="nigam7.html">Agent Environment</a>
+      <a href="nigam8.html">Turing Test in AI</a>
+      </div>
+      <div class="leftmenu2">
+      <h2 class="spanh2"><span class="spanh2">Problem-solving</span></h2>
+      </div>
+      <div class="leftmenu">
+      <a href="nigam9.html">Search Algorithms</a>
+      <a href="nigam10.html">Uninformed Search Algorithm</a>
+      <a href="nigam11.html">Informed Search Algorithms</a>
+      <a href="nigam12.html">Hill Climbing Algorithm</a>
+      <a href="nigam13.html">Means-Ends Analysis</a>
+      </div>
+      <div class="leftmenu2">
+      <h2 class="spanh2"><span class="spanh2">Adversarial Search</span></h2>
+      </div>
+      <div class="leftmenu">
+      <a href="nigam14.html">Adversarial search</a>
+      <a href="nigam15.html">Minimax Algorithm</a>
+      <a href="nigam16.html">Alpha-Beta Pruning</a>
+      </div>
+      <div class="leftmenu2">
+      <h2 class="spanh2"><span class="spanh2">Knowledge Represent</span></h2>
+      </div>
+      <div class="leftmenu">
+      <a href="nigam17.html">Knowledge Based Agent</a>
+      <a href="nigam18.html">Knowledge Representation</a>
+      <a href="nigam19.html">Knowledge Representation Techniques</a>
+      <a href="nigam20.html">Propositional Logic</a>
+      <a href="nigam21.html">Rules of Inference</a>
+      <a href="nigam22.html">The Wumpus world</a>
+      <a href="nigam23.html">knowledge-base for Wumpus World</a>
+      <a href="nigam24.html">First-order logic</a>
+      <a href="nigam25.html">Knowledge Engineering in FOL</a>
+      <a href="nigam26.html">Inference in First-Order Logic</a>
+      <a href="nigam27.html">Unification in FOL</a>
+      <a href="nigam28.html">Resolution in FOL</a>
+      <a href="nigam29.html">Forward Chaining and backward chaining</a>
+      <a href="nigam30.html">Backward Chaining vs Forward Chaining</a>
+      <a href="nigam31.html">Reasoning in AI</a>
+      <a href="nigam32.html">Inductive vs. Deductive reasoning</a>
+      </div>
+      <div class="leftmenu2">
+      <h2 class="spanh2"><span class="spanh2">Uncertain Knowledge R.</span></h2>
+      </div>
+      <div class="leftmenu">
+      <a href="nigam33.html">Probabilistic Reasoning in AI</a>
+      <a href="nigam34.html">Bayes theorem in AI</a>
+      <a href="nigam35.html">Bayesian Belief Network</a>
+      </div>
+      <div class="leftmenu2">
+      <h2 class="spanh2"><span class="spanh2">Misc</span></h2>
+      </div>
+      <div class="leftmenu">
+      <a href="nigam36.html">Examples of AI</a>
+      <a href="nigam37.html">AI Essay</a>
+      <a href="nigam38.html">AI in Healthcare</a>
+      <a href="nigam39.html">Artificial Intelligence in Education</a>
+      <a href="nigam40.html">Artificial Intelligence in Agriculture</a>
+      <a href="nigam41.html">Engineering Applications of AI</a>
+      <a href="nigam42.html">Advantages &amp; Disadvantages of AI</a>
+      <a href="nigam43.html">Robotics and AI</a>
+      <a href="nigam44.html">Future of AI</a>
+      <a href="nigam45.html">Languages used in AI</a>
+      <a href="nigam46.html">Approaches to AI Learning</a>
+      <a href="nigam47.html">Scope of AI</a>
+      <a href="nigam48.html">Agents in AI</a>
+      <a href="nigam49.html">Artificial Intelligence Jobs</a>
+      <a href="nigam50.html">Amazon CloudFront</a>
+      <a href="nigam51.html">Goals of Artificial Intelligence</a>
+      <a href="nigam52.html">Can Artificial Intelligence replace Human Intelligence</a>
+      <a href="nigam53.html">Importance of Artificial Intelligence</a>
+      <a href="nigam54.html">Artificial Intelligence Stock in India</a>
+      <a href="nigam55.html">How to Use Artificial Intelligence in Marketing</a>
+      <a href="nigam56.html">Artificial Intelligence in Business</a>
+      <a href="nigam57.html">Companies Working on Artificial Intelligence</a>
+      <a href="nigam58.html">Artificial Intelligence Future Ideas</a>
+      <a href="nigam59.html">Government Jobs in Artificial Intelligence in India</a>
+      <a href="nigam60.html">What is the Role of Planning in Artificial Intelligence</a>
+      <a href="nigam61.html">AI as a Service</a>
+      <a href="nigam62.html">AI in Banking</a>
+      <a href="nigam63.html">AI Tools</a>
+      <a href="nigam64.html">Cognitive AI</a>
+      <a href="nigam65.html">Introduction of Seaborn</a>
+      <a href="nigam66.html">Natural Language ToolKit (NLTK)</a>
+      <a href="nigam67.html">Best books for ML</a>
+      <a href="nigam68.html">AI companies of India will lead in 2022</a>
+      <a href="nigam69.html">Constraint Satisfaction Problems in Artificial Intelligence</a>
+      <a href="nigam70.html">How artificial intelligence will change the future</a>
+      <a href="nigam71.html">Problem Solving Techniques in AI</a>
+      <a href="nigam72.html">AI in Manufacturing Industry</a>
+      <a href="nigam73.html">Artificial Intelligence in Automotive Industry</a>
+      <a href="nigam74.html">Artificial Intelligence in Civil Engineering</a>
+      <a href="nigam75.html">Artificial Intelligence in Gaming Industry</a>
+      <a href="nigam76.html">Artificial Intelligence in HR</a>
+      <a href="nigam77.html">Artificial Intelligence in Medicine</a>
+      <a href="nigam78.html">PhD in Artificial Intelligence</a>
+      <a href="nigam79.html">Activation Functions in Neural Networks</a>
+      <a href="nigam80.html">Boston Housing Kaggle Challenge with Linear Regression</a>
+      <a href="nigam81.html">What are OpenAI and ChatGPT</a>
+      <a href="nigam82.html">Chatbot vs. Conversational AI</a>
+      <a href="nigam83.html">Iterative Deepening A* Algorithm (IDA*)</a>
+      <a href="nigam84.html">Iterative Deepening Search (IDS) or Iterative Deepening Depth First Search (IDDFS)</a>
+      </div>
+      <div class="leftmenu2">
+      <h2 class="spanh2"><span class="spanh2">Subsets of AI</span></h2>
+      </div>
+      <div class="leftmenu">
+      <a href="nigam85.html">Subsets of AI</a>
+      <a href="nigam86.html">Expert Systems</a>
+      <a href="nigam87.html">Machine Learning Tutorial</a>
+      <a href="nigam88.html">NLP Tutorial</a>
+      </div>
+      <div class="leftmenu2">
+      <h2 class="spanh2"><span class="spanh2">Artificial Intelligence MCQ</span></h2>
+      </div>
+      <div class="leftmenu">
+      <a href="nigam89.html">Artificial Intelligence MCQ</a>
+      </div>
+      <div class="leftmenu2">
+      <h2 class="spanh2"><span class="spanh2">Related Tutorials</span></h2>
+      </div>
+      <div class="leftmenu">
+      <a href="nigam92.html">Data Science Tutorial</a>
+      <a href="nigam93.html">Reinforcement Learning</a>
+      </div>
+       
+</div>
+</div>
+<div class="onlycontent">
+    <div class="onlycontentad">
+    </div>
+    <div class="onlycontentinner">
+    <div id="city">
+    <table>
+    <tbody><tr><td><div id="ec7386ef-ccf8-43e2-86ff-11daabcf306e" data-section="ec7386ef-ccf8-43e2-86ff-11daabcf306e" class="_ap_apex_ad" data-xpath="#city > table:eq(0) > tbody:eq(0) > tr:eq(0) > td:eq(0)" data-section-id="" data-ap-network="adpTags" data-render-time="1700128390081" data-refresh-time="1700128559032" data-timeout="17523" style="display: block; clear: both; text-align: center; margin: 10px auto 40px; width: 0px; height: 0px; overflow: hidden; visibility: hidden;"><div id="ADP_37780_728X90_ec7386ef-ccf8-43e2-86ff-11daabcf306e" style="text-align: center; margin: 0 auto;" data-google-query-id="CMCJwLegyIIDFbAH1QodAnUEBA">
+    <script type="text/javascript">
+    window.adpushup.adpTags.que.push(function(){
+    window.adpushup.adpTags.display("ADP_37780_728X90_ec7386ef-ccf8-43e2-86ff-11daabcf306e");
+    });
+    </script>
+    <div id="google_ads_iframe_/103512698,22511567001/22964681174_0__container__" style="border: 0pt none; width: 728px; height: 0px;"></div></div></div>
+    <div id="bottomnextup">
+    
+    
+    </div>
+    <b><i><h1 class="h1">Agents in Artificial Intelligence</h1>
+    <p>An AI system can be defined as the study of the rational agent and its environment. The agents sense the environment through sensors and act on their environment through actuators. An AI agent can have mental properties such as knowledge, belief, intention, etc. </p>
+    <h2 class="h2">What is an Agent?</h2>
+    <p>An agent can be anything that perceiveits environment through sensors and act upon that environment through actuators. An Agent runs in the cycle of <strong>perceiving</strong>, <strong>thinking</strong>, and <strong>acting</strong>. An agent can be:</p>
+    <ul class="points">
+    <li><strong>Human-Agent:</strong> A human agent has eyes, ears, and other organs which work for sensors and hand, legs, vocal tract work for actuators.</li>
+    <li><strong>Robotic Agent:</strong> A robotic agent can have cameras, infrared range finder, NLP for sensors and various motors for actuators.</li>
+    <li><strong>Software Agent:</strong> Software agent can have keystrokes, file contents as sensory input and act on those inputs and display output on the screen.</li>
+    </ul>
+    <p>Hence the world around us is full of agents such as thermostat, cellphone, camera, and even we are also agents.</p>
+    <p>Before moving forward, we should first know about sensors, effectors, and actuators.</p>
+    <p><strong>Sensor:</strong> Sensor is a device which detects the change in the environment and sends the information to other electronic devices. An agent observes its environment through sensors.</p>
+    <p><strong>Actuators:</strong> Actuators are the component of machines that converts energy into motion. The actuators are only responsible for moving and controlling a system. An actuator can be an electric motor, gears, rails, etc.</p>
+    <p><strong>Effectors:</strong> Effectors are the devices which affect the environment. Effectors can be legs, wheels, arms, fingers, wings, fins, and display screen.</p>
+    <img src="https://static.javatpoint.com/tutorial/ai/images/agents-in-ai.png" alt="Agents in AI">
+    <h2 class="h2">Intelligent Agents:</h2>
+    <p>An intelligent agent is an autonomous entity which act upon an environment using sensors and actuators for achieving goals. An intelligent agent may learn from the environment to achieve their goals. A thermostat is an example of an intelligent agent. </p>
+    <p>Following are the main four rules for an AI agent:</p>
+    <ul class="points">
+    <li><strong>Rule 1:</strong> An AI agent must have the ability to perceive the environment.</li>
+    <li><strong>Rule 2:</strong> The observation must be used to make decisions.</li>
+    <li><strong>Rule 3:</strong> Decision should result in an action.</li>
+    <li><strong>Rule 4:</strong> The action taken by an AI agent must be a rational action.</li>
+    </ul>
+    <h2 class="h2">Rational Agent: </h2>
+    <p>A rational agent is an agent which has clear preference, models uncertainty, and acts in a way to maximize its performance measure with all possible actions.</p>
+    <p>A rational agent is said to perform the right things. AI is about creating rational agents to use for game theory and decision theory for various real-world scenarios.</p>
+    <p>For an AI agent, the rational action is most important because in AI reinforcement learning algorithm, for each best possible action, agent gets the positive reward and for each wrong action, an agent gets a negative reward.</p>
+    <h4 class="n">Note: Rational agents in AI are very similar to intelligent agents. </h4>
+    <h3 class="h3">Rationality:</h3>
+    <p>The rationality of an agent is measured by its performance measure. Rationality can be judged on the basis of following points:</p>
+    <ul class="points">
+    <li>Performance measure which defines the success criterion.</li>
+    <li>Agent prior knowledge of its environment.</li>
+    <li>Best possible actions that an agent can perform.</li>
+    <li>The sequence of percepts. </li>
+    </ul>
+    <h4 class="n">Note: Rationality differs from Omniscience because an Omniscient agent knows the actual outcome of its action and act accordingly, which is not possible in reality.</h4>
+    <h2 class="h2">Structure of an AI Agent</h2>
+    <p>The task of AI is to design an agent program which implements the agent function. The structure of an intelligent agent is a combination of architecture and agent program. It can be viewed as:</p>
+    <div class="codeblock"><div class="dp-highlighter"><div class="bar"><div class="tools"><a href="#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;"></a><a href="#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;"></a><a href="#" onclick="dp.sh.Toolbar.Command('About',this);return false;"></a></div></div><ol start="1" class="dp-j"><li class="alt"><span><span>Agent&nbsp;=&nbsp;Architecture&nbsp;+&nbsp;Agent&nbsp;program&nbsp;&nbsp;</span></span></li></ol></div><textarea name="code" class="java" style="display: none;">       Agent = Architecture + Agent program
+    </textarea></div>
+    <p>Following are the main three terms involved in the structure of an AI agent: </p>
+    <p><strong>Architecture:</strong> Architecture is machinery that an AI agent executes on.</p>
+    <p><strong>Agent Function:</strong> Agent function is used to map a percept to an action. </p>
+    <div class="codeblock"><div class="dp-highlighter"><div class="bar"><div class="tools"><a href="#" onclick="dp.sh.Toolbar.Command('ViewSource',this);return false;"></a><a href="#" onclick="dp.sh.Toolbar.Command('PrintSource',this);return false;"></a><a href="#" onclick="dp.sh.Toolbar.Command('About',this);return false;"></a></div></div><ol start="1" class="dp-j"><li class="alt"><span><span>f:P*&nbsp;→&nbsp;A&nbsp;&nbsp;</span></span></li></ol></div><textarea name="code" class="java" style="display: none;">       f:P* → A
+    </textarea></div>
+    <p><strong>Agent program:</strong> Agent program is an implementation of agent function. An agent program executes on the physical architecture to produce function f. </p>
+    <div id="a9d156a7-075f-4e17-b533-47690b1b56b2" data-section="a9d156a7-075f-4e17-b533-47690b1b56b2" class="_ap_apex_ad" data-xpath="#city > table:eq(0) > tbody:eq(0) > tr:eq(0) > td:eq(0) > h2:eq(4)" data-section-id="" data-ap-network="adpTags" data-render-time="1700128390060" data-refresh-time="1700128582199" data-timeout="19205" style="display: block; clear: both; text-align: center; margin: 10px auto; width: 0px; height: 0px; overflow: hidden; visibility: hidden;"><div id="ADP_37780_728X280_a9d156a7-075f-4e17-b533-47690b1b56b2" style="text-align: center; margin: 0 auto;" data-google-query-id="CLzYy8KgyIIDFcFCaAodhdUOiw">
+    <script type="text/javascript">
+    window.adpushup.adpTags.que.push(function(){
+    window.adpushup.adpTags.display("ADP_37780_728X280_a9d156a7-075f-4e17-b533-47690b1b56b2");
+    });
+    </script>
+    <div id="google_ads_iframe_/103512698,22511567001/22987847942_0__container__" style="border: 0pt none; width: 728px; height: 0px;"></div></div></div><h2 class="h2">PEAS Representation</h2>
+    <p>PEAS is a type of model on which an AI agent works upon. When we define an AI agent or rational agent, then we can group its properties under PEAS representation model. It is made up of four words:</p>
+    <ul class="points">
+    <li><strong>P:</strong> Performance measure</li>
+    <li><strong>E:</strong> Environment</li>
+    <li><strong>A:</strong> Actuators</li>
+    <li><strong>S:</strong> Sensors</li>
+    </ul>
+    <p>Here performance measure is the objective for the success of an agent's behavior.</p>
+    <h3 class="h3">PEAS for self-driving cars:</h3>
+    <img src="https://static.javatpoint.com/tutorial/ai/images/peas-for-self-driving-cars.png" alt="Agents in AI">
+    <p>Let's suppose a self-driving car then PEAS representation will be: </p>
+    <p><strong>Performance:</strong> Safety, time, legal drive, comfort</p>
+    <p><strong>Environment:</strong> Roads, other vehicles, road signs, pedestrian</p>
+    <p><strong>Actuators:</strong> Steering, accelerator, brake, signal, horn</p>
+    <p><strong>Sensors:</strong> Camera, GPS, speedometer, odometer, accelerometer, sonar.</p>
+    <h2 class="h2">Example of Agents with their PEAS representation</h2>
+    <table class="alt">
+    <tbody><tr>
+    <th>Agent</th>
+    <th>Performance measure</th>
+    <th>Environment</th>
+    <th>Actuators</th>
+    <th>Sensors</th>
+    </tr>
+    <tr>
+    <td><strong>1. Medical Diagnose</strong></td>
+    <td><ul class="points">
+    <li>Healthy patient</li>
+    <li>Minimized cost</li>
+    </ul></td>
+    <td><ul class="points">
+    <li>Patient</li>
+    <li>Hospital</li>
+    <li>Staff</li>
+    </ul></td>
+    <td><ul class="points">
+    <li>Tests</li>
+    <li>Treatments</li>
+    </ul></td>
+    <td>Keyboard<br>
+    (Entry of symptoms)</td>
+    </tr>
+    <tr>
+    <td><strong>2. Vacuum Cleaner</strong></td>
+    <td><ul class="points">
+    <li>Cleanness</li>
+    <li>Efficiency</li>
+    <li>Battery life</li>
+    <li>Security</li>
+    </ul></td>
+    <td><ul class="points">
+    <li>Room</li>
+    <li>Table</li>
+    <li>Wood floor</li>
+    <li>Carpet</li>
+    <li>Various obstacles</li>
+    </ul></td>
+    <td><ul class="points">
+    <li>Wheels</li>
+    <li>Brushes</li>
+    <li>Vacuum Extractor</li>
+    </ul></td>
+    <td><ul class="points">
+    <li>Camera</li>
+    <li>Dirt detection sensor</li>
+    <li>Cliff sensor</li>
+    <li>Bump Sensor</li>
+    <li>Infrared Wall Sensor</li>
+    </ul></td>
+    </tr>
+    <tr>
+    <td><strong>3. Part -picking Robot</strong></td>
+    <td><ul class="points">
+    <li>Percentage of parts in correct bins.</li>
+    </ul></td>
+    <td><ul class="points">
+    <li>Conveyor belt with parts,</li>
+    <li>Bins</li>
+    </ul></td>
+    <td><ul class="points">
+    <li>Jointed Arms</li>
+    <li>Hand</li>
+    </ul></td>
+    <td><ul class="points">
+    <li>Camera</li>
+    <li>Joint angle sensors.</li>
+    </ul></td>
+    </tr>
+    </tbody></table>
+    <hr>
+    <h3 class="h3">Feedback</h3>
+  <ul class="points">
+  <li>Send your Feedback to nigammishra826@gmail.com</li>
+  </ul></i></b>
+
+    <div class="nexttopicdiv">
+    <span class="nexttopictext">Next Topic</span><span class="nexttopiclink"><a href="nigam7.html">Agent Environment</a></span>
+    </div>
+    
+    <br><br>
+    <div id="bottomnext">
+    <a style="float:left" class="next" href="nigam5.html">← prev</a>
+    <a style="float:right" class="next" href="nigam7.html">next →</a>
+    </div>
+    <br><br>
+    </td></tr>
+    </tbody></table>
+    <head>
+      <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+      <footer class="footer">
+        <div class="container row">
+          <div class="footer-col">
+            <h4>About</h4>
+            <ul>
+              <li><a href="nigam1.html">Artificial intelligence(AI)</a></li>
+              <li><a href="nigam4.html">Types of AI</a></li>
+              <li><a href="nigam8.html">Turing test of AI</a></li>
+              <li><a href="nigam22.html">The Wumpus world</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="nigam89.html">MCQ</a></li>
+              <li><a href="nigam87.html">Machine Learning</a></li>
+              <li><a href="nigam88.html">NPL</a></li>
+              <li><a href="nigam92.html">Data Science</a></li>
+              <li><a href="nigam93.html">Reinforcement learning</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Misc</h4>
+            <ul>
+              <li><a href="nigam36.html">examples</a></li>
+              <li><a href="nigam43.html">Robotioc & AI</a></li>
+              <li><a href="nigam44.html">Future of AI</a></li>
+              <li><a href="nigam47.html">Scope of AI</a></li>
+              <li><a href="nigam81.html">open AI&ChatGPT</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/nigam.mishra.710?mibextid=9R9pXO"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://twitter.com/MishraNugam?s=09"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://instagram.com/mr_nigam_8199?igshid=MXNzeGI3bmZ6b3M3NQ=="><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <a href="contact1.html"><img src="photo/logo2.jpg" style="height: 100px;width: 100px;"></a>
+          </div>
+        </div>
+      </footer>
+    </body>
+    </div>
+    </div>
+    <br><br><div class="mobilemenu" style="clear:both">
+    </div></div>
